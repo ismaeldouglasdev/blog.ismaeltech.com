@@ -1,0 +1,24 @@
+baseURL = "https://blog.ismaeltech.com"
+languageCode = "pt-BR"
+title = "Ismael Douglas — Blog"
+theme = "PaperMod"
+
+enableRobotsTXT = true
+buildDrafts = false
+
+[params]
+  description = "Artigos sobre desenvolvimento web, sistemas, e tecnologia por Ismael Douglas"
+  author = "Ismael Douglas"
+  ShowCodeCopyButtons = true
+  ShowReadingTime = true
+  ShowShareButtons = true
+
+[params.homeInfoParams]
+  Title = "Ismael Douglas"
+  Content = "Artigos sobre desenvolvimento web, sistemas sob medida, automação e tecnologia. Escrevo sobre o que construo e o que aprendo."
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[taxonomies]
+  tag = "tags"
