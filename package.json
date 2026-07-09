@@ -1,0 +1,13 @@
+{
+  "name": "blog.ismaeltech.com",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "hugo server --buildDrafts",
+    "build": "hugo build --gc",
+    "preview": "hugo build --gc --buildDrafts && npx serve public",
+    "discover": "node scripts/discover-topics.mjs",
+    "article:generate": "node scripts/generate-article.mjs",
+    "article:publish": "node scripts/publish-article.mjs"
+  }
+}

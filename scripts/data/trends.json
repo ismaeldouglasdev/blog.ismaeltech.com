@@ -1,0 +1,197 @@
+[
+  {
+    "title": "ponytail: Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+    "url": "https://github.com/DietrichGebert/ponytail",
+    "score": 78849,
+    "source": "GitHub Trending",
+    "tags": [
+      "JavaScript"
+    ],
+    "finalScore": 63079
+  },
+  {
+    "title": "Unlimited-OCR: Unlimited OCR Works: Welcome the Era of One-shot Long-horizon Parsing.",
+    "url": "https://github.com/baidu/Unlimited-OCR",
+    "score": 13792,
+    "source": "GitHub Trending",
+    "tags": [
+      "Python"
+    ],
+    "finalScore": 11034
+  },
+  {
+    "title": "MiMo-Code: MiMo Code: Where Models and Agents Co-Evolve",
+    "url": "https://github.com/XiaomiMiMo/MiMo-Code",
+    "score": 11690,
+    "source": "GitHub Trending",
+    "tags": [
+      "TypeScript"
+    ],
+    "finalScore": 9352
+  },
+  {
+    "title": "openwiki: OpenWiki is a CLI that writes and maintains agent documentation for your codebase.",
+    "url": "https://github.com/langchain-ai/openwiki",
+    "score": 10006,
+    "source": "GitHub Trending",
+    "tags": [
+      "TypeScript"
+    ],
+    "finalScore": 8005
+  },
+  {
+    "title": "improve: Use your most capable model to audit your codebase and write plans for cheaper models to execute.",
+    "url": "https://github.com/shadcn/improve",
+    "score": 7549,
+    "source": "GitHub Trending",
+    "tags": [],
+    "finalScore": 6039
+  },
+  {
+    "title": "omnigent: Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policies and sandboxing, and collaborate in real time from any device.",
+    "url": "https://github.com/omnigent-ai/omnigent",
+    "score": 6888,
+    "source": "GitHub Trending",
+    "tags": [
+      "Python"
+    ],
+    "finalScore": 5510
+  },
+  {
+    "title": "DeepSpec: DeepSpec: a full-stack codebase for training and evaluating speculative decoding algorithms",
+    "url": "https://github.com/deepseek-ai/DeepSpec",
+    "score": 6493,
+    "source": "GitHub Trending",
+    "tags": [
+      "Python"
+    ],
+    "finalScore": 5194
+  },
+  {
+    "title": "Grok 4.5",
+    "url": "https://x.ai/news/grok-4-5",
+    "score": 3400,
+    "source": "Hacker News",
+    "finalScore": 3400
+  },
+  {
+    "title": "Cowart",
+    "url": "https://github.com/zhongerxin/Cowart",
+    "score": 4225,
+    "source": "GitHub Trending",
+    "tags": [
+      "JavaScript"
+    ],
+    "finalScore": 3380
+  },
+  {
+    "title": "T3MP3ST: autonomous red teaming platform; multi-agent offensive-security meta-harness",
+    "url": "https://github.com/elder-plinius/T3MP3ST",
+    "score": 4075,
+    "source": "GitHub Trending",
+    "tags": [
+      "TypeScript"
+    ],
+    "finalScore": 3260
+  },
+  {
+    "title": "oomwoo: Open-source vacuum robot cleaner",
+    "url": "https://github.com/makerspet/oomwoo",
+    "score": 3997,
+    "source": "GitHub Trending",
+    "tags": [
+      "Python"
+    ],
+    "finalScore": 3198
+  },
+  {
+    "title": "exploitarium: A single archive of public exploit PoCs and vulnerability research writeups. At the time I post these, none have been reported. Feel free to report them yourself and take credit for the CVE if handed out lulz. Please do not abuse these. I do this so to allure people into the field, and I've always found this is the most efficient way.",
+    "url": "https://github.com/bikini/exploitarium",
+    "score": 3827,
+    "source": "GitHub Trending",
+    "tags": [
+      "Python"
+    ],
+    "finalScore": 3062
+  },
+  {
+    "title": "wloc: 修改 Apple 网络定位（gs-loc）返回坐标 · 支持 Surge / Quantumult X / Loon / Stash · 快捷指令一键设置/恢复定位",
+    "url": "https://github.com/Yu9191/wloc",
+    "score": 3602,
+    "source": "GitHub Trending",
+    "tags": [
+      "JavaScript"
+    ],
+    "finalScore": 2882
+  },
+  {
+    "title": "skills: Skills for coding agents",
+    "url": "https://github.com/BuilderIO/skills",
+    "score": 3571,
+    "source": "GitHub Trending",
+    "tags": [
+      "JavaScript"
+    ],
+    "finalScore": 2857
+  },
+  {
+    "title": "torlink: A sleek, zero-setup torrent finder and downloader that lives right in your terminal.",
+    "url": "https://github.com/baairon/torlink",
+    "score": 3366,
+    "source": "GitHub Trending",
+    "tags": [
+      "TypeScript"
+    ],
+    "finalScore": 2693
+  },
+  {
+    "title": "eve: The Framework for Building Agents",
+    "url": "https://github.com/vercel/eve",
+    "score": 3354,
+    "source": "GitHub Trending",
+    "tags": [
+      "TypeScript"
+    ],
+    "finalScore": 2683
+  },
+  {
+    "title": "devspace: Turn ChatGPT into Codex! OR Turn Claude Web into Claude Code!",
+    "url": "https://github.com/Waishnav/devspace",
+    "score": 3100,
+    "source": "GitHub Trending",
+    "tags": [
+      "TypeScript"
+    ],
+    "finalScore": 2480
+  },
+  {
+    "title": "X4G",
+    "url": "https://github.com/x4gKing/X4G",
+    "score": 3077,
+    "source": "GitHub Trending",
+    "tags": [
+      "Python"
+    ],
+    "finalScore": 2462
+  },
+  {
+    "title": "codex-orange-book: Codex 橙皮书：从安装到实战案例的全链路 Codex 使用指南（非官方开源，含可下载 PDF）",
+    "url": "https://github.com/bozhouDev/codex-orange-book",
+    "score": 2757,
+    "source": "GitHub Trending",
+    "tags": [
+      "HTML"
+    ],
+    "finalScore": 2206
+  },
+  {
+    "title": "kage: Shadow any website for offline viewing, with the JavaScript stripped out",
+    "url": "https://github.com/tamnd/kage",
+    "score": 2721,
+    "source": "GitHub Trending",
+    "tags": [
+      "Go"
+    ],
+    "finalScore": 2177
+  }
+]
