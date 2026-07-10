@@ -4,10 +4,13 @@
   "type": "module",
   "scripts": {
     "dev": "hugo server --buildDrafts",
-    "build": "hugo build --gc",
+    "build": "npx hugo build --gc",
     "preview": "hugo build --gc --buildDrafts && npx serve public",
     "discover": "node scripts/discover-topics.mjs",
     "article:generate": "node scripts/generate-article.mjs",
     "article:publish": "node scripts/publish-article.mjs"
+  },
+  "devDependencies": {
+    "hugo-bin": "^0.149.2"
   }
 }
