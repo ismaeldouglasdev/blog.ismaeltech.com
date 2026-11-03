@@ -46,7 +46,14 @@ buildDrafts = false
     ]
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS", "JSON", "search"]
+
+[outputFormats]
+  [outputFormats.search]
+    mediatype = "application/json"
+    baseName = "index"
+    isPlainText = false
+    notAlternative = true
 
 [taxonomies]
   tag = "tags"
