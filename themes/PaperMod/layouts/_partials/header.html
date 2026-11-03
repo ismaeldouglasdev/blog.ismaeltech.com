@@ -62,7 +62,7 @@
                     {{- $lang := .Lang}}
                     {{- with site.Home.Translations }}
                     {{- $separator := or $label_text (not site.Params.disableThemeToggle)}}
-                    {{- if $separator }}<span class="nav-sep">|</span>{{ end }}
+                    {{- if false }}<span class="nav-sep">|</span>{{ end }}
                     <ul class="lang-menu">
                         {{- range . -}}
                         {{- if ne $lang .Lang }}
