@@ -7,6 +7,8 @@ excerpt: "Inteligência Artificial para desenvolvedores: LLMs, RAG e agentes."
 cover:
   image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-06-inteligencia-artificial-para-desenvolvedores-llms-rag-e.jpg"
 lang: "pt"
+comments: true
+translationKey: "2026-10-06-inteligencia-artificial-para-desenvolvedores-llms-rag-e"
 ---
 
 ## Inteligência Artificial para desenvolvedores: LLMs, RAG e agentes

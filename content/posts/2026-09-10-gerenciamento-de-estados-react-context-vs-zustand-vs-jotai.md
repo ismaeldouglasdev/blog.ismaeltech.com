@@ -8,6 +8,8 @@ share_hook: "Context, Zustand ou Jotai? Comparação de performance de verdade e
 cover:
   image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-10-gerenciamento-de-estados-react-context-vs-zustand-vs-jotai.jpg"
 lang: "pt"
+comments: true
+translationKey: "2026-09-10-gerenciamento-de-estados-react-context-vs-zustand-vs-jotai"
 ---
 
 

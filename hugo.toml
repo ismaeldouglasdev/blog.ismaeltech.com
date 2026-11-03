@@ -13,9 +13,34 @@ buildDrafts = false
   ShowReadingTime = true
   ShowShareButtons = true
 
-[params.homeInfoParams]
-  Title = "Ismael Douglas"
-  Content = "Artigos sobre desenvolvimento web, sistemas sob medida, automação e tecnologia. Escrevo sobre o que construo e o que aprendo."
+  [params.homeInfoParams]
+    Title = "Ismael Douglas"
+    Content = "Artigos sobre desenvolvimento web, sistemas sob medida, automação e tecnologia. Escrevo sobre o que construo e o que aprendo."
+
+  [params.comments]
+    provider = "giscus"
+    [params.comments.giscus]
+      repo = "ismaeldouglasdev/blog.ismaeltech.com"
+      repoId = ""
+      category = "Blog comments"
+      categoryId = ""
+      mapping = "pathname"
+      term = ""
+      reactionsEnabled = "1"
+      emitMetadata = "0"
+      inputPosition = "top"
+      lang = "pt"
+      loading = "lazy"
+      crossorigin = "anonymous"
+
+  [params.related]
+    includeNewer = true
+    threshold = 20
+    toLower = true
+    indices = [
+      { name = "tags", weight = 100 },
+      { name = "categories", weight = 70 },
+    ]
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
@@ -42,3 +67,8 @@ buildDrafts = false
   name = "Sobre"
   url = "https://ismaeltech.com/#sobre"
   weight = 4
+
+[[menu.main]]
+  name = "EN"
+  url = "/en/"
+  weight = 5

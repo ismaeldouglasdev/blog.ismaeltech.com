@@ -7,6 +7,8 @@ excerpt: "Se você já precisou orquestrar um ambiente de desenvolvimento com Do
 cover:
   image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-24-docker-e-estranho-e-por-que-isso-importa-para-a-sua-stack.jpg"
 lang: "pt"
+comments: true
+translationKey: "2026-10-24-docker-e-estranho-e-por-que-isso-importa-para-a-sua-stack"
 ---
 
 Se você já precisou orquestrar um ambiente de desenvolvimento com Docker, seja para um app full stack, uma API Python, ou uma base de dados, provavelmente sentiu aquela sensação estranha: a imagem compila perfeitamente no seu Mac, mas falha no Ubuntu do servidor. O CI/CD passa, mas o contêiner trava em produção com um erro enigmático de filesystem. O container parece vivo, mas o volume sumiu. Você faz um `docker build` e fica cinco minutos esperando enquanto todas as camadas são baixadas novamente, mesmo que você só tenha mudado uma linha de código.

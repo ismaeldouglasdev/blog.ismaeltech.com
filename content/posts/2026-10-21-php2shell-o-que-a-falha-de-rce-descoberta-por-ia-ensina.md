@@ -7,6 +7,8 @@ excerpt: "Uma vulnerabilidade de execução remota de código (RCE) em uma das l
 cover:
   image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-21-php2shell-o-que-a-falha-de-rce-descoberta-por-ia-ensina.jpg"
 lang: "pt"
+comments: true
+translationKey: "2026-10-21-php2shell-o-que-a-falha-de-rce-descoberta-por-ia-ensina"
 ---
 
 Uma vulnerabilidade de execução remota de código (RCE) em uma das linguagens mais antigas e difundidas da web já seria motivo de preocupação por si só. Mas quando essa falha não é descoberta por um auditor humano, mas por um agente de inteligência artificial programado para caçar brechas de segurança, o cenário muda de figura. O recente incidente batizado de "PHP2Shell", descoberto pela equipe de pesquisa da Wiz, expôs uma falha crítica no PHP que permite a invasão de servidores com pouquíssimo esforço. O episódio levanta uma questão incômoda para quem constrói e mantém sistemas: será que nossas práticas de segurança atuais estão preparadas para a velocidade de varredura de uma IA?

@@ -8,6 +8,8 @@ share_hook: "Por que aquele endpoint consome tanta memória? Escape analysis, st
 cover:
   image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc.jpg"
 lang: "pt"
+comments: true
+translationKey: "2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc"
 ---
 
 

@@ -7,6 +7,8 @@ excerpt: "Quantas vezes você já precisou extrair texto de um PDF dentro de uma
 cover:
   image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-26-paperpilot-construindo-um-engine-pdf-zero-cloud-em-rust-com.jpg"
 lang: "pt"
+comments: true
+translationKey: "2026-10-26-paperpilot-construindo-um-engine-pdf-zero-cloud-em-rust-com"
 ---
 
 Quantas vezes você já precisou extrair texto de um PDF dentro de uma aplicação web e se viu refém de uma API externa? Você envia o arquivo, espera pela resposta e torce para que o serviço esteja funcionando, que seus dados não vazem e que a fatura no final do mês não seja uma surpresa. Se você está construindo algo que depende desse processamento, essa dependência é um ponto de falha direto.

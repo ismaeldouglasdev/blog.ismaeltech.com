@@ -7,6 +7,8 @@ excerpt: "Machine Learning (ML) é uma área em constante expansão, e sua aplic
 cover:
   image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-05-machine-learning-com-python-do-scikit-learn-ao-pytorch-em.jpg"
 lang: "pt"
+comments: true
+translationKey: "2026-10-05-machine-learning-com-python-do-scikit-learn-ao-pytorch-em"
 ---
 
 ## Introdução

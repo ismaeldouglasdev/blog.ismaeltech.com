@@ -7,6 +7,8 @@ excerpt: "Quando memoizar, como o React Compiler muda o jogo e como medir o impa
 cover:
   image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-13-react-performance-memo-usememo-usecallback-e-react-compiler.jpg"
 lang: "pt"
+comments: true
+translationKey: "2026-10-13-react-performance-memo-usememo-usecallback-e-react-compiler"
 ---
 
 ## Introdução: quando a otimização se torna necessária

@@ -268,6 +268,13 @@
       <description></description>
     </item>
     <item>
+      <title>Databases</title>
+      <link>https://blog.ismaeltech.com/tags/databases/</link>
+      <pubDate>Sat, 03 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/databases/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Nginx</title>
       <link>https://blog.ismaeltech.com/tags/nginx/</link>
       <pubDate>Sat, 03 Oct 2026 00:00:00 +0000</pubDate>
@@ -828,6 +835,13 @@
       <description></description>
     </item>
     <item>
+      <title>Autenticacao</title>
+      <link>https://blog.ismaeltech.com/tags/autenticacao/</link>
+      <pubDate>Sun, 23 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/autenticacao/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Autenticação</title>
       <link>https://blog.ismaeltech.com/tags/autentica%C3%A7%C3%A3o/</link>
       <pubDate>Sun, 23 Aug 2026 00:00:00 +0000</pubDate>
@@ -839,6 +853,13 @@
       <link>https://blog.ismaeltech.com/tags/jwt/</link>
       <pubDate>Sun, 23 Aug 2026 00:00:00 +0000</pubDate>
       <guid>https://blog.ismaeltech.com/tags/jwt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Historia</title>
+      <link>https://blog.ismaeltech.com/tags/historia/</link>
+      <pubDate>Sat, 22 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/historia/</guid>
       <description></description>
     </item>
     <item>
@@ -888,6 +909,20 @@
       <link>https://blog.ismaeltech.com/tags/prisma/</link>
       <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
       <guid>https://blog.ismaeltech.com/tags/prisma/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Grid</title>
+      <link>https://blog.ismaeltech.com/tags/grid/</link>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/grid/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Layout</title>
+      <link>https://blog.ismaeltech.com/tags/layout/</link>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/layout/</guid>
       <description></description>
     </item>
   </channel>

@@ -6,6 +6,8 @@ tags: ["react", "server-components", "nextjs"]
 excerpt: "React Server Components permitem renderizar componentes no servidor, reduzindo o bundle no cliente. Saiba como o Next.js mudou a arquitetura frontend com essa abordagem."
 share_hook: "Server ou Client Component, data fetching no servidor, streaming com Suspense e Server Actions — e quando cada um é a escolha certa."
 lang: "pt"
+comments: true
+translationKey: "2026-08-28-react-server-components-quando-e-como-usar-no-next-js"
 ---
 
 O ecossistema frontend passou anos focado em rodar tudo no navegador do cliente, mas a arquitetura moderna de frameworks como o Next.js mudou o jogo ao trazer o servidor de volta para o centro das decisões de renderização. 

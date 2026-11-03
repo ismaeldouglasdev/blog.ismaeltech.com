@@ -8,6 +8,8 @@ share_hook: "O que o Steam Deck provou, as lacunas que restam e para quem o Linu
 cover:
   image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-12-linux-no-desktop-em-2026-ja-esta-pronto-pra-todo-mundo.jpg"
 lang: "pt"
+comments: true
+translationKey: "2026-09-12-linux-no-desktop-em-2026-ja-esta-pronto-pra-todo-mundo"
 ---
 
 

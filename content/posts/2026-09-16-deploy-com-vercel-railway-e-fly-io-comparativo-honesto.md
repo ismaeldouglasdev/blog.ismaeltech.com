@@ -7,6 +7,8 @@ excerpt: "Comparativo honesto entre Vercel, Railway e Fly.io para deploy de apli
 cover:
   image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-16-deploy-com-vercel-railway-e-fly-io-comparativo-honesto.jpg"
 lang: "pt"
+comments: true
+translationKey: "2026-09-16-deploy-com-vercel-railway-e-fly-io-comparativo-honesto"
 ---
 
 ## Introdução

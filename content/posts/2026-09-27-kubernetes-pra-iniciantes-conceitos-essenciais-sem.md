@@ -7,6 +7,8 @@ excerpt: "Kubernetes pra iniciantes: conceitos essenciais sem complicação."
 cover:
   image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-27-kubernetes-pra-iniciantes-conceitos-essenciais-sem.jpg"
 lang: "pt"
+comments: true
+translationKey: "2026-09-27-kubernetes-pra-iniciantes-conceitos-essenciais-sem"
 ---
 
 Rodar uma aplicação localmente funciona bem. Colocá-la no ar em vários ambientes, com saúde, escalonamento e configuração separada, já é outro desafio. Este post mostra o caminho mais direto para subir um app no Kubernetes: você vai entender Pods, Deployments, Services, Ingress, ConfigMaps e Secrets, e como essas peças se conectam para rodar sua aplicação de forma mais resiliente.

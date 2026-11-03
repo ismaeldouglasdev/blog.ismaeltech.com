@@ -6,6 +6,8 @@ tags: ["linux", "automacao", "bash", "systemd"]
 excerpt: "Automação de tarefas com cron, systemd e scripts bash: exemplos reais, scripts robustos com logging e os erros clássicos a evitar."
 share_hook: "Cron e systemd timers lado a lado, scripts que não quebram de madrugada e logging para saber se a automação rodou."
 lang: "pt"
+comments: true
+translationKey: "2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash"
 ---
 
 ## Introdução

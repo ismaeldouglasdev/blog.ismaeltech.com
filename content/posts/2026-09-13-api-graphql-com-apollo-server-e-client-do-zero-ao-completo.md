@@ -8,6 +8,8 @@ share_hook: "Do schema aos resolvers e ao Apollo Client: por que over-fetching m
 cover:
   image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-13-api-graphql-com-apollo-server-e-client-do-zero-ao-completo.jpg"
 lang: "pt"
+comments: true
+translationKey: "2026-09-13-api-graphql-com-apollo-server-e-client-do-zero-ao-completo"
 ---
 
 

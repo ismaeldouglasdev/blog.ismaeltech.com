@@ -1,3 +1,21 @@
-{{- /* Comments area start */ -}}
-{{- /* to add comments read => https://gohugo.io/content-management/comments/ */ -}}
-{{- /* Comments area end */ -}}
+{{- /* Giscus comments */ -}}
+{{- if .Site.Params.comments.provider }}
+{{- $c := .Site.Params.comments.giscus -}}
+<div class="comments">
+  <script src="https://giscus.app/client.js"
+        data-repo="{{ $c.repo }}"
+        data-repo-id="{{ $c.repoId }}"
+        data-category="{{ $c.category }}"
+        data-category-id="{{ $c.categoryId }}"
+        data-mapping="{{ $c.mapping }}"
+        data-term="{{ $c.term }}"
+        data-reactions-enabled="{{ $c.reactionsEnabled }}"
+        data-emit-metadata="{{ $c.emitMetadata }}"
+        data-input-position="{{ $c.inputPosition }}"
+        data-lang="{{ $c.lang }}"
+        data-loading="{{ $c.loading }}"
+        data-crossorigin="{{ $c.crossorigin }}"
+        async>
+  </script>
+</div>
+{{- end -}}

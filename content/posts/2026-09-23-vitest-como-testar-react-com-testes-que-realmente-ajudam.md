@@ -8,6 +8,8 @@ share_hook: "Setup, mocking, testes de integração e coverage no CI: o fluxo co
 cover:
   image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam.jpg"
 lang: "pt"
+comments: true
+translationKey: "2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam"
 ---
 
 Testes não são opcionais. Eles são essenciais para garantir a qualidade do software e a confiança nas funcionalidades que estamos implementando. Especialmente em aplicações React, onde as interações do usuário e o comportamento dinâmico são constantes. Aqui, vou compartilhar como configurar e utilizar o Vitest para testar suas aplicações React de maneira eficiente, garantindo que seus testes realmente ajudem a melhorar a qualidade do seu código.

@@ -8,6 +8,8 @@ share_hook: "Git Flow ou trunk-based? E quando usar rebase interativo, bisect e 
 cover:
   image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao.jpg"
 lang: "pt"
+comments: true
+translationKey: "2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao"
 ---
 
 ## Introdução

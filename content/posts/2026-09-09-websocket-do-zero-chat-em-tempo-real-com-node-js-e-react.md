@@ -8,6 +8,8 @@ share_hook: "Do handshake à reconexão: como funciona por dentro um chat em tem
 cover:
   image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react.jpg"
 lang: "pt"
+comments: true
+translationKey: "2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react"
 ---
 
 Construir um chat em tempo real pode parecer uma tarefa desafiadora, mas, com as ferramentas adequadas, é possível criar uma aplicação funcional em questão de horas. Um dos principais desafios que os desenvolvedores enfrentam ao criar aplicações interativas é a escolha do protocolo de comunicação. Enquanto o HTTP é amplamente utilizado para a troca de dados entre cliente e servidor, ele não é o mais eficiente para aplicações que exigem comunicação em tempo real, como um chat. É aí que o WebSocket se destaca.

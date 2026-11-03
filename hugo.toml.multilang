@@ -1,0 +1,83 @@
+baseURL = "https://blog.ismaeltech.com"
+defaultContentLanguage = "pt"
+defaultContentLanguageInSubfolder = false
+
+[languages]
+  [languages.pt]
+    languageCode = "pt-BR"
+    languageName = "Português"
+    weight = 1
+    title = "Ismael Douglas — Blog"
+    description = "Artigos sobre desenvolvimento web, sistemas, e tecnologia por Ismael Douglas"
+    author = "Ismael Douglas"
+
+  [languages.en]
+    languageCode = "en-US"
+    languageName = "English"
+    weight = 2
+    title = "Ismael Douglas — Blog"
+    description = "Articles about web development, systems, and technology by Ismael Douglas"
+    author = "Ismael Douglas"
+
+enableRobotsTXT = true
+buildDrafts = false
+
+[params]
+  ShowCodeCopyButtons = true
+  ShowReadingTime = true
+  ShowShareButtons = true
+
+  [params.homeInfoParams]
+    Title = "Ismael Douglas"
+    Content = "Artigos sobre desenvolvimento web, sistemas sob medida, automação e tecnologia. Escrevo sobre o que construo e o que aprendo."
+
+  [params.comments]
+    provider = "giscus"
+    [params.comments.giscus]
+      repo = "ismaeldouglasdev/blog.ismaeltech.com"
+      repoId = ""
+      category = "Blog comments"
+      categoryId = ""
+      mapping = "pathname"
+      term = ""
+      reactionsEnabled = "1"
+      emitMetadata = "0"
+      inputPosition = "top"
+      lang = "pt"
+      loading = "lazy"
+      crossorigin = "anonymous"
+
+  [params.related]
+    includeNewer = true
+    threshold = 20
+    toLower = true
+    indices = [
+      { name = "tags", weight = 100 },
+      { name = "categories", weight = 70 },
+    ]
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[taxonomies]
+  tag = "tags"
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "Posts"
+  url = "/posts/"
+  weight = 2
+
+[[menu.main]]
+  name = "Tags"
+  url = "/tags/"
+  weight = 3
+
+[[menu.main]]
+  name = "Sobre"
+  url = "https://ismaeltech.com/#sobre"
+  weight = 4

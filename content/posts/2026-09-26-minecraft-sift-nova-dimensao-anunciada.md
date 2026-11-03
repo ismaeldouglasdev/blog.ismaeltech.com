@@ -8,6 +8,8 @@ share_hook: "Quinze anos sem uma dimensão nova. O que a Mojang mostrou do Sift,
 cover:
   image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-26-minecraft-sift-nova-dimensao-anunciada.jpg"
 lang: "pt"
+comments: true
+translationKey: "2026-09-26-minecraft-sift-nova-dimensao-anunciada"
 ---
 
 Minecraft completa 15 anos de versão 1.0 com uma novidade que muitos jogadores já consideravam atrasada: pela primeira vez desde 2011, o jogo ganha uma dimensão nova. Anunciada no Minecraft LIVE deste mês, ela se chama **The Sift** e vai chegar ao Minecraft Java e ao Bedrock em 2027.

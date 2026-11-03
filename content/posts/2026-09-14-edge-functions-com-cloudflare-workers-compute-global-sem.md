@@ -7,6 +7,8 @@ excerpt: "Edge Functions com Cloudflare Workers: compute global sem servidor."
 cover:
   image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-14-edge-functions-com-cloudflare-workers-compute-global-sem.jpg"
 lang: "pt"
+comments: true
+translationKey: "2026-09-14-edge-functions-com-cloudflare-workers-compute-global-sem"
 ---
 
 

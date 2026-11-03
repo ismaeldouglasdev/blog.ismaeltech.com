@@ -7,6 +7,8 @@ excerpt: "Você já parou para pensar quantas vulnerabilidades existem no transp
 cover:
   image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-24-o-que-os-devs-full-stack-precisam-saber-sobre-o-http2shell.jpg"
 lang: "pt"
+comments: true
+translationKey: "2026-10-24-o-que-os-devs-full-stack-precisam-saber-sobre-o-http2shell"
 ---
 
 Você já parou para pensar quantas vulnerabilidades existem no transporte de dados entre seu frontend e backend? Não estou falando só de criptografia quebrada ou token vazado. Estou falando da camada que você quase nunca toca, o protocolo HTTP/2. O que parecia uma evolução de performance trouxe um vetor de ataque silencioso: o `http2shell`. Basicamente, um atacante pode executar código remotamente no seu servidor se você estiver usando Node.js ou Python sem as devidas proteções, tudo por causa de como os servidores HTTP/2 lidam com streams contaminados.

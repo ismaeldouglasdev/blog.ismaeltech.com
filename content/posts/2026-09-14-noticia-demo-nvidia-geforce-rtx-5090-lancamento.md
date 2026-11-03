@@ -7,6 +7,8 @@ excerpt: "A NVIDIA revelou oficialmente a GeForce RTX 5090 com arquitetura Black
 cover:
   image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-14-noticia-demo-nvidia-geforce-rtx-5090-lancamento.jpg"
 lang: "pt"
+comments: true
+translationKey: "2026-09-14-noticia-demo-nvidia-geforce-rtx-5090-lancamento"
 ---
 
 

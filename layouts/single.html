@@ -13,6 +13,18 @@
         </svg>
       </span>
       {{- end }}
+      {{- $baseName := .File.BaseFileName }}
+      {{- $isEn := hasSuffix "-en" $baseName }}
+      {{- if not .Draft }}
+      <span class="lang-toggle" style="margin-left: 12px; font-size: 0.9rem;">
+        {{- if $isEn }}
+        {{- $ptName := strings.TrimSuffix "-en" $baseName }}
+        <a href="{{ printf "/posts/%s/" $ptName | absLangURL }}" style="margin-left: 8px;">🇧🇷 PT</a>
+        {{- else }}
+        <a href="{{ printf "/posts/%s-en/" $baseName | absLangURL }}" style="margin-left: 8px;">🇺🇸 EN</a>
+        {{- end }}
+      </span>
+      {{- end }}
     </h1>
     {{- if .Description }}
     <div class="post-description">
@@ -22,7 +34,6 @@
     {{- if not (.Param "hideMeta") }}
     <div class="post-meta">
       {{- partial "post_meta.html" . -}}
-      {{- partial "translation_list.html" . -}}
       {{- partial "edit_post.html" . -}}
       {{- partial "post_canonical.html" . -}}
     </div>
@@ -45,6 +56,17 @@
   {{- partial "extend_post_content.html" . }}
 
   {{ partial "cta.html" . }}
+  {{- $related := .Site.RegularPages.Related . | first 3 }}
+  {{- if $related }}
+  <section class="related">
+    <h2>Leia também</h2>
+    <ul>
+      {{- range $related }}
+      <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+      {{- end }}
+    </ul>
+  </section>
+  {{- end }}
   <footer class="post-footer">
     {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
     <ul class="post-tags">

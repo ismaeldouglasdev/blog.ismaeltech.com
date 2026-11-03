@@ -7,6 +7,8 @@ excerpt: "Colocar uma aplicacao web em producao expondo diretamente a porta do N
 cover:
   image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-03-nginx-como-reverse-proxy-ssl-load-balancing-e-caching.jpg"
 lang: "pt"
+comments: true
+translationKey: "2026-10-03-nginx-como-reverse-proxy-ssl-load-balancing-e-caching"
 ---
 
 Colocar uma aplicacao web em producao expondo diretamente a porta do Node.js, Python ou Go para a internet publica e pedir para ter dor de cabeca. Servidores de aplicacao sao excelentes para processar regras de negocio, lidar com I/O assincrono e responder requisicoes dinamicas. No entanto, eles raramente foram desenhados para suportar com eficiencia o peso de negociacao TLS pesada, ataques lentos de rede, buffering de uploads gigantescos ou distribuicao de arquivos estaticos.
