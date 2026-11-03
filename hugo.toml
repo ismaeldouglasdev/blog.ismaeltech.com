@@ -1,6 +1,6 @@
 baseURL = "https://blog.ismaeltech.com"
 languageCode = "pt-BR"
-title = "Ismael Douglas — Blog"
+title = "Ismael Douglas Blog"
 theme = "PaperMod"
 
 enableRobotsTXT = true
