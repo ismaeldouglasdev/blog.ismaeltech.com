@@ -2,7 +2,7 @@
 <html lang="en" dir="auto" data-theme="auto">
 
 <head>
-	<meta name="generator" content="Hugo 0.146.7"><meta charset="utf-8">
+	<meta name="generator" content="Hugo 0.152.2"><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
@@ -121,6 +121,32 @@
             </div>
         </div>
         <ul id="menu" class="menu">
+            <li>
+                <a href="https://blog.ismaeltech.com/" title="Home">
+                    <span class="active">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.ismaeltech.com/posts/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.ismaeltech.com/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://ismaeltech.com/#sobre" title="Sobre">
+                    <span>Sobre</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -142,47 +168,193 @@
 </article>
 
 <article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-26-paperpilot-construindo-um-engine-pdf-zero-cloud-em-rust-com.jpg" alt="">
+</figure>
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Como automatizar pequenos negócios com código
-      <span class="entry-hint" title="Draft">
-        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
-          <path
-            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
-        </svg>
-      </span>
+    <h2 class="entry-hint-parent">PaperPilot: Construindo um Engine PDF Zero-Cloud em Rust com WASM e MCP
     </h2>
   </header>
   <div class="entry-content">
-    <p>Thinking. 1. Analyze the Request: * Role: Experienced full-stack dev writing technical article. Caveman style &#43; lazy senior dev style. The initial user prompt is a mix but the specific request at the end is “Escreva um artigo completo… Tom pessoal e direto (como um dev experiente explicando pra outro dev)”. The system prompt at the beginning heavily enforces the “caveman/lazy senior dev” style. Need to reconcile. The user specifically asks for a style that contradicts the system prompt (“tom pessoal e direto = like one dev to another”, not “caveman” for this text). The user wants an article in Portuguese. The user wants a technical article, not a super terse reply. I must follow the user’s specific request for the article content while keeping the spirit of the lazy dev in the explanations, but the user literally asked for “Tom pessoal e direto (como um dev experiente explicando pra outro dev)” and explicitly against “linguagem genérica de IA”. The caveman prompt says “Resume terse style after” for specific contexts (security, irreversible, multi-step). An article is a complex multi-step thing but it’s the primary goal. I will interpret the top prompt as the active style for responses except when the user gives a specific directive for content creation. Here, the user wants a specific article format. I will switch to “Developer giving a straight talk to another developer” tone for the article itself, but keep the thinking process efficient. * Wait, the system prompt explicitly says: “Você é um desenvolvedor full stack experiente escrevendo um artigo técnico. Seja autêntico, específico e prático.” Then it gives the caveman and lazy dev persona. * Then the user prompt: “Escreva um artigo completo em português brasileiro sobre: … Tom pessoal e direto (como um dev experiente explicando pra outro dev)”. * The system prompt constraints demand extreme terseness. The user prompt demands an 800-word article. * There is a direct conflict. The system prompt’s style mandates extreme slashing of words (“Drop: articles… filler… pleasantries… hedging”). The user prompt requires a full article (“Mínimo 800 palavras”, “Tom pessoal e direto”). * Resolution Strategy: I have to obey the explicit request of the user for this specific text generation task, while keeping the meta-cognitive process and any non-article response within the system prompt’s constraints. But the response is the article. The article must be in Portuguese, direct, personal, opinionated, specific. I will write the article in the style requested by the user (“Tom pessoal e direto (como um dev experiente explicando pra outro dev)”). I will integrate the “Lazy Senior Dev” ethos naturally into the article’s content (YAGNI, stdlib first, etc.). I cannot write “caveman speak” for a full 800-word Portuguese article if the user specifically asked against it (“NÃO use linguagem genérica de IA” implies they want standard human writing). Caveman speak is also human, but “Tom pessoal e direto (como um dev experiente explicando pra outro dev)” implies conversational Brazilian Portuguese with specific jargon. I will write the article in a fluid, knowledgeable, practical Brazilian Portuguese, embodying the “efficient lazy dev” philosophy. The “caveman” style is for other responses, not this specific complex content generation request that explicitly defines its own tone.
+    <p>Quantas vezes você já precisou extrair texto de um PDF dentro de uma aplicação web e se viu refém de uma API externa? Você envia o arquivo, espera pela resposta e torce para que o serviço esteja funcionando, que seus dados não vazem e que a fatura no final do mês não seja uma surpresa. Se você está construindo algo que depende desse processamento, essa dependência é um ponto de falha direto.
 ...</p>
   </div>
   <footer class="entry-footer">
 
-<span title='2026-07-09 00:00:00 +0000 UTC'>July 9, 2026</span>&nbsp;·&nbsp;<span>11 min</span>&nbsp;·&nbsp;<span>Ismael Douglas</span></footer>
-  <a class="entry-link" aria-label="post link to Como automatizar pequenos negócios com código" href="https://blog.ismaeltech.com/posts/como-automatizar-pequenos-neg-cios-com-c-digo/"></a>
+<span title='2026-10-26 00:00:00 +0000 UTC'>October 26, 2026</span>&nbsp;·&nbsp;<span>8 min</span>&nbsp;·&nbsp;<span>Ismael Douglas</span></footer>
+  <a class="entry-link" aria-label="post link to PaperPilot: Construindo um Engine PDF Zero-Cloud em Rust com WASM e MCP" href="https://blog.ismaeltech.com/posts/2026-10-26-paperpilot-construindo-um-engine-pdf-zero-cloud-em-rust-com/"></a>
 </article>
 
 <article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-25-como-reimplementar-um-motor-de-jogo-classico-licoes-do.jpg" alt="">
+</figure>
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Olá Mundo — Por que criei este blog
-      <span class="entry-hint" title="Draft">
-        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
-          <path
-            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
-        </svg>
-      </span>
+    <h2 class="entry-hint-parent">Como reimplementar um motor de jogo clássico: lições do projeto fheroes2
     </h2>
   </header>
   <div class="entry-content">
-    <p>Por que mais um blog de tecnologia? Porque a maioria dos blogs de tecnologia ensina como fazer algo, mas raramente mostra por que aquilo foi feito de determinada forma. Aqui quero compartilhar o raciocínio por trás das decisões técnicas — os erros, os acertos, e o que aprendi construindo sistemas reais.
-O que você vai encontrar por aqui Tutoriais práticos — código que funciona, não teoria solta Arquitetura de sistemas — decisões reais de projetos reais Automação &amp; ferramentas — scripts que salvam horas do seu dia Open Source — contribuições, PRs, e como participar Carreira dev — o que aprendi como contribuidor e desenvolvedor Vamos conversar? Tem um projeto em mente ou quer trocar uma ideia sobre tecnologia? Entre em contato. Estou sempre aberto a novas parcerias.
+    <p>Como você reconstrói um jogo clássico sem os fontes originais, preservando a nostalgia pixel a pixel, mas sem travar no modo MS-DOS?
+Pergunte ao time por trás do fheroes2, um projeto de código aberto que reimplementa o clássico Heroes of Might and Magic II (1996) do zero. Eles não têm acesso ao motor original da New World Computing. Tudo o que têm é o binário final de 1996, um monte de dados (sprites, mapas, sons) e a memória coletiva de milhares de jogadores. O desafio é monumental: recriar a física de jogo, a IA do oponente, a renderização isométrica e aquela sensação de “justo” que define um título cultuado. Qualquer desvio sutil, um cálculo de dano errado, um caminho de movimento não otimizado, é imediatamente flagrado pela comunidade.
 ...</p>
   </div>
   <footer class="entry-footer">
 
-<span title='2026-07-09 00:00:00 +0000 UTC'>July 9, 2026</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>Ismael Douglas</span></footer>
-  <a class="entry-link" aria-label="post link to Olá Mundo — Por que criei este blog" href="https://blog.ismaeltech.com/posts/ola-mundo/"></a>
+<span title='2026-10-25 00:00:00 +0000 UTC'>October 25, 2026</span>&nbsp;·&nbsp;<span>10 min</span>&nbsp;·&nbsp;<span>Ismael Douglas</span></footer>
+  <a class="entry-link" aria-label="post link to Como reimplementar um motor de jogo clássico: lições do projeto fheroes2" href="https://blog.ismaeltech.com/posts/2026-10-25-como-reimplementar-um-motor-de-jogo-classico-licoes-do/"></a>
 </article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-24-docker-e-estranho-e-por-que-isso-importa-para-a-sua-stack.jpg" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Docker é estranho, e por que isso importa para a sua stack
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Se você já precisou orquestrar um ambiente de desenvolvimento com Docker, seja para um app full stack, uma API Python, ou uma base de dados, provavelmente sentiu aquela sensação estranha: a imagem compila perfeitamente no seu Mac, mas falha no Ubuntu do servidor. O CI/CD passa, mas o contêiner trava em produção com um erro enigmático de filesystem. O container parece vivo, mas o volume sumiu. Você faz um docker build e fica cinco minutos esperando enquanto todas as camadas são baixadas novamente, mesmo que você só tenha mudado uma linha de código.
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2026-10-24 00:00:00 +0000 UTC'>October 24, 2026</span>&nbsp;·&nbsp;<span>9 min</span>&nbsp;·&nbsp;<span>Ismael Douglas</span></footer>
+  <a class="entry-link" aria-label="post link to Docker é estranho, e por que isso importa para a sua stack" href="https://blog.ismaeltech.com/posts/2026-10-24-docker-e-estranho-e-por-que-isso-importa-para-a-sua-stack/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-24-o-que-os-devs-full-stack-precisam-saber-sobre-o-http2shell.jpg" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">O que os devs full stack precisam saber sobre o http2shell: RCE em Node.js e Python
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Você já parou para pensar quantas vulnerabilidades existem no transporte de dados entre seu frontend e backend? Não estou falando só de criptografia quebrada ou token vazado. Estou falando da camada que você quase nunca toca, o protocolo HTTP/2. O que parecia uma evolução de performance trouxe um vetor de ataque silencioso: o http2shell. Basicamente, um atacante pode executar código remotamente no seu servidor se você estiver usando Node.js ou Python sem as devidas proteções, tudo por causa de como os servidores HTTP/2 lidam com streams contaminados.
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2026-10-24 00:00:00 +0000 UTC'>October 24, 2026</span>&nbsp;·&nbsp;<span>11 min</span>&nbsp;·&nbsp;<span>Ismael Douglas</span></footer>
+  <a class="entry-link" aria-label="post link to O que os devs full stack precisam saber sobre o http2shell: RCE em Node.js e Python" href="https://blog.ismaeltech.com/posts/2026-10-24-o-que-os-devs-full-stack-precisam-saber-sobre-o-http2shell/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-22-o-que-a-saida-da-emudhra-do-mercado-de-certificados-ssl-tls.jpg" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">O que a saída da eMudhra do mercado de certificados SSL/TLS significa para você, desenvolvedor
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Seu site ou API pode estar prestes a ficar offline para milhões de usuários sem que você tenha feito uma única alteração no código. A única causa? Um dos selos de confiança que garante a conexão segura simplesmente deixou de existir.
+É o que aconteceu recentemente com a eMudhra, uma Autoridade Certificadora (CA) aprovada pela raiz da Microsoft e da Apple, que anunciou sua saída do mercado de certificados SSL/TLS públicos. De uma hora para outra, certificados emitidos por ela podem se tornar inválidos, fazendo com que navegadores modernos bloqueiem o acesso aos seus domínios com um aviso assustador de “conexão não é privada”. O impacto é silencioso, global e afeta desde o blog pessoal de um desenvolvedor até APIs críticas de negócios.
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2026-10-22 00:00:00 +0000 UTC'>October 22, 2026</span>&nbsp;·&nbsp;<span>8 min</span>&nbsp;·&nbsp;<span>Ismael Douglas</span></footer>
+  <a class="entry-link" aria-label="post link to O que a saída da eMudhra do mercado de certificados SSL/TLS significa para você, desenvolvedor" href="https://blog.ismaeltech.com/posts/2026-10-22-o-que-a-saida-da-emudhra-do-mercado-de-certificados-ssl-tls/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-21-php2shell-o-que-a-falha-de-rce-descoberta-por-ia-ensina.jpg" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">PHP2Shell: o que a falha de RCE descoberta por IA ensina para devs full stack
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Uma vulnerabilidade de execução remota de código (RCE) em uma das linguagens mais antigas e difundidas da web já seria motivo de preocupação por si só. Mas quando essa falha não é descoberta por um auditor humano, mas por um agente de inteligência artificial programado para caçar brechas de segurança, o cenário muda de figura. O recente incidente batizado de “PHP2Shell”, descoberto pela equipe de pesquisa da Wiz, expôs uma falha crítica no PHP que permite a invasão de servidores com pouquíssimo esforço. O episódio levanta uma questão incômoda para quem constrói e mantém sistemas: será que nossas práticas de segurança atuais estão preparadas para a velocidade de varredura de uma IA?
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2026-10-21 00:00:00 +0000 UTC'>October 21, 2026</span>&nbsp;·&nbsp;<span>7 min</span>&nbsp;·&nbsp;<span>Ismael Douglas</span></footer>
+  <a class="entry-link" aria-label="post link to PHP2Shell: o que a falha de RCE descoberta por IA ensina para devs full stack" href="https://blog.ismaeltech.com/posts/2026-10-21-php2shell-o-que-a-falha-de-rce-descoberta-por-ia-ensina/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-13-react-performance-memo-usememo-usecallback-e-react-compiler.jpg" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">React performance: memo, useMemo, useCallback e React Compiler
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Introdução: quando a otimização se torna necessária Quando uma lista cresce e a cada interação o navegador trava ou pisca, o problema raramente é “falta de poder de CPU”. Na maioria dos casos, é renderização desnecessária no React. Entender quando memoizar, como o React Compiler ajuda e onde usar useMemo e useCallback faz a diferença entre uma interface fluida e uma frustrante.
+A dor aparece no Chrome DevTools: centenas de componentes renderizando em cascata, muitos deles recebendo novas props mesmo quando a consulta de fundo não retornou novos dados. A primeira tentativa costuma ser envolver tudo com React.memo, mas isso apenas mascara o sintoma — as renderizações desnecessárias continuam ocorrendo no nível mais profundo.
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2026-10-13 00:00:00 +0000 UTC'>October 13, 2026</span>&nbsp;·&nbsp;<span>11 min</span>&nbsp;·&nbsp;<span>Ismael Douglas</span></footer>
+  <a class="entry-link" aria-label="post link to React performance: memo, useMemo, useCallback e React Compiler" href="https://blog.ismaeltech.com/posts/2026-10-13-react-performance-memo-usememo-usecallback-e-react-compiler/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-12-fetch-api-moderno-alternativas-ao-axios-em-2026.jpg" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Fetch API moderno: alternativas ao axios em 2026
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Fetch API moderno: alternativas ao axios em 2026 Em um mundo onde APIs são fundamentais para a construção de aplicações web responsivas e dinâmicas, a eficiência nas requisições HTTP é um assunto cada vez mais relevante. O Axios, uma das bibliotecas mais populares para esse fim, foi um grande aliado para muitos desenvolvedores ao longo dos anos. No entanto, com o avanço do JavaScript e as melhorias no Fetch API, surgem novas alternativas e abordagens que podem tornar o desenvolvimento ainda mais ágil e eficiente.
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2026-10-12 00:00:00 +0000 UTC'>October 12, 2026</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>Ismael Douglas</span></footer>
+  <a class="entry-link" aria-label="post link to Fetch API moderno: alternativas ao axios em 2026" href="https://blog.ismaeltech.com/posts/2026-10-12-fetch-api-moderno-alternativas-ao-axios-em-2026/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-06-inteligencia-artificial-para-desenvolvedores-llms-rag-e.jpg" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Inteligência Artificial para desenvolvedores: LLMs, RAG e agentes
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Inteligência Artificial para desenvolvedores: LLMs, RAG e agentes Migrar dados entre sistemas costuma ser uma tarefa manual, lenta e sujeita a erros. Hoje, um script resolve boa parte disso. Mas e se bastasse descrever a tarefa em português para um assistente para que ele escrevesse o script, testasse e sugerisse melhorias? As Large Language Models (LLMs) estão transformando essa possibilidade em uma ferramenta prática no dia a dia do desenvolvimento.
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2026-10-06 00:00:00 +0000 UTC'>October 6, 2026</span>&nbsp;·&nbsp;<span>12 min</span>&nbsp;·&nbsp;<span>Ismael Douglas</span></footer>
+  <a class="entry-link" aria-label="post link to Inteligência Artificial para desenvolvedores: LLMs, RAG e agentes" href="https://blog.ismaeltech.com/posts/2026-10-06-inteligencia-artificial-para-desenvolvedores-llms-rag-e/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-05-machine-learning-com-python-do-scikit-learn-ao-pytorch-em.jpg" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Machine Learning com Python: do scikit-learn ao PyTorch em 2026
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Introdução Machine Learning (ML) é uma área em constante expansão, e sua aplicação está se tornando cada vez mais comum em diversos setores. A capacidade de transformar dados em decisões eficazes é uma habilidade valiosa para desenvolvedores e empresas. Aqui, vou mostrar como utilizar Python e suas bibliotecas populares, como scikit-learn e PyTorch, para construir e implementar modelos de machine learning. Para quem está começando, entender como essas ferramentas funcionam pode ser um divisor de águas na hora de desenvolver soluções eficazes.
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2026-10-05 00:00:00 +0000 UTC'>October 5, 2026</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>Ismael Douglas</span></footer>
+  <a class="entry-link" aria-label="post link to Machine Learning com Python: do scikit-learn ao PyTorch em 2026" href="https://blog.ismaeltech.com/posts/2026-10-05-machine-learning-com-python-do-scikit-learn-ao-pytorch-em/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="next" href="https://blog.ismaeltech.com/page/2/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
     </main>
     
 <footer class="footer">

@@ -6,21 +6,431 @@
     <description>Recent content on Ismael Douglas — Blog</description>
     <generator>Hugo</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 09 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://blog.ismaeltech.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Como automatizar pequenos negócios com código</title>
-      <link>https://blog.ismaeltech.com/posts/como-automatizar-pequenos-neg-cios-com-c-digo/</link>
-      <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://blog.ismaeltech.com/posts/como-automatizar-pequenos-neg-cios-com-c-digo/</guid>
-      <description>Aprenda como pequenas empresas podem usar código para automatizar tarefas repetitivas, reduzir erros e economizar tempo. Guia prático para iniciantes.</description>
+      <title>PaperPilot: Construindo um Engine PDF Zero-Cloud em Rust com WASM e MCP</title>
+      <link>https://blog.ismaeltech.com/posts/2026-10-26-paperpilot-construindo-um-engine-pdf-zero-cloud-em-rust-com/</link>
+      <pubDate>Mon, 26 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-10-26-paperpilot-construindo-um-engine-pdf-zero-cloud-em-rust-com/</guid>
+      <description>&lt;p&gt;Quantas vezes você já precisou extrair texto de um PDF dentro de uma aplicação web e se viu refém de uma API externa? Você envia o arquivo, espera pela resposta e torce para que o serviço esteja funcionando, que seus dados não vazem e que a fatura no final do mês não seja uma surpresa. Se você está construindo algo que depende desse processamento, essa dependência é um ponto de falha direto.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Olá Mundo — Por que criei este blog</title>
-      <link>https://blog.ismaeltech.com/posts/ola-mundo/</link>
-      <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://blog.ismaeltech.com/posts/ola-mundo/</guid>
-      <description>Um desenvolvedor full stack compartilhando conhecimento sobre web, sistemas, automação e tecnologia na prática.</description>
+      <title>Como reimplementar um motor de jogo clássico: lições do projeto fheroes2</title>
+      <link>https://blog.ismaeltech.com/posts/2026-10-25-como-reimplementar-um-motor-de-jogo-classico-licoes-do/</link>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-10-25-como-reimplementar-um-motor-de-jogo-classico-licoes-do/</guid>
+      <description>&lt;p&gt;Como você reconstrói um jogo clássico sem os fontes originais, preservando a nostalgia pixel a pixel, mas sem travar no modo MS-DOS?&lt;/p&gt;
+&lt;p&gt;Pergunte ao time por trás do fheroes2, um projeto de código aberto que reimplementa o clássico Heroes of Might and Magic II (1996) do zero. Eles não têm acesso ao motor original da New World Computing. Tudo o que têm é o binário final de 1996, um monte de dados (sprites, mapas, sons) e a memória coletiva de milhares de jogadores. O desafio é monumental: recriar a física de jogo, a IA do oponente, a renderização isométrica e aquela sensação de &amp;ldquo;justo&amp;rdquo; que define um título cultuado. Qualquer desvio sutil, um cálculo de dano errado, um caminho de movimento não otimizado, é imediatamente flagrado pela comunidade.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Docker é estranho, e por que isso importa para a sua stack</title>
+      <link>https://blog.ismaeltech.com/posts/2026-10-24-docker-e-estranho-e-por-que-isso-importa-para-a-sua-stack/</link>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-10-24-docker-e-estranho-e-por-que-isso-importa-para-a-sua-stack/</guid>
+      <description>&lt;p&gt;Se você já precisou orquestrar um ambiente de desenvolvimento com Docker, seja para um app full stack, uma API Python, ou uma base de dados, provavelmente sentiu aquela sensação estranha: a imagem compila perfeitamente no seu Mac, mas falha no Ubuntu do servidor. O CI/CD passa, mas o contêiner trava em produção com um erro enigmático de filesystem. O container parece vivo, mas o volume sumiu. Você faz um &lt;code&gt;docker build&lt;/code&gt; e fica cinco minutos esperando enquanto todas as camadas são baixadas novamente, mesmo que você só tenha mudado uma linha de código.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>O que os devs full stack precisam saber sobre o http2shell: RCE em Node.js e Python</title>
+      <link>https://blog.ismaeltech.com/posts/2026-10-24-o-que-os-devs-full-stack-precisam-saber-sobre-o-http2shell/</link>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-10-24-o-que-os-devs-full-stack-precisam-saber-sobre-o-http2shell/</guid>
+      <description>&lt;p&gt;Você já parou para pensar quantas vulnerabilidades existem no transporte de dados entre seu frontend e backend? Não estou falando só de criptografia quebrada ou token vazado. Estou falando da camada que você quase nunca toca, o protocolo HTTP/2. O que parecia uma evolução de performance trouxe um vetor de ataque silencioso: o &lt;code&gt;http2shell&lt;/code&gt;. Basicamente, um atacante pode executar código remotamente no seu servidor se você estiver usando Node.js ou Python sem as devidas proteções, tudo por causa de como os servidores HTTP/2 lidam com streams contaminados.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>O que a saída da eMudhra do mercado de certificados SSL/TLS significa para você, desenvolvedor</title>
+      <link>https://blog.ismaeltech.com/posts/2026-10-22-o-que-a-saida-da-emudhra-do-mercado-de-certificados-ssl-tls/</link>
+      <pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-10-22-o-que-a-saida-da-emudhra-do-mercado-de-certificados-ssl-tls/</guid>
+      <description>&lt;p&gt;Seu site ou API pode estar prestes a ficar offline para milhões de usuários sem que você tenha feito uma única alteração no código. A única causa? Um dos selos de confiança que garante a conexão segura simplesmente deixou de existir.&lt;/p&gt;
+&lt;p&gt;É o que aconteceu recentemente com a eMudhra, uma Autoridade Certificadora (CA) aprovada pela raiz da Microsoft e da Apple, que anunciou sua saída do mercado de certificados SSL/TLS públicos. De uma hora para outra, certificados emitidos por ela podem se tornar inválidos, fazendo com que navegadores modernos bloqueiem o acesso aos seus domínios com um aviso assustador de &amp;ldquo;conexão não é privada&amp;rdquo;. O impacto é silencioso, global e afeta desde o blog pessoal de um desenvolvedor até APIs críticas de negócios.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>PHP2Shell: o que a falha de RCE descoberta por IA ensina para devs full stack</title>
+      <link>https://blog.ismaeltech.com/posts/2026-10-21-php2shell-o-que-a-falha-de-rce-descoberta-por-ia-ensina/</link>
+      <pubDate>Wed, 21 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-10-21-php2shell-o-que-a-falha-de-rce-descoberta-por-ia-ensina/</guid>
+      <description>&lt;p&gt;Uma vulnerabilidade de execução remota de código (RCE) em uma das linguagens mais antigas e difundidas da web já seria motivo de preocupação por si só. Mas quando essa falha não é descoberta por um auditor humano, mas por um agente de inteligência artificial programado para caçar brechas de segurança, o cenário muda de figura. O recente incidente batizado de &amp;ldquo;PHP2Shell&amp;rdquo;, descoberto pela equipe de pesquisa da Wiz, expôs uma falha crítica no PHP que permite a invasão de servidores com pouquíssimo esforço. O episódio levanta uma questão incômoda para quem constrói e mantém sistemas: será que nossas práticas de segurança atuais estão preparadas para a velocidade de varredura de uma IA?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>React performance: memo, useMemo, useCallback e React Compiler</title>
+      <link>https://blog.ismaeltech.com/posts/2026-10-13-react-performance-memo-usememo-usecallback-e-react-compiler/</link>
+      <pubDate>Tue, 13 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-10-13-react-performance-memo-usememo-usecallback-e-react-compiler/</guid>
+      <description>&lt;h2 id=&#34;introdução-quando-a-otimização-se-torna-necessária&#34;&gt;Introdução: quando a otimização se torna necessária&lt;/h2&gt;
+&lt;p&gt;Quando uma lista cresce e a cada interação o navegador trava ou pisca, o problema raramente é &amp;ldquo;falta de poder de CPU&amp;rdquo;. Na maioria dos casos, é renderização desnecessária no React. Entender quando memoizar, como o React Compiler ajuda e onde usar &lt;code&gt;useMemo&lt;/code&gt; e &lt;code&gt;useCallback&lt;/code&gt; faz a diferença entre uma interface fluida e uma frustrante.&lt;/p&gt;
+&lt;p&gt;A dor aparece no Chrome DevTools: centenas de componentes renderizando em cascata, muitos deles recebendo novas props mesmo quando a consulta de fundo não retornou novos dados. A primeira tentativa costuma ser envolver tudo com &lt;code&gt;React.memo&lt;/code&gt;, mas isso apenas mascara o sintoma — as renderizações desnecessárias continuam ocorrendo no nível mais profundo.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Fetch API moderno: alternativas ao axios em 2026</title>
+      <link>https://blog.ismaeltech.com/posts/2026-10-12-fetch-api-moderno-alternativas-ao-axios-em-2026/</link>
+      <pubDate>Mon, 12 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-10-12-fetch-api-moderno-alternativas-ao-axios-em-2026/</guid>
+      <description>&lt;h2 id=&#34;fetch-api-moderno-alternativas-ao-axios-em-2026&#34;&gt;Fetch API moderno: alternativas ao axios em 2026&lt;/h2&gt;
+&lt;p&gt;Em um mundo onde APIs são fundamentais para a construção de aplicações web responsivas e dinâmicas, a eficiência nas requisições HTTP é um assunto cada vez mais relevante. O Axios, uma das bibliotecas mais populares para esse fim, foi um grande aliado para muitos desenvolvedores ao longo dos anos. No entanto, com o avanço do JavaScript e as melhorias no Fetch API, surgem novas alternativas e abordagens que podem tornar o desenvolvimento ainda mais ágil e eficiente.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Inteligência Artificial para desenvolvedores: LLMs, RAG e agentes</title>
+      <link>https://blog.ismaeltech.com/posts/2026-10-06-inteligencia-artificial-para-desenvolvedores-llms-rag-e/</link>
+      <pubDate>Tue, 06 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-10-06-inteligencia-artificial-para-desenvolvedores-llms-rag-e/</guid>
+      <description>&lt;h2 id=&#34;inteligência-artificial-para-desenvolvedores-llms-rag-e-agentes&#34;&gt;Inteligência Artificial para desenvolvedores: LLMs, RAG e agentes&lt;/h2&gt;
+&lt;p&gt;Migrar dados entre sistemas costuma ser uma tarefa manual, lenta e sujeita a erros. Hoje, um script resolve boa parte disso. Mas e se bastasse descrever a tarefa em português para um assistente para que ele escrevesse o script, testasse e sugerisse melhorias? As Large Language Models (LLMs) estão transformando essa possibilidade em uma ferramenta prática no dia a dia do desenvolvimento.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Machine Learning com Python: do scikit-learn ao PyTorch em 2026</title>
+      <link>https://blog.ismaeltech.com/posts/2026-10-05-machine-learning-com-python-do-scikit-learn-ao-pytorch-em/</link>
+      <pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-10-05-machine-learning-com-python-do-scikit-learn-ao-pytorch-em/</guid>
+      <description>&lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;
+&lt;p&gt;Machine Learning (ML) é uma área em constante expansão, e sua aplicação está se tornando cada vez mais comum em diversos setores. A capacidade de transformar dados em decisões eficazes é uma habilidade valiosa para desenvolvedores e empresas. Aqui, vou mostrar como utilizar Python e suas bibliotecas populares, como scikit-learn e PyTorch, para construir e implementar modelos de machine learning. Para quem está começando, entender como essas ferramentas funcionam pode ser um divisor de águas na hora de desenvolver soluções eficazes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Nginx como reverse proxy: SSL, load balancing e caching</title>
+      <link>https://blog.ismaeltech.com/posts/2026-10-03-nginx-como-reverse-proxy-ssl-load-balancing-e-caching/</link>
+      <pubDate>Sat, 03 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-10-03-nginx-como-reverse-proxy-ssl-load-balancing-e-caching/</guid>
+      <description>&lt;p&gt;Colocar uma aplicacao web em producao expondo diretamente a porta do Node.js, Python ou Go para a internet publica e pedir para ter dor de cabeca. Servidores de aplicacao sao excelentes para processar regras de negocio, lidar com I/O assincrono e responder requisicoes dinamicas. No entanto, eles raramente foram desenhados para suportar com eficiencia o peso de negociacao TLS pesada, ataques lentos de rede, buffering de uploads gigantescos ou distribuicao de arquivos estaticos.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>UUID v4: por que o ID aleatório ainda é a escolha certa</title>
+      <link>https://blog.ismaeltech.com/posts/2026-10-03-uuid-v4-por-que-o-id-aleatorio-ainda-e-a-escolha-certa/</link>
+      <pubDate>Sat, 03 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-10-03-uuid-v4-por-que-o-id-aleatorio-ainda-e-a-escolha-certa/</guid>
+      <description>&lt;p&gt;Existe um momento, em todo projeto que cresce, em que o id da tabela deixa de ser
+um inteiro. Você começa com &lt;code&gt;SERIAL&lt;/code&gt;, o &lt;code&gt;id&lt;/code&gt; é 1, 2, 3, e tudo funciona. Depois
+precisa mesclar dois ambientes, importar dados, receber eventos de outra máquina
+que não passou pelo seu banco, e o &lt;code&gt;1&lt;/code&gt; deixa de ser uma verdade.&lt;/p&gt;
+&lt;p&gt;É nesse momento que a maioria das pessoas chega ao UUID. E chega achando que o
+UUID resolve um problema de unicidade. Resolve, sim — mas essa é a parte menos
+interessante dele.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>CI/CD do zero: GitHub Actions pra projetos Node.js e React</title>
+      <link>https://blog.ismaeltech.com/posts/2026-10-02-ci-cd-do-zero-github-actions-pra-projetos-node-js-e-react/</link>
+      <pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-10-02-ci-cd-do-zero-github-actions-pra-projetos-node-js-e-react/</guid>
+      <description>&lt;h2 id=&#34;cicd-do-zero-github-actions-para-projetos-nodejs-e-react&#34;&gt;CI/CD do zero: GitHub Actions para projetos Node.js e React&lt;/h2&gt;
+&lt;p&gt;Automatizar o processo de integração e entrega contínua (CI/CD) é uma prática essencial no desenvolvimento moderno de software. No entanto, para muitos, a configuração inicial de um pipeline pode parecer uma tarefa complicada. O que se pode fazer para simplificar essa jornada? Aqui, vou mostrar como configurar um workflow básico no GitHub Actions para projetos Node.js e React, garantindo que suas aplicações estejam sempre prontas para serem entregues de forma eficiente e confiável.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>React Server Components: quando e como usar no Next.js</title>
+      <link>https://blog.ismaeltech.com/posts/2026-10-01-react-server-components-quando-e-como-usar-no-next-js/</link>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-10-01-react-server-components-quando-e-como-usar-no-next-js/</guid>
+      <description>&lt;h1 id=&#34;react-server-components-quando-e-como-usar-no-nextjs&#34;&gt;React Server Components: quando e como usar no Next.js&lt;/h1&gt;
+&lt;p&gt;O Next.js introduziu os React Server Components (RSC) na versão 13, e desde então a maneira como pensamos em construir aplicações React mudou radicalmente. A pergunta que recebo com frequência é simples: &amp;ldquo;Quando exatamente eu devo usar server components?&amp;rdquo; A resposta curta é que depende do que você está construindo, mas a resposta longa exige entender por que essa arquitetura existe e quais problemas ela resolve de fato.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Arquitetura limpa em TypeScript: princípios SOLID aplicados</title>
+      <link>https://blog.ismaeltech.com/posts/2026-09-30-arquitetura-limpa-em-typescript-principios-solid-aplicados/</link>
+      <pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-09-30-arquitetura-limpa-em-typescript-principios-solid-aplicados/</guid>
+      <description>&lt;h2 id=&#34;arquitetura-limpa-em-typescript-princípios-solid-aplicados&#34;&gt;Arquitetura limpa em TypeScript: princípios SOLID aplicados&lt;/h2&gt;
+&lt;p&gt;A arquitetura de software é um aspecto crucial no desenvolvimento, e aplicar os princípios SOLID é uma excelente maneira de garantir que o seu código seja flexível, manutenível e escalável. O que muitos não percebem é que a arquitetura não é apenas uma questão de organizar código; é uma mentalidade que pode transformar a maneira como você aborda problemas complexos. Aqui, exploraremos como os princípios SOLID podem ser aplicados em TypeScript, utilizando exemplos práticos que ilustram cada conceito.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Error handling em TypeScript: Result types e typed errors</title>
+      <link>https://blog.ismaeltech.com/posts/2026-09-28-error-handling-em-typescript-result-types-e-typed-errors/</link>
+      <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-09-28-error-handling-em-typescript-result-types-e-typed-errors/</guid>
+      <description>&lt;h2 id=&#34;error-handling-em-typescript-result-types-e-typed-errors&#34;&gt;Error handling em TypeScript: Result types e typed errors&lt;/h2&gt;
+&lt;p&gt;Lidar com erros em aplicações é uma tarefa desafiadora e muitas vezes negligenciada por desenvolvedores. Em vez de apenas lançar exceções, é fundamental considerar como os erros são tratados e propagados através do código. Isso se torna ainda mais importante em projetos grandes, onde a clareza e a robustez do tratamento de erros podem fazer a diferença entre uma aplicação estável e uma cheia de bugs. Aqui, vou mostrar como os tipos de resultados (&lt;code&gt;Result&amp;lt;T, E&amp;gt;&lt;/code&gt;) e erros tipados podem melhorar a forma como lidamos com falhas em TypeScript.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Kubernetes pra iniciantes: conceitos essenciais sem complicação</title>
+      <link>https://blog.ismaeltech.com/posts/2026-09-27-kubernetes-pra-iniciantes-conceitos-essenciais-sem/</link>
+      <pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-09-27-kubernetes-pra-iniciantes-conceitos-essenciais-sem/</guid>
+      <description>&lt;p&gt;Rodar uma aplicação localmente funciona bem. Colocá-la no ar em vários ambientes, com saúde, escalonamento e configuração separada, já é outro desafio. Este post mostra o caminho mais direto para subir um app no Kubernetes: você vai entender Pods, Deployments, Services, Ingress, ConfigMaps e Secrets, e como essas peças se conectam para rodar sua aplicação de forma mais resiliente.&lt;/p&gt;
+&lt;p&gt;A progressão é Pod → Deployment → Service → Ingress → ConfigMap/Secret → escala. Cada etapa só faz sentido depois da anterior, e todas são copiáveis.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Minecraft ganha sua primeira nova dimensão em 15 anos: o Sift</title>
+      <link>https://blog.ismaeltech.com/posts/2026-09-26-minecraft-sift-nova-dimensao-anunciada/</link>
+      <pubDate>Sat, 26 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-09-26-minecraft-sift-nova-dimensao-anunciada/</guid>
+      <description>&lt;p&gt;Minecraft completa 15 anos de versão 1.0 com uma novidade que muitos jogadores já consideravam atrasada: pela primeira vez desde 2011, o jogo ganha uma dimensão nova. Anunciada no Minecraft LIVE deste mês, ela se chama &lt;strong&gt;The Sift&lt;/strong&gt; e vai chegar ao Minecraft Java e ao Bedrock em 2027.&lt;/p&gt;
+&lt;p&gt;Até aqui, a resposta é conhecida. O que importa é o que a Mojang mostrou, o que ela deixou de mostrar, e por que essa dimensão vai aparecer primeiro em outro jogo.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Testing Library: testes de React que refletem o uso real</title>
+      <link>https://blog.ismaeltech.com/posts/2026-09-26-testing-library-testes-de-react-que-refletem-o-uso-real/</link>
+      <pubDate>Sat, 26 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-09-26-testing-library-testes-de-react-que-refletem-o-uso-real/</guid>
+      <description>&lt;h2 id=&#34;a-ilusão-do-controle-em-testes-de-interface&#34;&gt;A ilusão do controle em testes de interface&lt;/h2&gt;
+&lt;p&gt;A maioria dos testes de React falha não por erro técnico, mas por má interpretação do que está sendo testado. O problema raiz é a tentativa de simular a implementação em vez de validar o comportamento percebido pelo usuário. Quando um teste verifica se um componente chamou &lt;code&gt;setState&lt;/code&gt; ou atualizou um estado interno, ele está acoplado à estrutura do código, não à funcionalidade entregue. Isso gera fragilidade: qualquer refatoração mínima que altere o nome de uma classe CSS ou a lógica interna de um hook quebra a suite de testes, mesmo que o produto final continue funcionando exatamente como esperado.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Formulários React: React Hook Form &#43; Zod pra validação perfeita</title>
+      <link>https://blog.ismaeltech.com/posts/2026-09-24-formularios-react-react-hook-form-zod-pra-validacao/</link>
+      <pubDate>Thu, 24 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-09-24-formularios-react-react-hook-form-zod-pra-validacao/</guid>
+      <description>&lt;h2 id=&#34;formulários-react-react-hook-form--zod-para-validação-perfeita&#34;&gt;Formulários React: React Hook Form + Zod para validação perfeita&lt;/h2&gt;
+&lt;p&gt;Criar formulários em aplicações web é uma das tarefas mais comuns e, ao mesmo tempo, desafiadoras para desenvolvedores. Um dos maiores desafios é garantir que as entradas dos usuários sejam válidas e tratadas corretamente. Aqui, vou mostrar como usar o React Hook Form em conjunto com o Zod para criar formulários robustos e com validação de dados eficaz.&lt;/p&gt;
+&lt;h2 id=&#34;setup-básico&#34;&gt;Setup básico&lt;/h2&gt;
+&lt;p&gt;Para começar, precisamos configurar nosso projeto React. Se ainda não tem um projeto, você pode criar um usando o Create React App:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Vitest: como testar React com testes que realmente ajudam</title>
+      <link>https://blog.ismaeltech.com/posts/2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam/</link>
+      <pubDate>Wed, 23 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam/</guid>
+      <description>&lt;p&gt;Testes não são opcionais. Eles são essenciais para garantir a qualidade do software e a confiança nas funcionalidades que estamos implementando. Especialmente em aplicações React, onde as interações do usuário e o comportamento dinâmico são constantes. Aqui, vou compartilhar como configurar e utilizar o Vitest para testar suas aplicações React de maneira eficiente, garantindo que seus testes realmente ajudem a melhorar a qualidade do seu código.&lt;/p&gt;
+&lt;h2 id=&#34;setup-com-vite&#34;&gt;Setup com Vite&lt;/h2&gt;
+&lt;p&gt;Para começar, precisamos configurar nosso ambiente. O Vitest se integra perfeitamente ao Vite, que é uma ferramenta moderna de construção de projetos. Para iniciar, crie um novo projeto usando Vite, caso ainda não tenha um:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>PostgreSQL e o renascimento dos bancos SQL relacionais</title>
+      <link>https://blog.ismaeltech.com/posts/2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais/</link>
+      <pubDate>Tue, 22 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais/</guid>
+      <description>&lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;
+&lt;p&gt;A escolha do banco de dados certo é crucial para qualquer projeto de desenvolvimento de software. Nos últimos anos, temos visto um aumento significativo no uso de bancos de dados NoSQL, que prometem maior flexibilidade e escalabilidade em comparação com os tradicionais bancos de dados relacionais. No entanto, com o passar do tempo, muitos desenvolvedores começaram a perceber as limitações dos bancos de dados NoSQL e a valorizar a robustez e a consistência dos bancos de dados relacionais, como o PostgreSQL. Aqui, vou mostrar o renascimento dos bancos de dados SQL relacionais, com foco no PostgreSQL e suas funcionalidades que o tornam uma escolha atraente para muitos projetos.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Arquitetura limpa em TypeScript: princípios SOLID aplicados</title>
+      <link>https://blog.ismaeltech.com/posts/2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados/</link>
+      <pubDate>Mon, 21 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados/</guid>
+      <description>&lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;
+&lt;p&gt;Quando se trata de desenvolver software, a arquitetura limpa é fundamental para garantir que o código seja fácil de manter, escalar e entender. No entanto, muitos desenvolvedores enfrentam desafios para implementar essa abordagem em seus projetos. Recentemente, tive a oportunidade de trabalhar em um projeto que exigia uma arquitetura limpa e escalável, e percebi que os princípios SOLID são essenciais para alcançar esse objetivo. aqui, vou mostrar como aplicar esses princípios em TypeScript para criar uma arquitetura limpa e eficaz.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tailwind CSS: utility-first na prática pra projetos reais</title>
+      <link>https://blog.ismaeltech.com/posts/2026-09-20-tailwind-css-utility-first-na-pratica-pra-projetos-reais/</link>
+      <pubDate>Sun, 20 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-09-20-tailwind-css-utility-first-na-pratica-pra-projetos-reais/</guid>
+      <description>&lt;p&gt;Quantas vezes você já passou horas nomeando classes CSS, apenas para descobrir que seu &lt;code&gt;button-primary-large-rounded&lt;/code&gt; não serve para o botão que precisa ser &amp;ldquo;quase primary, mas um pouco menor&amp;rdquo;? O CSS tradicional nos força a pensar em abstrações antes mesmo de entender o que estamos construindo.&lt;/p&gt;
+&lt;p&gt;Tailwind CSS inverte essa lógica. Em vez de criar componentes CSS prematuros, você monta interfaces diretamente no HTML usando utilitários atômicos. Parece caótico no início, mas na prática é muito mais previsível que sistemas baseados em componentes CSS complexos.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Git na prática: workflows profissionais, rebase e resolução de conflitos</title>
+      <link>https://blog.ismaeltech.com/posts/2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao/</link>
+      <pubDate>Sat, 19 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao/</guid>
+      <description>&lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;
+&lt;p&gt;Quando se trata de controle de versão, o Git é a ferramenta mais amplamente utilizada no mundo do desenvolvimento de software. No entanto, muitos desenvolvedores ainda subutilizam o Git, limitando-se a comandos básicos como &lt;code&gt;git add&lt;/code&gt;, &lt;code&gt;git commit&lt;/code&gt; e &lt;code&gt;git push&lt;/code&gt;. Mas o Git é muito mais do que apenas commitar mudanças. Ele oferece uma ampla gama de recursos para gerenciar o fluxo de trabalho de forma eficiente, resolver conflitos e manter um histórico de mudanças limpo e organizado.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Gerenciamento de memória em Go: escapes, stack e GC</title>
+      <link>https://blog.ismaeltech.com/posts/2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc/</link>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc/</guid>
+      <description>&lt;p&gt;Você já se perguntou por que um programa Go às vezes consome muito mais memória do que deveria? Ou por que aquele endpoint da API que deveria ser rápido está apresentando latências estranhas? A resposta muitas vezes está no comportamento do gerenciamento de memória do Go - um tópico que pode parecer abstrato, mas tem impacto direto na performance das aplicações.&lt;/p&gt;
+&lt;p&gt;Go foi projetado para ser uma linguagem que esconde a complexidade do gerenciamento manual de memória, mas isso não significa que devemos ignorar completamente como ela funciona por baixo dos panos. Na verdade, entender os mecanismos internos pode ser a diferença entre uma aplicação que escala bem e outra que trava sob carga.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Deploy com Vercel, Railway e Fly.io: comparativo honesto</title>
+      <link>https://blog.ismaeltech.com/posts/2026-09-16-deploy-com-vercel-railway-e-fly-io-comparativo-honesto/</link>
+      <pubDate>Wed, 16 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-09-16-deploy-com-vercel-railway-e-fly-io-comparativo-honesto/</guid>
+      <description>&lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;
+&lt;p&gt;Quando se trata de deploy de aplicações web, os desenvolvedores enfrentam uma escolha difícil: qual plataforma usar? Com tantas opções disponíveis, é fácil se perder na selva de possibilidades. aqui, vou mostrar três opções populares: Vercel, Railway e Fly.io. Cada uma tem suas próprias características e vantagens, e vamos compará-las de forma honesta e objetiva.&lt;/p&gt;
+&lt;h2 id=&#34;vercel-spa--serverless&#34;&gt;Vercel: SPA + serverless&lt;/h2&gt;
+&lt;p&gt;Vercel é uma plataforma de deploy que se concentra em aplicações web modernas, especialmente aquelas construídas com React, Next.js e outras tecnologias de ponta. Com Vercel, você pode deployar suas aplicações web de forma rápida e fácil, sem se preocupar com a infraestrutura subjacente. Além disso, Vercel oferece suporte a serverless, o que significa que você só paga pelo tempo de execução da sua aplicação, e não por um servidor dedicado.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Next.js App Router: Server Components na prática</title>
+      <link>https://blog.ismaeltech.com/posts/2026-09-15-next-js-app-router-server-components-na-pratica/</link>
+      <pubDate>Tue, 15 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-09-15-next-js-app-router-server-components-na-pratica/</guid>
+      <description>&lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;
+&lt;p&gt;Quando se trata de desenvolver aplicações web escaláveis e performáticas, a escolha da arquitetura e das ferramentas certas é crucial. Uma das principais decisões que os desenvolvedores enfrentam é como lidar com a renderização de componentes e a manipulação de dados no servidor e no cliente. É aqui que o Next.js App Router entra em cena, oferecendo uma solução inovadora para esses desafios com o uso de Server Components. Aqui, vou mostrar em profundidade como o Next.js App Router pode ser utilizado para criar aplicações web mais eficientes, começando com uma visão geral dos Server Components e sua importância na arquitetura de aplicações modernas.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Edge Functions com Cloudflare Workers: compute global sem servidor</title>
+      <link>https://blog.ismaeltech.com/posts/2026-09-14-edge-functions-com-cloudflare-workers-compute-global-sem/</link>
+      <pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-09-14-edge-functions-com-cloudflare-workers-compute-global-sem/</guid>
+      <description>&lt;p&gt;A arquitetura de aplicações web passou por uma transformação silenciosa nos últimos anos. O modelo tradicional de servidor único, onde você mantém uma máquina respondendo a requisições em uma localização geográfica específica, está dando lugar a algo fundamentalmente diferente: código que executa simultaneamente em centenas de pontos de presença ao redor do mundo, a poucos milissegundos de qualquer usuário. Essa mudança não é apenas evolutiva, é uma redefinição do que significa &amp;ldquo;distribuir&amp;rdquo; uma aplicação.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>NVIDIA anuncia GeForce RTX 5090: specs, preço e o que esperar</title>
+      <link>https://blog.ismaeltech.com/posts/2026-09-14-noticia-demo-nvidia-geforce-rtx-5090-lancamento/</link>
+      <pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-09-14-noticia-demo-nvidia-geforce-rtx-5090-lancamento/</guid>
+      <description>&lt;p&gt;A NVIDIA apresentou a GeForce RTX 5090 durante a CES 2026, levando a arquitetura Blackwell ao mercado consumidor. É a geração que promete o maior salto em ray tracing e inteligência artificial desde a virada para os tensor cores, mas também a mais cara da história da linha xx90. A pergunta que todo mundo está fazendo: vale o preço?&lt;/p&gt;
+&lt;h2 id=&#34;o-que-mudou-na-arquitetura-blackwell&#34;&gt;O que mudou na arquitetura Blackwell&lt;/h2&gt;
+&lt;p&gt;A RTX 5090 chega com 32 GB de GDDR7 em barramento de 512 bits, um salto considerável em relação aos 24 GB da RTX 4090. A NVIDIA promete ganhos de até 2x em ray tracing e eficiência energética 40% melhor que a geração anterior, com o mesmo TDP de 450W.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Teclados mecânicos em 2026: os modelos que estão chamando atenção</title>
+      <link>https://blog.ismaeltech.com/posts/2026-09-14-teclados-mecanicos-em-2026-modelos-em-destaque/</link>
+      <pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-09-14-teclados-mecanicos-em-2026-modelos-em-destaque/</guid>
+      <description>&lt;p&gt;Teclados mecânicos saíram do nicho de entusiastas e viraram item quase obrigatório de setup. Em 2026, a pergunta não é mais &amp;ldquo;por que comprar um&amp;rdquo;, e sim &amp;ldquo;qual comprar&amp;rdquo;. Depois de passar algum tempo acompanhando reviews, discussões em fóruns e o que a comunidade brasileira mais comenta, separei os três modelos que mais aparecem nas conversas e o que cada um entrega de verdade.&lt;/p&gt;
+&lt;h2 id=&#34;por-que-o-interesse-cresceu-tanto&#34;&gt;Por que o interesse cresceu tanto&lt;/h2&gt;
+&lt;p&gt;Três motores explicam o movimento dos últimos anos: a popularização dos switches hot-swap, que permitem trocar a sensação de digitação sem solda; o trabalho híbrido, que colocou o teclado no centro do home office; e a cultura de teclados custom, alimentada por comunidades como o &lt;a href=&#34;https://www.reddit.com/r/MechanicalKeyboards/&#34;&gt;r/MechanicalKeyboards&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>API GraphQL com Apollo Server e Client: do zero ao completo</title>
+      <link>https://blog.ismaeltech.com/posts/2026-09-13-api-graphql-com-apollo-server-e-client-do-zero-ao-completo/</link>
+      <pubDate>Sun, 13 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-09-13-api-graphql-com-apollo-server-e-client-do-zero-ao-completo/</guid>
+      <description>&lt;p&gt;APIs REST dominaram o desenvolvimento web por mais de uma década, mas carregam limitações que se tornaram cada vez mais evidentes conforme aplicações cresceram em complexidade. Over-fetching de dados, múltiplas requisições para carregar uma única tela, e a rigidez dos endpoints fixos criaram gargalos reais em projetos modernos. GraphQL surge como uma alternativa que coloca o cliente no controle, permitindo buscar exatamente os dados necessários em uma única requisição.&lt;/p&gt;
+&lt;p&gt;O Apollo ecosystem se estabeleceu como o padrão de facto para implementar GraphQL, oferecendo tanto o server quanto o client com ferramentas maduras e bem documentadas. A combinação de Apollo Server no backend com Apollo Client no React cria uma stack poderosa que resolve problemas reais de performance e developer experience.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Linux no desktop em 2026: já está pronto pra todo mundo?</title>
+      <link>https://blog.ismaeltech.com/posts/2026-09-12-linux-no-desktop-em-2026-ja-esta-pronto-pra-todo-mundo/</link>
+      <pubDate>Sat, 12 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-09-12-linux-no-desktop-em-2026-ja-esta-pronto-pra-todo-mundo/</guid>
+      <description>&lt;p&gt;A pergunta que não quer calar: &amp;ldquo;Este é o ano do Linux no desktop?&amp;rdquo; Já virou meme entre desenvolvedores, repetida religiosamente a cada nova versão do Ubuntu ou atualização do kernel. Mas em 2026, com o Steam Deck provando que Linux pode rodar jogos AAA sem drama e interfaces como o Hyprland transformando a experiência do usuário, talvez seja hora de revisitar essa questão com seriedade.&lt;/p&gt;
+&lt;p&gt;O Linux sempre foi o sistema preferido de servidores e desenvolvedores, mas o desktop doméstico permaneceu como território quase exclusivo do Windows e macOS. Porém, os últimos dois anos trouxeram mudanças significativas que alteram fundamentalmente essa equação.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Gerenciamento de estados: React Context vs Zustand vs Jotai</title>
+      <link>https://blog.ismaeltech.com/posts/2026-09-10-gerenciamento-de-estados-react-context-vs-zustand-vs-jotai/</link>
+      <pubDate>Thu, 10 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-09-10-gerenciamento-de-estados-react-context-vs-zustand-vs-jotai/</guid>
+      <description>&lt;p&gt;Você já passou uma tarde inteira debugando uma atualização que não disparava reação no componente, só para descobrir que o problema estava no &lt;code&gt;useMemo&lt;/code&gt; que envolveu seu contexto? Ou já viu um projeto crescer até o ponto em que qualquer mudança num estado global acaba afetando metade da árvore de componentes? Gerenciamento de estado em React não é só sobre guardar dados: é sobre prevenir esses choques de realidade que te fazem questionar sua carreira.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>WebSocket do zero: chat em tempo real com Node.js e React</title>
+      <link>https://blog.ismaeltech.com/posts/2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react/</link>
+      <pubDate>Wed, 09 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react/</guid>
+      <description>&lt;p&gt;Construir um chat em tempo real pode parecer uma tarefa desafiadora, mas, com as ferramentas adequadas, é possível criar uma aplicação funcional em questão de horas. Um dos principais desafios que os desenvolvedores enfrentam ao criar aplicações interativas é a escolha do protocolo de comunicação. Enquanto o HTTP é amplamente utilizado para a troca de dados entre cliente e servidor, ele não é o mais eficiente para aplicações que exigem comunicação em tempo real, como um chat. É aí que o WebSocket se destaca.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Programação quântica em 2026: prática real ou ainda é ciência?</title>
+      <link>https://blog.ismaeltech.com/posts/2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia/</link>
+      <pubDate>Tue, 08 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia/</guid>
+      <description>&lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;
+&lt;p&gt;A programação quântica é um campo que tem gerado grande interesse nos últimos anos, com muitos especialistas e empresas investindo tempo e recursos para desenvolver tecnologias quânticas. No entanto, a pergunta que muitos desenvolvedores se fazem é: a programação quântica é uma prática real ou ainda está na esfera da ciência? Aqui, vou mostrar o estado atual dos computadores quânticos, as principais empresas que estão trabalhando nessa área, as ferramentas e linguagens de programação disponíveis e os problemas reais que a programação quântica pode resolver.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Por que Rust não vai substituir Go (e vice-versa)</title>
+      <link>https://blog.ismaeltech.com/posts/2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa/</link>
+      <pubDate>Sun, 06 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa/</guid>
+      <description>&lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;
+&lt;p&gt;A escolha da linguagem de programação certa para um projeto é uma decisão crucial que pode afetar significativamente o sucesso e a manutenção do software. Com o surgimento de novas linguagens e a evolução das existentes, a comunidade de desenvolvedores está constantemente debatendo sobre as melhores opções. Uma dessas discussões que tem ganhado destaque é a comparação entre Rust e Go, duas linguagens que têm sido apontadas como possíveis substitutas uma da outra em certos contextos. Mas será que Rust pode substituir Go, ou vice-versa? Aqui, vou mostrar as características, vantagens e desvantagens de cada linguagem para entender melhor onde cada uma brilha e por que a coexistência é a realidade.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Princípios SOLID explicados com exemplos de código real</title>
+      <link>https://blog.ismaeltech.com/posts/2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real/</link>
+      <pubDate>Fri, 04 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real/</guid>
+      <description>&lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;
+&lt;p&gt;Imagine que um cliente solicita uma integração que sincroniza estoque com um marketplace. Você entrega o código, mas depois precisa adicionar um relatório de vendas por categoria. O que era um módulo simples agora está cheio de condições, métodos que fazem tudo e pouca margem para mudanças.&lt;/p&gt;
+&lt;p&gt;Aqui eu explico como os cinco princípios SOLID podem impedir que um código evolua para um monólito incontrolável. Cada princípio vem acompanhado de um exemplo em uma das duas linguagens que eu uso no dia a dia: TypeScript no serviço de sincronização e Python no motor de canais. No final eu junto os dois em um caso real, e também escrevo sobre &lt;strong&gt;quando não vale a pena&lt;/strong&gt; aplicar nada disso.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Redis na prática: cache, rate limiting e filas em Node.js</title>
+      <link>https://blog.ismaeltech.com/posts/2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js/</link>
+      <pubDate>Thu, 03 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js/</guid>
+      <description>&lt;h3 id=&#34;por-que-você-deve-se-preocupar-agora&#34;&gt;Por que você deve se preocupar agora&lt;/h3&gt;
+&lt;p&gt;Imagine que seu e-commerce precisa manter o estoque sincronizado com um marketplace. A cada venda o estoque tem que ser atualizado em milissegundos, senão o cliente compra um produto que já acabou e a reputação da loja despenca. Em um cenário assim, a API do marketplace pode começar a responder com erros de &lt;em&gt;429 Too Many Requests&lt;/em&gt; e, ao mesmo tempo, o banco de dados fica sobrecarregado com consultas repetidas ao mesmo registro de produto. A solução acaba sendo colocar uma camada de Redis entre a aplicação e o banco, usando o Redis não só como cache, mas também como limitador de taxa e como broker de filas.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Banco de dados relacional vs NoSQL: quando usar cada um</title>
+      <link>https://blog.ismaeltech.com/posts/2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um/</link>
+      <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um/</guid>
+      <description>&lt;p&gt;A escolha do banco de dados adequado para um projeto pode ser um dos fatores mais críticos para o sucesso do mesmo. Com a crescente complexidade das aplicações modernas, entender as diferenças entre bancos de dados relacionais e NoSQL se torna essencial. Aqui, vou mostrar quando e por que utilizar cada um desses tipos de banco de dados, considerando aspectos como modelagem de dados, transações e escalabilidade.&lt;/p&gt;
+&lt;h2 id=&#34;sql-postgresql-como-padrão&#34;&gt;SQL: PostgreSQL como padrão&lt;/h2&gt;
+&lt;p&gt;PostgreSQL é um dos bancos de dados relacionais mais robustos e populares atualmente. Com suporte a um rico conjunto de recursos, como transações ACID, integridade referencial e uma poderosa linguagem de consulta SQL, ele se destaca como uma escolha confiável para muitas aplicações empresariais. Sua capacidade de lidar com dados complexos e relacionais permite uma modelagem de dados que se adapta bem a cenários onde a estrutura dos dados é bem definida.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>O fim do npm: por que bun e deno estão ganhando espaço</title>
+      <link>https://blog.ismaeltech.com/posts/2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco/</link>
+      <pubDate>Sun, 30 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco/</guid>
+      <description>&lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;
+&lt;p&gt;Quando se trata de gerenciar dependências em projetos JavaScript, o npm é o gigante da indústria. Com mais de 1,5 milhão de pacotes disponíveis, é o maior repositório de código aberto do mundo. No entanto, com o tempo, o npm tem enfrentado problemas crônicos que afetam a velocidade, a segurança e a estabilidade dos projetos. Aqui, vou mostrar os problemas do npm e como dois novos players, Bun e Deno, estão ganhando espaço no mercado.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>TypeScript: tipos avançados que transformam seu código em produção</title>
+      <link>https://blog.ismaeltech.com/posts/2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em/</link>
+      <pubDate>Sat, 29 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em/</guid>
+      <description>&lt;h2 id=&#34;tipos-avançados-do-typescript-que-evitam-bugs-em-produção&#34;&gt;Tipos Avançados do TypeScript que Evitam Bugs em Produção&lt;/h2&gt;
+&lt;p&gt;Uma produção quebra no banco de dados porque um número foi passado como string. Um estado de autenticação vira &lt;code&gt;null&lt;/code&gt; em vez de &lt;code&gt;Authenticated&lt;/code&gt;, permitindo acesso não autorizado. A interface quebrou porque a tipagem não via que o campo era opcional. Esses são os tipos de dor que acontecem quando a lógica é deixada para a sorte.&lt;/p&gt;
+&lt;p&gt;Muitos iniciantes em TypeScript aprendem a sintaxe: declarar uma variável, usar interfaces e types básicos. Entretanto, a transição de escrever código que &amp;ldquo;compila&amp;rdquo; para escrever código que &amp;ldquo;resiste&amp;rdquo; em produção exige o uso de recursos mais profundos. Construo software de verdade desde 2024 e já vi projetos que parecem sólidos no desenvolvimento local quebrarem rotineiramente devido a conflitos de tipagem mal definidos.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>React Server Components: quando e como usar no Next.js</title>
+      <link>https://blog.ismaeltech.com/posts/2026-08-28-react-server-components-quando-e-como-usar-no-next-js/</link>
+      <pubDate>Fri, 28 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-08-28-react-server-components-quando-e-como-usar-no-next-js/</guid>
+      <description>&lt;p&gt;O ecossistema frontend passou anos focado em rodar tudo no navegador do cliente, mas a arquitetura moderna de frameworks como o Next.js mudou o jogo ao trazer o servidor de volta para o centro das decisões de renderização.&lt;/p&gt;
+&lt;p&gt;Quando comecei a construir meus próprios projetos e a estruturar interfaces com React, a divisão entre o que roda no servidor e o que roda no cliente parecia um detalhe de implementação secundário. Na prática, entender essa fronteira define se sua aplicação vai carregar instantaneamente ou se vai engasgar em dispositivos móveis mais modestos.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Automação de tarefas com cron, systemd e scripts Bash</title>
+      <link>https://blog.ismaeltech.com/posts/2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash/</link>
+      <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash/</guid>
+      <description>&lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;
+&lt;p&gt;Automatizar tarefas é uma das formas mais práticas de ganhar confiabilidade. Em vez de rodar comandos manualmente todos os dias, é possível agendá-los com &lt;code&gt;cron&lt;/code&gt; ou &lt;code&gt;systemd&lt;/code&gt;, criar scripts robustos com logs e tratamento de erros e garantir que rotinas críticas rodem na hora certa, sem intervenção humana.&lt;/p&gt;
+&lt;h2 id=&#34;cron-sintaxe-e-exemplos-reais&#34;&gt;Cron: Sintaxe e Exemplos Reais&lt;/h2&gt;
+&lt;p&gt;O &lt;code&gt;cron&lt;/code&gt; é uma ferramenta de agendamento de tarefas que permite executar comandos ou scripts em intervalos de tempo específicos. A sintaxe do &lt;code&gt;cron&lt;/code&gt; é simples e consiste em cinco campos, separados por espaços, que especificam o minuto, hora, dia do mês, mês e dia da semana, respectivamente. Por exemplo, o seguinte comando agendará a execução de um script Bash todos os dias às 2h da manhã:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Serverless no AWS Lambda: funções, APIs e automações baratas</title>
+      <link>https://blog.ismaeltech.com/posts/2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas/</link>
+      <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas/</guid>
+      <description>&lt;h2 id=&#34;por-que-servidores-invisíveis-podem-ser-a-resposta-para-pequenos-negócios&#34;&gt;Por que servidores “invisíveis” podem ser a resposta para pequenos negócios&lt;/h2&gt;
+&lt;p&gt;Você já recebeu a demanda de um cliente que precisa expor um endpoint para validar cupons, mas não tem orçamento para manter um servidor 24 h por dia? Ou ainda, já precisou sincronizar o estoque da sua loja física com o marketplace e a solução tradicional acabou consumindo horas de desenvolvimento e custos de infraestrutura?&lt;/p&gt;
+&lt;p&gt;Essas situações são mais comuns do que imaginamos, principalmente em ambientes de varejo onde cada centavo conta. A proposta do &lt;strong&gt;serverless&lt;/strong&gt; — executar código apenas quando um evento acontece — permite transformar essas demandas em funções leves, pagas apenas pelo tempo efetivo de execução. No ecossistema da AWS, o serviço que materializa essa ideia é o &lt;strong&gt;AWS Lambda&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Autenticação JWT completa: login, refresh token e proteção de rotas</title>
+      <link>https://blog.ismaeltech.com/posts/2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de/</link>
+      <pubDate>Sun, 23 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de/</guid>
+      <description>&lt;h2 id=&#34;introdução-jwt-vs-sessões&#34;&gt;Introdução: JWT vs Sessões&lt;/h2&gt;
+&lt;p&gt;Quando um aplicativo web começa a receber mais de alguns poucos usuários, a abordagem de sessão baseada em cookie simplesmente não escala. É o cenário clássico de quem opera qualquer aplicação que cresce: o tráfego aumenta, a sessão armazenada no lado do servidor vira gargalo, a latência do banco dispara e a resposta natural é migrar para tokens JWT. Em vez de armazenar um ID de sessão em um banco de dados e verificar isso a cada solicitação, podemos assinar dados e verificá-los em qualquer lugar.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A história do TypeScript: de acidente a padrão da indústria</title>
+      <link>https://blog.ismaeltech.com/posts/2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria/</link>
+      <pubDate>Sat, 22 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria/</guid>
+      <description>&lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;
+&lt;p&gt;Em outubro de 2012, a Microsoft fez um anúncio que mudaria o rumo do desenvolvimento JavaScript: o TypeScript. Na época, equipes que mantinham aplicações JavaScript grandes enfrentavam um problema cada vez mais evidente — código que crescia rápido e se tornava impossível de manter sem tipagem estática. O TypeScript surgiu exatamente para atacar essa dor, prometendo trazer a segurança e a manutenibilidade da tipagem estática sem abandonar o ecossistema JavaScript. Mais de uma década depois, ele se tornou o padrão de facto da indústria. Esta é a história de como um projeto experimental interno virou a base de praticamente todo framework moderno.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>DevTools do navegador: técnicas avançadas de debug</title>
+      <link>https://blog.ismaeltech.com/posts/2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug/</link>
+      <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug/</guid>
+      <description>&lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;
+&lt;p&gt;Já ficou horas encurralado por um bug que desaparece assim que você tenta inspecionar? A sensação de estar jogando gato e rato com o navegador é mais comum do que parece, e a maioria das vezes a culpa não é do código em si e sim da forma como o analisamos. Tratar as DevTools como um “caderno de anotações” ao invés de um simples painel de inspeção muda completamente o jogo: a produtividade dispara e a frustração diminui drasticamente. Neste texto eu compartilho as técnicas avançadas que me ajudaram a transformar horas de caça ao erro em minutos de diagnóstico preciso. Prepare o café, abra o Chrome (ou o Firefox, o Edge tem quase as mesmas funcionalidades) e vamos colocar a lupa nas camadas que realmente importam.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Prisma ORM: como modelar banco de dados com TypeScript</title>
+      <link>https://blog.ismaeltech.com/posts/2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript/</link>
+      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript/</guid>
+      <description>&lt;h2 id=&#34;introdução-orm-vs-query-raw&#34;&gt;Introdução: ORM vs query raw&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“Se a única forma que você conhece de conversar com o banco de dados é gritar &lt;strong&gt;SQL&lt;/strong&gt;, está na hora de aprender a falar a língua dele.”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Essa frase pode parecer clichê, mas captura bem a realidade de quem desenvolve aplicações modernas. Enquanto as consultas &lt;em&gt;raw&lt;/em&gt; dão controle total, elas também trazem &lt;strong&gt;carga cognitiva&lt;/strong&gt;, risco de &lt;em&gt;SQL injection&lt;/em&gt; e manutenção dolorosa. Um &lt;strong&gt;ORM&lt;/strong&gt; (Object‑Relational Mapping) abstrai a camada de persistência, permitindo que você trabalhe com objetos tipados, migrações versionadas e, o melhor de tudo, &lt;strong&gt;autocompletar&lt;/strong&gt; e &lt;strong&gt;validação&lt;/strong&gt; no seu editor.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>React Hooks avançados: useEffect, useRef e custom hooks que você precisa conhecer</title>
+      <link>https://blog.ismaeltech.com/posts/2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks/</link>
+      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks/</guid>
+      <description>&lt;h2 id=&#34;introdução-por-que-os-hooks-mudaram-o-react&#34;&gt;Introdução: Por que os Hooks mudaram o React?&lt;/h2&gt;
+&lt;p&gt;Desde que chegaram ao React na versão 16.8, no início de 2019, os Hooks se tornaram o padrão de facto da comunidade — praticamente toda biblioteca e tutorial moderno parte deles hoje.&lt;/p&gt;
+&lt;p&gt;Se você começou a programar em React antes da versão 16.8, provavelmente ainda tem na memória a saga dos &lt;em&gt;class components&lt;/em&gt;: &lt;code&gt;componentDidMount&lt;/code&gt;, &lt;code&gt;componentWillUnmount&lt;/code&gt;, &lt;code&gt;this.setState&lt;/code&gt;, e a eterna luta contra o &lt;em&gt;binding&lt;/em&gt; de métodos. Foi um período de produtividade limitada e, convenhamos, de código verboso.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>CSS Grid e Flexbox: quando usar cada um</title>
+      <link>https://blog.ismaeltech.com/posts/2026-08-17-css-grid-e-flexbox-quando-usar-cada-um/</link>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/posts/2026-08-17-css-grid-e-flexbox-quando-usar-cada-um/</guid>
+      <description>&lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;
+&lt;p&gt;Por décadas, o layout de websites dependeu de ferramentas limitadas, como a propriedade &lt;code&gt;float&lt;/code&gt; e a posição absoluta. Essas técnicas, embora poderosas, exigiam hacks complexos e muitas vezes resultavam em código difícil de manter. Com o surgimento do CSS moderno, o desenvolvimento front-end tornou-se muito mais elegante. Dois dos principais destaques dessa revolução são o &lt;strong&gt;CSS Flexbox&lt;/strong&gt; e o &lt;strong&gt;CSS Grid&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Muitos desenvolvedores iniciantes — e até experientes — frequentemente ficam na dúvida: &amp;ldquo;Qual devo usar?&amp;rdquo;. A resposta curta é: ambos são ótimos, mas têm propósitos diferentes. Para dominar o design responsivo, é essencial entender a filosofia por trás de cada um.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

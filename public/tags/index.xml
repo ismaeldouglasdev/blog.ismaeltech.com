@@ -6,48 +6,888 @@
     <description>Recent content in Tags on Ismael Douglas — Blog</description>
     <generator>Hugo</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 09 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://blog.ismaeltech.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Automação</title>
-      <link>https://blog.ismaeltech.com/tags/automa%C3%A7%C3%A3o/</link>
-      <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://blog.ismaeltech.com/tags/automa%C3%A7%C3%A3o/</guid>
+      <title>Mcp</title>
+      <link>https://blog.ismaeltech.com/tags/mcp/</link>
+      <pubDate>Mon, 26 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/mcp/</guid>
       <description></description>
     </item>
     <item>
-      <title>Carreira</title>
-      <link>https://blog.ismaeltech.com/tags/carreira/</link>
-      <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://blog.ismaeltech.com/tags/carreira/</guid>
+      <title>Open-Source</title>
+      <link>https://blog.ismaeltech.com/tags/open-source/</link>
+      <pubDate>Mon, 26 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/open-source/</guid>
       <description></description>
     </item>
     <item>
-      <title>Código</title>
-      <link>https://blog.ismaeltech.com/tags/c%C3%B3digo/</link>
-      <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://blog.ismaeltech.com/tags/c%C3%B3digo/</guid>
+      <title>Pdf</title>
+      <link>https://blog.ismaeltech.com/tags/pdf/</link>
+      <pubDate>Mon, 26 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/pdf/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rust</title>
+      <link>https://blog.ismaeltech.com/tags/rust/</link>
+      <pubDate>Mon, 26 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/rust/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Wasm</title>
+      <link>https://blog.ismaeltech.com/tags/wasm/</link>
+      <pubDate>Mon, 26 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/wasm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>C&#43;&#43;</title>
+      <link>https://blog.ismaeltech.com/tags/c&#43;&#43;/</link>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/c&#43;&#43;/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Engenharia-De-Software</title>
+      <link>https://blog.ismaeltech.com/tags/engenharia-de-software/</link>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/engenharia-de-software/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Jogos</title>
+      <link>https://blog.ismaeltech.com/tags/jogos/</link>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/jogos/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reverse-Engineering</title>
+      <link>https://blog.ismaeltech.com/tags/reverse-engineering/</link>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/reverse-engineering/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Containers</title>
+      <link>https://blog.ismaeltech.com/tags/containers/</link>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/containers/</guid>
       <description></description>
     </item>
     <item>
       <title>Desenvolvimento</title>
       <link>https://blog.ismaeltech.com/tags/desenvolvimento/</link>
-      <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 +0000</pubDate>
       <guid>https://blog.ismaeltech.com/tags/desenvolvimento/</guid>
       <description></description>
     </item>
     <item>
-      <title>Pequenos Negócios</title>
-      <link>https://blog.ismaeltech.com/tags/pequenos-neg%C3%B3cios/</link>
-      <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://blog.ismaeltech.com/tags/pequenos-neg%C3%B3cios/</guid>
+      <title>Devops</title>
+      <link>https://blog.ismaeltech.com/tags/devops/</link>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/devops/</guid>
       <description></description>
     </item>
     <item>
-      <title>Pessoal</title>
-      <link>https://blog.ismaeltech.com/tags/pessoal/</link>
-      <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://blog.ismaeltech.com/tags/pessoal/</guid>
+      <title>Docker</title>
+      <link>https://blog.ismaeltech.com/tags/docker/</link>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/docker/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Http2</title>
+      <link>https://blog.ismaeltech.com/tags/http2/</link>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/http2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nodejs</title>
+      <link>https://blog.ismaeltech.com/tags/nodejs/</link>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/nodejs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>https://blog.ismaeltech.com/tags/python/</link>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rce</title>
+      <link>https://blog.ismaeltech.com/tags/rce/</link>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/rce/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Seguranca</title>
+      <link>https://blog.ismaeltech.com/tags/seguranca/</link>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/seguranca/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ca</title>
+      <link>https://blog.ismaeltech.com/tags/ca/</link>
+      <pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/ca/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Segurança</title>
+      <link>https://blog.ismaeltech.com/tags/seguran%C3%A7a/</link>
+      <pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/seguran%C3%A7a/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ssl</title>
+      <link>https://blog.ismaeltech.com/tags/ssl/</link>
+      <pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/ssl/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tls</title>
+      <link>https://blog.ismaeltech.com/tags/tls/</link>
+      <pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/tls/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ia</title>
+      <link>https://blog.ismaeltech.com/tags/ia/</link>
+      <pubDate>Wed, 21 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/ia/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Php</title>
+      <link>https://blog.ismaeltech.com/tags/php/</link>
+      <pubDate>Wed, 21 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/php/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Otimizacao</title>
+      <link>https://blog.ismaeltech.com/tags/otimizacao/</link>
+      <pubDate>Tue, 13 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/otimizacao/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Performance</title>
+      <link>https://blog.ismaeltech.com/tags/performance/</link>
+      <pubDate>Tue, 13 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/performance/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>React</title>
+      <link>https://blog.ismaeltech.com/tags/react/</link>
+      <pubDate>Tue, 13 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/react/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Api</title>
+      <link>https://blog.ismaeltech.com/tags/api/</link>
+      <pubDate>Mon, 12 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/api/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fetch</title>
+      <link>https://blog.ismaeltech.com/tags/fetch/</link>
+      <pubDate>Mon, 12 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/fetch/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Javascript</title>
+      <link>https://blog.ismaeltech.com/tags/javascript/</link>
+      <pubDate>Mon, 12 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Agentes</title>
+      <link>https://blog.ismaeltech.com/tags/agentes/</link>
+      <pubDate>Tue, 06 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/agentes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Llm</title>
+      <link>https://blog.ismaeltech.com/tags/llm/</link>
+      <pubDate>Tue, 06 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/llm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Openai</title>
+      <link>https://blog.ismaeltech.com/tags/openai/</link>
+      <pubDate>Tue, 06 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/openai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rag</title>
+      <link>https://blog.ismaeltech.com/tags/rag/</link>
+      <pubDate>Tue, 06 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/rag/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data-Science</title>
+      <link>https://blog.ismaeltech.com/tags/data-science/</link>
+      <pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/data-science/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Machine-Learning</title>
+      <link>https://blog.ismaeltech.com/tags/machine-learning/</link>
+      <pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Banco-De-Dados</title>
+      <link>https://blog.ismaeltech.com/tags/banco-de-dados/</link>
+      <pubDate>Sat, 03 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/banco-de-dados/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nginx</title>
+      <link>https://blog.ismaeltech.com/tags/nginx/</link>
+      <pubDate>Sat, 03 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/nginx/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Proxy</title>
+      <link>https://blog.ismaeltech.com/tags/proxy/</link>
+      <pubDate>Sat, 03 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/proxy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Uuid</title>
+      <link>https://blog.ismaeltech.com/tags/uuid/</link>
+      <pubDate>Sat, 03 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/uuid/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ci-Cd</title>
+      <link>https://blog.ismaeltech.com/tags/ci-cd/</link>
+      <pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/ci-cd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Github-Actions</title>
+      <link>https://blog.ismaeltech.com/tags/github-actions/</link>
+      <pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/github-actions/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nextjs</title>
+      <link>https://blog.ismaeltech.com/tags/nextjs/</link>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/nextjs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Server-Components</title>
+      <link>https://blog.ismaeltech.com/tags/server-components/</link>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/server-components/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Arquitetura</title>
+      <link>https://blog.ismaeltech.com/tags/arquitetura/</link>
+      <pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/arquitetura/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Solid</title>
+      <link>https://blog.ismaeltech.com/tags/solid/</link>
+      <pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/solid/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Typescript</title>
+      <link>https://blog.ismaeltech.com/tags/typescript/</link>
+      <pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/typescript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Error-Handling</title>
+      <link>https://blog.ismaeltech.com/tags/error-handling/</link>
+      <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/error-handling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kubernetes</title>
+      <link>https://blog.ismaeltech.com/tags/kubernetes/</link>
+      <pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dungeons</title>
+      <link>https://blog.ismaeltech.com/tags/dungeons/</link>
+      <pubDate>Sat, 26 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/dungeons/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Games</title>
+      <link>https://blog.ismaeltech.com/tags/games/</link>
+      <pubDate>Sat, 26 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/games/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Minecraft</title>
+      <link>https://blog.ismaeltech.com/tags/minecraft/</link>
+      <pubDate>Sat, 26 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/minecraft/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mojang</title>
+      <link>https://blog.ismaeltech.com/tags/mojang/</link>
+      <pubDate>Sat, 26 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/mojang/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Testes</title>
+      <link>https://blog.ismaeltech.com/tags/testes/</link>
+      <pubDate>Sat, 26 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/testes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Testing-Library</title>
+      <link>https://blog.ismaeltech.com/tags/testing-library/</link>
+      <pubDate>Sat, 26 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/testing-library/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Forms</title>
+      <link>https://blog.ismaeltech.com/tags/forms/</link>
+      <pubDate>Thu, 24 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/forms/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>React-Hook-Form</title>
+      <link>https://blog.ismaeltech.com/tags/react-hook-form/</link>
+      <pubDate>Thu, 24 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/react-hook-form/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Zod</title>
+      <link>https://blog.ismaeltech.com/tags/zod/</link>
+      <pubDate>Thu, 24 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/zod/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tdd</title>
+      <link>https://blog.ismaeltech.com/tags/tdd/</link>
+      <pubDate>Wed, 23 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/tdd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vitest</title>
+      <link>https://blog.ismaeltech.com/tags/vitest/</link>
+      <pubDate>Wed, 23 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/vitest/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Database</title>
+      <link>https://blog.ismaeltech.com/tags/database/</link>
+      <pubDate>Tue, 22 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/database/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Postgresql</title>
+      <link>https://blog.ismaeltech.com/tags/postgresql/</link>
+      <pubDate>Tue, 22 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/postgresql/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tendencias</title>
+      <link>https://blog.ismaeltech.com/tags/tendencias/</link>
+      <pubDate>Tue, 22 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/tendencias/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Css</title>
+      <link>https://blog.ismaeltech.com/tags/css/</link>
+      <pubDate>Sun, 20 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/css/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Frontend</title>
+      <link>https://blog.ismaeltech.com/tags/frontend/</link>
+      <pubDate>Sun, 20 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/frontend/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tailwind</title>
+      <link>https://blog.ismaeltech.com/tags/tailwind/</link>
+      <pubDate>Sun, 20 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/tailwind/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Git</title>
+      <link>https://blog.ismaeltech.com/tags/git/</link>
+      <pubDate>Sat, 19 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/git/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Produtividade</title>
+      <link>https://blog.ismaeltech.com/tags/produtividade/</link>
+      <pubDate>Sat, 19 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/produtividade/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Workflow</title>
+      <link>https://blog.ismaeltech.com/tags/workflow/</link>
+      <pubDate>Sat, 19 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/workflow/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Go</title>
+      <link>https://blog.ismaeltech.com/tags/go/</link>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/go/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Memoria</title>
+      <link>https://blog.ismaeltech.com/tags/memoria/</link>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/memoria/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloud</title>
+      <link>https://blog.ismaeltech.com/tags/cloud/</link>
+      <pubDate>Wed, 16 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/cloud/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Deploy</title>
+      <link>https://blog.ismaeltech.com/tags/deploy/</link>
+      <pubDate>Wed, 16 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/deploy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Railway</title>
+      <link>https://blog.ismaeltech.com/tags/railway/</link>
+      <pubDate>Wed, 16 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/railway/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vercel</title>
+      <link>https://blog.ismaeltech.com/tags/vercel/</link>
+      <pubDate>Wed, 16 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/vercel/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloudflare</title>
+      <link>https://blog.ismaeltech.com/tags/cloudflare/</link>
+      <pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/cloudflare/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Edge</title>
+      <link>https://blog.ismaeltech.com/tags/edge/</link>
+      <pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/edge/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gadget</title>
+      <link>https://blog.ismaeltech.com/tags/gadget/</link>
+      <pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/gadget/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Geforce</title>
+      <link>https://blog.ismaeltech.com/tags/geforce/</link>
+      <pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/geforce/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gpu</title>
+      <link>https://blog.ismaeltech.com/tags/gpu/</link>
+      <pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/gpu/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hardware</title>
+      <link>https://blog.ismaeltech.com/tags/hardware/</link>
+      <pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/hardware/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mecanico</title>
+      <link>https://blog.ismaeltech.com/tags/mecanico/</link>
+      <pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/mecanico/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nvidia</title>
+      <link>https://blog.ismaeltech.com/tags/nvidia/</link>
+      <pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/nvidia/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Serverless</title>
+      <link>https://blog.ismaeltech.com/tags/serverless/</link>
+      <pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/serverless/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Teclado</title>
+      <link>https://blog.ismaeltech.com/tags/teclado/</link>
+      <pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/teclado/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Workers</title>
+      <link>https://blog.ismaeltech.com/tags/workers/</link>
+      <pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/workers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Apollo</title>
+      <link>https://blog.ismaeltech.com/tags/apollo/</link>
+      <pubDate>Sun, 13 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/apollo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Graphql</title>
+      <link>https://blog.ismaeltech.com/tags/graphql/</link>
+      <pubDate>Sun, 13 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/graphql/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Desktop</title>
+      <link>https://blog.ismaeltech.com/tags/desktop/</link>
+      <pubDate>Sat, 12 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/desktop/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>https://blog.ismaeltech.com/tags/linux/</link>
+      <pubDate>Sat, 12 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Opiniao</title>
+      <link>https://blog.ismaeltech.com/tags/opiniao/</link>
+      <pubDate>Sat, 12 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/opiniao/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Jotai</title>
+      <link>https://blog.ismaeltech.com/tags/jotai/</link>
+      <pubDate>Thu, 10 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/jotai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>State</title>
+      <link>https://blog.ismaeltech.com/tags/state/</link>
+      <pubDate>Thu, 10 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/state/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Zustand</title>
+      <link>https://blog.ismaeltech.com/tags/zustand/</link>
+      <pubDate>Thu, 10 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/zustand/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Node</title>
+      <link>https://blog.ismaeltech.com/tags/node/</link>
+      <pubDate>Wed, 09 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/node/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Real-Time</title>
+      <link>https://blog.ismaeltech.com/tags/real-time/</link>
+      <pubDate>Wed, 09 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/real-time/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Websocket</title>
+      <link>https://blog.ismaeltech.com/tags/websocket/</link>
+      <pubDate>Wed, 09 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/websocket/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Computacao</title>
+      <link>https://blog.ismaeltech.com/tags/computacao/</link>
+      <pubDate>Tue, 08 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/computacao/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Futuro</title>
+      <link>https://blog.ismaeltech.com/tags/futuro/</link>
+      <pubDate>Tue, 08 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/futuro/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Quantum</title>
+      <link>https://blog.ismaeltech.com/tags/quantum/</link>
+      <pubDate>Tue, 08 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/quantum/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linguagens</title>
+      <link>https://blog.ismaeltech.com/tags/linguagens/</link>
+      <pubDate>Sun, 06 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/linguagens/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Boas-Praticas</title>
+      <link>https://blog.ismaeltech.com/tags/boas-praticas/</link>
+      <pubDate>Fri, 04 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/boas-praticas/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Backend</title>
+      <link>https://blog.ismaeltech.com/tags/backend/</link>
+      <pubDate>Thu, 03 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/backend/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cache</title>
+      <link>https://blog.ismaeltech.com/tags/cache/</link>
+      <pubDate>Thu, 03 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/cache/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Redis</title>
+      <link>https://blog.ismaeltech.com/tags/redis/</link>
+      <pubDate>Thu, 03 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/redis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mongodb</title>
+      <link>https://blog.ismaeltech.com/tags/mongodb/</link>
+      <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/mongodb/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nosql</title>
+      <link>https://blog.ismaeltech.com/tags/nosql/</link>
+      <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/nosql/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sql</title>
+      <link>https://blog.ismaeltech.com/tags/sql/</link>
+      <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/sql/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bun</title>
+      <link>https://blog.ismaeltech.com/tags/bun/</link>
+      <pubDate>Sun, 30 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/bun/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Deno</title>
+      <link>https://blog.ismaeltech.com/tags/deno/</link>
+      <pubDate>Sun, 30 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/deno/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Npm</title>
+      <link>https://blog.ismaeltech.com/tags/npm/</link>
+      <pubDate>Sun, 30 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/npm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tipagem</title>
+      <link>https://blog.ismaeltech.com/tags/tipagem/</link>
+      <pubDate>Sat, 29 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/tipagem/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Automacao</title>
+      <link>https://blog.ismaeltech.com/tags/automacao/</link>
+      <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/automacao/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bash</title>
+      <link>https://blog.ismaeltech.com/tags/bash/</link>
+      <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/bash/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Systemd</title>
+      <link>https://blog.ismaeltech.com/tags/systemd/</link>
+      <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/systemd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Aws</title>
+      <link>https://blog.ismaeltech.com/tags/aws/</link>
+      <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/aws/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lambda</title>
+      <link>https://blog.ismaeltech.com/tags/lambda/</link>
+      <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/lambda/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Autenticação</title>
+      <link>https://blog.ismaeltech.com/tags/autentica%C3%A7%C3%A3o/</link>
+      <pubDate>Sun, 23 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/autentica%C3%A7%C3%A3o/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Jwt</title>
+      <link>https://blog.ismaeltech.com/tags/jwt/</link>
+      <pubDate>Sun, 23 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/jwt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>História</title>
+      <link>https://blog.ismaeltech.com/tags/hist%C3%B3ria/</link>
+      <pubDate>Sat, 22 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/hist%C3%B3ria/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Browser</title>
+      <link>https://blog.ismaeltech.com/tags/browser/</link>
+      <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/browser/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Debug</title>
+      <link>https://blog.ismaeltech.com/tags/debug/</link>
+      <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/debug/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Devtools</title>
+      <link>https://blog.ismaeltech.com/tags/devtools/</link>
+      <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/devtools/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hooks</title>
+      <link>https://blog.ismaeltech.com/tags/hooks/</link>
+      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/hooks/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Orm</title>
+      <link>https://blog.ismaeltech.com/tags/orm/</link>
+      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/orm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Prisma</title>
+      <link>https://blog.ismaeltech.com/tags/prisma/</link>
+      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.ismaeltech.com/tags/prisma/</guid>
       <description></description>
     </item>
   </channel>
