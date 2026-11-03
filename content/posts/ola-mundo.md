@@ -3,6 +3,7 @@ title: 'Olá Mundo — Por que criei este blog'
 date: 2026-07-09
 draft: true
 description: 'Um desenvolvedor full stack compartilhando conhecimento sobre web, sistemas, automação e tecnologia na prática.'
+lang: "pt"
 tags: ['desenvolvimento', 'carreira', 'pessoal']
 ---
 

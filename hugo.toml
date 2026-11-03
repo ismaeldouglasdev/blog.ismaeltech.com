@@ -5,7 +5,9 @@ theme = "PaperMod"
 
 enableRobotsTXT = true
 buildDrafts = false
-paginate = 0
+
+[pagination]
+  pagerSize = 10
 
 [params]
   description = "Artigos sobre desenvolvimento web, sistemas, e tecnologia por Ismael Douglas"
@@ -36,7 +38,7 @@ paginate = 0
 
   [params.related]
     includeNewer = true
-    threshold = 20
+    threshold = 1
     toLower = true
     indices = [
       { name = "tags", weight = 100 },

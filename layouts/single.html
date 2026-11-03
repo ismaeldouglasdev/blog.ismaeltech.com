@@ -43,13 +43,15 @@
   {{- partial "extend_post_content.html" . }}
 
   {{ partial "cta.html" . }}
-  {{- $related := .Site.RegularPages.Related . | first 3 }}
+  {{- $related := first 3 (where .Site.Pages "Section" "posts") }}
   {{- if $related }}
   <section class="related">
     <h2>Leia também</h2>
     <ul>
       {{- range $related }}
+      {{- if ne .Permalink $.Permalink }}
       <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+      {{- end }}
       {{- end }}
     </ul>
   </section>
