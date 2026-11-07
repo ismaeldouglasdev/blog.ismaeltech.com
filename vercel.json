@@ -1,4 +1,451 @@
 {
+  "redirects": [
+    {
+      "source": "/2026-08-17-css-grid-e-flexbox-quando-usar-cada-um",
+      "destination": "/posts/2026-08-17-css-grid-e-flexbox-quando-usar-cada-um/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-08-17-css-grid-e-flexbox-quando-usar-cada-um-en",
+      "destination": "/posts/2026-08-17-css-grid-e-flexbox-quando-usar-cada-um/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript",
+      "destination": "/posts/2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript-en",
+      "destination": "/posts/2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks",
+      "destination": "/posts/2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks-en",
+      "destination": "/posts/2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug",
+      "destination": "/posts/2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug-en",
+      "destination": "/posts/2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria",
+      "destination": "/posts/2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria-en",
+      "destination": "/posts/2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de",
+      "destination": "/posts/2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de-en",
+      "destination": "/posts/2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas",
+      "destination": "/posts/2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas-en",
+      "destination": "/posts/2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-08-25-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um",
+      "destination": "/posts/2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash",
+      "destination": "/posts/2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash-en",
+      "destination": "/posts/2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-08-27-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas",
+      "destination": "/posts/2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-08-27-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas-en",
+      "destination": "/posts/2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-08-28-react-server-components-quando-e-como-usar-no-next-js",
+      "destination": "/posts/2026-08-28-react-server-components-quando-e-como-usar-no-next-js/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-08-28-react-server-components-quando-e-como-usar-no-next-js-en",
+      "destination": "/posts/2026-08-28-react-server-components-quando-e-como-usar-no-next-js/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em",
+      "destination": "/posts/2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em-en",
+      "destination": "/posts/2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco",
+      "destination": "/posts/2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco-en",
+      "destination": "/posts/2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um",
+      "destination": "/posts/2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um-en",
+      "destination": "/posts/2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-01-testing-library-testes-de-react-que-refletem-o-uso-real",
+      "destination": "/posts/2026-09-26-testing-library-testes-de-react-que-refletem-o-uso-real/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-01-testing-library-testes-de-react-que-refletem-o-uso-real-en",
+      "destination": "/posts/2026-09-26-testing-library-testes-de-react-que-refletem-o-uso-real/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js",
+      "destination": "/posts/2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js-en",
+      "destination": "/posts/2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real",
+      "destination": "/posts/2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real-en",
+      "destination": "/posts/2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa",
+      "destination": "/posts/2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa-en",
+      "destination": "/posts/2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-07-postgresql-e-o-renascimento-dos-bancos-sql-relacionais",
+      "destination": "/posts/2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-07-postgresql-e-o-renascimento-dos-bancos-sql-relacionais-en",
+      "destination": "/posts/2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia",
+      "destination": "/posts/2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia-en",
+      "destination": "/posts/2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react",
+      "destination": "/posts/2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react-en",
+      "destination": "/posts/2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-10-gerenciamento-de-estados-react-context-vs-zustand-vs-jotai",
+      "destination": "/posts/2026-09-10-gerenciamento-de-estados-react-context-vs-zustand-vs-jotai/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-10-gerenciamento-de-estados-react-context-vs-zustand-vs-jotai-en",
+      "destination": "/posts/2026-09-10-gerenciamento-de-estados-react-context-vs-zustand-vs-jotai/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-11-por-que-rust-nao-vai-substituir-go-e-vice-versa",
+      "destination": "/posts/2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-11-por-que-rust-nao-vai-substituir-go-e-vice-versa-en",
+      "destination": "/posts/2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-12-linux-no-desktop-em-2026-ja-esta-pronto-pra-todo-mundo",
+      "destination": "/posts/2026-09-12-linux-no-desktop-em-2026-ja-esta-pronto-pra-todo-mundo/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-12-linux-no-desktop-em-2026-ja-esta-pronto-pra-todo-mundo-en",
+      "destination": "/posts/2026-09-12-linux-no-desktop-em-2026-ja-esta-pronto-pra-todo-mundo/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-13-api-graphql-com-apollo-server-e-client-do-zero-ao-completo",
+      "destination": "/posts/2026-09-13-api-graphql-com-apollo-server-e-client-do-zero-ao-completo/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-13-api-graphql-com-apollo-server-e-client-do-zero-ao-completo-en",
+      "destination": "/posts/2026-09-13-api-graphql-com-apollo-server-e-client-do-zero-ao-completo/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-14-edge-functions-com-cloudflare-workers-compute-global-sem",
+      "destination": "/posts/2026-09-14-edge-functions-com-cloudflare-workers-compute-global-sem/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-14-edge-functions-com-cloudflare-workers-compute-global-sem-en",
+      "destination": "/posts/2026-09-14-edge-functions-com-cloudflare-workers-compute-global-sem/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-14-noticia-demo-nvidia-geforce-rtx-5090-lancamento",
+      "destination": "/posts/2026-09-14-noticia-demo-nvidia-geforce-rtx-5090-lancamento/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-14-noticia-demo-nvidia-geforce-rtx-5090-lancamento-en",
+      "destination": "/posts/2026-09-14-noticia-demo-nvidia-geforce-rtx-5090-lancamento/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-14-teclados-mecanicos-em-2026-modelos-em-destaque",
+      "destination": "/posts/2026-09-14-teclados-mecanicos-em-2026-modelos-em-destaque/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-14-teclados-mecanicos-em-2026-modelos-em-destaque-en",
+      "destination": "/posts/2026-09-14-teclados-mecanicos-em-2026-modelos-em-destaque/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-15-next-js-app-router-server-components-na-pratica",
+      "destination": "/posts/2026-09-15-next-js-app-router-server-components-na-pratica/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-15-next-js-app-router-server-components-na-pratica-en",
+      "destination": "/posts/2026-09-15-next-js-app-router-server-components-na-pratica/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-16-deploy-com-vercel-railway-e-fly-io-comparativo-honesto",
+      "destination": "/posts/2026-09-16-deploy-com-vercel-railway-e-fly-io-comparativo-honesto/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-16-deploy-com-vercel-railway-e-fly-io-comparativo-honesto-en",
+      "destination": "/posts/2026-09-16-deploy-com-vercel-railway-e-fly-io-comparativo-honesto/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-17-testing-library-testes-de-react-que-refletem-o-uso-real",
+      "destination": "/posts/2026-09-26-testing-library-testes-de-react-que-refletem-o-uso-real/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-17-testing-library-testes-de-react-que-refletem-o-uso-real-en",
+      "destination": "/posts/2026-09-26-testing-library-testes-de-react-que-refletem-o-uso-real/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc",
+      "destination": "/posts/2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc-en",
+      "destination": "/posts/2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao",
+      "destination": "/posts/2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao-en",
+      "destination": "/posts/2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-20-tailwind-css-utility-first-na-pratica-pra-projetos-reais",
+      "destination": "/posts/2026-09-20-tailwind-css-utility-first-na-pratica-pra-projetos-reais/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-20-tailwind-css-utility-first-na-pratica-pra-projetos-reais-en",
+      "destination": "/posts/2026-09-20-tailwind-css-utility-first-na-pratica-pra-projetos-reais/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados",
+      "destination": "/posts/2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados-en",
+      "destination": "/posts/2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais",
+      "destination": "/posts/2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais-en",
+      "destination": "/posts/2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam",
+      "destination": "/posts/2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam-en",
+      "destination": "/posts/2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-24-formularios-react-react-hook-form-zod-pra-validacao",
+      "destination": "/posts/2026-09-24-formularios-react-react-hook-form-zod-pra-validacao/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-24-formularios-react-react-hook-form-zod-pra-validacao-en",
+      "destination": "/posts/2026-09-24-formularios-react-react-hook-form-zod-pra-validacao/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-25-testing-library-testes-de-react-que-refletem-o-uso-real",
+      "destination": "/posts/2026-09-26-testing-library-testes-de-react-que-refletem-o-uso-real/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-25-testing-library-testes-de-react-que-refletem-o-uso-real-en",
+      "destination": "/posts/2026-09-26-testing-library-testes-de-react-que-refletem-o-uso-real/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-26-minecraft-sift-nova-dimensao-anunciada",
+      "destination": "/posts/2026-09-26-minecraft-sift-nova-dimensao-anunciada/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-26-minecraft-sift-nova-dimensao-anunciada-en",
+      "destination": "/posts/2026-09-26-minecraft-sift-nova-dimensao-anunciada/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-26-testing-library-testes-de-react-que-refletem-o-uso-real",
+      "destination": "/posts/2026-09-26-testing-library-testes-de-react-que-refletem-o-uso-real/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-26-testing-library-testes-de-react-que-refletem-o-uso-real-en",
+      "destination": "/posts/2026-09-26-testing-library-testes-de-react-que-refletem-o-uso-real/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-27-kubernetes-pra-iniciantes-conceitos-essenciais-sem",
+      "destination": "/posts/2026-09-27-kubernetes-pra-iniciantes-conceitos-essenciais-sem/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-27-kubernetes-pra-iniciantes-conceitos-essenciais-sem-en",
+      "destination": "/posts/2026-09-27-kubernetes-pra-iniciantes-conceitos-essenciais-sem/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-28-error-handling-em-typescript-result-types-e-typed-errors",
+      "destination": "/posts/2026-09-28-error-handling-em-typescript-result-types-e-typed-errors/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-09-28-error-handling-em-typescript-result-types-e-typed-errors-en",
+      "destination": "/posts/2026-09-28-error-handling-em-typescript-result-types-e-typed-errors/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-10-26-paperpilot-construindo-um-engine-pdf-zero-cloud-em-rust-com",
+      "destination": "/posts/2026-10-26-paperpilot-construindo-um-engine-pdf-zero-cloud-em-rust-com/",
+      "permanent": true
+    },
+    {
+      "source": "/2026-10-26-paperpilot-construindo-um-engine-pdf-zero-cloud-em-rust-com-en",
+      "destination": "/posts/2026-10-26-paperpilot-construindo-um-engine-pdf-zero-cloud-em-rust-com/",
+      "permanent": true
+    },
+    {
+      "source": "/:slug(\\d{4}-[\\w-]+)",
+      "destination": "/posts/:slug/",
+      "permanent": true
+    },
+    {
+      "source": "/feed.xml",
+      "destination": "/index.xml",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/assets/(.*)",
