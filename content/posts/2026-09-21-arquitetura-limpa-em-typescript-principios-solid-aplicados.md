@@ -7,7 +7,6 @@ excerpt: "Arquitetura limpa em TypeScript: princípios SOLID aplicados com servi
 share_hook: "SOLID na prática, um princípio por vez: services, strategy pattern, generics e inversão de dependência, cada um com código de exemplo."
 cover:
   image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados.jpg"
-lang: "pt"
 comments: true
 translationKey: "2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados"
 ---

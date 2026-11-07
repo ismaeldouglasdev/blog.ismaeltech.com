@@ -6,7 +6,6 @@ tags: ["reverse-engineering", "c++", "jogos", "engenharia-de-software", "open-so
 excerpt: "Como você reconstrói um jogo clássico sem os fontes originais, preservando a nostalgia pixel a pixel, mas sem travar no modo MS-DOS?"
 cover:
   image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-25-como-reimplementar-um-motor-de-jogo-classico-licoes-do.jpg"
-lang: "pt"
 comments: true
 translationKey: "2026-10-25-como-reimplementar-um-motor-de-jogo-classico-licoes-do"
 ---

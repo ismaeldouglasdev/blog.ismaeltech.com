@@ -7,7 +7,6 @@ excerpt: "Tailwind CSS na prática: por que utility-first acelera o desenvolvime
 share_hook: "Do setup no Vite ao dark mode e otimização de produção: o Tailwind completo, incluindo onde ele não é a melhor opção."
 cover:
   image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-20-tailwind-css-utility-first-na-pratica-pra-projetos-reais.jpg"
-lang: "pt"
 comments: true
 translationKey: "2026-09-20-tailwind-css-utility-first-na-pratica-pra-projetos-reais"
 ---

@@ -3,7 +3,6 @@ title: 'Como automatizar pequenos negócios com código'
 date: 2026-07-09
 draft: true
 description: 'Aprenda como pequenas empresas podem usar código para automatizar tarefas repetitivas, reduzir erros e economizar tempo. Guia prático para iniciantes.'
-lang: "pt"
 tags:
   - "automação"
   - "código"

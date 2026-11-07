@@ -6,7 +6,6 @@ tags: ["nginx", "devops", "proxy"]
 excerpt: "Colocar uma aplicacao web em producao expondo diretamente a porta do Node.js, Python ou Go para a internet publica e pedir para ter dor de cabeca."
 cover:
   image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-03-nginx-como-reverse-proxy-ssl-load-balancing-e-caching.jpg"
-lang: "pt"
 comments: true
 translationKey: "2026-10-03-nginx-como-reverse-proxy-ssl-load-balancing-e-caching"
 ---

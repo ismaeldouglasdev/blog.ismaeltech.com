@@ -1,0 +1,28 @@
+<style>
+/* Home: o .first-entry do tema força min-height: 320px, o que abre um
+   "vão" vazio entre o bloco de apresentação e a barra de busca. */
+.first-entry.home-info {
+  min-height: 0;
+  margin-bottom: var(--gap);
+}
+</style>
+
+{{- /* Redireciona para o idioma do navegador (uma vez por navegador).
+       Só redireciona se existir versão traduzida da página (hreflang). */ -}}
+<script>
+(function () {
+  try {
+    if (localStorage.getItem('blog-lang-pref')) return;
+    var nav = (navigator.language || navigator.userLanguage || '').toLowerCase();
+    var isEn = location.pathname === '/en' || location.pathname.indexOf('/en/') === 0;
+    var wantEn = nav.indexOf('en') === 0;
+    var wantPt = nav.indexOf('pt') === 0;
+    if (wantEn === isEn || (!wantEn && !wantPt)) return;
+    var alt = document.querySelector('link[rel="alternate"][hreflang="' + (wantEn ? 'en' : 'pt') + '"]');
+    if (!alt) return;
+    localStorage.setItem('blog-lang-pref', '1');
+    var u = new URL(alt.href, location.origin);
+    location.replace(u.pathname + u.search + u.hash);
+  } catch (e) {}
+})();
+</script>

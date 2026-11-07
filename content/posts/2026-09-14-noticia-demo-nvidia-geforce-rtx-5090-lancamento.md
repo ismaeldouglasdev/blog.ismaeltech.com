@@ -6,7 +6,6 @@ tags: ["nvidia", "gpu", "hardware", "geforce"]
 excerpt: "A NVIDIA revelou oficialmente a GeForce RTX 5090 com arquitetura Blackwell. Specs, preço e o que dá para esperar do lançamento mais aguardado do ano."
 cover:
   image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-14-noticia-demo-nvidia-geforce-rtx-5090-lancamento.jpg"
-lang: "pt"
 comments: true
 translationKey: "2026-09-14-noticia-demo-nvidia-geforce-rtx-5090-lancamento"
 ---

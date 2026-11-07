@@ -7,7 +7,6 @@ excerpt: "Anunciado no Minecraft LIVE, o Sift é a quarta dimensão do Minecraft
 share_hook: "Quinze anos sem uma dimensão nova. O que a Mojang mostrou do Sift, por que ele nasce primeiro em Dungeons II, e o que ainda ninguém sabe."
 cover:
   image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-26-minecraft-sift-nova-dimensao-anunciada.jpg"
-lang: "pt"
 comments: true
 translationKey: "2026-09-26-minecraft-sift-nova-dimensao-anunciada"
 ---

@@ -6,7 +6,6 @@ tags: ["teclado", "mecanico", "gadget"]
 excerpt: "Keychron Q6 Max, Wooting 80HE e NuPhy Air75 V2: o que torna cada um especial, o que a comunidade diz e para quem cada modelo faz sentido."
 cover:
   image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-14-teclados-mecanicos-em-2026-modelos-em-destaque.jpg"
-lang: "pt"
 comments: true
 translationKey: "2026-09-14-teclados-mecanicos-em-2026-modelos-em-destaque"
 ---

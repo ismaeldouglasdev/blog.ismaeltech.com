@@ -6,7 +6,6 @@ tags: ["typescript", "arquitetura", "solid"]
 excerpt: "Arquitetura limpa em TypeScript: princípios SOLID aplicados."
 cover:
   image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-30-arquitetura-limpa-em-typescript-principios-solid-aplicados.jpg"
-lang: "pt"
 comments: true
 translationKey: "2026-09-30-arquitetura-limpa-em-typescript-principios-solid-aplicados"
 ---

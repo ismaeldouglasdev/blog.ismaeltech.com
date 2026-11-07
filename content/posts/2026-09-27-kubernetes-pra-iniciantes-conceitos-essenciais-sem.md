@@ -6,7 +6,6 @@ tags: ["kubernetes", "devops", "containers"]
 excerpt: "Kubernetes pra iniciantes: conceitos essenciais sem complicação."
 cover:
   image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-27-kubernetes-pra-iniciantes-conceitos-essenciais-sem.jpg"
-lang: "pt"
 comments: true
 translationKey: "2026-09-27-kubernetes-pra-iniciantes-conceitos-essenciais-sem"
 ---

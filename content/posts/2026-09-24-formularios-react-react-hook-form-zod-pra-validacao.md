@@ -7,7 +7,6 @@ excerpt: "Formulários React: React Hook Form + Zod para validação perfeita."
 share_hook: "Do setup ao multi-step: validação com Zod, mensagens de erro que fazem sentido, upload de arquivos e performance."
 cover:
   image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-24-formularios-react-react-hook-form-zod-pra-validacao.jpg"
-lang: "pt"
 comments: true
 translationKey: "2026-09-24-formularios-react-react-hook-form-zod-pra-validacao"
 ---

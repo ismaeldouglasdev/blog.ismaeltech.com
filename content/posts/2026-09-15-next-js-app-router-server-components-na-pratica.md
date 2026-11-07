@@ -6,7 +6,6 @@ tags: ["nextjs", "react", "server-components"]
 excerpt: "Server Components no Next.js App Router na prática: como funcionam, quando usar, patterns de data fetching, streaming e interop com Client Components."
 cover:
   image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-15-next-js-app-router-server-components-na-pratica.jpg"
-lang: "pt"
 comments: true
 translationKey: "2026-09-15-next-js-app-router-server-components-na-pratica"
 ---

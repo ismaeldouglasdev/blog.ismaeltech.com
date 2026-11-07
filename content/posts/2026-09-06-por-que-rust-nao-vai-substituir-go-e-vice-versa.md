@@ -4,7 +4,6 @@ date: "2026-09-06"
 category: "curiosidade"
 tags: ["rust", "go", "linguagens", "opiniao"]
 excerpt: "Rust e Go resolvem problemas diferentes: Rust prioriza controle de baixo nível e segurança de memória, enquanto Go foca em simplicidade e produtividade. Entenda quando usar cada um."
-lang: "pt"
 comments: true
 translationKey: "2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa"
 ---

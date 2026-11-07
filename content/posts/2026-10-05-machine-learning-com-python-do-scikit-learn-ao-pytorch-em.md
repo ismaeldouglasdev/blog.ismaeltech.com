@@ -6,7 +6,6 @@ tags: ["machine-learning", "python", "ia", "data-science"]
 excerpt: "Machine Learning (ML) é uma área em constante expansão, e sua aplicação está se tornando cada vez mais comum em diversos setores."
 cover:
   image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-05-machine-learning-com-python-do-scikit-learn-ao-pytorch-em.jpg"
-lang: "pt"
 comments: true
 translationKey: "2026-10-05-machine-learning-com-python-do-scikit-learn-ao-pytorch-em"
 ---

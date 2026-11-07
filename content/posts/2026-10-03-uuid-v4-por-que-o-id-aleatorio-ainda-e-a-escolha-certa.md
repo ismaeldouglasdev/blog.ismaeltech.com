@@ -5,7 +5,6 @@ category: "tutorial"
 tags: ["uuid", "javascript", "banco-de-dados"]
 excerpt: "Identificador universalmente único parece ganho de tempo até você precisar de um índice no Postgres e o tamanho do ID começa a doer. Um olhar honesto sobre quando usar UUID e quando não usar."
 share_hook: "UUID é o padrão da indústria por um motivo razoável, e também por um motivo que pouca gente admite: ele tira o trabalho de coordinating inserts."
-lang: "pt"
 comments: true
 translationKey: "2026-10-03-uuid-v4-por-que-o-id-aleatorio-ainda-e-a-escolha-certa"
 ---

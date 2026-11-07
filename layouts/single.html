@@ -21,6 +21,7 @@
     {{- if not (.Param "hideMeta") }}
     <div class="post-meta">
       {{- partial "post_meta.html" . -}}
+      {{- partial "translation_list.html" . -}}
       {{- partial "edit_post.html" . -}}
       {{- partial "post_canonical.html" . -}}
     </div>
@@ -43,15 +44,18 @@
   {{- partial "extend_post_content.html" . }}
 
   {{ partial "cta.html" . }}
-  {{- $related := first 3 (where .Site.Pages "Section" "posts") }}
+  {{- $related := slice -}}
+  {{- range where .Site.Pages "Section" "posts" -}}
+    {{- if and (ne .Permalink $.Permalink) (eq .Lang $.Lang) (lt (len $related) 3) -}}
+      {{- $related = $related | append . -}}
+    {{- end -}}
+  {{- end -}}
   {{- if $related }}
   <section class="related">
-    <h2>Leia também</h2>
+    <h2>{{ i18n "related_title" }}</h2>
     <ul>
       {{- range $related }}
-      {{- if ne .Permalink $.Permalink }}
       <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
-      {{- end }}
       {{- end }}
     </ul>
   </section>

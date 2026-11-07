@@ -7,7 +7,6 @@ excerpt: "PostgreSQL e o renascimento dos bancos SQL: JSON nativo, extensions co
 share_hook: "De NoSQL de volta a SQL: JSON nativo, extensões como pgvector e PostGIS, e por que o PostgreSQL ganhou de novo."
 cover:
   image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais.jpg"
-lang: "pt"
 comments: true
 translationKey: "2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais"
 ---

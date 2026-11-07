@@ -6,7 +6,6 @@ tags: ["seguran\u00e7a", "ssl", "tls", "ca"]
 excerpt: "Seu site ou API pode estar prestes a ficar offline para milhões de usuários sem que você tenha feito uma única alteração no código. A única causa? Um dos selos de confiança."
 cover:
   image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-22-o-que-a-saida-da-emudhra-do-mercado-de-certificados-ssl-tls.jpg"
-lang: "pt"
 comments: true
 translationKey: "2026-10-22-o-que-a-saida-da-emudhra-do-mercado-de-certificados-ssl-tls"
 ---

@@ -5,7 +5,6 @@ category: "article"
 tags: ["database", "sql", "nosql", "mongodb"]
 excerpt: "Banco de dados relacional vs NoSQL: quando usar cada um."
 share_hook: "ACID, modelagem de dados e escalabilidade: quando PostgreSQL é a resposta certa e quando NoSQL realmente compensa."
-lang: "pt"
 comments: true
 translationKey: "2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um"
 ---

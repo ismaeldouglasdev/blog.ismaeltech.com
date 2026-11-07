@@ -3,6 +3,23 @@ languageCode = "pt-BR"
 title = "ismaeldev</>"
 theme = "PaperMod"
 
+defaultContentLanguage = "pt"
+defaultContentLanguageInSubdir = false
+
+[languages]
+  [languages.pt]
+    languageName = "Português"
+    languageCode = "pt-BR"
+    weight = 1
+  [languages.en]
+    languageName = "English"
+    weight = 2
+    [languages.en.params]
+      description = "Articles about web development, systems, automation and technology by Ismael Douglas"
+      [languages.en.params.homeInfoParams]
+        Title = "Ismael Douglas"
+        Content = "Articles about web development, custom systems, automation and technology. I write about what I build and what I learn."
+
 enableRobotsTXT = true
 buildDrafts = false
 
@@ -22,26 +39,13 @@ buildDrafts = false
   ShowCodeCopyButtons = true
   ShowReadingTime = true
   ShowShareButtons = true
+  DateFormat = "02/01/2006"
 
   [params.homeInfoParams]
     Title = "Ismael Douglas"
     Content = "Artigos sobre desenvolvimento web, sistemas sob medida, automação e tecnologia. Escrevo sobre o que construo e o que aprendo."
 
-  [params.comments]
-    provider = "giscus"
-    [params.comments.giscus]
-      repo = "ismaeldouglasdev/blog.ismaeltech.com"
-      repoId = "R_kgDOTTmrIQ"
-      category = "General"
-      categoryId = "DIC_kwDOTTmrIc4DKkN6"
-      mapping = "pathname"
-      term = ""
-      reactionsEnabled = "1"
-      emitMetadata = "0"
-      inputPosition = "top"
-      lang = "pt"
-      loading = "lazy"
-      crossorigin = "anonymous"
+  # Comentários: layouts/partials/comments.html (Cloudflare Worker + D1)
 
   [params.related]
     includeNewer = true
@@ -65,22 +69,42 @@ buildDrafts = false
 [taxonomies]
   tag = "tags"
 
-[[menu.main]]
-  name = "Home"
+[[languages.pt.menu.main]]
+  name = "Início"
   url = "/"
   weight = 1
 
-[[menu.main]]
+[[languages.pt.menu.main]]
   name = "Posts"
   url = "/posts/"
   weight = 2
 
-[[menu.main]]
+[[languages.pt.menu.main]]
   name = "Tags"
   url = "/tags/"
   weight = 3
 
-[[menu.main]]
+[[languages.pt.menu.main]]
   name = "Sobre"
+  url = "https://ismaeltech.com/#sobre"
+  weight = 4
+
+[[languages.en.menu.main]]
+  name = "Home"
+  url = "/en/"
+  weight = 1
+
+[[languages.en.menu.main]]
+  name = "Posts"
+  url = "/en/posts/"
+  weight = 2
+
+[[languages.en.menu.main]]
+  name = "Tags"
+  url = "/en/tags/"
+  weight = 3
+
+[[languages.en.menu.main]]
+  name = "About"
   url = "https://ismaeltech.com/#sobre"
   weight = 4

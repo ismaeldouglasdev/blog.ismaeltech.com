@@ -6,7 +6,6 @@ tags: ["typescript", "error-handling", "arquitetura"]
 excerpt: "Error handling em TypeScript: Result types e typed errors."
 cover:
   image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-28-error-handling-em-typescript-result-types-e-typed-errors.jpg"
-lang: "pt"
 comments: true
 translationKey: "2026-09-28-error-handling-em-typescript-result-types-e-typed-errors"
 ---

@@ -1,0 +1,62 @@
+{{- /* Paginação numerada estilo Google. Espera dict "paginator". */ -}}
+{{- $pag := .paginator -}}
+{{- if gt $pag.TotalPages 1 }}
+<nav class="pagination pagination-numbered" aria-label="{{ i18n "pagination_label" | default "Paginação" }}">
+  {{- if $pag.HasPrev }}
+  <a class="pag-nav" href="{{ $pag.Prev.URL | absURL }}" aria-label="{{ i18n "prev_page" | default "Anterior" }}">‹</a>
+  {{- end }}
+  {{- range $pag.Pagers }}
+    {{- if eq .PageNumber $pag.PageNumber }}
+  <span class="pag-current" aria-current="page">{{ .PageNumber }}</span>
+    {{- else }}
+  <a class="pag-num" href="{{ .URL | absURL }}">{{ .PageNumber }}</a>
+    {{- end }}
+  {{- end }}
+  {{- if $pag.HasNext }}
+  <a class="pag-nav" href="{{ $pag.Next.URL | absURL }}" aria-label="{{ i18n "next_page" | default "Próxima" }}">›</a>
+  {{- end }}
+</nav>
+{{- end }}
+
+<style>
+.pagination-numbered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.35rem;
+  margin: 2.5rem 0 1rem;
+  flex-wrap: wrap;
+}
+.pagination-numbered .pag-nav,
+.pagination-numbered .pag-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.2rem;
+  height: 2.2rem;
+  padding: 0 0.55rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--primary);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.pagination-numbered .pag-nav:hover,
+.pagination-numbered .pag-num:hover {
+  background: var(--entry);
+}
+.pagination-numbered .pag-current {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.2rem;
+  height: 2.2rem;
+  padding: 0 0.55rem;
+  border-radius: 6px;
+  background: var(--primary);
+  color: var(--theme, #fff);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+</style>

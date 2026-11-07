@@ -6,7 +6,6 @@ tags: ["react", "server-components", "nextjs"]
 excerpt: "React Server Components: quando e como usar no Next.js."
 cover:
   image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-01-react-server-components-quando-e-como-usar-no-next-js.jpg"
-lang: "pt"
 comments: true
 translationKey: "2026-10-01-react-server-components-quando-e-como-usar-no-next-js"
 ---

@@ -5,7 +5,6 @@ category: "curiosidade"
 tags: ["typescript", "história", "javascript"]
 excerpt: "TypeScript nasceu como experimento interno da Microsoft em 2012 para resolver a crise de manutenibilidade do JavaScript. Veja como virou padrão da indústria."
 share_hook: "De 2012 ao ecossistema: como o TypeScript nasceu, a resistência inicial e o momento em que o Angular 2 virou o ponto de virada."
-lang: "pt"
 comments: true
 translationKey: "2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria"
 ---

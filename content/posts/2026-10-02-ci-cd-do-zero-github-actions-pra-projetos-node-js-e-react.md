@@ -6,7 +6,6 @@ tags: ["ci-cd", "github-actions", "devops"]
 excerpt: "CI/CD do zero: GitHub Actions para projetos Node.js e React."
 cover:
   image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-02-ci-cd-do-zero-github-actions-pra-projetos-node-js-e-react.jpg"
-lang: "pt"
 comments: true
 translationKey: "2026-10-02-ci-cd-do-zero-github-actions-pra-projetos-node-js-e-react"
 ---

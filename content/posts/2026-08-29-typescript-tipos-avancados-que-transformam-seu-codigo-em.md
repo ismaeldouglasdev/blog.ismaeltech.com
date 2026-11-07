@@ -5,7 +5,6 @@ category: "tutorial"
 tags: ["typescript", "javascript", "tipagem"]
 excerpt: "Tipos Avançados do TypeScript que Evitam Bugs em Produção."
 share_hook: "O tipo que impede o bug antes do deploy: narrowing, branded types e generics para estado de autenticação e payloads de API."
-lang: "pt"
 comments: true
 translationKey: "2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em"
 ---
