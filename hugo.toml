@@ -1,10 +1,17 @@
 baseURL = "https://blog.ismaeltech.com"
 languageCode = "pt-BR"
-title = "Ismael Douglas Blog"
+title = "ismaeldev</>"
 theme = "PaperMod"
 
 enableRobotsTXT = true
 buildDrafts = false
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      # Posts usam HTML cru (<figure>, <img>, <details>, <table>) que o
+      # goldmark descarta por padrão — sem isso imagens e figuras somem.
+      unsafe = true
 
 [pagination]
   pagerSize = 10
@@ -24,9 +31,9 @@ buildDrafts = false
     provider = "giscus"
     [params.comments.giscus]
       repo = "ismaeldouglasdev/blog.ismaeltech.com"
-      repoId = ""
-      category = "Blog comments"
-      categoryId = ""
+      repoId = "R_kgDOTTmrIQ"
+      category = "General"
+      categoryId = "DIC_kwDOTTmrIc4DKkN6"
       mapping = "pathname"
       term = ""
       reactionsEnabled = "1"

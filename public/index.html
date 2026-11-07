@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Ismael Douglas Blog</title>
+<title>ismaeldev&lt;/&gt;</title>
 
 <meta name="description" content="Artigos sobre desenvolvimento web, sistemas, e tecnologia por Ismael Douglas">
 <meta name="author" content="Ismael Douglas">
@@ -68,21 +68,21 @@
     }
 
 </script><meta property="og:url" content="https://blog.ismaeltech.com/">
-  <meta property="og:site_name" content="Ismael Douglas Blog">
-  <meta property="og:title" content="Ismael Douglas Blog">
+  <meta property="og:site_name" content="ismaeldev&lt;/&gt;">
+  <meta property="og:title" content="ismaeldev&lt;/&gt;">
   <meta property="og:description" content="Artigos sobre desenvolvimento web, sistemas, e tecnologia por Ismael Douglas">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:type" content="website">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Ismael Douglas Blog">
+  <meta name="twitter:title" content="ismaeldev&lt;/&gt;">
   <meta name="twitter:description" content="Artigos sobre desenvolvimento web, sistemas, e tecnologia por Ismael Douglas">
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "Ismael Douglas Blog",
+  "name": "ismaeldev\u003c/\u003e",
   "url": "https://blog.ismaeltech.com/",
   "description": "Artigos sobre desenvolvimento web, sistemas, e tecnologia por Ismael Douglas",
   "logo": "https://blog.ismaeltech.com/favicon.ico",
@@ -96,7 +96,7 @@
     <header class="header">
     <nav class="header-nav">
         <div class="logo">
-            <a href="https://blog.ismaeltech.com/" accesskey="h" title="Ismael Douglas Blog (Alt + H)">Ismael Douglas Blog</a>
+            <a href="https://blog.ismaeltech.com/" accesskey="h" title="ismaeldev&lt;/&gt; (Alt + H)">ismaeldev&lt;/&gt;</a>
             <div class="logo-switches">
                 <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
@@ -116,12 +116,6 @@
                         <line x1="21" y1="12" x2="23" y2="12"></line>
                         <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-                <button id="search-btn" class="search-toggle" accesskey="/" title="(Alt + /)" aria-label="Search" onclick="location.href='/search/'">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="11" cy="11" r="8"></circle>
-                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                     </svg>
                 </button>
             </div>
@@ -172,6 +166,13 @@
 
     </footer>
 </article>
+<section class="home-search" style="text-align: center; margin: 40px 0;">
+    <div class="search-container" style="position: relative; max-width: 600px; margin: 0 auto;">
+        <input type="search" id="homeSearchInput" placeholder="Buscar artigos..." 
+               style="width: 100%; padding: 12px 20px; font-size: 1rem; border: 1px solid var(--border); border-radius: 6px; background: var(--theme); color: var(--primary);">
+        <div id="homeSearchResults" style="position: absolute; top: 100%; left: 0; right: 0; z-index: 50; max-width: 600px; margin: 0 auto; background: var(--entry); border: 1px solid var(--border); border-radius: 6px; box-shadow: 0 8px 24px rgba(0,0,0,0.15); display: none;"></div>
+    </div>
+</section>
 
 <article class="post-entry"> 
 <figure class="entry-cover">
@@ -361,10 +362,56 @@ A dor aparece no Chrome DevTools: centenas de componentes renderizando em cascat
     </a>
   </nav>
 </footer>
+<script>
+  (function() {
+    var input = document.getElementById('homeSearchInput');
+    var results = document.getElementById('homeSearchResults');
+    var data = [];
+
+    fetch('https:\/\/blog.ismaeltech.com\/index.json').then(function(r){ return r.json(); }).then(function(d){ data = d; });
+
+    function esc(s) {
+      var d = document.createElement('div');
+      d.textContent = s || '';
+      return d.innerHTML;
+    }
+    function stripHtml(s) {
+      return (s || '').replace(/<[^>]*>/g, '');
+    }
+
+    input.addEventListener('input', function(e) {
+      var q = e.target.value.toLowerCase().trim();
+      results.innerHTML = '';
+      results.style.display = 'none';
+      if (!q) return;
+      var matches = data.filter(function(p) {
+        return (p.title || '').toLowerCase().includes(q) || stripHtml(p.summary || '').toLowerCase().includes(q);
+      }).slice(0, 8);
+      matches.forEach(function(p) {
+        var a = document.createElement('a');
+        a.href = p.permalink;
+        a.style.display = 'block';
+        a.style.padding = '10px 16px';
+        a.style.color = 'var(--primary)';
+        a.style.textDecoration = 'none';
+        a.style.borderBottom = '1px solid var(--border)';
+        a.innerHTML = '<strong>' + esc(p.title) + '</strong><br><small style="opacity:0.7">' + esc(stripHtml(p.summary).slice(0, 120)) + '...</small>';
+        results.appendChild(a);
+      });
+      if (matches.length) results.style.display = 'block';
+    });
+
+    document.addEventListener('click', function(e) {
+      if (!results.contains(e.target) && e.target !== input) {
+        results.style.display = 'none';
+      }
+    });
+  })();
+</script>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="https://blog.ismaeltech.com/">Ismael Douglas Blog</a></span> · 
+        <span>&copy; 2026 <a href="https://blog.ismaeltech.com/">ismaeldev&lt;/&gt;</a></span> · 
 
     
     
