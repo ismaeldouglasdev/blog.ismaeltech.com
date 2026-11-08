@@ -18,6 +18,17 @@ A arquitetura de software é um aspecto crucial no desenvolvimento, e aplicar os
 
 O primeiro princípio SOLID é o Princípio da Responsabilidade Única (Single Responsibility Principle - SRP). Esse princípio estabelece que uma classe deve ter apenas uma razão para mudar. Em termos práticos, isso significa que cada módulo ou classe deve estar focado em uma única tarefa ou responsabilidade.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-30-arquitetura-limpa-em-typescript-principios-solid-aplicados-1.jpg" alt="Arquitetura limpa em TypeScript: princípios SOLID aplicados" loading="lazy">
+<figcaption>درخت مفاهیم معماری نرم افزار. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AASTA.ir_software_architecture_mind_map_printable.png">ASTA.ir software architecture mind map printable.png</a> por Mohammadjavadheydari — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
+</figure>
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-30-arquitetura-limpa-em-typescript-principios-solid-aplicados.jpg" alt="Arquitetura limpa em TypeScript: princípios SOLID aplicados" loading="lazy">
+<figcaption>Cover image do artigo</figcaption>
+</figure>
+
 Ao construir serviços em TypeScript, podemos aplicar o SRP criando classes que encapsulam a lógica de um único domínio. Por exemplo, considere um serviço de usuário que gerencia operações relacionadas a usuários:
 
 ```typescript
@@ -85,6 +96,7 @@ Com essa estrutura, podemos facilmente adicionar novos métodos de pagamento sem
 ## Liskov com generics
 
 O Princípio de Substituição de Liskov (LSP) sugere que objetos de uma classe base devem ser substituíveis por objetos de classes derivadas sem alterar o comportamento do programa. Um jeito eficaz de fazer isso em TypeScript é utilizando generics.
+
 
 Considere a seguinte implementação de uma classe genérica:
 

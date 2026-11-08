@@ -18,6 +18,12 @@ Generally, the choice of the right database is crucial for any software developm
 ## The NoSQL Era (2010-2018)
 Generally, at the beginning of the 2010s, NoSQL databases started to gain popularity due to their ability to handle large volumes of unstructured data and their horizontal scalability. Many developers and companies adopted NoSQL databases, such as MongoDB, Cassandra, and Redis, for their projects. However, over time, many began to realize the limitations of NoSQL databases, such as the lack of support for ACID transactions, the complexity in data modeling, and the difficulty in performing complex queries.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais-1.jpg" alt="PostgreSQL and the Resurgence of Relational SQL Databases" loading="lazy">
+<figcaption>Recurcive CTEs (Common Table Expressions) are a powerful construct within PostgreSQL, it defined in the WITH clause. CTEs allows to work with temporary set of d. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ARECURSIVE_%2843321721355%29.jpg">RECURSIVE (43321721355).jpg</a> por Exey Panteleev from Moscow, Russia — <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a> · via Wikimedia Commons</figcaption>
+</figure>
+
 ---
 ## The Turning Point
 In the mid-2010s, a movement back to relational databases began to occur. This was due, in part, to the fact that many developers and companies started to realize the advantages of relational databases, such as data consistency, support for ACID transactions, and the ability to perform complex queries. Additionally, relational databases began to evolve and incorporate functionalities that allowed them to handle large volumes of data and scale horizontally.
@@ -26,6 +32,11 @@ In the mid-2010s, a movement back to relational databases began to occur. This w
 ## Native JSON in PostgreSQL
 Generally, one of the features that made PostgreSQL more attractive was the addition of native JSON support. This allowed developers to store and query data in JSON format efficiently and flexibly. For example, it is possible to store a JSON object in a column of a table and perform queries on it using standard SQL syntax. This is especially useful in projects that deal with unstructured or semi-structured data.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais-2.jpg" alt="PostgreSQL and the Resurgence of Relational SQL Databases" loading="lazy">
+<figcaption>db postgresql perf. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ADb_postgresql.png">Db postgresql.png</a> por Vk2410 — <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0</a> · via Wikimedia Commons</figcaption>
+</figure>
 ```sql
 CREATE TABLE meus_dados (
     id SERIAL PRIMARY KEY,

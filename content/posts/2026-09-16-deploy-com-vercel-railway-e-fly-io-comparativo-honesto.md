@@ -16,6 +16,12 @@ Quando se trata de deploy de aplicações web, os desenvolvedores enfrentam uma 
 ## Vercel: SPA + serverless
 Vercel é uma plataforma de deploy que se concentra em aplicações web modernas, especialmente aquelas construídas com React, Next.js e outras tecnologias de ponta. Com Vercel, você pode deployar suas aplicações web de forma rápida e fácil, sem se preocupar com a infraestrutura subjacente. Além disso, Vercel oferece suporte a serverless, o que significa que você só paga pelo tempo de execução da sua aplicação, e não por um servidor dedicado.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-16-deploy-com-vercel-railway-e-fly-io-comparativo-honesto-1.jpg" alt="Deploy com Vercel, Railway e Fly.io: comparativo honesto" loading="lazy">
+<figcaption>An image representing a DMZ and Corporate Zone deployment on the cloud. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ADMZ_and_Corporate_Deployment_Architecture_On_Cloud.png">DMZ and Corporate Deployment Architecture On Cloud.png</a> por Fantail-P — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
+</figure>
+
 Um exemplo de como usar Vercel é criar um projeto Next.js e deployá-lo usando o comando `vercel build && vercel deploy`. Isso irá compilar o seu projeto e deployá-lo na plataforma Vercel.
 
 ## Railway: containers baratos
@@ -25,6 +31,12 @@ Um exemplo de como usar Railway é criar um arquivo `Dockerfile` para o seu proj
 
 ## Fly.io: edge global
 Fly.io é uma plataforma de deploy que se concentra em aplicações web globais. Com Fly.io, você pode deployar suas aplicações web em múltiplos locais ao redor do mundo, o que significa que seus usuários podem acessar sua aplicação de forma rápida e eficiente, independentemente de onde estejam. Além disso, Fly.io oferece suporte a edge computing, o que significa que você pode executar código em locais próximos aos seus usuários.
+
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-16-deploy-com-vercel-railway-e-fly-io-comparativo-honesto-2.jpg" alt="Deploy com Vercel, Railway e Fly.io: comparativo honesto" loading="lazy">
+<figcaption>ESA’s EarthCARE satellite mission will soon be launched to answer some critical scientific questions related to the role that clouds and aerosols play in reflec. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AEarthCARE_solar_wing_deployed_ESA24376876.jpeg">EarthCARE solar wing deployed ESA24376876.jpeg</a> por European Space Agency — <a href="https://creativecommons.org/licenses/by-sa/3.0/igo/deed.en">CC BY-SA 3.0 igo</a> · via Wikimedia Commons</figcaption>
+</figure>
 
 Um exemplo de como usar Fly.io é criar um projeto React e deployá-lo usando o comando `fly init && fly deploy`. Isso irá criar uma aplicação web global e deployá-la na plataforma Fly.io.
 

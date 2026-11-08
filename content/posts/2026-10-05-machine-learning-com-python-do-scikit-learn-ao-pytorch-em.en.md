@@ -62,6 +62,12 @@ Let's look at an example of normalization using the `sklearn.preprocessing` libr
 ```python
 from sklearn.preprocessing import StandardScaler
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-10-05-machine-learning-com-python-do-scikit-learn-ao-pytorch-em-1.jpg" alt="Machine Learning with Python: From scikit-learn to PyTorch in 2026" loading="lazy">
+<figcaption>A calibration plot example from Python's scikit-learn documentation. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ACalibration_plot.png">Calibration plot.png</a> por Jan Hendrik Metzen — <a href="http://opensource.org/licenses/bsd-license.php">BSD</a> · via Wikimedia Commons</figcaption>
+</figure>
+
 # Normalizing the data
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X_train)
@@ -174,6 +180,13 @@ In this example, we created an endpoint `/predict/` that accepts input data abou
 ## When to Use Which Tool
 
 The choice between scikit-learn and PyTorch depends on the problem you are trying to solve. If you need a simple model and want quick results, scikit-learn is the ideal choice. On the other hand, if you are dealing with more complex problems, such as image recognition or natural language processing, PyTorch provides the necessary flexibility to build and train custom neural networks.
+
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-10-05-machine-learning-com-python-do-scikit-learn-ao-pytorch-em-2.jpg" alt="Machine Learning with Python: From scikit-learn to PyTorch in 2026" loading="lazy">
+<figcaption>Estimating Greenhouse Gas Concentration from Space using Machine Learning
+This year, two satellites are challenging the usual methods for calculating Greenhouse. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AEstimating_Greenhouse_Gas_Concentration_from_Space_using_Machine_Learning_at_Laboratoire_LMD_-_54482717148.jpg">Estimating Greenhouse Gas Concentration from Space using Machine Learning at Laboratoire LMD - 54482717148.jpg</a> por Ecole  polytechnique / Jérémy Barande — <a href="https://creativecommons.org/licenses/by-sa/2.0">CC BY-SA 2.0</a> · via Wikimedia Commons</figcaption>
+</figure>
 
 ## Conclusion
 

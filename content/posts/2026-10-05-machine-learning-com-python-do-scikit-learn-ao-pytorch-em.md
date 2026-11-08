@@ -18,6 +18,12 @@ Machine Learning (ML) é uma área em constante expansão, e sua aplicação est
 
 A biblioteca scikit-learn é uma das mais utilizadas para machine learning em Python, especialmente para tarefas de classificação e regressão. Vamos começar com um exemplo simples de classificação usando o famoso conjunto de dados Iris, que contém 150 amostras de flores Iris, cada uma com quatro características.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-10-05-machine-learning-com-python-do-scikit-learn-ao-pytorch-em-1.jpg" alt="Machine Learning com Python: do scikit-learn ao PyTorch em 2026" loading="lazy">
+<figcaption>A calibration plot example from Python's scikit-learn documentation. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ACalibration_plot.png">Calibration plot.png</a> por Jan Hendrik Metzen — <a href="http://opensource.org/licenses/bsd-license.php">BSD</a> · via Wikimedia Commons</figcaption>
+</figure>
+
 ```python
 import pandas as pd
 from sklearn.datasets import load_iris
@@ -72,6 +78,13 @@ A normalização ajuda a melhorar a convergência do algoritmo e pode ser um pas
 ## PyTorch básico: tensores e redes
 
 Enquanto scikit-learn é ótimo para protótipos rápidos e modelos simples, o PyTorch brilha em cenários mais complexos, especialmente em deep learning. Na sua essência, o PyTorch utiliza tensores, que são estruturas semelhantes a arrays, mas com capacidades adicionais.
+
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-10-05-machine-learning-com-python-do-scikit-learn-ao-pytorch-em-2.jpg" alt="Machine Learning com Python: do scikit-learn ao PyTorch em 2026" loading="lazy">
+<figcaption>Estimating Greenhouse Gas Concentration from Space using Machine Learning
+This year, two satellites are challenging the usual methods for calculating Greenhouse. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AEstimating_Greenhouse_Gas_Concentration_from_Space_using_Machine_Learning_at_Laboratoire_LMD_-_54482717148.jpg">Estimating Greenhouse Gas Concentration from Space using Machine Learning at Laboratoire LMD - 54482717148.jpg</a> por Ecole  polytechnique / Jérémy Barande — <a href="https://creativecommons.org/licenses/by-sa/2.0">CC BY-SA 2.0</a> · via Wikimedia Commons</figcaption>
+</figure>
 
 Vamos criar um modelo simples de rede neural para classificação usando o PyTorch.
 

@@ -28,6 +28,17 @@ Os Server Components representam uma terceira via: componentes que executam excl
 
 A distinção fundamental entre server e client components está no ciclo de vida e no que cada um pode fazer.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-10-01-react-server-components-quando-e-como-usar-no-next-js-1.jpg" alt="React Server Components: quando e como usar no Next.js" loading="lazy">
+<figcaption>Subsequent secure socket layers (SSL and TLS), implemented several years later using the architecture and key ideas first presented in SNP, enabled secure e-com. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3A2004_ACM_Software_System_Award_Certificate.jpg">2004 ACM Software System Award Certificate.jpg</a> por Ssl-wiki2021 — <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0</a> · via Wikimedia Commons</figcaption>
+</figure>
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-01-react-server-components-quando-e-como-usar-no-next-js.jpg" alt="React Server Components: quando e como usar no Next.js" loading="lazy">
+<figcaption>Cover image do artigo</figcaption>
+</figure>
+
 Client components são os React que você conhece: podem usar hooks (useState, useEffect, useContext), gerenciar estado de interação do usuário, e executam inteiramente no browser. Eles são enviados como parte do JavaScript bundle e o React faz hydration para torná-los interativos. Quando você escreve um componente que responde a eventos de clique, digitação, ou qualquer outra interação, precisa ser um client component.
 
 Server components operam de maneira completamente diferente. Eles não podem usar hooks de estado ou efeitos porque não existem no browser â eles executam no servidor durante a renderização e produzem HTML que é enviado ao cliente. A implicação prática é que você pode importar modules diretamente do servidor (conexões de banco, utilitários de sistema de arquivos) sem expô-los ao browser. É como ter uma função que roda no backend mas pode ser usada na sua UI como se fosse um componente qualquer.
@@ -143,6 +154,7 @@ Neste padrão, a page busca os dados no servidor e passa como prop inicial para 
 ## Data fetching server-side: patterns que funcionam
 
 A forma de buscar dados em server components é surpreendentemente simples: você pode usar async/await diretamente no corpo do componente. Não precisa de useEffect, loading states complexos, ou tratamento de erros em múltiplas camadas.
+
 
 O Next.js trata a função assíncrona como uma promise e automaticamente envolve o componente em Suspense enquanto os dados carregam. Isso permite que você pense em data fetching como algo serializado: primeiro o header carrega, depois o conteúdo principal, e o browser já pode mostrar algo enquanto espera.
 

@@ -40,6 +40,12 @@ In summary, server components are not a replacement for client components but a 
 
 To understand server components, we need to look at the path React has taken. In the beginning, we had classic CSR: the browser downloads empty HTML, downloads the JavaScript bundle, hydrates React, and only then the application comes to life. It worked, but had performance costs, especially on more modest devices and slower connections.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-01-react-server-components-quando-e-como-usar-no-next-js.jpg" alt="React Server Components: When and How to Use in Next.js" loading="lazy">
+<figcaption>Cover image do artigo</figcaption>
+</figure>
+
 Next.js emerged with the idea of Server-Side Rendering (SSR): React was executed on the server, HTML was sent ready to the browser. This significantly improved First Contentful Paint (FCP) and SEO, but brought the hydration problem: you sent server-generated HTML, and the browser had to re-execute all React logic to make the page interactive. If you have a complex dashboard with a lot of JavaScript, this becomes a bottleneck.
 
 Server Components represent a third way: components that execute exclusively on the server and don't send JavaScript to the browser. They can access server resources (databases, file systems, internal APIs) and return HTML directly, without hydration. The browser receives only the final result.
@@ -47,6 +53,12 @@ Server Components represent a third way: components that execute exclusively on 
 ## Server Components versus Client Components: The Practical Differences
 
 The fundamental distinction between server and client components lies in the lifecycle and what each can do.
+
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-10-01-react-server-components-quando-e-como-usar-no-next-js-1.jpg" alt="React Server Components: When and How to Use in Next.js" loading="lazy">
+<figcaption>Subsequent secure socket layers (SSL and TLS), implemented several years later using the architecture and key ideas first presented in SNP, enabled secure e-com. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3A2004_ACM_Software_System_Award_Certificate.jpg">2004 ACM Software System Award Certificate.jpg</a> por Ssl-wiki2021 — <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0</a> · via Wikimedia Commons</figcaption>
+</figure>
 
 Client components are the React you know: they can use hooks (useState, useEffect, useContext), manage user interaction state, and run entirely in the browser. They are sent as part of the JavaScript bundle and React hydrates them to make them interactive. When you write a component that responds to click events, typing, or any other interaction, it needs to be a client component.
 

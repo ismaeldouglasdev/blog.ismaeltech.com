@@ -18,6 +18,12 @@ Handling errors in applications is a challenging task and is often overlooked by
 
 The traditional approach to error handling in JavaScript and TypeScript is using `throw`. Throwing an exception halts the normal execution of the code and transfers control to the first available `catch` block. While this works, it can become problematic, especially in functions that require a continuous execution flow. Here is a simple example:
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-28-error-handling-em-typescript-result-types-e-typed-errors-1.jpg" alt="Error Handling in TypeScript: Result Types and Typed Errors" loading="lazy">
+<figcaption>visible à airbus Defense & Space Toulouse depuis le chemin du canal du midi. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ABoite_de_transport_de_la_sonde_JUICE.jpg">Boite de transport de la sonde JUICE.jpg</a> por DuniterDotOrg — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
+</figure>
+
 ```typescript
 function dividir(a: number, b: number): number {
     if (b === 0) {
@@ -125,6 +131,13 @@ With this approach, you can catch and handle specific errors, making your code m
 ## Zod Error Formatting
 
 When dealing with data validation, such as in APIs, it is common to use libraries like Zod to define schemas and validate objects. Zod also provides a way to format validation errors clearly and structurally. Here is an example of how to use Zod for validation and error handling:
+
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-28-error-handling-em-typescript-result-types-e-typed-errors-2.jpg" alt="Error Handling in TypeScript: Result Types and Typed Errors" loading="lazy">
+<figcaption>Fred A. Dolph to Korean Provisional Government
+Institution name: USC Korean Heritage Library; Processing funded by a grant from the Library Services and Techno. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AFred_A._Dolph_to_Korean_Provisional_Government_%28KADA-shyun04-010%29.jpg">Fred A. Dolph to Korean Provisional Government (KADA-shyun04-010).jpg</a> por Unknown authorUnknown author — <a href="https://creativecommons.org/licenses/">Public domain</a> · via Wikimedia Commons</figcaption>
+</figure>
 
 ```typescript
 import { z } from 'zod';

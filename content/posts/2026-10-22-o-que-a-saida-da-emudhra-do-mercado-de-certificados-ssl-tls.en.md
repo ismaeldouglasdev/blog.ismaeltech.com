@@ -19,6 +19,12 @@ You may not have heard of eMudhra, but you’ve likely already encountered their
 
 Modern web infrastructure relies on a trust network called Public Key Infrastructure (PKI). In this system, root Certificate Authorities, such as ISRG (which operates Let's Encrypt) or DigiCert, act as global "digital notaries," recognized by operating systems and browsers. Other CAs, like eMudhra was, can be approved by these roots, delegating to them the power to issue certificates that will also be trusted.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-10-22-o-que-a-saida-da-emudhra-do-mercado-de-certificados-ssl-tls-1.jpg" alt="What eMudhra&#x27;s departure from the SSL/TLS certificate market means for you, the developer" loading="lazy">
+<figcaption>Brief explanation of how SSL certificates function. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3A1258X489_How-SSL-Certificates-Work.jpg">1258X489 How-SSL-Certificates-Work.jpg</a> por Drew Carver1 — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
+</figure>
+
 When a CA like eMudhra ceases to operate in the public market, the process of "distrust" begins. First, it stops issuing new certificates. Then, existing certificates continue to work until their expiration date, but there is a major catch. If the CA does not keep its validation servers (OCSP) and revocation lists (CRL) online, browsers attempting to verify a certificate's validity may fail this check. Depending on their configuration, they may treat this failure as a sign that the certificate is invalid or potentially compromised, blocking access.
 
 The announcement was not a bug; it was a planned feature removal. And it exposes an inherent fragility of the system: the dependency on third parties that you, as a developer, never directly chose. You can perfectly manage your code, your infrastructure, and your automatic renewals, but if the entity that signed your certificate disappears, all your effort goes down the drain.
@@ -28,6 +34,12 @@ A system's resilience isn't just about server uptime, but about the health of al
 ## How to check if you're affected
 
 Before panicking, the first step is a simple diagnosis. The good news is you don't need to be a cryptography expert to do this.
+
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-10-22-o-que-a-saida-da-emudhra-do-mercado-de-certificados-ssl-tls-2.jpg" alt="What eMudhra&#x27;s departure from the SSL/TLS certificate market means for you, the developer" loading="lazy">
+<figcaption>MOBILE EV SSL CERTIFICATE. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AMOBILE_EV_SSL_CERTIFICATE.jpg">MOBILE EV SSL CERTIFICATE.jpg</a> por Русский Хакер — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
+</figure>
 
 **1. Direct inspection in the browser**
 

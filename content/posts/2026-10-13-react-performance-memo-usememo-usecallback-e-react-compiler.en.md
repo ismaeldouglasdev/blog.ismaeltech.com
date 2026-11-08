@@ -24,6 +24,17 @@ Optimization is not an optional step "for when there is time". It is a direct an
 
 `React.memo` is a higher-order wrapper that memoizes the result of a function component. If props do not change, React reuses the last result, skipping a full render and commit cycle. In practice, a product grid can survive a fast-typed search as long as the list itself stays unchanged.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-10-13-react-performance-memo-usememo-usecallback-e-react-compiler-1.jpg" alt="React performance: memo, useMemo, useCallback, and React Compiler" loading="lazy">
+<figcaption>Don Edwards San Francisco Bay National Wildlife Refuge. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AACE_EMD_F40PH_Fremont_-_San_Jose.jpg">ACE EMD F40PH Fremont - San Jose.jpg</a> por Kabelleger / David Gubler (http://www.bahnbilder.ch) — <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a> · via Wikimedia Commons</figcaption>
+</figure>
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-13-react-performance-memo-usememo-usecallback-e-react-compiler.jpg" alt="React performance: memo, useMemo, useCallback, and React Compiler" loading="lazy">
+<figcaption>Cover image do artigo</figcaption>
+</figure>
+
 Consider a `<ProductGrid>` component that receives two props: `items` (the filtered array) and `onSelect` (a click handler). If the handler is an arrow function that does not depend on external data, its identity stays stable when created outside the component. Because `items` is a new reference on every keystroke (the query string is transformed into a new array), memo still triggers a render — but only for the grid, not for the whole layout tree above it.
 
 The real gain appears when you combine `React.memo` with more granular state management. Keeping the selection set separate from the items array, for example with `useReducer`, prevents selecting one item from forcing the entire grid to render again.
@@ -59,6 +70,7 @@ Another classic case is rendering deep structures, such as a JSON viewer with th
 ## useCallback: when reference stability matters
 
 `useCallback` memoizes functions so their identity stays the same across renders. The goal is to prevent a new handler from forcing a memoized child component to render again.
+
 
 A typical case: a `<CartButton>` wrapped with `React.memo` receives an `onAddToCart` handler. If the handler is an arrow function defined inside the parent component, it gets a new reference on every render, the prop comparison always fails, and memo never helps.
 

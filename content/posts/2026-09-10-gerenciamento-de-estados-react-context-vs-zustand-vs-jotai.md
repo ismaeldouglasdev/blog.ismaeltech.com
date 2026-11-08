@@ -36,6 +36,12 @@ O Context é simples de entender, mas sua implementação interna (o provider co
 
 Zustand surgiu como resposta a essa complexidade. Sua API é mínima: basicamente, você cria um store com `create`, passa um estado inicial e mutações. Não precisa de providers, não precisa de hooks complexos, nem memoização manual.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-10-gerenciamento-de-estados-react-context-vs-zustand-vs-jotai-1.jpg" alt="Gerenciamento de estados: React Context vs Zustand vs Jotai" loading="lazy">
+<figcaption>Chemist Tesia Irwin tests a 3D printer on July 28, 2022, at Swamp Works at NASA’s Kennedy Space Center in Florida, as part of the Relevant Environment Additive. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AREACT_Demonstration_%28KSC-20220728-PH-FMX02_0029%29.jpeg">REACT Demonstration (KSC-20220728-PH-FMX02 0029).jpeg</a> por Frank Michaux — <a href="https://creativecommons.org/licenses/">Public domain</a> · via Wikimedia Commons</figcaption>
+</figure>
+
 ```ts
 // Exemplo prático: gerenciamento de estoque
 import { create } from 'zustand';
@@ -143,6 +149,12 @@ O Jotai funciona bem para estado de UI (abas abertas, filtros, seleção). A ló
 ## Comparando performance
 
 Performance não é só sobre quantos ms leva para atualizar: é sobre quantos componentes re-renderizam, quantas verificações de igualdade são feitas e como o garbage collector se sente.
+
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-10-gerenciamento-de-estados-react-context-vs-zustand-vs-jotai-2.jpg" alt="Gerenciamento de estados: React Context vs Zustand vs Jotai" loading="lazy">
+<figcaption>Chemist Tesia Irwin tests a 3D printer on July 28, 2022, at Swamp Works at NASA’s Kennedy Space Center in Florida, as part of the Relevant Environment Additive. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AREACT_Demonstration_%28KSC-20220728-PH-FMX02_0030%29.jpeg">REACT Demonstration (KSC-20220728-PH-FMX02 0030).jpeg</a> por Frank Michaux — <a href="https://creativecommons.org/licenses/">Public domain</a> · via Wikimedia Commons</figcaption>
+</figure>
 
 No contexto tradicional (sem memoização), cada atualização de contexto dispara re-renders em todos os componentes que consumem aquele contexto, mesmo que o valor específico usado por cada um não mude. O React não tem como saber disso, já que o objeto retornado pelo provider é novo a cada render.
 

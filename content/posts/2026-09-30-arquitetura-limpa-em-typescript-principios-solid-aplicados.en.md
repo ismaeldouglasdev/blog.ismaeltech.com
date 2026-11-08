@@ -18,6 +18,17 @@ Software architecture is a crucial aspect of development, and applying the SOLID
 
 The first SOLID principle is the Single Responsibility Principle (SRP). This principle states that a class should have only one reason to change. In practical terms, this means that each module or class should focus on a single task or responsibility.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-30-arquitetura-limpa-em-typescript-principios-solid-aplicados-1.jpg" alt="Clean Architecture in TypeScript: Applying SOLID Principles" loading="lazy">
+<figcaption>درخت مفاهیم معماری نرم افزار. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AASTA.ir_software_architecture_mind_map_printable.png">ASTA.ir software architecture mind map printable.png</a> por Mohammadjavadheydari — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
+</figure>
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-30-arquitetura-limpa-em-typescript-principios-solid-aplicados.jpg" alt="Clean Architecture in TypeScript: Applying SOLID Principles" loading="lazy">
+<figcaption>Cover image do artigo</figcaption>
+</figure>
+
 When building services in TypeScript, we can apply SRP by creating classes that encapsulate the logic of a single domain. For example, consider a user service that manages operations related to users:
 
 ```typescript
@@ -148,6 +159,7 @@ In this example, the `Printable` and `Scannable` interfaces are small and focuse
 ## DIP with Dependency Inversion
 
 The Dependency Inversion Principle (DIP) states that high-level modules should not depend on low-level modules, but both should depend on abstractions. In TypeScript, this can be achieved by using interfaces to define contracts between different parts of the system.
+
 
 Let's look at a practical example:
 

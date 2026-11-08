@@ -5,6 +5,8 @@ category: "tutorial"
 tags: ["uuid", "javascript", "databases"]
 excerpt: "A universally unique identifier looks like a shortcut until you need an index in Postgres and the ID size starts to hurt. An honest look at when UUID is the right choice and when it isn't."
 share_hook: "UUID became the industry default for a reasonable reason, and for one reason few people admit: it removes the work of coordinating inserts."
+cover:
+  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-03-uuid-v4-por-que-o-id-aleatorio-ainda-e-a-escolha-certa.jpg"
 comments: true
 translationKey: "2026-10-03-uuid-v4-por-que-o-id-aleatorio-ainda-e-a-escolha-certa"
 ---
@@ -41,6 +43,17 @@ talking to a database.
 
 A UUID isn't 128 bits of randomness. It has structure, and that structure is what
 distinguishes the versions.
+
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-10-03-uuid-v4-por-que-o-id-aleatorio-ainda-e-a-escolha-certa-1.jpg" alt="UUID v4: why the random ID is still the right call" loading="lazy">
+<figcaption>Globally Unique Identifier is a special type of identifier used in software applications in order to provide a reference number which is unique in any context f. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AGlobally_Unique_ID_%2851157352349%29.jpg">Globally Unique ID (51157352349).jpg</a> por Exey Panteleev from Moscow, Russia — <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a> · via Wikimedia Commons</figcaption>
+</figure>
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-03-uuid-v4-por-que-o-id-aleatorio-ainda-e-a-escolha-certa.jpg" alt="UUID v4: why the random ID is still the right call" loading="lazy">
+<figcaption>Cover image do artigo</figcaption>
+</figure>
 
 In a v4 UUID like `9f8e7d6c-5b4a-4392-8180-7f6e5d4c3b2a`:
 
@@ -82,6 +95,7 @@ new systems, that's the call I'd make without thinking hard about it.
   v4; on v7 the prefix is a timestamp, and it does.
 - **A table that will never be merged or imported.** If it exists in one database
   and nothing else consumes the id, `SERIAL`/`BIGSERIAL` is simpler.
+
 
 And there's the opposite mistake: **you don't need the whole identifier**. Plenty
 of teams use a UUID and keep a sequential `id` alongside it, duplicating the work

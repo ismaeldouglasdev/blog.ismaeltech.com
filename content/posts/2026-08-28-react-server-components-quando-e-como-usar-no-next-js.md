@@ -5,6 +5,8 @@ category: "tutorial"
 tags: ["react", "server-components", "nextjs"]
 excerpt: "React Server Components permitem renderizar componentes no servidor, reduzindo o bundle no cliente. Saiba como o Next.js mudou a arquitetura frontend com essa abordagem."
 share_hook: "Server ou Client Component, data fetching no servidor, streaming com Suspense e Server Actions — e quando cada um é a escolha certa."
+cover:
+  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-28-react-server-components-quando-e-como-usar-no-next-js.jpg"
 comments: true
 translationKey: "2026-08-28-react-server-components-quando-e-como-usar-no-next-js"
 ---
@@ -36,6 +38,11 @@ O erro comum é tentar tratar o 'use client' como um botão de atalho para resol
 
 A regra prática para decidir entre Server e Client Components baseia-se na necessidade de interatividade e acesso a recursos do navegador.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-28-react-server-components-quando-e-como-usar-no-next-js.jpg" alt="React Server Components: quando e como usar no Next.js" loading="lazy">
+<figcaption>Cover image do artigo</figcaption>
+</figure>
 Server Components devem ser a escolha padrão para a maior parte da aplicação. Eles entram em cena quando você precisa buscar dados diretamente de um banco de dados, manter chaves de API ocultas do cliente, reduzir o tamanho do pacote JavaScript ou renderizar conteúdos estáticos e textuais pesados.
 
 Client Components entram quando a interface exige interatividade direta. Isso inclui o uso de ganchos de estado como useState e useEffect, gerenciamento de eventos de clique ou teclado, uso de APIs do navegador como localStorage ou geolocalização, e bibliotecas de terceiros que dependem de componentes visuais baseados no DOM.

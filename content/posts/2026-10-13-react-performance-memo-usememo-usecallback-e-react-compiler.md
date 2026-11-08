@@ -24,6 +24,17 @@ Otimização não é um passo opcional "quando sobra tempo". É uma resposta dir
 
 `React.memo` é um wrapper de alto nível que memoiza o resultado de um componente funcional. Se as props não mudarem, o React reutiliza o último resultado, evitando um ciclo completo de render e commit. Na prática, uma grade de produtos pode sobreviver a uma busca digitada rapidamente, desde que a lista em si permaneça inalterada.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-10-13-react-performance-memo-usememo-usecallback-e-react-compiler-1.jpg" alt="React performance: memo, useMemo, useCallback e React Compiler" loading="lazy">
+<figcaption>Don Edwards San Francisco Bay National Wildlife Refuge. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AACE_EMD_F40PH_Fremont_-_San_Jose.jpg">ACE EMD F40PH Fremont - San Jose.jpg</a> por Kabelleger / David Gubler (http://www.bahnbilder.ch) — <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a> · via Wikimedia Commons</figcaption>
+</figure>
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-13-react-performance-memo-usememo-usecallback-e-react-compiler.jpg" alt="React performance: memo, useMemo, useCallback e React Compiler" loading="lazy">
+<figcaption>Cover image do artigo</figcaption>
+</figure>
+
 Considere um componente `<ProductGrid>` que recebe duas props: `items` (o array filtrado) e `onSelect` (um manipulador de clique). O manipulador é uma função de seta que não depende de dados externos, então sua identidade permanece estável se for criada fora do componente. Como `items` é uma nova referência a cada digitação (porque a string de consulta é transformada em um novo array), o memo ainda dispara uma renderização — mas apenas para a grade, e não para toda a árvore de layout acima dela.
 
 O ganho real aparece quando você combina `React.memo` com um gerenciamento de estado mais granular. Manter o conjunto de seleção separado do array de itens, por exemplo com `useReducer`, evita que a seleção de um item force a grade inteira a renderizar de novo.
@@ -59,6 +70,7 @@ Outro caso clássico é renderizar estruturas profundas, como um visualizador de
 ## useCallback: quando a estabilidade de referência importa
 
 `useCallback` memoiza funções para que a identidade permaneça a mesma entre renders. O objetivo é evitar que um novo manipulador force um componente filho memoizado a renderizar de novo.
+
 
 Um caso típico: um `<CartButton>` envolvido com `React.memo` recebe um manipulador `onAddToCart`. Se o manipulador é uma função de seta definida dentro do componente pai, ele ganha uma nova referência a cada render, e a comparação de props sempre falha — o memo nunca ajuda.
 

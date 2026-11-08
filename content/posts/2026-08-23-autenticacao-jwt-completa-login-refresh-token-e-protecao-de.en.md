@@ -5,6 +5,8 @@ category: "tutorial"
 tags: ["jwt", "autenticacao", "seguranca", "node"]
 excerpt: "Complete JWT authentication: login flow, access and refresh tokens, route protection with middleware, rotation, and revocation."
 share_hook: "Access and refresh tokens, route middleware, rotation and blacklist - the full flow."
+cover:
+  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de.jpg"
 comments: true
 translationKey: "2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de"
 ---
@@ -21,6 +23,11 @@ JWT has become the standard for modern APIs, mainly because it works well with m
 
 The typical flow starts with a user providing credentials (email and password). In the backend, you verify the credentials, issue a signed access token and a refresh token (if you’re using refresh rotation). The access token is short‑lived, usually about 15 minutes, while the refresh token lasts longer, such as 7 days. The client stores the access token in memory (or localStorage for SPAs) and the refresh token in a secure httpOnly cookie (for added security). In practice, I always use a cookie for the refresh token because it prevents it from being exposed to XSS.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de-1.jpg" alt="Full JWT Authentication: Login, Refresh Tokens, and Route Protection" loading="lazy">
+<figcaption>DSC_0199. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AASJ_Jet_Airways_-_Airbus_A330-302_-_VT-JWT_-_Flight_JAI229_to_BRU-DEL_%289360691015%29.jpg">ASJ Jet Airways - Airbus A330-302 - VT-JWT - Flight JAI229 to BRU-DEL (9360691015).jpg</a> por Lord of the Wings© from Toronto, Canada — <a href="https://creativecommons.org/licenses/by-sa/2.0">CC BY-SA 2.0</a> · via Wikimedia Commons</figcaption>
+</figure>
 Here is a simple login endpoint in Express with local Passport:
 
 ```js

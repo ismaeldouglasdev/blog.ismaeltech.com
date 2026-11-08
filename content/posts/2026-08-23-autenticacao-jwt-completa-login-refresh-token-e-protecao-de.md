@@ -5,6 +5,8 @@ category: "tutorial"
 tags: ["jwt", "autenticação", "segurança", "node"]
 excerpt: "Autenticação JWT completa: fluxo de login, access e refresh tokens, proteção de rotas com middleware, rotação e revogação."
 share_hook: "Access e refresh tokens, middleware de rota, rotação e blacklist: o fluxo de autenticação completo, incluindo o que costuma ser esquecido."
+cover:
+  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de.jpg"
 comments: true
 translationKey: "2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de"
 ---
@@ -19,6 +21,11 @@ JWT se tornou o padrão para APIs modernas, principalmente porque funciona bem c
 
 O fluxo típico começa com um usuário fornecendo credenciais (e-mail e senha). No backend, você verifica as credenciais, emite um token de acesso assinado e um token de refresh (se estiver usando rotação de refresh). O token de acesso é breve, geralmente de 15 minutos, enquanto o refresh é mais longo, como 7 dias. O cliente armazena o token de acesso em memória (ou localStorage para SPAs) e o refresh em um cookie httpOnly seguro (para maior segurança). Na prática, eu sempre uso um cookie para o refresh, pois isso impede que ele seja exposto a XSS.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de-1.jpg" alt="Autenticação JWT completa: login, refresh token e proteção de rotas" loading="lazy">
+<figcaption>DSC_0199. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AASJ_Jet_Airways_-_Airbus_A330-302_-_VT-JWT_-_Flight_JAI229_to_BRU-DEL_%289360691015%29.jpg">ASJ Jet Airways - Airbus A330-302 - VT-JWT - Flight JAI229 to BRU-DEL (9360691015).jpg</a> por Lord of the Wings© from Toronto, Canada — <a href="https://creativecommons.org/licenses/by-sa/2.0">CC BY-SA 2.0</a> · via Wikimedia Commons</figcaption>
+</figure>
 Aqui está um endpoint de login simples em Express com Passport local:
 
 ```js

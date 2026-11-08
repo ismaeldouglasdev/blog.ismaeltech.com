@@ -23,6 +23,17 @@ Os modelos que se destacam em 2026 seguem uma receita parecida: construção em 
 
 O Keychron Q6 Max é um dos full size mais comentados do ano, e com motivo. É fabricado em alumínio CNC com gasket mount, aquela construção sólida que consolidou a marca na comunidade. Vem com switches hot-swap nas opções Gateron Jupiter e Keychron K Pro, conectividade tripla e layout ANSI ou ISO.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-14-teclados-mecanicos-em-2026-modelos-em-destaque-1.jpg" alt="Teclados mecânicos em 2026: os modelos que estão chamando atenção" loading="lazy">
+<figcaption>A pair of mechanical filters from a Collins 75A-4 amateur radio receiver. Left: F 455-J-05 with 500 Hz bandwidth for CW (Continuous Wave / Morse code) transmiss. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ACollins_mechanical_filters.jpg">Collins mechanical filters.jpg</a> por Ladd Observatory — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
+</figure>
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-14-teclados-mecanicos-em-2026-modelos-em-destaque.jpg" alt="Teclados mecânicos em 2026: os modelos que estão chamando atenção" loading="lazy">
+<figcaption>Cover image do artigo</figcaption>
+</figure>
+
 O que a comunidade diz: elogios consistentes para a qualidade de construção e o som thocky característico do gasket mount. As críticas pontuais ficam no software de configuração e na altura do teclado, que praticamente exige um descanso de pulso para uso prolongado.
 
 Pra quem é: quem usa o teclado o dia todo no trabalho e não abre mão do bloco numérico.
@@ -38,6 +49,7 @@ Pra quem é: quem joga de forma competitiva e prioriza a velocidade de resposta 
 ## NuPhy Air75 V2: o low profile que viaja bem
 
 O Air75 V2 é o modelo low profile mais citado entre quem trabalha de onde estiver. Com apenas 17 mm de altura e suporte a wireless tri-mode, ele equilibra portabilidade e qualidade de digitação sem parecer um teclado de emergência.
+
 
 O que a comunidade diz: ótimo custo-benefício para quem quer um teclado de perfil baixo sem abrir mão de hot-swap. As reclamações ficam na bateria, em torno de 200h com RGB desligado, e na necessidade de software para configurações mais avançadas.
 

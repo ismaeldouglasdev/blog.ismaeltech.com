@@ -19,6 +19,17 @@ Building forms in web applications is one of the most common and, at the same ti
 
 To get started, we need to set up our React project. If you do not have a project yet, you can create one using Create React App:
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-24-formularios-react-react-hook-form-zod-pra-validacao-1.jpg" alt="React Forms: Perfect Validation with React Hook Form + Zod" loading="lazy">
+<figcaption>Accounting Services HTML form. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AAccounting_request_html_form.png">Accounting request html form.png</a> por Rikulpatel1 — <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0</a> · via Wikimedia Commons</figcaption>
+</figure>
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-24-formularios-react-react-hook-form-zod-pra-validacao.jpg" alt="React Forms: Perfect Validation with React Hook Form + Zod" loading="lazy">
+<figcaption>Cover image do artigo</figcaption>
+</figure>
+
 ```bash
 npx create-react-app meu-formulario
 cd meu-formulario
@@ -93,6 +104,7 @@ With this addition, the form will now also require the user to create a password
 ## Pretty errors
 
 User experience is essential. When displaying error messages, we need to ensure that they are visible and intuitive. We can style error messages so that they stand out:
+
 
 ```css
 span {

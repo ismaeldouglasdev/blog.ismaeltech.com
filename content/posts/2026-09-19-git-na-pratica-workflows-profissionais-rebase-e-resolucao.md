@@ -17,11 +17,23 @@ Quando se trata de controle de versão, o Git é a ferramenta mais amplamente ut
 ## Git Flow vs Trunk-based
 Dois dos workflows de Git mais populares são o Git Flow e o Trunk-based. O Git Flow é um workflow que utiliza branches separados para desenvolvimento, teste e produção, enquanto o Trunk-based utiliza um único branch principal para todos os estágios do desenvolvimento. Embora ambos os workflows tenham seus prós e contras, o Trunk-based é cada vez mais popular devido à sua simplicidade e eficiência.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao-1.jpg" alt="Git na prática: workflows profissionais, rebase e resolução de conflitos" loading="lazy">
+<figcaption>Git Scheynius with the British film and stage director, producer, and screenwriter Sam Mendes who is awarded the Stockholm Visionary Award 2022 during the Stock. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AGit_Scheynius_and_Sam_Mendes_in_2022.jpg">Git Scheynius and Sam Mendes in 2022.jpg</a> por Frankie Fouganthin — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
+</figure>
+
 ## Interactive Rebase para Histórico Limpo
 Um dos recursos mais poderosos do Git é o interactive rebase. Ele permite que você reorganize e edite commits anteriores, criando um histórico de mudanças limpo e organizado. Com o interactive rebase, você pode squashar commits, reordená-los e até mesmo remover commits desnecessários. Isso é especialmente útil quando você está trabalhando em um projeto com muitos contribuidores e deseja manter um histórico de mudanças fácil de seguir.
 
 ## Cherry-pick e Bisect
 Outros dois recursos úteis do Git são o cherry-pick e o bisect. O cherry-pick permite que você aplique um commit específico em um branch diferente, enquanto o bisect é uma ferramenta de depuração que ajuda a encontrar o commit que introduziu um bug. Com o bisect, você pode rapidamente identificar o commit problemático e resolver o problema.
+
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao-2.jpg" alt="Git na prática: workflows profissionais, rebase e resolução de conflitos" loading="lazy">
+<figcaption>A basic overview of the git branching workflow (geared towards GitLab). — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ABasic_git_branching_workflow_%28GitLab%29.png">Basic git branching workflow (GitLab).png</a> por TheresNoTime — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
+</figure>
 
 ## Resolução de Conflitos na Prática
 Quando você está trabalhando em um projeto com muitos contribuidores, conflitos inevitavelmente surgem. No entanto, com o Git, você pode resolver conflitos de forma eficiente. Uma das maneiras de resolver conflitos é utilizar o `git merge` com a opção `--no-commit`. Isso permite que você resolva os conflitos manualmente antes de commitar as mudanças. Além disso, você pode utilizar ferramentas como o `git diff` e o `git log` para identificar as mudanças conflitantes e resolver o problema.

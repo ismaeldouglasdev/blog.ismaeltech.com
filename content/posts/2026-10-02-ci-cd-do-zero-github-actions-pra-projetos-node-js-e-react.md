@@ -18,6 +18,12 @@ Automatizar o processo de integração e entrega contínua (CI/CD) é uma práti
 
 O primeiro passo para implementar CI/CD com GitHub Actions é criar um arquivo de workflow. Este arquivo, geralmente localizado na pasta `.github/workflows`, define as etapas que o GitHub deve seguir a cada push ou pull request.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-10-02-ci-cd-do-zero-github-actions-pra-projetos-node-js-e-react-1.jpg" alt="CI/CD do zero: GitHub Actions pra projetos Node.js e React" loading="lazy">
+<figcaption>วงจร CI/CD. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ACICD_TH.png">CICD TH.png</a> por Wittawin Panta — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
+</figure>
+
 Vamos criar um exemplo básico para um projeto Node.js. Aqui está um exemplo de um arquivo de workflow chamado `ci.yml`:
 
 ```yaml
@@ -88,6 +94,11 @@ Com essa configuração, o GitHub Actions irá executar os testes para cada vers
 
 Um dos aspectos que pode melhorar significativamente a eficiência do seu pipeline é o cache de dependências. Ao armazenar em cache as dependências instaladas, você pode reduzir o tempo de execução do seu workflow. Aqui está um exemplo de como implementar isso:
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-10-02-ci-cd-do-zero-github-actions-pra-projetos-node-js-e-react-2.jpg" alt="CI/CD do zero: GitHub Actions pra projetos Node.js e React" loading="lazy">
+<figcaption>Event Platform, desired CI/CD. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AEvent_Platform_value_stream_-_desired_CI-CD.png">Event Platform value stream - desired CI-CD.png</a> por GModena (WMF) — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
+</figure>
 ```yaml
     steps:
     - name: Checkout code

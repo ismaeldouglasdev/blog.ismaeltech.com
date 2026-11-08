@@ -5,6 +5,8 @@ category: "tutorial"
 tags: ["prisma", "orm", "banco-de-dados", "typescript"]
 excerpt: "Prisma ORM in practice: modeling a SaaS schema, relationships, safe migrations, advanced query API, and performance indexing."
 share_hook: "Modeling a SaaS schema: relations, safe migrations and the advanced Query API."
+cover:
+  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript.jpg"
 comments: true
 translationKey: "2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript"
 ---
@@ -23,6 +25,12 @@ The sentence may sound cliché, but it captures the reality of modern applicatio
 
 Let’s start by defining what our SaaS needs:
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript-1.jpg" alt="Prisma ORM: Modeling Databases with TypeScript" loading="lazy">
+<figcaption>Soon Hyun to Koreans in Los Angeles
+Institution name: USC Korean Heritage Library; Processing funded by a grant from the Library Services and Technology Act (L. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ASoon_Hyun_to_Koreans_in_Los_Angeles_%28KADA-shyun04-039%29.jpg">Soon Hyun to Koreans in Los Angeles (KADA-shyun04-039).jpg</a> por Unknown authorUnknown author — <a href="https://creativecommons.org/licenses/">Public domain</a> · via Wikimedia Commons</figcaption>
+</figure>
 | Entity            | Description                                          |
 |-------------------|------------------------------------------------------|
 | **User**          | Platform user (admin, manager, member)              |

@@ -17,6 +17,17 @@ When it comes to developing scalable and performant web applications, choosing t
 ## Server vs Client Components
 Before diving into the details of the Next.js App Router, it's essential to understand the difference between Server Components and Client Components. Client Components are rendered on the client-side, i.e., in the user's browser. They are loaded once and updated dynamically as the user interacts with the application. On the other hand, Server Components are rendered on the server and sent to the client as static HTML. This approach offers significant advantages in terms of SEO, security, and performance, as it reduces the amount of work the client needs to do to render the page.
 
+
+<figure class="video-embed">
+<iframe src="https://www.youtube-nocookie.com/embed/DrxiNfbr63s" title="Introdução ao App Router do Next.js — Next.js Conf" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<figcaption>Vídeo oficial de apresentação do App Router pelo time do Next.js. — <a href="https://www.youtube.com/watch?v=DrxiNfbr63s">YouTube</a></figcaption>
+</figure>
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-15-next-js-app-router-server-components-na-pratica.jpg" alt="Next.js App Router: Server Components in Action" loading="lazy">
+<figcaption>Cover image do artigo</figcaption>
+</figure>
+
 ---
 ## Layouts and Loading States
 One of the main challenges when working with Server Components is handling layouts and loading states. Since components are rendered on the server, it's crucial to ensure that the page structure is loaded efficiently and that loading states are handled properly to avoid UX issues. The Next.js App Router provides solutions to these problems, allowing developers to create flexible layouts and manage loading states effectively.
@@ -24,6 +35,7 @@ One of the main challenges when working with Server Components is handling layou
 ---
 ## Server Actions
 Server Actions are a powerful feature of the Next.js App Router that allows developers to execute actions on the server in response to client events. This can range from data manipulation to user authentication and authorization. With Server Actions, developers can create more interactive and dynamic applications, enhancing the user experience.
+
 
 ---
 ## Data Fetching Patterns

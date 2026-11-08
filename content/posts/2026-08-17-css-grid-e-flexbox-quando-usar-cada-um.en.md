@@ -6,6 +6,8 @@ category: "tutorial"
 tags: ["css", "grid", "layout"]
 excerpt: "CSS Grid vs. Flexbox: When to Use Each in Web Development."
 share_hook: "Grid is 2D, Flexbox is 1D - that one distinction fixes most layout puzzles."
+cover:
+  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-17-css-grid-e-flexbox-quando-usar-cada-um.jpg"
 comments: true
 translationKey: "2026-08-17-css-grid-e-flexbox-quando-usar-cada-um"
 ---
@@ -32,6 +34,11 @@ In this article, we'll explore how Flexbox and Grid work, their main characteris
 
 To understand the fundamental difference, we need to look at the terminology used by the creators of CSS:
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-17-css-grid-e-flexbox-quando-usar-cada-um-1.jpg" alt="CSS Grid vs. Flexbox: When to Use Each One" loading="lazy">
+<figcaption>Representa o box model CSS. Há três retângulos na tela. O centro indica o conteúdo. A borda separa as áreas de preenchimento (padding) e de margem (margin). — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ABox_model_CSS.png">Box model CSS.png</a> por Diego Mariano — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
+</figure>
 *   **Flexbox (One-dimensional):** Focuses on a single axis. It organizes items in a row or in a column.
 *   **CSS Grid (Two-dimensional):** Focuses on two axes simultaneously. It organizes items in rows and columns at the same time.
 

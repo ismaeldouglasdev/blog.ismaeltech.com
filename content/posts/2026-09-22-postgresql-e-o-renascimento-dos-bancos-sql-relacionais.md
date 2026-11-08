@@ -17,12 +17,23 @@ A escolha do banco de dados certo é crucial para qualquer projeto de desenvolvi
 ## A Era NoSQL (2010-2018)
 No início dos anos 2010, os bancos de dados NoSQL começaram a ganhar popularidade devido à sua capacidade de lidar com grandes volumes de dados não estruturados e à sua escalabilidade horizontal. Muitos desenvolvedores e empresas adotaram bancos de dados NoSQL, como MongoDB, Cassandra e Redis, para seus projetos. No entanto, com o tempo, muitos começaram a perceber as limitações dos bancos de dados NoSQL, como a falta de suporte a transações ACID, a complexidade na modelagem de dados e a dificuldade em realizar consultas complexas.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais-1.jpg" alt="PostgreSQL e o renascimento dos bancos SQL relacionais" loading="lazy">
+<figcaption>Recurcive CTEs (Common Table Expressions) are a powerful construct within PostgreSQL, it defined in the WITH clause. CTEs allows to work with temporary set of d. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ARECURSIVE_%2843321721355%29.jpg">RECURSIVE (43321721355).jpg</a> por Exey Panteleev from Moscow, Russia — <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a> · via Wikimedia Commons</figcaption>
+</figure>
+
 ## O Virar de Chave
 Em meados dos anos2010, começou a ocorrer um movimento de volta aos bancos de dados relacionais. Isso se deveu, em parte, ao fato de que muitos desenvolvedores e empresas começaram a perceber as vantagens dos bancos de dados relacionais, como a consistência dos dados, a suporte a transações ACID e a capacidade de realizar consultas complexas. Além disso, os bancos de dados relacionais começaram a evoluir e a incorporar funcionalidades que permitiam lidar com grandes volumes de dados e escalar horizontalmente.
 
 ## JSON Nativo no PostgreSQL
 Uma das funcionalidades que tornou o PostgreSQL mais atraente foi a adição do suporte a JSON nativo. Isso permitiu que os desenvolvedores armazenem e consultem dados em formato JSON de forma eficiente e flexível. Por exemplo, é possível armazenar um objeto JSON em uma coluna de uma tabela e realizar consultas sobre ele usando a sintaxe SQL padrão. Isso é especialmente útil em projetos que lidam com dados não estruturados ou semi-estruturados.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais-2.jpg" alt="PostgreSQL e o renascimento dos bancos SQL relacionais" loading="lazy">
+<figcaption>db postgresql perf. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ADb_postgresql.png">Db postgresql.png</a> por Vk2410 — <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0</a> · via Wikimedia Commons</figcaption>
+</figure>
 ```sql
 CREATE TABLE meus_dados (
     id SERIAL PRIMARY KEY,

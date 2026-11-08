@@ -72,6 +72,12 @@ API call failures can occur for various reasons, and implementing a retry strate
 
 An implementation example can be seen below:
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-12-fetch-api-moderno-alternativas-ao-axios-em-2026.jpg" alt="Modern Fetch API: Alternatives to Axios in 2026" loading="lazy">
+<figcaption>Cover image do artigo</figcaption>
+</figure>
+
 ```javascript
 const fetchWithRetry = async (url, options = {}, retries = 3, backoff = 300) => {
   try {
@@ -103,6 +109,11 @@ const fetchWithTimeout = (url, options = {}, timeout = 5000) => {
   const controller = new AbortController();
   const signal = controller.signal;
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-10-12-fetch-api-moderno-alternativas-ao-axios-em-2026-1.jpg" alt="Modern Fetch API: Alternatives to Axios in 2026" loading="lazy">
+<figcaption>Dalian Tiandi Software Park - Model 2011. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ADalian_Tiandi_Software_Park_-_Model.jpg">Dalian Tiandi Software Park - Model.jpg</a> por Yoshi Canopus — <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a> · via Wikimedia Commons</figcaption>
+</figure>
   const fetchPromise = fetch(url, { ...options, signal });
 
   const timeoutPromise = new Promise((_, reject) => {
@@ -129,6 +140,7 @@ When it comes to managing data states in React applications, libraries like SWR 
 SWR, developed by the Vercel team, is a library based on the stale-while-revalidate strategy. This means that when you make a request, the cached data is returned immediately, while a new request is made in the background to update the data.
 
 Here is a simple example of using SWR:
+
 
 ```javascript
 import useSWR from 'swr';

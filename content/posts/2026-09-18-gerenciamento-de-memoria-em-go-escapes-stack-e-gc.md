@@ -51,6 +51,17 @@ Neste exemplo, a variável `x` na primeira função permanece na stack porque se
 
 A análise de escape é um dos recursos mais importantes do compilador Go. Ela determina automaticamente o tempo de vida das variáveis e otimiza a alocação de memória sem intervenção manual do programador.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc-1.jpg" alt="Gerenciamento de memória em Go: escapes, stack e GC" loading="lazy">
+<figcaption>Code example of the shortended declaration syntactic sugar in the programming language Go. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ASyntactic_Sugar_example_in_Go.png">Syntactic Sugar example in Go.png</a> por EpicScizor — <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0</a> · via Wikimedia Commons</figcaption>
+</figure>
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc.jpg" alt="Gerenciamento de memória em Go: escapes, stack e GC" loading="lazy">
+<figcaption>Cover image do artigo</figcaption>
+</figure>
+
 Para ver essa análise em ação, você pode usar a flag `-gcflags=-m` durante a compilação:
 
 ```bash
@@ -128,6 +139,7 @@ A stack também tem limitações. Stacks muito grandes podem causar stack overfl
 ## Garbage Collector: O Faxineiro Automático
 
 O garbage collector (GC) do Go é um coletor concorrente, tri-color, mark-and-sweep que roda em paralelo com seu programa. Ele foi projetado para ter pausas baixas (sub-milissegundo na maioria dos casos) em vez de throughput máximo.
+
 
 O GC funciona em ciclos e é acionado quando a quantidade de memória heap nova atinge um limite (por padrão, quando dobra desde a última coleta). Você pode monitorar o GC usando algumas funções úteis:
 

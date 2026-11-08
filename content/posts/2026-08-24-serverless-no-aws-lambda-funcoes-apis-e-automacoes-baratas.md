@@ -4,6 +4,8 @@ date: "2026-08-24"
 category: "tutorial"
 tags: ["serverless", "aws", "lambda", "cloud"]
 excerpt: "AWS Lambda elimina a necessidade de gerenciar servidores, permitindo que pequenas empresas rodem APIs e automações sem infraestrutura dedicada."
+cover:
+  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas.jpg"
 comments: true
 translationKey: "2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas"
 ---
@@ -31,6 +33,11 @@ A seguir, mostro como montar funções, APIs e gatilhos de forma prática e econ
 
 A primeira coisa que precisamos entender é que uma **Lambda** é simplesmente um trecho de código que a AWS executa em resposta a um evento. Não há servidor para provisionar, nem máquina virtual para monitorar. Basta fazer o upload do código (ou apontar para um repositório) e definir as permissões.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas-1.jpg" alt="Serverless no AWS Lambda: funções, APIs e automações baratas" loading="lazy">
+<figcaption>Arfa Software Technology Park located at 346-B, Ferozepur Road, Lahore, Pakistan!. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AArfa_Software_Technology_Park%2C_Ferozepur_Road%2C_Lahore.jpg">Arfa Software Technology Park, Ferozepur Road, Lahore.jpg</a> por Shahzaib Damn Cruze — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
+</figure>
 ### 1.1 Estrutura mínima de uma função Python  
 
 ```python

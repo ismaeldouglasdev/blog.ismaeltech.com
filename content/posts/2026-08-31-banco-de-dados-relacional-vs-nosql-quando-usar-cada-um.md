@@ -5,6 +5,8 @@ category: "article"
 tags: ["database", "sql", "nosql", "mongodb"]
 excerpt: "Banco de dados relacional vs NoSQL: quando usar cada um."
 share_hook: "ACID, modelagem de dados e escalabilidade: quando PostgreSQL é a resposta certa e quando NoSQL realmente compensa."
+cover:
+  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um.jpg"
 comments: true
 translationKey: "2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um"
 ---
@@ -34,6 +36,12 @@ Este comando cria uma tabela de produtos com um identificador único, nome, pre�
 
 Por outro lado, bancos de dados NoSQL, como MongoDB e Redis, surgiram para atender a demandas específicas que bancos de dados relacionais não conseguem satisfazer de forma eficiente. O MongoDB, por exemplo, é orientado a documentos e permite que você armazene dados em formato JSON, facilitando a manipulação de dados sem uma estrutura rígida.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um-1.jpg" alt="Banco de dados relacional vs NoSQL: quando usar cada um" loading="lazy">
+<figcaption>Title NIH Building 6 Cornerstone Laying
+Description A gathering of people on June 24, 1939, outside the National Cancer Institute's first building, building 6,. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ANIH_building_6_cornerstone_laying.jpg">NIH building 6 cornerstone laying.jpg</a> por Unknown authorUnknown author — <a href="https://creativecommons.org/licenses/">Public domain</a> · via Wikimedia Commons</figcaption>
+</figure>
 ### Exemplo de NoSQL com MongoDB
 
 Um exemplo de inserção de um documento no MongoDB:

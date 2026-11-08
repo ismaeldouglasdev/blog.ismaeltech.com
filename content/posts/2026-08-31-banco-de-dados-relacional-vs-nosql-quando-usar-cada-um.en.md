@@ -5,6 +5,8 @@ category: "article"
 tags: ["database", "sql", "nosql", "mongodb"]
 excerpt: "Relational vs. NoSQL databases: when to use each one."
 share_hook: "ACID, data modeling and scaling: when PostgreSQL wins and when NoSQL pays."
+cover:
+  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um.jpg"
 comments: true
 translationKey: "2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um"
 ---
@@ -17,6 +19,12 @@ Choosing the right database for a project can be one of the most critical factor
 
 PostgreSQL is one of the most robust and popular relational databases today. With support for a rich set of features, such as ACID transactions, referential integrity, and a powerful SQL query language, it stands out as a reliable choice for many enterprise applications. Its ability to handle complex and relational data enables data modeling that adapts well to scenarios where the data structure is well defined.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um-1.jpg" alt="Relational Database vs NoSQL: When to Use Each" loading="lazy">
+<figcaption>Title NIH Building 6 Cornerstone Laying
+Description A gathering of people on June 24, 1939, outside the National Cancer Institute's first building, building 6,. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ANIH_building_6_cornerstone_laying.jpg">NIH building 6 cornerstone laying.jpg</a> por Unknown authorUnknown author — <a href="https://creativecommons.org/licenses/">Public domain</a> · via Wikimedia Commons</figcaption>
+</figure>
 ### SQL Example with PostgreSQL
 
 A simple example of creating a table in PostgreSQL:

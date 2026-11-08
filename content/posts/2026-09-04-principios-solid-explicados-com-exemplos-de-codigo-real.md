@@ -5,6 +5,8 @@ category: "article"
 tags: ["solid", "arquitetura", "boas-praticas"]
 excerpt: "Princípios SOLID explicados com código real: SRP, OCP, LSP, ISP e DIP aplicados a um caso de integração de e-commerce."
 share_hook: "Cada princípio SOLID com o código antes e depois, a partir de uma integração que quebrou dois meses depois de entrega."
+cover:
+  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real.jpg"
 comments: true
 translationKey: "2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real"
 ---
@@ -22,6 +24,17 @@ Aqui eu explico como os cinco princípios SOLID podem impedir que um código evo
 ## Single Responsibility Principle (SRP)
 
 **Regra básica:** uma classe ou módulo deve ter apenas um motivo para mudar.
+
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real-1.jpg" alt="Princípios SOLID explicados com exemplos de código real" loading="lazy">
+<figcaption>Comparison between separate hw/sw design and co-design. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AHardware-Software_codesign.png">Hardware-Software codesign.png</a> por FrancezcoPezce — <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0</a> · via Wikimedia Commons</figcaption>
+</figure>
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real.jpg" alt="Princípios SOLID explicados com exemplos de código real" loading="lazy">
+<figcaption>Cover image do artigo</figcaption>
+</figure>
 
 ### Por que isso importa
 
@@ -243,6 +256,7 @@ A classe `SyncEngine` não conhece detalhes de nenhum canal. Quando surge um nov
 ## Liskov Substitution Principle (LSP)
 
 **Regra básica:** objetos de uma subclasse devem poder substituir objetos da superclasse sem alterar o comportamento esperado.
+
 
 ### Por que isso importa
 

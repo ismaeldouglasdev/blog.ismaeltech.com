@@ -23,6 +23,17 @@ The standout models of 2026 follow a similar recipe: aluminum or reinforced ABS 
 
 The Keychron Q6 Max is one of the most talked-about full-size keyboards of the year, and for good reason. It is CNC-machined aluminum with a gasket mount, the solid construction that established the brand in the community. It comes with hot-swap switches in Gateron Jupiter and Keychron K Pro options, triple connectivity and ANSI or ISO layouts.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-14-teclados-mecanicos-em-2026-modelos-em-destaque-1.jpg" alt="Mechanical keyboards in 2026: the models getting the most attention" loading="lazy">
+<figcaption>A pair of mechanical filters from a Collins 75A-4 amateur radio receiver. Left: F 455-J-05 with 500 Hz bandwidth for CW (Continuous Wave / Morse code) transmiss. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ACollins_mechanical_filters.jpg">Collins mechanical filters.jpg</a> por Ladd Observatory — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
+</figure>
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-14-teclados-mecanicos-em-2026-modelos-em-destaque.jpg" alt="Mechanical keyboards in 2026: the models getting the most attention" loading="lazy">
+<figcaption>Cover image do artigo</figcaption>
+</figure>
+
 What the community says: consistent praise for build quality and the characteristic thocky sound of the gasket mount. The occasional criticisms target the configuration software and the keyboard height, which practically requires a wrist rest for prolonged use.
 
 Who it's for: anyone who uses the keyboard all day at work and won't give up the numpad.
@@ -38,6 +49,7 @@ Who it's for: competitive gamers who prioritize response speed above all else.
 ## NuPhy Air75 V2: the low-profile keyboard that travels well
 
 The Air75 V2 is the most cited low-profile model among those who work from anywhere. At just 17 mm tall with tri-mode wireless support, it balances portability and typing quality without feeling like an emergency keyboard.
+
 
 What the community says: great value for anyone who wants a low-profile keyboard without giving up hot-swap. Complaints center on the battery, around 200h with RGB off, and the need for software for more advanced settings.
 

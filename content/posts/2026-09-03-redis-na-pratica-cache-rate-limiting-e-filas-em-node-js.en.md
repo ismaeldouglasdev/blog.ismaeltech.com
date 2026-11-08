@@ -5,6 +5,8 @@ category: "tutorial"
 tags: ["redis", "cache", "backend"]
 excerpt: "Redis in practice: caching, rate limiting and queues in Node.js."
 share_hook: "Cache, sliding-window rate limiting, BullMQ queues and pub/sub in one Redis."
+cover:
+  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js.jpg"
 comments: true
 translationKey: "2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js"
 ---
@@ -57,6 +59,11 @@ Run `docker compose up -d` and Redis is ready to accept connections on the defau
 * **Write‑through** – every write to the database also updates the cache.  
 * **Cache‑aside** – the application reads from the cache; if the data isn’t there, it queries the database, writes to the cache, and returns it to the client.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js-1.jpg" alt="Redis in Practice: Caching, Rate Limiting &amp; Queues in Node.js" loading="lazy">
+<figcaption>Redis "expire" command sets a timeout in seconds on key. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ARedis%27s_%22EXPIRE%22_%2818563947238%29.jpg">Redis&#x27;s &quot;EXPIRE&quot; (18563947238).jpg</a> por Exey Panteleev from Moscow, Russia — <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a> · via Wikimedia Commons</figcaption>
+</figure>
 In my day‑to‑day work, the cache‑aside pattern has been the most flexible, especially when the write load is lower than the read load, such as in inventory synchronization.
 
 

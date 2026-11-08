@@ -19,6 +19,17 @@ Criar formulários em aplicações web é uma das tarefas mais comuns e, ao mesm
 
 Para começar, precisamos configurar nosso projeto React. Se ainda não tem um projeto, você pode criar um usando o Create React App:
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-24-formularios-react-react-hook-form-zod-pra-validacao-1.jpg" alt="Formulários React: React Hook Form + Zod pra validação perfeita" loading="lazy">
+<figcaption>Accounting Services HTML form. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AAccounting_request_html_form.png">Accounting request html form.png</a> por Rikulpatel1 — <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0</a> · via Wikimedia Commons</figcaption>
+</figure>
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-24-formularios-react-react-hook-form-zod-pra-validacao.jpg" alt="Formulários React: React Hook Form + Zod pra validação perfeita" loading="lazy">
+<figcaption>Cover image do artigo</figcaption>
+</figure>
+
 ```bash
 npx create-react-app meu-formulario
 cd meu-formulario
@@ -93,6 +104,7 @@ Com essa adição, agora o formulário também irá exigir que o usuário crie u
 ## Erros bonitos
 
 A experiência do usuário é fundamental. Ao exibir mensagens de erro, precisamos garantir que elas sejam visíveis e intuitivas. Podemos estilizar as mensagens de erro para que se destaquem:
+
 
 ```css
 span {

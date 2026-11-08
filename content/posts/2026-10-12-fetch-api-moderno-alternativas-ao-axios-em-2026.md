@@ -14,6 +14,12 @@ translationKey: "2026-10-12-fetch-api-moderno-alternativas-ao-axios-em-2026"
 
 Em um mundo onde APIs são fundamentais para a construção de aplicações web responsivas e dinâmicas, a eficiência nas requisições HTTP é um assunto cada vez mais relevante. O Axios, uma das bibliotecas mais populares para esse fim, foi um grande aliado para muitos desenvolvedores ao longo dos anos. No entanto, com o avanço do JavaScript e as melhorias no Fetch API, surgem novas alternativas e abordagens que podem tornar o desenvolvimento ainda mais ágil e eficiente.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-12-fetch-api-moderno-alternativas-ao-axios-em-2026.jpg" alt="Fetch API moderno: alternativas ao axios em 2026" loading="lazy">
+<figcaption>Cover image do artigo</figcaption>
+</figure>
+
 ### Fetch nativo: o que mudou
 
 O Fetch API, introduzido no JavaScript moderno, trouxe uma nova forma de lidar com requisições HTTP de maneira nativa, eliminando a necessidade de bibliotecas externas como o Axios em muitos casos. Uma das principais mudanças é a forma como os dados são manipulados. O Fetch API retorna uma `Promise` que resolve com um objeto `Response`, o que permite um controle mais eficiente sobre o resultado da requisição.
@@ -171,3 +177,9 @@ O cenário de requisições HTTP em JavaScript evoluiu bastante, e hoje temos um
 - [SWR Documentation](https://swr.vercel.app/)
 - [React Query Documentation](https://react-query.tanstack.com/)
 - [JavaScript Info: Fetch](https://javascript.info/fetch)
+
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-10-12-fetch-api-moderno-alternativas-ao-axios-em-2026-1.jpg" alt="Fetch API moderno: alternativas ao axios em 2026" loading="lazy">
+<figcaption>Dalian Tiandi Software Park - Model 2011. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ADalian_Tiandi_Software_Park_-_Model.jpg">Dalian Tiandi Software Park - Model.jpg</a> por Yoshi Canopus — <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a> · via Wikimedia Commons</figcaption>
+</figure>

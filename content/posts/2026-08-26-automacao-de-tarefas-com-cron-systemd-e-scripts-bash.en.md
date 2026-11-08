@@ -5,6 +5,8 @@ category: "tutorial"
 tags: ["linux", "automacao", "bash", "systemd"]
 excerpt: "Task automation with cron, systemd, and bash scripts: real examples, robust scripts with logging, and classic mistakes to avoid."
 share_hook: "Cron vs systemd timers, robust scripts and logging you can trust."
+cover:
+  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash.jpg"
 comments: true
 translationKey: "2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash"
 ---
@@ -26,6 +28,11 @@ Another example is scheduling the execution of a script for every weekday (Monda
 ```
 These examples illustrate the flexibility of `cron` in scheduling tasks for different time intervals.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash.jpg" alt="Automating Tasks with Cron, Systemd, and Bash Scripts" loading="lazy">
+<figcaption>Cover image do artigo</figcaption>
+</figure>
 ---
 
 <figure>

@@ -23,6 +23,12 @@ What catches my attention most is DLSS 4. The previous generation was already im
 
 The launch price in the US is US$ 1,999. It is high, but consistent with the premium positioning of the xx90 lineup. In Brazil, estimates range between R$ 14,000 and R$ 16,000 depending on the model, Founders Edition or AIB partners.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-14-noticia-demo-nvidia-geforce-rtx-5090-lancamento-1.jpg" alt="NVIDIA unveils GeForce RTX 5090: specs, price and what to expect" loading="lazy">
+<figcaption>NVIDIA 12VHPWR adapter. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3A2023_Adapter_NVIDIA_12VHPWR_%281%29.jpg">2023 Adapter NVIDIA 12VHPWR (1).jpg</a> por Jacek Halicki — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
+</figure>
+
 Availability is expected by the end of January 2026, with limited initial stock. The community already warns that scalpers should make purchasing difficult in the first months, so anyone wanting one at launch needs stock alerts and patience.
 
 ## What the community is saying
@@ -43,6 +49,12 @@ The most recurring criticism is fair: for those gaming at 1440p, a US$ 1,999 car
 | Ray Tracing | 4th-gen RT cores | 3rd-gen RT cores |
 | DLSS | 4.0 | 3.5 |
 | MSRP | US$ 1,999 | US$ 1,599 |
+
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-14-noticia-demo-nvidia-geforce-rtx-5090-lancamento-2.jpg" alt="NVIDIA unveils GeForce RTX 5090: specs, price and what to expect" loading="lazy">
+<figcaption>NVIDIA 12VHPWR adapter. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3A2023_Adapter_NVIDIA_12VHPWR_%282%29.jpg">2023 Adapter NVIDIA 12VHPWR (2).jpg</a> por Jacek Halicki — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
+</figure>
 
 ## Preliminary verdict
 

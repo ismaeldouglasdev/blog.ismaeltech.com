@@ -18,6 +18,12 @@ When it comes to version control, Git is the most widely used tool in the softwa
 ## Git Flow vs Trunk-based
 Two of the most popular Git workflows are Git Flow and Trunk-based. Git Flow is a workflow that uses separate branches for development, testing, and production, while Trunk-based uses a single main branch for all stages of development. Although both workflows have their pros and cons, Trunk-based is increasingly popular due to its simplicity and efficiency.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao-1.jpg" alt="Git in Action: Pro Workflows, Rebase, and Conflict Resolution" loading="lazy">
+<figcaption>Git Scheynius with the British film and stage director, producer, and screenwriter Sam Mendes who is awarded the Stockholm Visionary Award 2022 during the Stock. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AGit_Scheynius_and_Sam_Mendes_in_2022.jpg">Git Scheynius and Sam Mendes in 2022.jpg</a> por Frankie Fouganthin — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
+</figure>
+
 ---
 ## Interactive Rebase for a Clean History
 One of the most powerful features of Git is the interactive rebase. It allows you to reorganize and edit previous commits, creating a clean and organized change history. With interactive rebase, you can squash commits, reorder them, and even remove unnecessary commits. This is especially useful when you're working on a project with many contributors and want to maintain a change history that's easy to follow.
@@ -25,6 +31,12 @@ One of the most powerful features of Git is the interactive rebase. It allows yo
 ---
 ## Cherry-pick and Bisect
 Two other useful Git features are cherry-pick and bisect. The cherry-pick allows you to apply a specific commit to a different branch, while bisect is a debugging tool that helps find the commit that introduced a bug. With bisect, you can quickly identify the problematic commit and resolve the issue.
+
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao-2.jpg" alt="Git in Action: Pro Workflows, Rebase, and Conflict Resolution" loading="lazy">
+<figcaption>A basic overview of the git branching workflow (geared towards GitLab). — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ABasic_git_branching_workflow_%28GitLab%29.png">Basic git branching workflow (GitLab).png</a> por TheresNoTime — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
+</figure>
 
 ---
 ## Conflict Resolution in Practice

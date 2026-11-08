@@ -40,6 +40,12 @@ Anti-cheat sempre foi o calcanhar de Aquiles, mas até mesmo essa barreira está
 
 O X11 estava tecnicamente obsoleto há uma década, mas o Wayland demorou para amadurecer. Em 2026, finalmente temos um protocolo de display moderno que resolve problemas fundamentais: segurança entre aplicações, suporte adequado para múltiplos monitores, e compositing eficiente.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-12-linux-no-desktop-em-2026-ja-esta-pronto-pra-todo-mundo-1.jpg" alt="Linux no desktop em 2026: já está pronto pra todo mundo?" loading="lazy">
+<figcaption>Arch Linux with KDE Plasma 6 and Firefox. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AArch_Linux_-_October_2025_%28Portuguese%29.png">Arch Linux - October 2025 (Portuguese).png</a> por Breno Martins de Oliveira Vasconcelos — <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0</a> · via Wikimedia Commons</figcaption>
+</figure>
+
 Gerenciadores de janela como o Hyprland aproveitam o Wayland para criar experiências que simplesmente não eram possíveis no X11. Animações fluidas, tiling dinâmico, e efeitos visuais que rivalizam com qualquer sistema proprietário.
 
 ### KDE Plasma 6 e GNOME 46: Maturidade Técnica
@@ -84,6 +90,12 @@ Cada área profissional tem seu software específico que simplesmente não exist
 ### Desenvolvedores e Profissionais de TI
 
 Se você trabalha com desenvolvimento web, DevOps, ciência de dados ou administração de sistemas, Linux é objetivamente superior. O terminal nativo, package managers poderosos, e integração com ferramentas de desenvolvimento tornam o workflow muito mais eficiente.
+
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-12-linux-no-desktop-em-2026-ja-esta-pronto-pra-todo-mundo-2.jpg" alt="Linux no desktop em 2026: já está pronto pra todo mundo?" loading="lazy">
+<figcaption>"Linux system can be regarded as a kind of pyramid, as illustrated in Fig. 10-1. At the bottom is the hardware, consisting of the CPU, memory, disks, a monitor. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ALayers_of_a_Linux_system.png">Layers of a Linux system.png</a> por Andrew S. Tanenbaum, Herbert Bos — <a href="https://creativecommons.org/licenses/">Public domain</a> · via Wikimedia Commons</figcaption>
+</figure>
 
 Na minha experiência administrando a infraestrutura Linux da loja, a diferença de produtividade é gritante. Automações que levam horas no Windows são questão de minutos no Linux.
 

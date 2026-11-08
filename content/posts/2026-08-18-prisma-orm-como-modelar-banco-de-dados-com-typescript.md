@@ -5,6 +5,8 @@ category: "tutorial"
 tags: ["prisma", "orm", "banco-de-dados", "typescript"]
 excerpt: "Prisma ORM na prática: modelando o schema de um SaaS, relacionamentos, migrations seguras, query API avançada e indexing de performance."
 share_hook: "Modelando o schema de um SaaS no Prisma: relacionamentos 1:1, 1:N e N:M, migrations seguras e a Query API avançada."
+cover:
+  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript.jpg"
 comments: true
 translationKey: "2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript"
 ---
@@ -23,6 +25,12 @@ O **Prisma** tem ganhado destaque no ecossistema TypeScript por combinar a produ
 
 Vamos começar definindo o que o nosso SaaS precisa:
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript-1.jpg" alt="Prisma ORM: como modelar banco de dados com TypeScript" loading="lazy">
+<figcaption>Soon Hyun to Koreans in Los Angeles
+Institution name: USC Korean Heritage Library; Processing funded by a grant from the Library Services and Technology Act (L. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ASoon_Hyun_to_Koreans_in_Los_Angeles_%28KADA-shyun04-039%29.jpg">Soon Hyun to Koreans in Los Angeles (KADA-shyun04-039).jpg</a> por Unknown authorUnknown author — <a href="https://creativecommons.org/licenses/">Public domain</a> · via Wikimedia Commons</figcaption>
+</figure>
 | Entidade          | Descrição                                              |
 |-------------------|--------------------------------------------------------|
 | **User**          | Usuário da plataforma (admin, manager, member)        |

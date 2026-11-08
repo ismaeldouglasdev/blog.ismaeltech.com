@@ -5,6 +5,8 @@ category: "curiosidade"
 tags: ["typescript", "historia", "javascript"]
 excerpt: "In October 2012, Microsoft announced TypeScript, reshaping JavaScript development. At the time, teams maintaining large JavaScript."
 share_hook: "From 2012 to ecosystem default: how TypeScript was born and won."
+cover:
+  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria.jpg"
 comments: true
 translationKey: "2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria"
 ---
@@ -28,6 +30,11 @@ In October 2012, Microsoft made an announcement that would change the directio
 
 TypeScript was created by Microsoft in 2012 with the goal of providing a language that is compatible with JavaScript but adds static typing. The idea was to enable developers to write code that is safer and more maintainable without sacrificing JavaScript’s flexibility and dynamism. TypeScript was released as an open‑source project and quickly attracted attention from the developer community.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria.jpg" alt="The History of TypeScript: From Accident to Industry Standard" loading="lazy">
+<figcaption>Cover image do artigo</figcaption>
+</figure>
 ## Anders Hejlsberg and gradual typing
 One of the main architects behind TypeScript was Anders Hejlsberg, a well‑known software engineer who worked on projects such as Delphi and C#. Hejlsberg is a proponent of gradual typing, which lets developers use static and dynamic typing together, according to the project's needs. This approach was crucial to TypeScript's success, because it allowed developers to start using the language without having to rewrite all existing code.
 

@@ -115,6 +115,12 @@ In the main block, we enable `http2` for connection multiplexing over a single T
 
 When the application grows or when we need to run parallel processes with tools like PM2 or Docker containers, keeping only one backend instance creates a single point of failure and CPU bottleneck.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-10-03-nginx-como-reverse-proxy-ssl-load-balancing-e-caching-1.jpg" alt="Nginx as a Reverse Proxy: SSL, Load Balancing, and Caching" loading="lazy">
+<figcaption>HTTP header returned by nginx with curl executed from Ubuntu. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AEncabezado_HTTP_devuelto_por_nginx_con_curl_ejecutado_desde_Ubuntu.jpg">Encabezado HTTP devuelto por nginx con curl ejecutado desde Ubuntu.jpg</a> por Jimmy Olano — <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a> · via Wikimedia Commons</figcaption>
+</figure>
+
 Nginx solves this natively through the `upstream` block. It allows defining a pool of servers and distributing incoming requests among them.
 
 ```nginx
@@ -207,6 +213,12 @@ location ~* \.(jpg|jpeg|png|gif|ico|css|js|woff2)$ {
 ## Securing the API with Rate Limiting
 
 Leaving an authentication route (`/api/login`) or critical endpoints open without frequency restrictions is an invitation to brute force attacks and aggressive scraping. Nginx implements rate limiting through the Leaky Bucket algorithm, processing requests at a constant rate and discarding or queuing the excess.
+
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-10-03-nginx-como-reverse-proxy-ssl-load-balancing-e-caching-2.jpg" alt="Nginx as a Reverse Proxy: SSL, Load Balancing, and Caching" loading="lazy">
+<figcaption>nginx statistics. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AMonitorix-nginx.png">Monitorix-nginx.png</a> por Mikaku — <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a> · via Wikimedia Commons</figcaption>
+</figure>
 
 To configure, we define the memory space and the request rate per second (r/s) or per minute (r/m):
 

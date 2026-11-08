@@ -14,6 +14,12 @@ translationKey: "2026-10-06-inteligencia-artificial-para-desenvolvedores-llms-ra
 
 Migrar dados entre sistemas costuma ser uma tarefa manual, lenta e sujeita a erros. Hoje, um script resolve boa parte disso. Mas e se bastasse descrever a tarefa em português para um assistente para que ele escrevesse o script, testasse e sugerisse melhorias? As Large Language Models (LLMs) estão transformando essa possibilidade em uma ferramenta prática no dia a dia do desenvolvimento.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-06-inteligencia-artificial-para-desenvolvedores-llms-rag-e.jpg" alt="Inteligência Artificial para desenvolvedores: LLMs, RAG e agentes" loading="lazy">
+<figcaption>Cover image do artigo</figcaption>
+</figure>
+
 Este novo paradigma não se resume a um chatbot mais esperto. Trata-se de uma mudança fundamental em como interagimos com código, dados e sistemas. Como desenvolvedor full stack que construiu desde APIs REST em Python até uma dashboard para um sistema de memória de IA open source, vejo essas ferramentas se desdobrando em três camadas principais: as LLMs como núcleo inteligente, o RAG para dar a elas memória específica e os agentes para transformar intenções em ações.
 
 Vou explicar como cada peça funciona, onde elas se encaixam e, principalmente, como você pode começar a usá-las hoje em projetos reais.
@@ -339,3 +345,9 @@ Os blocos básicos estão aí. LLMs fornecem o raciocínio, RAG fornece o contex
 *   [Paper original "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks" (Lewis et al., 2020)](https://arxiv.org/abs/2005.11401)
 *   [Chroma DB: Guia de Início Rápido para Bancos de Dados Vetoriais](https://docs.trychroma.com/getting-started)
 *   [Anthropic Claude: Documentação da API de Mensagens](https://docs.anthropic.com/en/api/messages)
+
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-10-06-inteligencia-artificial-para-desenvolvedores-llms-rag-e-1.jpg" alt="Inteligência Artificial para desenvolvedores: LLMs, RAG e agentes" loading="lazy">
+<figcaption>Neural net completion for "artificial intelligence", as done by DALL-E mini hosted on HuggingFace, 4 June 2022 (code under Apache 2.0 license). Upscaled with Re. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AArtificial_intelligence_prompt_completion_by_dalle_mini.jpg">Artificial intelligence prompt completion by dalle mini.jpg</a> por Prompt by JPxG, model by Boris Dayma, upscaler by Xintao Wang, Liangbin Xie et a — <a href="https://creativecommons.org/licenses/">Public domain</a> · via Wikimedia Commons</figcaption>
+</figure>

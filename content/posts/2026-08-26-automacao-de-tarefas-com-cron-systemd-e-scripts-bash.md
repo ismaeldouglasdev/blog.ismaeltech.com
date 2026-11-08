@@ -5,6 +5,8 @@ category: "tutorial"
 tags: ["linux", "automacao", "bash", "systemd"]
 excerpt: "Automação de tarefas com cron, systemd e scripts bash: exemplos reais, scripts robustos com logging e os erros clássicos a evitar."
 share_hook: "Cron e systemd timers lado a lado, scripts que não quebram de madrugada e logging para saber se a automação rodou."
+cover:
+  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash.jpg"
 comments: true
 translationKey: "2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash"
 ---
@@ -23,6 +25,11 @@ Outro exemplo é agendar a execução de um script para todos os dias úteis (de
 ```
 Esses exemplos ilustram a flexibilidade do `cron` em agendar tarefas para diferentes intervalos de tempo.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash.jpg" alt="Automação de tarefas com cron, systemd e scripts Bash" loading="lazy">
+<figcaption>Cover image do artigo</figcaption>
+</figure>
 
 <figure>
   <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash.jpg" alt="Exemplo de crontab: sintaxe e agendamentos reais." loading="lazy" />

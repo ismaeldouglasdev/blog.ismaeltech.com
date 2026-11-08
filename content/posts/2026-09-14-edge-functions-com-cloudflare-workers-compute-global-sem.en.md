@@ -29,6 +29,18 @@ Edge functions tackle precisely this limitation. Instead of just caching content
 
 Workers uses the Service Worker pattern as its programming model, which means every incoming request passes through a handler you define. The API is deliberately minimalist: you define a listener for fetch events, process the request, and return a response. This simplicity hides a system cleverly designed for instant startup and execution in isolated environments.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-14-edge-functions-com-cloudflare-workers-compute-global-sem-1.jpg" alt="Edge Functions with Cloudflare Workers: Global Serverless Computing" loading="lazy">
+<figcaption>Rob Reid's new book After On was published tonight! We were there to celebrate in the Haight.
+Despite its heft, my son read the book in one day, as we read the. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AEmergent_AI_that_controls_the_world_seed_funded_by_DFJ_and_Norwest_%2836159024422%29.jpg">Emergent AI that controls the world seed funded by DFJ and Norwest (36159024422).jpg</a> por Steve Jurvetson from Los Altos, USA — <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a> · via Wikimedia Commons</figcaption>
+</figure>
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-14-edge-functions-com-cloudflare-workers-compute-global-sem.jpg" alt="Edge Functions with Cloudflare Workers: Global Serverless Computing" loading="lazy">
+<figcaption>Cover image do artigo</figcaption>
+</figure>
+
 To start developing, you need to install Wrangler, Cloudflare's official CLI for Workers. Wrangler isn't just a deployment tool—it's your complete development environment, allowing you to create new projects, test locally with Miniflare, and deploy with a single command.
 
 ```bash
@@ -145,6 +157,7 @@ If you have prose text in Portuguese that needs translating, please share it and
 ## Object Storage with R2
 
 R2 is Cloudflare's object storage offering, positioned as an S3 alternative with a crucial difference: there are no egress fees. For applications that serve large volumes of files to users globally, these savings can be substantial. R2 is compatible with the S3 API, which means existing client libraries work without modifications.
+
 
 A common use case at the edge is serving processed images. You can store originals in R2 and use Workers to resize, compress, or convert formats on demand:
 

@@ -32,6 +32,12 @@ The concept that trips up beginners most is the last pair. A Service **does not 
 
 A standalone pod, so you can see the shape. Notice it **has no label** — we get back to that in a minute:
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-27-kubernetes-pra-iniciantes-conceitos-essenciais-sem-1.jpg" alt="Kubernetes for Beginners: Essential Concepts Made Easy" loading="lazy">
+<figcaption>December 2023 Developer Satisfaction Survey (DSS): likert chart showing respondents' satisfaction using Wikimedia's production Kubernetes infrastructure. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3A2023-12_DSS_deployment_kubernetes_satisfaction.png">2023-12 DSS deployment kubernetes satisfaction.png</a> por CMyrick-WMF — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
+</figure>
+
 ```yaml
 apiVersion: v1
 kind: Pod
@@ -123,6 +129,12 @@ I used `NodePort` because it works in Minikube with no extra setup. In productio
 ## Ingress
 
 An Ingress is a set of layer 7 (HTTP/HTTPS) traffic rules: it says which hostname goes to which service. It is **not** a load balancer, and that is the point that usually generates disappointment.
+
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-27-kubernetes-pra-iniciantes-conceitos-essenciais-sem-2.jpg" alt="Kubernetes for Beginners: Essential Concepts Made Easy" loading="lazy">
+<figcaption>December 2023 Developer Satisfaction Survey (DSS): bar chart showing respondents' use of Wikimedia's production Kubernetes infrastructure in the past year. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3A2023-12_DSS_deployment_kubernetes_use.png">2023-12 DSS deployment kubernetes use.png</a> por CMyrick-WMF — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
+</figure>
 
 **An Ingress does not work on its own.** It is only read by a component called an **Ingress Controller** (nginx, Traefik, the cloud provider…). Without a controller installed in the cluster, your objects are accepted without error and simply do nothing. In Minikube, turn one on with:
 

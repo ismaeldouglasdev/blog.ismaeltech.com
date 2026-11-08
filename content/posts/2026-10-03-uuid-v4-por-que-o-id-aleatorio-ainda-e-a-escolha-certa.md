@@ -5,6 +5,8 @@ category: "tutorial"
 tags: ["uuid", "javascript", "banco-de-dados"]
 excerpt: "Identificador universalmente único parece ganho de tempo até você precisar de um índice no Postgres e o tamanho do ID começa a doer. Um olhar honesto sobre quando usar UUID e quando não usar."
 share_hook: "UUID é o padrão da indústria por um motivo razoável, e também por um motivo que pouca gente admite: ele tira o trabalho de coordinating inserts."
+cover:
+  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-03-uuid-v4-por-que-o-id-aleatorio-ainda-e-a-escolha-certa.jpg"
 comments: true
 translationKey: "2026-10-03-uuid-v4-por-que-o-id-aleatorio-ainda-e-a-escolha-certa"
 ---
@@ -42,6 +44,17 @@ concordar sobre um id sem falar com um banco.
 
 Um UUID não é 128 bits de aleatoriedade. Tem estrutura, e a estrutura é o que
 distingue as versões.
+
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-10-03-uuid-v4-por-que-o-id-aleatorio-ainda-e-a-escolha-certa-1.jpg" alt="UUID v4: por que o ID aleatório ainda é a escolha certa" loading="lazy">
+<figcaption>Globally Unique Identifier is a special type of identifier used in software applications in order to provide a reference number which is unique in any context f. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AGlobally_Unique_ID_%2851157352349%29.jpg">Globally Unique ID (51157352349).jpg</a> por Exey Panteleev from Moscow, Russia — <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a> · via Wikimedia Commons</figcaption>
+</figure>
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-03-uuid-v4-por-que-o-id-aleatorio-ainda-e-a-escolha-certa.jpg" alt="UUID v4: por que o ID aleatório ainda é a escolha certa" loading="lazy">
+<figcaption>Cover image do artigo</figcaption>
+</figure>
 
 Num UUID v4 como `9f8e7d6c-5b4a-4392-8180-7f6e5d4c3b2a`:
 
@@ -85,6 +98,7 @@ a maioria dos sistemas novos, é a escolha que eu faria sem pensar muito.
   índice; em v7, prefixo é timestamp, e aí funciona.
 - **Table que nunca vai ser mergeada nem importada.** Se só existe num banco e
   ninguém mais consome o id, `SERIAL`/`BIGSERIAL` é mais simples.
+
 
 E há o extremo oposto: **você não precisa do identificador inteiro**. Muita
 gente usa UUID e mantém um `id` sequencial junto, o que duplica o trabalho sem

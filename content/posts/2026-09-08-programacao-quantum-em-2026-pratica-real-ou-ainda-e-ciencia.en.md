@@ -5,6 +5,8 @@ category: "curiosidade"
 tags: ["quantum", "computacao", "futuro"]
 excerpt: "Quantum computing in 2026: the real state of the technology, Qiskit and Cirq, practical problems being solved, and when developers need to care."
 share_hook: "Qiskit and Cirq in practice, what's real today and what's still marketing."
+cover:
+  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia.jpg"
 comments: true
 translationKey: "2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia"
 ---
@@ -15,6 +17,11 @@ Quantum programming is a field that has generated significant interest in recent
 ## The current state of quantum computers
 Quantum computers are devices that utilize the principles of quantum mechanics to perform calculations. They have the potential to solve problems that are very difficult or impossible for classical computers to solve. Currently, there are several types of quantum computers, including gate-based quantum computers, topological quantum computers, and photonic quantum computers.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia-1.jpg" alt="Quantum Programming in 2026: Reality or Still Science?" loading="lazy">
+<figcaption>25/10/2024. Minister Sir Patrick Vallance officially opens the National Quantum Computing Centre. Picture by Zoe-Rose Herbert / DSIT. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AMinister_Sir_Patrick_Vallance_officially_opens_the_National_Quantum_Computing_Centre_at_Harwell_Science_and_Innovation_Campus%2C_Oxfordshire%2C_United_Kingdom_on_25_October_2024_-_1.jpg">Minister Sir Patrick Vallance officially opens the National Quantum Computing Centre at Harwell Science and Innovation Campus, Oxfordshire, United Kingdom on 25 October 2024 - 1.jpg</a> por Department for Science, Innovation &amp; Technology — <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a> · via Wikimedia Commons</figcaption>
+</figure>
 ## IBM, Google, IonQ
 The main companies working in the field of quantum programming are IBM, Google, and IonQ. IBM has a quantum computing program that includes the development of hardware and software for quantum computers. Google also has a quantum computing program and has developed several quantum algorithms, including Shor's algorithm and Grover's algorithm. IonQ is a company that specializes in quantum computing and has developed several products, including a gate-based quantum computer.
 

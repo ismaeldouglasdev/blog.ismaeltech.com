@@ -5,6 +5,8 @@ category: "article"
 tags: ["devtools", "debug", "browser"]
 excerpt: "Bugs que somem ao abrir o DevTools são mais comuns do que parece. Domine técnicas avançadas de debug no navegador para encontrar e resolver problemas de performance e memória."
 share_hook: "Performance Profiler, Memory Snapshots e Network Waterfall: como achar a causa raiz em vez de chutar no escuro."
+cover:
+  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug.jpg"
 comments: true
 translationKey: "2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug"
 ---

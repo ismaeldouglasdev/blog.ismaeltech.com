@@ -22,6 +22,12 @@ Este artigo explora como aplicar a Testing Library de forma rigorosa, evitando a
 
 A premissa central da Testing Library é que o código do seu componente é uma implementação detalhada que o usuário final nunca vê. O usuário não sabe que existe um `div` com a classe `btn-primary`. Ele sabe que existe um botão escrito "Salvar". O usuário não sabe que o componente recebe um prop chamado `isLoading`. Ele sabe que o botão está desabilitado e mostrando um spinner de carregamento.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-26-testing-library-testes-de-react-que-refletem-o-uso-real-1.jpg" alt="Testing Library: testes de React que refletem o uso real" loading="lazy">
+<figcaption>A team at NASA’s Kennedy Space Center in Florida tests a 3D printer on July 28, 2022, at the Florida spaceport’s Swamp Works, as part of the Relevant Environmen. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AREACT_Demonstration_%28KSC-20220728-PH-FMX02_0011%29.jpeg">REACT Demonstration (KSC-20220728-PH-FMX02 0011).jpeg</a> por Frank Michaux — <a href="https://creativecommons.org/licenses/">Public domain</a> · via Wikimedia Commons</figcaption>
+</figure>
+
 Testar a implementação é um erro de estratégia. Se você escreve um teste que verifica `container.querySelector('.btn-primary')`, você está assumindo que a classe CSS nunca mudará. Se amanhã você decide usar Tailwind ou CSS Modules, seu teste quebra. Se você escreve `container.getByRole('button', { name: 'Salvar' })`, você está testando a acessibilidade e a funcionalidade. A única maneira de um usuário interagir com uma interface web é através de roles, labels, textos e atributos HTML padrão.
 
 Essa abordagem elimina o acoplamento frágil. Ela obriga o desenvolvedor a garantir que os elementos tenham semântica HTML correta e acessível. Se você não pode encontrar um botão pelo seu nome visível, talvez ele não esteja bem estruturado para acessibilidade, e isso é um problema maior do que o teste em si.
@@ -56,6 +62,12 @@ Este exemplo é simples, mas ilustra o ponto. Não importa como `MyComponent` é
 ## User events: simulando a interação real
 
 Testar componentes estáticos é fácil. Testar interatividade é onde a Testing Library brilha. A biblioteca `@testing-library/user-event` (ou as funções integradas em versões mais recentes) permite simular ações do usuário de forma realista. O segredo não é clicar no elemento DOM bruto, mas sim usar a API de eventos de alta fidelidade.
+
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-26-testing-library-testes-de-react-que-refletem-o-uso-real-2.jpg" alt="Testing Library: testes de React que refletem o uso real" loading="lazy">
+<figcaption>A team at NASA’s Kennedy Space Center in Florida tests a 3D printer on July 28, 2022, at the Florida spaceport’s Swamp Works, as part of the Relevant Environmen. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AREACT_Demonstration_%28KSC-20220728-PH-FMX02_0027%29.jpeg">REACT Demonstration (KSC-20220728-PH-FMX02 0027).jpeg</a> por Frank Michaux — <a href="https://creativecommons.org/licenses/">Public domain</a> · via Wikimedia Commons</figcaption>
+</figure>
 
 `UserEvent.click()`: Simula um clique completo, incluindo focos, mouse down, mouse up e click.
 `UserEvent.type()`: Simula digitação caractere por caractere, disparando eventos de input, change e keypress.

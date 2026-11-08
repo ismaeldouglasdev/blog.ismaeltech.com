@@ -5,6 +5,8 @@ category: "curiosidade"
 tags: ["typescript", "história", "javascript"]
 excerpt: "TypeScript nasceu como experimento interno da Microsoft em 2012 para resolver a crise de manutenibilidade do JavaScript. Veja como virou padrão da indústria."
 share_hook: "De 2012 ao ecossistema: como o TypeScript nasceu, a resistência inicial e o momento em que o Angular 2 virou o ponto de virada."
+cover:
+  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria.jpg"
 comments: true
 translationKey: "2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria"
 ---
@@ -25,6 +27,11 @@ Em outubro de 2012, a Microsoft fez um anúncio que mudaria o rumo do desenvolvi
 ## 2012: TypeScript nasceu
 O TypeScript foi criado pela Microsoft em 2012, com o objetivo de fornecer uma linguagem que fosse compatível com o JavaScript, mas com a adição de tipagem estática. A ideia era permitir que os desenvolvedores escrevessem código mais seguro e manutenível, sem sacrificar a flexibilidade e a dinâmica do JavaScript. O TypeScript foi lançado como um projeto de código aberto e rapidamente ganhou atenção da comunidade de desenvolvedores.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria.jpg" alt="A história do TypeScript: de acidente a padrão da indústria" loading="lazy">
+<figcaption>Cover image do artigo</figcaption>
+</figure>
 ## Anders Hejlsberg e a tipagem gradual
 Um dos principais arquitetos por trás do TypeScript foi Anders Hejlsberg, um conhecido engenheiro de software que trabalhou em projetos como o Delphi e o C#. Hejlsberg é um defensor da tipagem gradual, que permite que os desenvolvedores usem tipagem estática e dinâmica juntas, de acordo com as necessidades do projeto. Essa abordagem foi fundamental para o sucesso do TypeScript, pois permitiu que os desenvolvedores começassem a usar a linguagem sem ter que reescrever todo o código existente.
 

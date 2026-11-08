@@ -5,6 +5,8 @@ category: "article"
 tags: ["solid", "arquitetura", "boas-praticas"]
 excerpt: "SOLID principles explained with real code: SRP, OCP, LSP, ISP, and DIP applied to an e-commerce integration case."
 share_hook: "Each SOLID principle with the code before and after, from an integration that broke two months after delivery."
+cover:
+  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real.jpg"
 comments: true
 translationKey: "2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real"
 ---
@@ -22,6 +24,17 @@ Here I explain how the five SOLID principles can keep code from evolving into an
 ## Single Responsibility Principle (SRP)
 
 **Basic rule:** a class or module should have only one reason to change.
+
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real-1.jpg" alt="SOLID Principles Explained with Real Code Examples" loading="lazy">
+<figcaption>Comparison between separate hw/sw design and co-design. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AHardware-Software_codesign.png">Hardware-Software codesign.png</a> por FrancezcoPezce — <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0</a> · via Wikimedia Commons</figcaption>
+</figure>
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real.jpg" alt="SOLID Principles Explained with Real Code Examples" loading="lazy">
+<figcaption>Cover image do artigo</figcaption>
+</figure>
 
 ### Why it matters
 
@@ -243,6 +256,7 @@ The `SyncEngine` class knows no details of any channel. When a new marketplace a
 ## Liskov Substitution Principle (LSP)
 
 **Basic rule:** objects of a subclass must be able to replace objects of the superclass without altering the expected behavior.
+
 
 ### Why it matters
 

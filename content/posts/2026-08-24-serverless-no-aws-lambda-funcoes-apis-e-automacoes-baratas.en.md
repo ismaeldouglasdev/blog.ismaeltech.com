@@ -4,6 +4,8 @@ date: "2026-08-24"
 category: "tutorial"
 tags: ["serverless", "aws", "lambda", "cloud"]
 excerpt: "Serverless on AWS Lambda: how \"invisible\" servers let small businesses run APIs and automations without dedicated infrastructure."
+cover:
+  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas.jpg"
 comments: true
 translationKey: "2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas"
 ---
@@ -31,6 +33,11 @@ Below, I'll show how to build functions, APIs, and triggers in a practical and c
 
 The first thing we need to understand is that a **Lambda** is simply a snippet of code that AWS runs in response to an event. There is no server to provision, nor a virtual machine to monitor. Just upload the code (or point to a repository) and set the permissions.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas-1.jpg" alt="Serverless on AWS Lambda: Affordable Functions, APIs, and Automation" loading="lazy">
+<figcaption>Arfa Software Technology Park located at 346-B, Ferozepur Road, Lahore, Pakistan!. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AArfa_Software_Technology_Park%2C_Ferozepur_Road%2C_Lahore.jpg">Arfa Software Technology Park, Ferozepur Road, Lahore.jpg</a> por Shahzaib Damn Cruze — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
+</figure>
 ### 1.1 Minimal structure of a Python function  
 
 ```python

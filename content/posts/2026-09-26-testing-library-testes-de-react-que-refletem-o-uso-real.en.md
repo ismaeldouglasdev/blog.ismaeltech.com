@@ -71,6 +71,12 @@ Testing static components is easy. Testing interactivity is where the Testing Li
 
 The reason to use `userEvent` instead of `fireEvent` is realism. `fireEvent` triggers events on the element, but does not simulate the mouse or keyboard behavior of the browser. `userEvent` generates a sequence of events that the browser would naturally process. This is crucial for testing form validations, which depend on the order of events and the state of the DOM during typing.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-26-testing-library-testes-de-react-que-refletem-o-uso-real-1.jpg" alt="Testing Library: React Tests that Reflect Real Usage" loading="lazy">
+<figcaption>A team at NASA’s Kennedy Space Center in Florida tests a 3D printer on July 28, 2022, at the Florida spaceport’s Swamp Works, as part of the Relevant Environmen. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AREACT_Demonstration_%28KSC-20220728-PH-FMX02_0011%29.jpeg">REACT Demonstration (KSC-20220728-PH-FMX02 0011).jpeg</a> por Frank Michaux — <a href="https://creativecommons.org/licenses/">Public domain</a> · via Wikimedia Commons</figcaption>
+</figure>
+
 ```javascript
 import { render, screen, fireEvent } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
@@ -128,6 +134,12 @@ It is important to note that `findBy` requires the test function to be `async` a
 Testing real integration with production APIs is a bad idea. It is slow, depends on the stability of the external service, and introduces uncontrollable variables. The standard practice is to mock the API responses.
 
 There are two main approaches. The first is to mock the global `fetch` or libraries like `axios`. The second is to mock data hooks, such as React Query or SWR. The choice depends on the project's architecture. For most cases, mocking the network communication layer is sufficient.
+
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-26-testing-library-testes-de-react-que-refletem-o-uso-real-2.jpg" alt="Testing Library: React Tests that Reflect Real Usage" loading="lazy">
+<figcaption>A team at NASA’s Kennedy Space Center in Florida tests a 3D printer on July 28, 2022, at the Florida spaceport’s Swamp Works, as part of the Relevant Environmen. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AREACT_Demonstration_%28KSC-20220728-PH-FMX02_0027%29.jpeg">REACT Demonstration (KSC-20220728-PH-FMX02 0027).jpeg</a> por Frank Michaux — <a href="https://creativecommons.org/licenses/">Public domain</a> · via Wikimedia Commons</figcaption>
+</figure>
 
 Using `jest.fn()` or `vi.fn()` (in Vitest) allows you to control the behavior of the fetch function. You can specify that a particular call returns a predetermined JSON. This isolates the component test from the API's business logic, focusing solely on how the component reacts to the received data.
 

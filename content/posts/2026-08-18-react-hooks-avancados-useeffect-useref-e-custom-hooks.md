@@ -5,6 +5,8 @@ category: "tutorial"
 tags: ["react", "hooks", "javascript", "frontend"]
 excerpt: "Desde a versão 16.8 do React, os Hooks se tornaram o padrão da comunidade. Domine useEffect, useRef e custom hooks com exemplos de produção."
 share_hook: "useEffect com cleanup, useRef para DOM e valores persistentes, e os custom hooks que você realmente usa — com os erros que mais aparecem."
+cover:
+  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks.jpg"
 comments: true
 translationKey: "2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks"
 ---
@@ -41,6 +43,11 @@ Neste artigo, vamos mergulhar nos detalhes que fazem a diferença no dia‑a‑d
 
 O `useEffect` substitui os métodos de ciclo de vida das classes (`componentDidMount`, `componentDidUpdate`, `componentWillUnmount`). Ele aceita **duas** coisas:
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks.jpg" alt="React Hooks avançados: useEffect, useRef e custom hooks que você precisa conhecer" loading="lazy">
+<figcaption>Cover image do artigo</figcaption>
+</figure>
 ```tsx
 useEffect(() => {
   // efeito colateral (side‑effect)

@@ -50,6 +50,17 @@ Com isso, já temos o Vitest pronto para testes. Agora, crie uma pasta `src/__te
 
 A React Testing Library é uma excelente ferramenta para testar componentes React, pois se concentra em como os usuários interagem com a interface. Vamos começar escrevendo um teste simples para um componente.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam-1.jpg" alt="Vitest: como testar React com testes que realmente ajudam" loading="lazy">
+<figcaption>Sequential Software Testing Life Cycle. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ASoftware_Testing_Life_Cycle.jpg">Software Testing Life Cycle.jpg</a> por Perfect Happiness — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
+</figure>
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam.jpg" alt="Vitest: como testar React com testes que realmente ajudam" loading="lazy">
+<figcaption>Cover image do artigo</figcaption>
+</figure>
+
 Suponha que temos um componente `Button.js`:
 
 ```javascript
@@ -123,6 +134,7 @@ Aqui, estamos utilizando `vi.fn()` do Vitest para criar um mock da função `fet
 ## Testes de integração
 
 Os testes de integração verificam como diferentes partes do sistema funcionam juntas. Vamos criar um exemplo simples onde um componente busca dados de uma API e os exibe.
+
 
 Suponha que temos um componente `DataDisplay.js`:
 

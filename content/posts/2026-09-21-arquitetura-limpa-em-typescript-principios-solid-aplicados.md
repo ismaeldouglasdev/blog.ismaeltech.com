@@ -17,6 +17,18 @@ Quando se trata de desenvolver software, a arquitetura limpa é fundamental para
 ## SRP com services
 O princípio da Responsabilidade Única (SRP) é o primeiro dos princípios SOLID e afirma que uma classe deve ter apenas uma razão para mudar. Em outras palavras, uma classe deve ter apenas uma responsabilidade. Para aplicar esse princípio em TypeScript, podemos criar serviços que encapsulam uma lógica de negócios específica. Por exemplo, em um projeto que eu desenvolvi recentemente, criei um serviço de autenticação que se encarregava de validar as credenciais dos usuários. Isso permitiu que o resto do código se concentrasse em outras responsabilidades, tornando-o mais fácil de manter e entender.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados-1.jpg" alt="Arquitetura limpa em TypeScript: princípios SOLID aplicados" loading="lazy">
+<figcaption>Soon Hyun to Syngman Rhee
+Institution name: USC Korean Heritage Library; Processing funded by a grant from the Library Services and Technology Act (LSTA), Cali. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ASoon_Hyun_to_Syngman_Rhee_%28KADA-shyun04-058%29.jpg">Soon Hyun to Syngman Rhee (KADA-shyun04-058).jpg</a> por Unknown authorUnknown author — <a href="https://creativecommons.org/licenses/">Public domain</a> · via Wikimedia Commons</figcaption>
+</figure>
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados.jpg" alt="Arquitetura limpa em TypeScript: princípios SOLID aplicados" loading="lazy">
+<figcaption>Cover image do artigo</figcaption>
+</figure>
+
 ```typescript
 // exemplo de serviço de autenticação
 interface AutenticacaoService {
@@ -55,6 +67,7 @@ class PagamentoStripe implements PagamentoStrategy {
 
 ## Liskov com generics
 O princípio de Liskov afirma que as subclasses devem ser substituíveis pelas suas superclasses. Em TypeScript, podemos aplicar esse princípio usando generics. Por exemplo, em um projeto que eu desenvolvi, criei uma classe que se encarregava de processar dados, mas queria permitir que diferentes tipos de dados fossem processados. Para isso, criei uma classe genérica que podia trabalhar com diferentes tipos de dados.
+
 
 ```typescript
 // exemplo de classe genérica

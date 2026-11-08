@@ -32,6 +32,12 @@ O conceito que mais trava iniciante é o último par. Um Service **não sabe o n
 
 Um pod avulso, para você ver a estrutura. Repare que **não tem label** — voltamos nisso em um minuto:
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-27-kubernetes-pra-iniciantes-conceitos-essenciais-sem-1.jpg" alt="Kubernetes pra iniciantes: conceitos essenciais sem complicação" loading="lazy">
+<figcaption>December 2023 Developer Satisfaction Survey (DSS): likert chart showing respondents' satisfaction using Wikimedia's production Kubernetes infrastructure. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3A2023-12_DSS_deployment_kubernetes_satisfaction.png">2023-12 DSS deployment kubernetes satisfaction.png</a> por CMyrick-WMF — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
+</figure>
+
 ```yaml
 apiVersion: v1
 kind: Pod
@@ -123,6 +129,12 @@ Usei `NodePort` porque é o que funciona no Minikube sem configurar nada. Em pro
 ## Ingress
 
 Ingress é um conjunto de regras de tráfego na camada 7 (HTTP/HTTPS): ele diz qual hostname vai para qual serviço. Ele **não** é um balanceador de carga, e esse é o ponto que costuma gerar decepção.
+
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-27-kubernetes-pra-iniciantes-conceitos-essenciais-sem-2.jpg" alt="Kubernetes pra iniciantes: conceitos essenciais sem complicação" loading="lazy">
+<figcaption>December 2023 Developer Satisfaction Survey (DSS): bar chart showing respondents' use of Wikimedia's production Kubernetes infrastructure in the past year. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3A2023-12_DSS_deployment_kubernetes_use.png">2023-12 DSS deployment kubernetes use.png</a> por CMyrick-WMF — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
+</figure>
 
 **Um Ingress não funciona sozinho.** Ele só é lido por um componente chamado **Ingress Controller** (nginx, Traefik, cloud provider…). Sem um controller instalado no cluster, seus objetos são aceitos sem erro e simplesmente não fazem nada. No Minikube, você liga um com:
 

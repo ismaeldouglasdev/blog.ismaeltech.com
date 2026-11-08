@@ -18,6 +18,18 @@ When it comes to developing software, clean architecture is fundamental to ensur
 ## SRP with services
 The Single Responsibility Principle (SRP) is the first of the SOLID principles and states that a class should have only one reason to change. In other words, a class should have only one responsibility. To apply this principle in TypeScript, we can create services that encapsulate specific business logic. For example, in a project I recently developed, I created an authentication service that handled validating user credentials. This allowed the rest of the code to focus on other responsibilities, making it easier to maintain and understand.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados-1.jpg" alt="Clean Architecture in TypeScript: Applying SOLID Principles" loading="lazy">
+<figcaption>Soon Hyun to Syngman Rhee
+Institution name: USC Korean Heritage Library; Processing funded by a grant from the Library Services and Technology Act (LSTA), Cali. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ASoon_Hyun_to_Syngman_Rhee_%28KADA-shyun04-058%29.jpg">Soon Hyun to Syngman Rhee (KADA-shyun04-058).jpg</a> por Unknown authorUnknown author — <a href="https://creativecommons.org/licenses/">Public domain</a> · via Wikimedia Commons</figcaption>
+</figure>
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados.jpg" alt="Clean Architecture in TypeScript: Applying SOLID Principles" loading="lazy">
+<figcaption>Cover image do artigo</figcaption>
+</figure>
+
 ```typescript
 // example of authentication service
 interface AutenticacaoService {
@@ -58,6 +70,7 @@ class PagamentoStripe implements PagamentoStrategy {
 ---
 ## Liskov with Generics
 The Liskov principle states that subclasses should be substitutable for their superclasses. In TypeScript, we can apply this principle using generics. For example, in a project I developed, I created a class responsible for processing data, but I wanted to allow different types of data to be processed. To achieve this, I created a generic class that could work with different types of data.
+
 
 ```typescript
 // example of a generic class

@@ -40,6 +40,12 @@ Anti-cheat has always been the Achilles' heel, but even this barrier is falling.
 
 X11 was technically obsolete for a decade, but Wayland took time to mature. In 2026, we finally have a modern display protocol that solves fundamental problems: security between applications, proper support for multiple monitors, and efficient compositing.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-12-linux-no-desktop-em-2026-ja-esta-pronto-pra-todo-mundo-1.jpg" alt="Desktop Linux in 2026: Is It Ready for Everyone?" loading="lazy">
+<figcaption>Arch Linux with KDE Plasma 6 and Firefox. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AArch_Linux_-_October_2025_%28Portuguese%29.png">Arch Linux - October 2025 (Portuguese).png</a> por Breno Martins de Oliveira Vasconcelos — <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0</a> · via Wikimedia Commons</figcaption>
+</figure>
+
 Window managers like Hyprland take advantage of Wayland to create experiences that simply weren't possible on X11. Smooth animations, dynamic tiling, and visual effects that rival any proprietary system.
 
 ### KDE Plasma 6 and GNOME 46: Technical Maturity
@@ -84,6 +90,12 @@ Each professional area has its specific software that simply doesn't exist on Li
 ### Developers and IT Professionals
 
 If you work with web development, DevOps, data science, or system administration, Linux is objectively superior. The native terminal, powerful package managers, and integration with development tools make the workflow much more efficient.
+
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-12-linux-no-desktop-em-2026-ja-esta-pronto-pra-todo-mundo-2.jpg" alt="Desktop Linux in 2026: Is It Ready for Everyone?" loading="lazy">
+<figcaption>"Linux system can be regarded as a kind of pyramid, as illustrated in Fig. 10-1. At the bottom is the hardware, consisting of the CPU, memory, disks, a monitor. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ALayers_of_a_Linux_system.png">Layers of a Linux system.png</a> por Andrew S. Tanenbaum, Herbert Bos — <a href="https://creativecommons.org/licenses/">Public domain</a> · via Wikimedia Commons</figcaption>
+</figure>
 
 In my experience managing the store's Linux infrastructure, the productivity difference is striking. Automations that take hours on Windows are a matter of minutes on Linux.
 

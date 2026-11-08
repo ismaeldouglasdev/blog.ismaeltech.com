@@ -40,6 +40,8 @@ buildDrafts = false
   ShowReadingTime = true
   ShowShareButtons = true
   DateFormat = "02/01/2006"
+  defaultTheme = "light"
+  disableThemeToggle = false
 
   [params.homeInfoParams]
     Title = "Ismael Douglas"
