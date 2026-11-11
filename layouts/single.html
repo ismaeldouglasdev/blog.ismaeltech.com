@@ -43,23 +43,42 @@
 
   {{- partial "extend_post_content.html" . }}
 
-  {{ partial "cta.html" . }}
-  {{- $related := slice -}}
-  {{- range where .Site.Pages "Section" "posts" -}}
-    {{- if and (ne .Permalink $.Permalink) (eq .Lang $.Lang) (lt (len $related) 3) -}}
-      {{- $related = $related | append . -}}
-    {{- end -}}
-  {{- end -}}
-  {{- if $related }}
-  <section class="related">
-    <h2>{{ i18n "related_title" }}</h2>
-    <ul>
-      {{- range $related }}
-      <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+  {{- $lang := .Lang }}
+  {{- $picks := slice }}
+  {{- $seen := slice .RelPermalink }}
+  {{- range .Site.RegularPages.Related . }}
+    {{- if and (eq .Lang $lang) (lt (len $picks) 6) (not (in $seen .RelPermalink)) }}
+      {{- $picks = $picks | append . }}
+      {{- $seen = $seen | append .RelPermalink }}
+    {{- end }}
+  {{- end }}
+  {{- if lt (len $picks) 4 }}
+    {{- range .Site.RegularPages.ByDate.Reverse }}
+      {{- if and (ne .RelPermalink $.RelPermalink) (eq .Lang $lang) (not (in $seen .RelPermalink)) }}
+        {{- $picks = $picks | append . }}
+        {{- $seen = $seen | append .RelPermalink }}
+        {{- if ge (len $picks) 4 }}{{ break }}{{ end }}
       {{- end }}
-    </ul>
+    {{- end }}
+  {{- end }}
+  {{- if $picks }}
+  <section class="related">
+    <h2>{{ i18n "related_title" | default "Leia também" }}</h2>
+    <div class="related-grid">
+      {{- range first 6 $picks }}
+      <a class="related-card" href="{{ .Permalink }}">
+        {{- $cover := .Params.cover }}
+        {{- if reflect.IsMap $cover }}{{ $cover = $cover.image }}{{ end }}
+        {{- with $cover }}
+        <img class="related-card-img" src="{{ . }}" alt="" loading="lazy" />
+        {{- end }}
+        <span class="related-card-title">{{ .LinkTitle }}</span>
+      </a>
+      {{- end }}
+    </div>
   </section>
   {{- end }}
+  {{ partial "cta.html" . }}
   <footer class="post-footer">
     {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
     <ul class="post-tags">

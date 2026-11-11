@@ -15,7 +15,6 @@
     <button type="submit" class="blog-comments-submit" disabled>{{ i18n "comments_submit" }}</button>
     <p class="blog-comments-status"></p>
   </form>
-</div>
 
 <style>
 .blog-comments { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); }
@@ -52,9 +51,11 @@
 <script>
 (function () {
   var root = document.currentScript.closest('.blog-comments');
+  if (!root) return;
   var API = 'https://blog-analytics.y2kgif.workers.dev';
   var SITEKEY = '0x4AAAAAAEqk8S7SDJkzdRsG';
   var path = root.getAttribute('data-path');
+  if (!path) return;
   var listEl = root.querySelector('.blog-comments-list');
   var emptyEl = root.querySelector('.blog-comments-empty');
   var form = root.querySelector('.blog-comments-form');
@@ -215,3 +216,4 @@
   load();
 })();
 </script>
+</div>

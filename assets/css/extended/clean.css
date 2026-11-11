@@ -226,3 +226,49 @@ main > * { margin-bottom: var(--gap); }
   --clean-shadow-card: 0 1px 3px rgba(0, 0, 0, 0.3);
   --clean-shadow-hover: 0 6px 20px rgba(0, 0, 0, 0.45);
 }
+
+/* ---------- Leia também: cards com capa ---------- */
+.related {
+  margin-top: 3rem;
+}
+
+.related h2 {
+  margin-bottom: 1.25rem;
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.related-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  border-radius: var(--clean-radius-card, 12px);
+  background: var(--entry);
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.related-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--clean-shadow-hover, 0 6px 20px rgba(0, 0, 0, 0.08));
+}
+
+.related-card-img {
+  width: 100%;
+  aspect-ratio: 1200 / 630;
+  object-fit: cover;
+  display: block;
+}
+
+.related-card-title {
+  padding: 0.75rem 0.9rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.35;
+}
