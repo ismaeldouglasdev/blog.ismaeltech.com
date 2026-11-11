@@ -6,7 +6,7 @@ tags: ["go", "performance", "memoria"]
 excerpt: "Go memory management explained: escape analysis, stack vs heap allocation, concurrent tri-color GC, and sync.Pool patterns to reduce allocations."
 share_hook: "Escape analysis, sync.Pool, benchmarks, and why Go burns memory."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc.jpg"
+  image: "/covers/2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc.jpg"
 comments: true
 translationKey: "2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc"
 ---
@@ -58,7 +58,7 @@ Escape analysis is one of the most important features of the Go compiler. It aut
 </figure>
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc.jpg" alt="Memory Management in Go: Escape Analysis, Stack and GC" loading="lazy">
+<img src="/covers/2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc.jpg" alt="Memory Management in Go: Escape Analysis, Stack and GC" loading="lazy">
 <figcaption>Cover image do artigo</figcaption>
 </figure>
 

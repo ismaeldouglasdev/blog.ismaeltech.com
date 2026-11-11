@@ -5,7 +5,7 @@ category: "tutorial"
 tags: ["nextjs", "react", "server-components"]
 excerpt: "Choosing the right architecture and tools is crucial for scalable web applications."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-15-next-js-app-router-server-components-na-pratica.jpg"
+  image: "/covers/2026-09-15-next-js-app-router-server-components-na-pratica.jpg"
 comments: true
 translationKey: "2026-09-15-next-js-app-router-server-components-na-pratica"
 ---
@@ -24,7 +24,7 @@ Before diving into the details of the Next.js App Router, it's essential to unde
 </figure>
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-15-next-js-app-router-server-components-na-pratica.jpg" alt="Next.js App Router: Server Components in Action" loading="lazy">
+<img src="/covers/2026-09-15-next-js-app-router-server-components-na-pratica.jpg" alt="Next.js App Router: Server Components in Action" loading="lazy">
 <figcaption>Cover image do artigo</figcaption>
 </figure>
 

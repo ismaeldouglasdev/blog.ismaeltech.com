@@ -5,7 +5,7 @@ category: "tutorial"
 tags: ["nextjs", "react", "server-components"]
 excerpt: "Server Components no Next.js App Router na prática: como funcionam, quando usar, patterns de data fetching, streaming e interop com Client Components."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-15-next-js-app-router-server-components-na-pratica.jpg"
+  image: "/covers/2026-09-15-next-js-app-router-server-components-na-pratica.jpg"
 comments: true
 translationKey: "2026-09-15-next-js-app-router-server-components-na-pratica"
 ---
@@ -23,7 +23,7 @@ Antes de mergulharmos nos detalhes do Next.js App Router, é fundamental entende
 </figure>
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-15-next-js-app-router-server-components-na-pratica.jpg" alt="Next.js App Router: Server Components na prática" loading="lazy">
+<img src="/covers/2026-09-15-next-js-app-router-server-components-na-pratica.jpg" alt="Next.js App Router: Server Components na prática" loading="lazy">
 <figcaption>Cover image do artigo</figcaption>
 </figure>
 

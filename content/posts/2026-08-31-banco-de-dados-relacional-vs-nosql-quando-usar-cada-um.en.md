@@ -6,7 +6,7 @@ tags: ["database", "sql", "nosql", "mongodb"]
 excerpt: "Relational vs. NoSQL databases: when to use each one."
 share_hook: "ACID, data modeling and scaling: when PostgreSQL wins and when NoSQL pays."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um.jpg"
+  image: "/covers/2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um.jpg"
 comments: true
 translationKey: "2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um"
 ---

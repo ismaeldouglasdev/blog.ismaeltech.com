@@ -6,7 +6,7 @@ tags: ["websocket", "real-time", "node", "react"]
 excerpt: "Build a real-time chat application from scratch using WebSocket, Node.js, and React. Learn how WebSocket works and integrate it into a full-stack project."
 share_hook: "From handshake to reconnect: how a realtime chat actually works."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react.jpg"
+  image: "/covers/2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react.jpg"
 comments: true
 translationKey: "2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react"
 ---
@@ -231,7 +231,7 @@ Creating a real-time chat with WebSockets using Node.js and React is quite an ac
 ## 📸 Cover image credit
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react.jpg" alt="WebSocket from scratch: real-time chat with Node.js and React" loading="lazy">
+<img src="/covers/2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react.jpg" alt="WebSocket from scratch: real-time chat with Node.js and React" loading="lazy">
 <figcaption>Cover image do artigo</figcaption>
 </figure>
 - **Image:** [Apollo Guidance Computer (AGC).jpg](https://commons.wikimedia.org/wiki/File%3AApollo_Guidance_Computer_%28AGC%29.jpg)

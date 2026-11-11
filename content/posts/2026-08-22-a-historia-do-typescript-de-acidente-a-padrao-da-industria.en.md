@@ -6,7 +6,7 @@ tags: ["typescript", "historia", "javascript"]
 excerpt: "In October 2012, Microsoft announced TypeScript, reshaping JavaScript development. At the time, teams maintaining large JavaScript."
 share_hook: "From 2012 to ecosystem default: how TypeScript was born and won."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria.jpg"
+  image: "/covers/2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria.jpg"
 comments: true
 translationKey: "2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria"
 ---
@@ -32,7 +32,7 @@ TypeScript was created by Microsoft in 2012 with the goal of providing a languag
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria.jpg" alt="The History of TypeScript: From Accident to Industry Standard" loading="lazy">
+<img src="/covers/2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria.jpg" alt="The History of TypeScript: From Accident to Industry Standard" loading="lazy">
 <figcaption>Cover image do artigo</figcaption>
 </figure>
 ## Anders Hejlsberg and gradual typing

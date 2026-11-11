@@ -5,7 +5,7 @@ category: "tutorial"
 tags: ["react", "server-components", "nextjs"]
 excerpt: "React Server Components: when and how to use in Next.js."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-01-react-server-components-quando-e-como-usar-no-next-js.jpg"
+  image: "/covers/2026-10-01-react-server-components-quando-e-como-usar-no-next-js.jpg"
 comments: true
 translationKey: "2026-10-01-react-server-components-quando-e-como-usar-no-next-js"
 ---
@@ -42,7 +42,7 @@ To understand server components, we need to look at the path React has taken. In
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-01-react-server-components-quando-e-como-usar-no-next-js.jpg" alt="React Server Components: When and How to Use in Next.js" loading="lazy">
+<img src="/covers/2026-10-01-react-server-components-quando-e-como-usar-no-next-js.jpg" alt="React Server Components: When and How to Use in Next.js" loading="lazy">
 <figcaption>Cover image do artigo</figcaption>
 </figure>
 

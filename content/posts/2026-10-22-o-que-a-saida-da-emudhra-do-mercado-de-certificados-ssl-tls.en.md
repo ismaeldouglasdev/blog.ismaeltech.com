@@ -5,7 +5,7 @@ category: "tendencia"
 tags: ["seguran\u00e7a", "ssl", "tls", "ca"]
 excerpt: "Your website or API could be about to go offline for millions of users without you having made a single change to your code. The only cause? One of the trust seals that"
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-22-o-que-a-saida-da-emudhra-do-mercado-de-certificados-ssl-tls.jpg"
+  image: "/covers/2026-10-22-o-que-a-saida-da-emudhra-do-mercado-de-certificados-ssl-tls.jpg"
 comments: true
 translationKey: "2026-10-22-o-que-a-saida-da-emudhra-do-mercado-de-certificados-ssl-tls"
 ---

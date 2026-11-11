@@ -6,7 +6,7 @@ tags: ["minecraft", "games", "mojang", "dungeons"]
 excerpt: "Anunciado no Minecraft LIVE, o Sift é a quarta dimensão do Minecraft e a primeira adicionada em mais de uma década. Chega primeiro em Dungeons II, em 29/09, e ao jogo principal em 2027."
 share_hook: "Quinze anos sem uma dimensão nova. O que a Mojang mostrou do Sift, por que ele nasce primeiro em Dungeons II, e o que ainda ninguém sabe."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-26-minecraft-sift-nova-dimensao-anunciada.jpg"
+  image: "/covers/2026-09-26-minecraft-sift-nova-dimensao-anunciada.jpg"
 comments: true
 translationKey: "2026-09-26-minecraft-sift-nova-dimensao-anunciada"
 ---

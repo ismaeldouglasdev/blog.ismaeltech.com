@@ -5,7 +5,7 @@ category: "article"
 tags: ["ia", "llm", "rag", "agentes", "openai"]
 excerpt: "Inteligência Artificial para desenvolvedores: LLMs, RAG e agentes."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-06-inteligencia-artificial-para-desenvolvedores-llms-rag-e.jpg"
+  image: "/covers/2026-10-06-inteligencia-artificial-para-desenvolvedores-llms-rag-e.jpg"
 comments: true
 translationKey: "2026-10-06-inteligencia-artificial-para-desenvolvedores-llms-rag-e"
 ---
@@ -16,7 +16,7 @@ Migrar dados entre sistemas costuma ser uma tarefa manual, lenta e sujeita a err
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-06-inteligencia-artificial-para-desenvolvedores-llms-rag-e.jpg" alt="Inteligência Artificial para desenvolvedores: LLMs, RAG e agentes" loading="lazy">
+<img src="/covers/2026-10-06-inteligencia-artificial-para-desenvolvedores-llms-rag-e.jpg" alt="Inteligência Artificial para desenvolvedores: LLMs, RAG e agentes" loading="lazy">
 <figcaption>Cover image do artigo</figcaption>
 </figure>
 

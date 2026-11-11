@@ -6,7 +6,7 @@ tags: ["typescript", "arquitetura", "solid"]
 excerpt: "Clean architecture in TypeScript: SOLID principles applied with services, the strategy pattern, generics, and dependency inversion."
 share_hook: "SOLID one principle at a time: services, strategy, generics, DIP."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados.jpg"
+  image: "/covers/2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados.jpg"
 comments: true
 translationKey: "2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados"
 ---
@@ -26,7 +26,7 @@ Institution name: USC Korean Heritage Library; Processing funded by a grant from
 </figure>
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados.jpg" alt="Clean Architecture in TypeScript: Applying SOLID Principles" loading="lazy">
+<img src="/covers/2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados.jpg" alt="Clean Architecture in TypeScript: Applying SOLID Principles" loading="lazy">
 <figcaption>Cover image do artigo</figcaption>
 </figure>
 

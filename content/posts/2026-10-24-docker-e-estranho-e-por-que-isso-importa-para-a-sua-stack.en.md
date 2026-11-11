@@ -5,7 +5,7 @@ category: "tutorial"
 tags: ["docker", "devops", "containers", "desenvolvimento"]
 excerpt: "If youve ever needed to orchestrate a development environment with Docker, whether for a full stack app, a Python API, or a database, youve probably felt that strange"
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-24-docker-e-estranho-e-por-que-isso-importa-para-a-sua-stack.jpg"
+  image: "/covers/2026-10-24-docker-e-estranho-e-por-que-isso-importa-para-a-sua-stack.jpg"
 comments: true
 translationKey: "2026-10-24-docker-e-estranho-e-por-que-isso-importa-para-a-sua-stack"
 ---

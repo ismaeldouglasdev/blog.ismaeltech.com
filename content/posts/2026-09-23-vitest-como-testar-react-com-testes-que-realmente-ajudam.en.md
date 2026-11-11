@@ -6,7 +6,7 @@ tags: ["vitest", "testes", "react", "tdd"]
 excerpt: "Vitest: how to test React with tests that genuinely assist."
 share_hook: "Vite setup, mocking, integration tests and CI coverage."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam.jpg"
+  image: "/covers/2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam.jpg"
 comments: true
 translationKey: "2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam"
 ---
@@ -17,7 +17,7 @@ Tests are not optional. They are essential for ensuring software quality and con
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam.jpg" alt="Vitest: How to Test React with Truly Helpful Tests" loading="lazy">
+<img src="/covers/2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam.jpg" alt="Vitest: How to Test React with Truly Helpful Tests" loading="lazy">
 <figcaption>Cover image do artigo</figcaption>
 </figure>
 

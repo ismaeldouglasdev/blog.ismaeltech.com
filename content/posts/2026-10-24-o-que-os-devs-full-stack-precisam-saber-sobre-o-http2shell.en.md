@@ -5,7 +5,7 @@ category: "tutorial"
 tags: ["seguranca", "http2", "rce", "nodejs", "python"]
 excerpt: "Have you ever stopped to think about how many vulnerabilities exist in data transport between your frontend and backend? Im not just talking about broken encryption or leaked"
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-24-o-que-os-devs-full-stack-precisam-saber-sobre-o-http2shell.jpg"
+  image: "/covers/2026-10-24-o-que-os-devs-full-stack-precisam-saber-sobre-o-http2shell.jpg"
 comments: true
 translationKey: "2026-10-24-o-que-os-devs-full-stack-precisam-saber-sobre-o-http2shell"
 ---

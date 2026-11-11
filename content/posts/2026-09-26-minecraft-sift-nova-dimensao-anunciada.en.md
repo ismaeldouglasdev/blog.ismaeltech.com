@@ -6,7 +6,7 @@ tags: ["minecraft", "games", "mojang", "dungeons"]
 excerpt: "Announced at Minecraft LIVE, The Sift is Minecraft's fourth dimension and the first one added in over a decade. It lands in Dungeons II on September 29 and in the main game in 2027."
 share_hook: "Fifteen years without a new dimension. What Mojang showed of The Sift, why it debuts in Dungeons II, and what nobody knows yet."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-26-minecraft-sift-nova-dimensao-anunciada.jpg"
+  image: "/covers/2026-09-26-minecraft-sift-nova-dimensao-anunciada.jpg"
 comments: true
 translationKey: "2026-09-26-minecraft-sift-nova-dimensao-anunciada"
 ---

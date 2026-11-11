@@ -5,7 +5,7 @@ category: "article"
 tags: ["react", "performance", "otimizacao"]
 excerpt: "When to memoize, how React Compiler changes the game, and how to measure real impact with the Profiler."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-13-react-performance-memo-usememo-usecallback-e-react-compiler.jpg"
+  image: "/covers/2026-10-13-react-performance-memo-usememo-usecallback-e-react-compiler.jpg"
 comments: true
 translationKey: "2026-10-13-react-performance-memo-usememo-usecallback-e-react-compiler"
 ---
@@ -31,7 +31,7 @@ Optimization is not an optional step "for when there is time". It is a direct an
 </figure>
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-13-react-performance-memo-usememo-usecallback-e-react-compiler.jpg" alt="React performance: memo, useMemo, useCallback, and React Compiler" loading="lazy">
+<img src="/covers/2026-10-13-react-performance-memo-usememo-usecallback-e-react-compiler.jpg" alt="React performance: memo, useMemo, useCallback, and React Compiler" loading="lazy">
 <figcaption>Cover image do artigo</figcaption>
 </figure>
 

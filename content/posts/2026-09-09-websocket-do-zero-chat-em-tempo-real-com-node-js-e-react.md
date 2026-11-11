@@ -6,7 +6,7 @@ tags: ["websocket", "real-time", "node", "react"]
 excerpt: "WebSocket do zero: chat em tempo real com Node.js e React."
 share_hook: "Do handshake à reconexão: como funciona por dentro um chat em tempo real com Node.js e React."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react.jpg"
+  image: "/covers/2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react.jpg"
 comments: true
 translationKey: "2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react"
 ---
@@ -234,6 +234,6 @@ Criar um chat em tempo real com WebSockets utilizando Node.js e React é uma tar
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react.jpg" alt="WebSocket do zero: chat em tempo real com Node.js e React" loading="lazy">
+<img src="/covers/2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react.jpg" alt="WebSocket do zero: chat em tempo real com Node.js e React" loading="lazy">
 <figcaption>Cover image do artigo</figcaption>
 </figure>

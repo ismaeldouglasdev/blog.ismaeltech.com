@@ -5,7 +5,7 @@ category: "tutorial"
 tags: ["nginx", "devops", "proxy"]
 excerpt: "Deploying a web app directly exposing the Node.js, Python, or Go port to the public internet is asking for trouble."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-03-nginx-como-reverse-proxy-ssl-load-balancing-e-caching.jpg"
+  image: "/covers/2026-10-03-nginx-como-reverse-proxy-ssl-load-balancing-e-caching.jpg"
 comments: true
 translationKey: "2026-10-03-nginx-como-reverse-proxy-ssl-load-balancing-e-caching"
 ---

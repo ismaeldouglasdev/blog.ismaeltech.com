@@ -6,7 +6,7 @@ tags: ["react", "hooks", "javascript", "frontend"]
 excerpt: "By 2018, 85% of React projects had already adopted Hooks."
 share_hook: "useEffect cleanup, useRef, custom hooks, and the mistakes that keep showing up."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks.jpg"
+  image: "/covers/2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks.jpg"
 comments: true
 translationKey: "2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks"
 ---
@@ -47,7 +47,7 @@ The `useEffect` replaces class lifecycle methods (`componentDidMount`, `componen
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks.jpg" alt="Advanced React Hooks: Essential useEffect, useRef, and Custom Hooks" loading="lazy">
+<img src="/covers/2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks.jpg" alt="Advanced React Hooks: Essential useEffect, useRef, and Custom Hooks" loading="lazy">
 <figcaption>Cover image do artigo</figcaption>
 </figure>
 ```tsx

@@ -6,7 +6,7 @@ tags: ["typescript", "história", "javascript"]
 excerpt: "TypeScript nasceu como experimento interno da Microsoft em 2012 para resolver a crise de manutenibilidade do JavaScript. Veja como virou padrão da indústria."
 share_hook: "De 2012 ao ecossistema: como o TypeScript nasceu, a resistência inicial e o momento em que o Angular 2 virou o ponto de virada."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria.jpg"
+  image: "/covers/2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria.jpg"
 comments: true
 translationKey: "2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria"
 ---
@@ -29,7 +29,7 @@ O TypeScript foi criado pela Microsoft em 2012, com o objetivo de fornecer uma l
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria.jpg" alt="A história do TypeScript: de acidente a padrão da indústria" loading="lazy">
+<img src="/covers/2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria.jpg" alt="A história do TypeScript: de acidente a padrão da indústria" loading="lazy">
 <figcaption>Cover image do artigo</figcaption>
 </figure>
 ## Anders Hejlsberg e a tipagem gradual

@@ -5,7 +5,7 @@ category: "tutorial"
 tags: ["edge", "cloudflare", "serverless", "workers"]
 excerpt: "Edge Functions com Cloudflare Workers: compute global sem servidor."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-14-edge-functions-com-cloudflare-workers-compute-global-sem.jpg"
+  image: "/covers/2026-09-14-edge-functions-com-cloudflare-workers-compute-global-sem.jpg"
 comments: true
 translationKey: "2026-09-14-edge-functions-com-cloudflare-workers-compute-global-sem"
 ---
@@ -37,7 +37,7 @@ Despite its heft, my son read the book in one day, as we read the. — Imagem: <
 </figure>
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-14-edge-functions-com-cloudflare-workers-compute-global-sem.jpg" alt="Edge Functions com Cloudflare Workers: compute global sem servidor" loading="lazy">
+<img src="/covers/2026-09-14-edge-functions-com-cloudflare-workers-compute-global-sem.jpg" alt="Edge Functions com Cloudflare Workers: compute global sem servidor" loading="lazy">
 <figcaption>Cover image do artigo</figcaption>
 </figure>
 

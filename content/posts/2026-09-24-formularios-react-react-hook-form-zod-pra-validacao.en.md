@@ -6,7 +6,7 @@ tags: ["react", "forms", "zod", "react-hook-form"]
 excerpt: "React Forms: React Hook Form + Zod for Effortless Validation."
 share_hook: "Validation, error messages, multi-step forms and performance."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-24-formularios-react-react-hook-form-zod-pra-validacao.jpg"
+  image: "/covers/2026-09-24-formularios-react-react-hook-form-zod-pra-validacao.jpg"
 comments: true
 translationKey: "2026-09-24-formularios-react-react-hook-form-zod-pra-validacao"
 ---
@@ -26,7 +26,7 @@ To get started, we need to set up our React project. If you do not have a projec
 </figure>
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-24-formularios-react-react-hook-form-zod-pra-validacao.jpg" alt="React Forms: Perfect Validation with React Hook Form + Zod" loading="lazy">
+<img src="/covers/2026-09-24-formularios-react-react-hook-form-zod-pra-validacao.jpg" alt="React Forms: Perfect Validation with React Hook Form + Zod" loading="lazy">
 <figcaption>Cover image do artigo</figcaption>
 </figure>
 

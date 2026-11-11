@@ -5,7 +5,7 @@ category: "article"
 tags: ["deploy", "cloud", "vercel", "railway"]
 excerpt: "Developers face a tough choice when deploying web applications, with many platforms available."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-16-deploy-com-vercel-railway-e-fly-io-comparativo-honesto.jpg"
+  image: "/covers/2026-09-16-deploy-com-vercel-railway-e-fly-io-comparativo-honesto.jpg"
 comments: true
 translationKey: "2026-09-16-deploy-com-vercel-railway-e-fly-io-comparativo-honesto"
 ---

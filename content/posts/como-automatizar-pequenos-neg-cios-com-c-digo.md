@@ -2,7 +2,7 @@
 title: 'Como automatizar pequenos negócios com código'
 date: 2026-07-09
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/como-automatizar-pequenos-neg-cios-com-c-digo.jpg"
+  image: "/covers/como-automatizar-pequenos-neg-cios-com-c-digo.jpg"
 draft: true
 description: 'Aprenda como pequenas empresas podem usar código para automatizar tarefas repetitivas, reduzir erros e economizar tempo. Guia prático para iniciantes.'
 tags:

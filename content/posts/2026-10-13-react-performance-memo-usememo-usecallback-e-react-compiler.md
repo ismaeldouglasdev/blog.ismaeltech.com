@@ -5,7 +5,7 @@ category: "article"
 tags: ["react", "performance", "otimizacao"]
 excerpt: "Quando memoizar, como o React Compiler muda o jogo e como medir o impacto real com o Profiler."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-13-react-performance-memo-usememo-usecallback-e-react-compiler.jpg"
+  image: "/covers/2026-10-13-react-performance-memo-usememo-usecallback-e-react-compiler.jpg"
 comments: true
 translationKey: "2026-10-13-react-performance-memo-usememo-usecallback-e-react-compiler"
 ---
@@ -31,7 +31,7 @@ Otimização não é um passo opcional "quando sobra tempo". É uma resposta dir
 </figure>
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-13-react-performance-memo-usememo-usecallback-e-react-compiler.jpg" alt="React performance: memo, useMemo, useCallback e React Compiler" loading="lazy">
+<img src="/covers/2026-10-13-react-performance-memo-usememo-usecallback-e-react-compiler.jpg" alt="React performance: memo, useMemo, useCallback e React Compiler" loading="lazy">
 <figcaption>Cover image do artigo</figcaption>
 </figure>
 

@@ -6,7 +6,7 @@ tags: ["uuid", "javascript", "databases"]
 excerpt: "A universally unique identifier looks like a shortcut until you need an index in Postgres and the ID size starts to hurt. An honest look at when UUID is the right choice and when it isn't."
 share_hook: "UUID became the industry default for a reasonable reason, and for one reason few people admit: it removes the work of coordinating inserts."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-03-uuid-v4-por-que-o-id-aleatorio-ainda-e-a-escolha-certa.jpg"
+  image: "/covers/2026-10-03-uuid-v4-por-que-o-id-aleatorio-ainda-e-a-escolha-certa.jpg"
 comments: true
 translationKey: "2026-10-03-uuid-v4-por-que-o-id-aleatorio-ainda-e-a-escolha-certa"
 ---
@@ -51,7 +51,7 @@ distinguishes the versions.
 </figure>
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-03-uuid-v4-por-que-o-id-aleatorio-ainda-e-a-escolha-certa.jpg" alt="UUID v4: why the random ID is still the right call" loading="lazy">
+<img src="/covers/2026-10-03-uuid-v4-por-que-o-id-aleatorio-ainda-e-a-escolha-certa.jpg" alt="UUID v4: why the random ID is still the right call" loading="lazy">
 <figcaption>Cover image do artigo</figcaption>
 </figure>
 

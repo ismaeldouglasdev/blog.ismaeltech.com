@@ -7,7 +7,7 @@ tags: ["css", "grid", "layout"]
 excerpt: "CSS Grid vs. Flexbox: When to Use Each in Web Development."
 share_hook: "Grid is 2D, Flexbox is 1D - that one distinction fixes most layout puzzles."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-17-css-grid-e-flexbox-quando-usar-cada-um.jpg"
+  image: "/covers/2026-08-17-css-grid-e-flexbox-quando-usar-cada-um.jpg"
 comments: true
 translationKey: "2026-08-17-css-grid-e-flexbox-quando-usar-cada-um"
 ---

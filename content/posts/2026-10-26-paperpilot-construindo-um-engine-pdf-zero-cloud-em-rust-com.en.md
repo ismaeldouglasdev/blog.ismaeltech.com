@@ -5,7 +5,7 @@ category: "tutorial"
 tags: ["rust", "wasm", "pdf", "mcp", "open-source"]
 excerpt: "How many times have you needed to extract text from a PDF within a web application and found yourself beholden to an external API? You upload the file, wait for the response"
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-26-paperpilot-construindo-um-engine-pdf-zero-cloud-em-rust-com.jpg"
+  image: "/covers/2026-10-26-paperpilot-construindo-um-engine-pdf-zero-cloud-em-rust-com.jpg"
 comments: true
 translationKey: "2026-10-26-paperpilot-construindo-um-engine-pdf-zero-cloud-em-rust-com"
 ---

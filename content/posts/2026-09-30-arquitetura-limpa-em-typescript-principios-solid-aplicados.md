@@ -5,7 +5,7 @@ category: "article"
 tags: ["typescript", "arquitetura", "solid"]
 excerpt: "Arquitetura limpa em TypeScript: princípios SOLID aplicados."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-30-arquitetura-limpa-em-typescript-principios-solid-aplicados.jpg"
+  image: "/covers/2026-09-30-arquitetura-limpa-em-typescript-principios-solid-aplicados.jpg"
 comments: true
 translationKey: "2026-09-30-arquitetura-limpa-em-typescript-principios-solid-aplicados"
 ---
@@ -25,7 +25,7 @@ O primeiro princípio SOLID é o Princípio da Responsabilidade Única (Single R
 </figure>
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-30-arquitetura-limpa-em-typescript-principios-solid-aplicados.jpg" alt="Arquitetura limpa em TypeScript: princípios SOLID aplicados" loading="lazy">
+<img src="/covers/2026-09-30-arquitetura-limpa-em-typescript-principios-solid-aplicados.jpg" alt="Arquitetura limpa em TypeScript: princípios SOLID aplicados" loading="lazy">
 <figcaption>Cover image do artigo</figcaption>
 </figure>
 

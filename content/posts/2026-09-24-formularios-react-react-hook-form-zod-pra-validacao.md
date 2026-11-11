@@ -6,7 +6,7 @@ tags: ["react", "forms", "zod", "react-hook-form"]
 excerpt: "Formulários React: React Hook Form + Zod para validação perfeita."
 share_hook: "Do setup ao multi-step: validação com Zod, mensagens de erro que fazem sentido, upload de arquivos e performance."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-24-formularios-react-react-hook-form-zod-pra-validacao.jpg"
+  image: "/covers/2026-09-24-formularios-react-react-hook-form-zod-pra-validacao.jpg"
 comments: true
 translationKey: "2026-09-24-formularios-react-react-hook-form-zod-pra-validacao"
 ---
@@ -26,7 +26,7 @@ Para começar, precisamos configurar nosso projeto React. Se ainda não tem um p
 </figure>
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-24-formularios-react-react-hook-form-zod-pra-validacao.jpg" alt="Formulários React: React Hook Form + Zod pra validação perfeita" loading="lazy">
+<img src="/covers/2026-09-24-formularios-react-react-hook-form-zod-pra-validacao.jpg" alt="Formulários React: React Hook Form + Zod pra validação perfeita" loading="lazy">
 <figcaption>Cover image do artigo</figcaption>
 </figure>
 

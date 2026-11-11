@@ -5,7 +5,7 @@ category: "tendencia"
 tags: ["php", "seguran\u00e7a", "ia", "devops"]
 excerpt: "A remote code execution (RCE) vulnerability in one of the webs oldest and most widespread languages would be concerning enough on its own. But when this flaw is discovered"
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-21-php2shell-o-que-a-falha-de-rce-descoberta-por-ia-ensina.jpg"
+  image: "/covers/2026-10-21-php2shell-o-que-a-falha-de-rce-descoberta-por-ia-ensina.jpg"
 comments: true
 translationKey: "2026-10-21-php2shell-o-que-a-falha-de-rce-descoberta-por-ia-ensina"
 ---

@@ -6,7 +6,7 @@ tags: ["vitest", "testes", "react", "tdd"]
 excerpt: "Vitest: como testar React com testes que realmente ajudam."
 share_hook: "Setup, mocking, testes de integração e coverage no CI: o fluxo completo de testes com Vitest em React."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam.jpg"
+  image: "/covers/2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam.jpg"
 comments: true
 translationKey: "2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam"
 ---
@@ -57,7 +57,7 @@ A React Testing Library é uma excelente ferramenta para testar componentes Reac
 </figure>
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam.jpg" alt="Vitest: como testar React com testes que realmente ajudam" loading="lazy">
+<img src="/covers/2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam.jpg" alt="Vitest: como testar React com testes que realmente ajudam" loading="lazy">
 <figcaption>Cover image do artigo</figcaption>
 </figure>
 

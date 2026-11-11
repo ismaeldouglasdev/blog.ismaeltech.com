@@ -6,7 +6,7 @@ tags: ["prisma", "orm", "banco-de-dados", "typescript"]
 excerpt: "Prisma ORM in practice: modeling a SaaS schema, relationships, safe migrations, advanced query API, and performance indexing."
 share_hook: "Modeling a SaaS schema: relations, safe migrations and the advanced Query API."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript.jpg"
+  image: "/covers/2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript.jpg"
 comments: true
 translationKey: "2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript"
 ---

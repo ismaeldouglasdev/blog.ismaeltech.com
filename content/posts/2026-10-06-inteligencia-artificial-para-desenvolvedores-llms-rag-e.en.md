@@ -5,7 +5,7 @@ category: "article"
 tags: ["ia", "llm", "rag", "agentes", "openai"]
 excerpt: "Artificial Intelligence for Developers: LLMs, RAG, and Agents."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-06-inteligencia-artificial-para-desenvolvedores-llms-rag-e.jpg"
+  image: "/covers/2026-10-06-inteligencia-artificial-para-desenvolvedores-llms-rag-e.jpg"
 comments: true
 translationKey: "2026-10-06-inteligencia-artificial-para-desenvolvedores-llms-rag-e"
 ---
@@ -16,7 +16,7 @@ I remember when I updated the point-of-sale system for the store where I work. M
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-06-inteligencia-artificial-para-desenvolvedores-llms-rag-e.jpg" alt="Artificial Intelligence for Developers: LLMs, RAG, and Agents" loading="lazy">
+<img src="/covers/2026-10-06-inteligencia-artificial-para-desenvolvedores-llms-rag-e.jpg" alt="Artificial Intelligence for Developers: LLMs, RAG, and Agents" loading="lazy">
 <figcaption>Cover image do artigo</figcaption>
 </figure>
 

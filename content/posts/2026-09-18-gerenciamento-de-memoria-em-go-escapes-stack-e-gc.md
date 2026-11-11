@@ -6,7 +6,7 @@ tags: ["go", "performance", "memoria"]
 excerpt: "Entenda como o Go gerencia memória: escape analysis, alocação stack vs heap, garbage collector concorrente e sync.Pool para reduzir alocações."
 share_hook: "Por que aquele endpoint consome tanta memória? Escape analysis, stack vs heap, sync.Pool, benchmarks e as armadilhas que só aparecem em produção."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc.jpg"
+  image: "/covers/2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc.jpg"
 comments: true
 translationKey: "2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc"
 ---
@@ -58,7 +58,7 @@ A análise de escape é um dos recursos mais importantes do compilador Go. Ela d
 </figure>
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc.jpg" alt="Gerenciamento de memória em Go: escapes, stack e GC" loading="lazy">
+<img src="/covers/2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc.jpg" alt="Gerenciamento de memória em Go: escapes, stack e GC" loading="lazy">
 <figcaption>Cover image do artigo</figcaption>
 </figure>
 

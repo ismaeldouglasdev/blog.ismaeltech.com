@@ -5,7 +5,7 @@ category: "tutorial"
 tags: ["serverless", "aws", "lambda", "cloud"]
 excerpt: "Serverless on AWS Lambda: how \"invisible\" servers let small businesses run APIs and automations without dedicated infrastructure."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas.jpg"
+  image: "/covers/2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas.jpg"
 comments: true
 translationKey: "2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas"
 ---

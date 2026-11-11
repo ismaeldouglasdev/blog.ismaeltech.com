@@ -6,7 +6,7 @@ tags: ["git", "workflow", "produtividade"]
 excerpt: "Git na prática: Git Flow vs trunk-based, rebase interativo, cherry-pick e bisect, resolução de conflitos e convenção de commits."
 share_hook: "Git Flow ou trunk-based? E quando usar rebase interativo, bisect e Husky de verdade, com os conflitos resolvidos passo a passo."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao.jpg"
+  image: "/covers/2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao.jpg"
 comments: true
 translationKey: "2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao"
 ---

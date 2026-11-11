@@ -6,7 +6,7 @@ tags: ["graphql", "apollo", "api"]
 excerpt: "GraphQL com Apollo Server e Client: Do Zero ao Completo."
 share_hook: "Do schema aos resolvers e ao Apollo Client: por que over-fetching mata e o que o GraphQL resolve de fato."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-13-api-graphql-com-apollo-server-e-client-do-zero-ao-completo.jpg"
+  image: "/covers/2026-09-13-api-graphql-com-apollo-server-e-client-do-zero-ao-completo.jpg"
 comments: true
 translationKey: "2026-09-13-api-graphql-com-apollo-server-e-client-do-zero-ao-completo"
 ---

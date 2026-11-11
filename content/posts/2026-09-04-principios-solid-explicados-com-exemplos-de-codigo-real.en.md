@@ -6,7 +6,7 @@ tags: ["solid", "arquitetura", "boas-praticas"]
 excerpt: "SOLID principles explained with real code: SRP, OCP, LSP, ISP, and DIP applied to an e-commerce integration case."
 share_hook: "Each SOLID principle with the code before and after, from an integration that broke two months after delivery."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real.jpg"
+  image: "/covers/2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real.jpg"
 comments: true
 translationKey: "2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real"
 ---
@@ -32,7 +32,7 @@ Here I explain how the five SOLID principles can keep code from evolving into an
 </figure>
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real.jpg" alt="SOLID Principles Explained with Real Code Examples" loading="lazy">
+<img src="/covers/2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real.jpg" alt="SOLID Principles Explained with Real Code Examples" loading="lazy">
 <figcaption>Cover image do artigo</figcaption>
 </figure>
 

@@ -5,7 +5,7 @@ category: "article"
 tags: ["javascript", "fetch", "api"]
 excerpt: "markdown Modern Fetch API: alternatives to axios in 2026"
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-12-fetch-api-moderno-alternativas-ao-axios-em-2026.jpg"
+  image: "/covers/2026-10-12-fetch-api-moderno-alternativas-ao-axios-em-2026.jpg"
 comments: true
 translationKey: "2026-10-12-fetch-api-moderno-alternativas-ao-axios-em-2026"
 ---
@@ -74,7 +74,7 @@ An implementation example can be seen below:
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-12-fetch-api-moderno-alternativas-ao-axios-em-2026.jpg" alt="Modern Fetch API: Alternatives to Axios in 2026" loading="lazy">
+<img src="/covers/2026-10-12-fetch-api-moderno-alternativas-ao-axios-em-2026.jpg" alt="Modern Fetch API: Alternatives to Axios in 2026" loading="lazy">
 <figcaption>Cover image do artigo</figcaption>
 </figure>
 

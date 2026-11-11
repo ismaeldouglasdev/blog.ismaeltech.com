@@ -6,7 +6,7 @@ tags: ["react", "server-components", "nextjs"]
 excerpt: "React Server Components and Next.js: how server-side rendering shrinks the client bundle, and when this architecture makes sense."
 share_hook: "Server vs Client Components, streaming and Server Actions - when each one fits."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-28-react-server-components-quando-e-como-usar-no-next-js.jpg"
+  image: "/covers/2026-08-28-react-server-components-quando-e-como-usar-no-next-js.jpg"
 comments: true
 translationKey: "2026-08-28-react-server-components-quando-e-como-usar-no-next-js"
 ---
@@ -41,7 +41,7 @@ The rule of thumb for deciding between Server and Client Components is based on 
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-28-react-server-components-quando-e-como-usar-no-next-js.jpg" alt="React Server Components: when and how to use them in Next.js" loading="lazy">
+<img src="/covers/2026-08-28-react-server-components-quando-e-como-usar-no-next-js.jpg" alt="React Server Components: when and how to use them in Next.js" loading="lazy">
 <figcaption>Cover image do artigo</figcaption>
 </figure>
 Server Components should be the default choice for most of the application. They come into play when you need to fetch data directly from a database, keep API keys hidden from the client, reduce the JavaScript bundle size, or render heavy static and textual content.

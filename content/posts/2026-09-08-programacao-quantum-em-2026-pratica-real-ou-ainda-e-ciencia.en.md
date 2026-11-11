@@ -6,7 +6,7 @@ tags: ["quantum", "computacao", "futuro"]
 excerpt: "Quantum computing in 2026: the real state of the technology, Qiskit and Cirq, practical problems being solved, and when developers need to care."
 share_hook: "Qiskit and Cirq in practice, what's real today and what's still marketing."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia.jpg"
+  image: "/covers/2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia.jpg"
 comments: true
 translationKey: "2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia"
 ---

@@ -6,7 +6,7 @@ tags: ["typescript", "javascript", "tipagem"]
 excerpt: "Advanced TypeScript Types That Prevent Bugs in Production."
 share_hook: "Narrowing, branded types and generics that kill bugs before deploy."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em.jpg"
+  image: "/covers/2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em.jpg"
 comments: true
 translationKey: "2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em"
 ---
@@ -87,6 +87,6 @@ This pattern is fundamental for robust APIs. It eliminates the need for excessiv
 - **License:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) · via Wikimedia Commons
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em.jpg" alt="TypeScript: Advanced Types to Take Your Code to Production" loading="lazy">
+<img src="/covers/2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em.jpg" alt="TypeScript: Advanced Types to Take Your Code to Production" loading="lazy">
 <figcaption>Cover image do artigo</figcaption>
 </figure>

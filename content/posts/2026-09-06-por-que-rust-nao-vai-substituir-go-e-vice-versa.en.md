@@ -5,7 +5,7 @@ category: "curiosidade"
 tags: ["rust", "go", "linguagens", "opiniao"]
 excerpt: "Choosing the right programming language is crucial for a projects success and maintenance."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa.jpg"
+  image: "/covers/2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa.jpg"
 comments: true
 translationKey: "2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa"
 ---
@@ -18,7 +18,7 @@ Go, also known as Golang, was created by the Google team in 2009 with the goal o
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa.jpg" alt="Why Rust Won&#x27;t Replace Go (and Vice Versa)" loading="lazy">
+<img src="/covers/2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa.jpg" alt="Why Rust Won&#x27;t Replace Go (and Vice Versa)" loading="lazy">
 <figcaption>Cover image do artigo</figcaption>
 </figure>
 One of the main strengths of Go is its simplicity. The language has a small set of keywords and a syntax that is easy to learn, even for developers who do not have prior experience with the language. This, combined with its efficiency and ability to handle concurrency, makes Go a popular choice for developing distributed systems, networks, and applications that require high performance.

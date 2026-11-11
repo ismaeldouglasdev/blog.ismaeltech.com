@@ -6,7 +6,7 @@ tags: ["postgresql", "database", "tendencias"]
 excerpt: "PostgreSQL and the revival of SQL databases: native JSON, extensions like pgvector and PostGIS, and why SQL beat NoSQL again."
 share_hook: "Native JSON, pgvector, PostGIS - why SQL won again."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais.jpg"
+  image: "/covers/2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais.jpg"
 comments: true
 translationKey: "2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais"
 ---

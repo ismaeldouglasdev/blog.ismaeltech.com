@@ -5,7 +5,7 @@ category: "gadget"
 tags: ["teclado", "mecanico", "gadget"]
 excerpt: "Keychron Q6 Max, Wooting 80HE and NuPhy Air75 V2: what makes each one special, what the community says and who each model is for."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-14-teclados-mecanicos-em-2026-modelos-em-destaque.jpg"
+  image: "/covers/2026-09-14-teclados-mecanicos-em-2026-modelos-em-destaque.jpg"
 comments: true
 translationKey: "2026-09-14-teclados-mecanicos-em-2026-modelos-em-destaque"
 ---
@@ -30,7 +30,7 @@ The Keychron Q6 Max is one of the most talked-about full-size keyboards of the y
 </figure>
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-14-teclados-mecanicos-em-2026-modelos-em-destaque.jpg" alt="Mechanical keyboards in 2026: the models getting the most attention" loading="lazy">
+<img src="/covers/2026-09-14-teclados-mecanicos-em-2026-modelos-em-destaque.jpg" alt="Mechanical keyboards in 2026: the models getting the most attention" loading="lazy">
 <figcaption>Cover image do artigo</figcaption>
 </figure>
 

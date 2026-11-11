@@ -5,7 +5,7 @@ category: "tutorial"
 tags: ["react", "server-components", "nextjs"]
 excerpt: "React Server Components: quando e como usar no Next.js."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-01-react-server-components-quando-e-como-usar-no-next-js.jpg"
+  image: "/covers/2026-10-01-react-server-components-quando-e-como-usar-no-next-js.jpg"
 comments: true
 translationKey: "2026-10-01-react-server-components-quando-e-como-usar-no-next-js"
 ---
@@ -35,7 +35,7 @@ A distinção fundamental entre server e client components está no ciclo de vid
 </figure>
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-01-react-server-components-quando-e-como-usar-no-next-js.jpg" alt="React Server Components: quando e como usar no Next.js" loading="lazy">
+<img src="/covers/2026-10-01-react-server-components-quando-e-como-usar-no-next-js.jpg" alt="React Server Components: quando e como usar no Next.js" loading="lazy">
 <figcaption>Cover image do artigo</figcaption>
 </figure>
 

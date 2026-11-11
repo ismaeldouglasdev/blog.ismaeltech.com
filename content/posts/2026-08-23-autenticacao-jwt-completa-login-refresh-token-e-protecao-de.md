@@ -6,7 +6,7 @@ tags: ["jwt", "autenticação", "segurança", "node"]
 excerpt: "Autenticação JWT completa: fluxo de login, access e refresh tokens, proteção de rotas com middleware, rotação e revogação."
 share_hook: "Access e refresh tokens, middleware de rota, rotação e blacklist: o fluxo de autenticação completo, incluindo o que costuma ser esquecido."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de.jpg"
+  image: "/covers/2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de.jpg"
 comments: true
 translationKey: "2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de"
 ---

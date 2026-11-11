@@ -6,7 +6,7 @@ tags: ["npm", "bun", "deno", "javascript"]
 excerpt: "Bun e Deno estão ganhando espaço no ecossistema JavaScript: velocidade, TypeScript nativo, segurança e por que o npm ainda vai durar."
 share_hook: "Os problemas reais do npm, o que Bun e Deno resolvem — e se vale migrar ou só ficar no Yarn ou pnpm."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco.jpg"
+  image: "/covers/2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco.jpg"
 comments: true
 translationKey: "2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco"
 ---

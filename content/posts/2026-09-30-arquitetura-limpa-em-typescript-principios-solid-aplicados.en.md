@@ -5,7 +5,7 @@ category: "article"
 tags: ["typescript", "arquitetura", "solid"]
 excerpt: "Clean Architecture in TypeScript: SOLID Principles Applied."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-30-arquitetura-limpa-em-typescript-principios-solid-aplicados.jpg"
+  image: "/covers/2026-09-30-arquitetura-limpa-em-typescript-principios-solid-aplicados.jpg"
 comments: true
 translationKey: "2026-09-30-arquitetura-limpa-em-typescript-principios-solid-aplicados"
 ---
@@ -25,7 +25,7 @@ The first SOLID principle is the Single Responsibility Principle (SRP). This pri
 </figure>
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-30-arquitetura-limpa-em-typescript-principios-solid-aplicados.jpg" alt="Clean Architecture in TypeScript: Applying SOLID Principles" loading="lazy">
+<img src="/covers/2026-09-30-arquitetura-limpa-em-typescript-principios-solid-aplicados.jpg" alt="Clean Architecture in TypeScript: Applying SOLID Principles" loading="lazy">
 <figcaption>Cover image do artigo</figcaption>
 </figure>
 

@@ -5,7 +5,7 @@ category: "tutorial"
 tags: ["testing-library", "react", "testes"]
 excerpt: "A maioria dos testes de React falha não por erro técnico, mas por má interpretação do que está sendo testado."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-26-testing-library-testes-de-react-que-refletem-o-uso-real.jpg"
+  image: "/covers/2026-09-26-testing-library-testes-de-react-que-refletem-o-uso-real.jpg"
 comments: true
 translationKey: "2026-09-26-testing-library-testes-de-react-que-refletem-o-uso-real"
 ---
