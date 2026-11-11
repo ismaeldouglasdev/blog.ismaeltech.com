@@ -112,7 +112,7 @@
     var results = document.getElementById('homeSearchResults');
     var data = [];
 
-    fetch('{{ "index.json" | absURL }}').then(function(r){ return r.json(); }).then(function(d){ data = d; });
+    fetch('{{ "index.json" | relLangURL }}').then(function(r){ return r.json(); }).then(function(d){ data = d; });
 
     function esc(s) {
       var d = document.createElement('div');
