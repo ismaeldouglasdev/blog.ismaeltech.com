@@ -25,7 +25,7 @@ The Keychron Q6 Max is one of the most talked-about full-size keyboards of the y
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-14-teclados-mecanicos-em-2026-modelos-em-destaque-1.jpg" alt="Mechanical keyboards in 2026: the models getting the most attention" loading="lazy">
+<img src="/media/2026-09-14-teclados-mecanicos-em-2026-modelos-em-destaque-1.jpg" alt="Mechanical keyboards in 2026: the models getting the most attention" loading="lazy">
 <figcaption>A pair of mechanical filters from a Collins 75A-4 amateur radio receiver. Left: F 455-J-05 with 500 Hz bandwidth for CW (Continuous Wave / Morse code) transmiss. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ACollins_mechanical_filters.jpg">Collins mechanical filters.jpg</a> por Ladd Observatory — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 

@@ -20,7 +20,7 @@ O primeiro princípio SOLID é o Princípio da Responsabilidade Única (Single R
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-30-arquitetura-limpa-em-typescript-principios-solid-aplicados-1.jpg" alt="Arquitetura limpa em TypeScript: princípios SOLID aplicados" loading="lazy">
+<img src="/media/2026-09-30-arquitetura-limpa-em-typescript-principios-solid-aplicados-1.jpg" alt="Arquitetura limpa em TypeScript: princípios SOLID aplicados" loading="lazy">
 <figcaption>درخت مفاهیم معماری نرم افزار. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AASTA.ir_software_architecture_mind_map_printable.png">ASTA.ir software architecture mind map printable.png</a> por Mohammadjavadheydari — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 

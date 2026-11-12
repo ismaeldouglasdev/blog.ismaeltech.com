@@ -128,7 +128,7 @@ test('fetchData calls the API and returns data', async () => {
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam-1.jpg" alt="Vitest: How to Test React with Truly Helpful Tests" loading="lazy">
+<img src="/media/2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam-1.jpg" alt="Vitest: How to Test React with Truly Helpful Tests" loading="lazy">
 <figcaption>Sequential Software Testing Life Cycle. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ASoftware_Testing_Life_Cycle.jpg">Software Testing Life Cycle.jpg</a> por Perfect Happiness — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
 </figure>
   const data = await fetchData();

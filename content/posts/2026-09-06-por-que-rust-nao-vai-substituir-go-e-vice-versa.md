@@ -25,7 +25,7 @@ Um dos principais pontos fortes de Go é sua simplicidade. A linguagem tem um co
 
 
 <figure>
-  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa.jpg" alt="O gopher, mascote do Go, segurando uma chave-inglesa." loading="lazy" />
+  <img src="/media/2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa.jpg" alt="O gopher, mascote do Go, segurando uma chave-inglesa." loading="lazy" />
   <figcaption>
     O gopher, mascote do Go, segurando uma chave-inglesa. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AGo_gopher_pencil_wrench.jpg">Go gopher pencil wrench.jpg</a> por Renee French —
     <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a> · via Wikimedia Commons

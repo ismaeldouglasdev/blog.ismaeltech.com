@@ -21,7 +21,7 @@ Aqui, vou explorar como utilizar recursos avançados do TypeScript para criar in
 
 
 <figure>
-  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em.jpg" alt="O logo do TypeScript: tipagem estática que evita bugs em produção." loading="lazy" />
+  <img src="/media/2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em.jpg" alt="O logo do TypeScript: tipagem estática que evita bugs em produção." loading="lazy" />
   <figcaption>
     O logo do TypeScript: tipagem estática que evita bugs em produção. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ATypescript.svg">Typescript.svg</a> por TypeScript —
     <a href="https://en.wikipedia.org/wiki/Public_domain">Public domain</a> · via Wikimedia Commons

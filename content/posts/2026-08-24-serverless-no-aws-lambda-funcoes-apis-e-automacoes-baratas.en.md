@@ -22,7 +22,7 @@ Below, I'll show how to build functions, APIs, and triggers in a practical and c
 
 
 <figure>
-  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas.jpg" alt="Wikimedia Foundation servers: the infrastructure behind on-demand services." loading="lazy" />
+  <img src="/media/2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas.jpg" alt="Wikimedia Foundation servers: the infrastructure behind on-demand services." loading="lazy" />
   <figcaption>
     Wikimedia Foundation servers: the infrastructure behind on-demand services. — Image: <a href="https://commons.wikimedia.org/wiki/File%3AWikimedia_Foundation_Servers-8055_08.jpg">Wikimedia Foundation Servers-8055 08.jpg</a> by Victorgrigas —
     <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> · via Wikimedia Commons
@@ -35,7 +35,7 @@ The first thing we need to understand is that a **Lambda** is simply a snippet o
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas-1.jpg" alt="Serverless on AWS Lambda: Affordable Functions, APIs, and Automation" loading="lazy">
+<img src="/media/2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas-1.jpg" alt="Serverless on AWS Lambda: Affordable Functions, APIs, and Automation" loading="lazy">
 <figcaption>Arfa Software Technology Park located at 346-B, Ferozepur Road, Lahore, Pakistan!. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AArfa_Software_Technology_Park%2C_Ferozepur_Road%2C_Lahore.jpg">Arfa Software Technology Park, Ferozepur Road, Lahore.jpg</a> por Shahzaib Damn Cruze — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 ### 1.1 Minimal structure of a Python function  

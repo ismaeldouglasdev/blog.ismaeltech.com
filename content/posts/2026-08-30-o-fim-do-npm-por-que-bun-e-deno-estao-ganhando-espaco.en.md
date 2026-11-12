@@ -16,7 +16,7 @@ When it comes to managing dependencies in JavaScript projects, npm is the indust
 
 
 <figure>
-  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco.jpg" alt="The npm logo, the world's largest package registry." loading="lazy" />
+  <img src="/media/2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco.jpg" alt="The npm logo, the world's largest package registry." loading="lazy" />
   <figcaption>
     The npm logo, the world's largest package registry. — Image: <a href="https://commons.wikimedia.org/wiki/File%3ANpm-logo.svg">Npm-logo.svg</a> by Boboss74 —
     <a href="https://en.wikipedia.org/wiki/Public_domain">Public domain</a> · via Wikimedia Commons
@@ -49,7 +49,7 @@ This will install the react package and its dependencies.
 
 
 <figure>
-  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco-deno.jpg" alt="The Deno logo, a JavaScript/TypeScript runtime secure by default." loading="lazy" />
+  <img src="/media/2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco-deno.jpg" alt="The Deno logo, a JavaScript/TypeScript runtime secure by default." loading="lazy" />
   <figcaption>
     The Deno logo, a JavaScript/TypeScript runtime secure by default. — Image: <a href="https://commons.wikimedia.org/wiki/File%3ADeno.svg">Deno.svg</a> by Kevin Qian —
     <a href="https://opensource.org/license/mit">MIT</a> · via Wikimedia Commons

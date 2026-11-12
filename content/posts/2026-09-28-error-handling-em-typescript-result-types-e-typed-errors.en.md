@@ -20,7 +20,7 @@ The traditional approach to error handling in JavaScript and TypeScript is using
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-28-error-handling-em-typescript-result-types-e-typed-errors-1.jpg" alt="Error Handling in TypeScript: Result Types and Typed Errors" loading="lazy">
+<img src="/media/2026-09-28-error-handling-em-typescript-result-types-e-typed-errors-1.jpg" alt="Error Handling in TypeScript: Result Types and Typed Errors" loading="lazy">
 <figcaption>visible à airbus Defense & Space Toulouse depuis le chemin du canal du midi. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ABoite_de_transport_de_la_sonde_JUICE.jpg">Boite de transport de la sonde JUICE.jpg</a> por DuniterDotOrg — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 
@@ -134,7 +134,7 @@ When dealing with data validation, such as in APIs, it is common to use librarie
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-28-error-handling-em-typescript-result-types-e-typed-errors-2.jpg" alt="Error Handling in TypeScript: Result Types and Typed Errors" loading="lazy">
+<img src="/media/2026-09-28-error-handling-em-typescript-result-types-e-typed-errors-2.jpg" alt="Error Handling in TypeScript: Result Types and Typed Errors" loading="lazy">
 <figcaption>Fred A. Dolph to Korean Provisional Government
 Institution name: USC Korean Heritage Library; Processing funded by a grant from the Library Services and Techno. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AFred_A._Dolph_to_Korean_Provisional_Government_%28KADA-shyun04-010%29.jpg">Fred A. Dolph to Korean Provisional Government (KADA-shyun04-010).jpg</a> por Unknown authorUnknown author — <a href="https://creativecommons.org/licenses/">Public domain</a> · via Wikimedia Commons</figcaption>
 </figure>

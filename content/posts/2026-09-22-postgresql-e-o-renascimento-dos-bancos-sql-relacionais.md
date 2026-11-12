@@ -19,7 +19,7 @@ No início dos anos 2010, os bancos de dados NoSQL começaram a ganhar popularid
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais-1.jpg" alt="PostgreSQL e o renascimento dos bancos SQL relacionais" loading="lazy">
+<img src="/media/2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais-1.jpg" alt="PostgreSQL e o renascimento dos bancos SQL relacionais" loading="lazy">
 <figcaption>Recurcive CTEs (Common Table Expressions) are a powerful construct within PostgreSQL, it defined in the WITH clause. CTEs allows to work with temporary set of d. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ARECURSIVE_%2843321721355%29.jpg">RECURSIVE (43321721355).jpg</a> por Exey Panteleev from Moscow, Russia — <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 
@@ -31,7 +31,7 @@ Uma das funcionalidades que tornou o PostgreSQL mais atraente foi a adição do 
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais-2.jpg" alt="PostgreSQL e o renascimento dos bancos SQL relacionais" loading="lazy">
+<img src="/media/2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais-2.jpg" alt="PostgreSQL e o renascimento dos bancos SQL relacionais" loading="lazy">
 <figcaption>db postgresql perf. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ADb_postgresql.png">Db postgresql.png</a> por Vk2410 — <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0</a> · via Wikimedia Commons</figcaption>
 </figure>
 ```sql

@@ -25,7 +25,7 @@ O preço de lançamento nos EUA é de US$ 1.999. É alto, mas consistente com o 
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-14-noticia-demo-nvidia-geforce-rtx-5090-lancamento-1.jpg" alt="NVIDIA anuncia GeForce RTX 5090: specs, preço e o que esperar" loading="lazy">
+<img src="/media/2026-09-14-noticia-demo-nvidia-geforce-rtx-5090-lancamento-1.jpg" alt="NVIDIA anuncia GeForce RTX 5090: specs, preço e o que esperar" loading="lazy">
 <figcaption>NVIDIA 12VHPWR adapter. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3A2023_Adapter_NVIDIA_12VHPWR_%281%29.jpg">2023 Adapter NVIDIA 12VHPWR (1).jpg</a> por Jacek Halicki — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 
@@ -52,7 +52,7 @@ A crítica mais recorrente é justa: para quem joga em 1440p, uma placa de US$ 1
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-14-noticia-demo-nvidia-geforce-rtx-5090-lancamento-2.jpg" alt="NVIDIA anuncia GeForce RTX 5090: specs, preço e o que esperar" loading="lazy">
+<img src="/media/2026-09-14-noticia-demo-nvidia-geforce-rtx-5090-lancamento-2.jpg" alt="NVIDIA anuncia GeForce RTX 5090: specs, preço e o que esperar" loading="lazy">
 <figcaption>NVIDIA 12VHPWR adapter. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3A2023_Adapter_NVIDIA_12VHPWR_%282%29.jpg">2023 Adapter NVIDIA 12VHPWR (2).jpg</a> por Jacek Halicki — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 

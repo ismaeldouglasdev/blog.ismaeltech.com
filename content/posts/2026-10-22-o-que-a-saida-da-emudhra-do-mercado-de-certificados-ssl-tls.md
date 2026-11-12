@@ -32,7 +32,7 @@ Antes de entrar em pânico, o primeiro passo é um diagnóstico simples. A boa n
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-10-22-o-que-a-saida-da-emudhra-do-mercado-de-certificados-ssl-tls-1.jpg" alt="O que a saída da eMudhra do mercado de certificados SSL/TLS significa para você, desenvolv" loading="lazy">
+<img src="/media/2026-10-22-o-que-a-saida-da-emudhra-do-mercado-de-certificados-ssl-tls-1.jpg" alt="O que a saída da eMudhra do mercado de certificados SSL/TLS significa para você, desenvolv" loading="lazy">
 <figcaption>Brief explanation of how SSL certificates function. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3A1258X489_How-SSL-Certificates-Work.jpg">1258X489 How-SSL-Certificates-Work.jpg</a> por Drew Carver1 — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 
@@ -127,7 +127,7 @@ A situação da eMudhra serve como um alerta para um problema estrutural maior. 
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-10-22-o-que-a-saida-da-emudhra-do-mercado-de-certificados-ssl-tls-2.jpg" alt="O que a saída da eMudhra do mercado de certificados SSL/TLS significa para você, desenvolv" loading="lazy">
+<img src="/media/2026-10-22-o-que-a-saida-da-emudhra-do-mercado-de-certificados-ssl-tls-2.jpg" alt="O que a saída da eMudhra do mercado de certificados SSL/TLS significa para você, desenvolv" loading="lazy">
 <figcaption>MOBILE EV SSL CERTIFICATE. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AMOBILE_EV_SSL_CERTIFICATE.jpg">MOBILE EV SSL CERTIFICATE.jpg</a> por Русский Хакер — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 

@@ -19,7 +19,7 @@ Dois dos workflows de Git mais populares são o Git Flow e o Trunk-based. O Git 
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao-1.jpg" alt="Git na prática: workflows profissionais, rebase e resolução de conflitos" loading="lazy">
+<img src="/media/2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao-1.jpg" alt="Git na prática: workflows profissionais, rebase e resolução de conflitos" loading="lazy">
 <figcaption>Git Scheynius with the British film and stage director, producer, and screenwriter Sam Mendes who is awarded the Stockholm Visionary Award 2022 during the Stock. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AGit_Scheynius_and_Sam_Mendes_in_2022.jpg">Git Scheynius and Sam Mendes in 2022.jpg</a> por Frankie Fouganthin — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 
@@ -31,7 +31,7 @@ Outros dois recursos úteis do Git são o cherry-pick e o bisect. O cherry-pick 
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao-2.jpg" alt="Git na prática: workflows profissionais, rebase e resolução de conflitos" loading="lazy">
+<img src="/media/2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao-2.jpg" alt="Git na prática: workflows profissionais, rebase e resolução de conflitos" loading="lazy">
 <figcaption>A basic overview of the git branching workflow (geared towards GitLab). — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ABasic_git_branching_workflow_%28GitLab%29.png">Basic git branching workflow (GitLab).png</a> por TheresNoTime — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 

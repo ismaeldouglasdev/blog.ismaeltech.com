@@ -25,7 +25,7 @@ The typical flow starts with a user providing credentials (email and password). 
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de-1.jpg" alt="Full JWT Authentication: Login, Refresh Tokens, and Route Protection" loading="lazy">
+<img src="/media/2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de-1.jpg" alt="Full JWT Authentication: Login, Refresh Tokens, and Route Protection" loading="lazy">
 <figcaption>DSC_0199. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AASJ_Jet_Airways_-_Airbus_A330-302_-_VT-JWT_-_Flight_JAI229_to_BRU-DEL_%289360691015%29.jpg">ASJ Jet Airways - Airbus A330-302 - VT-JWT - Flight JAI229 to BRU-DEL (9360691015).jpg</a> por Lord of the Wings© from Toronto, Canada — <a href="https://creativecommons.org/licenses/by-sa/2.0">CC BY-SA 2.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 Here is a simple login endpoint in Express with local Passport:
@@ -319,7 +319,7 @@ Choose the approach that best fits your infrastructure. In my experience, Redis 
 
 
 <figure>
-  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de.jpg" alt="Cybersecurity vs. information security: complementary concepts." loading="lazy" />
+  <img src="/media/2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de.jpg" alt="Cybersecurity vs. information security: complementary concepts." loading="lazy" />
   <figcaption>
     Cybersecurity vs. information security: complementary concepts. — Image: <a href="https://commons.wikimedia.org/wiki/File%3ACybersecurity_vs_information_security.png">Cybersecurity vs information security.png</a> by Pcoronaf —
     <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons

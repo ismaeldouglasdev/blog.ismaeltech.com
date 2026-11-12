@@ -50,7 +50,7 @@ Manter-se seguro exige vigilância constante. Se você gerencia servidores, veri
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-10-21-php2shell-o-que-a-falha-de-rce-descoberta-por-ia-ensina-1.jpg" alt="PHP2Shell: o que a falha de RCE descoberta por IA ensina para devs full stack" loading="lazy">
+<img src="/media/2026-10-21-php2shell-o-que-a-falha-de-rce-descoberta-por-ia-ensina-1.jpg" alt="PHP2Shell: o que a falha de RCE descoberta por IA ensina para devs full stack" loading="lazy">
 <figcaption>This image contains an example of a "hello world" application running in PHP 7.4 including the index.php source file, the localhost server instance running in t. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3A%22Hello_World%22_Application_in_PHP.png">&quot;Hello World&quot; Application in PHP.png</a> por DirkDouse — <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0</a> · via Wikimedia Commons</figcaption>
 </figure>
 
@@ -63,6 +63,6 @@ Manter-se seguro exige vigilância constante. Se você gerencia servidores, veri
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-10-21-php2shell-o-que-a-falha-de-rce-descoberta-por-ia-ensina-2.jpg" alt="PHP2Shell: o que a falha de RCE descoberta por IA ensina para devs full stack" loading="lazy">
+<img src="/media/2026-10-21-php2shell-o-que-a-falha-de-rce-descoberta-por-ia-ensina-2.jpg" alt="PHP2Shell: o que a falha de RCE descoberta por IA ensina para devs full stack" loading="lazy">
 <figcaption>Código en PHP. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ACodigo_php.jpg">Codigo php.jpg</a> por lmonk72 — <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0</a> · via Wikimedia Commons</figcaption>
 </figure>

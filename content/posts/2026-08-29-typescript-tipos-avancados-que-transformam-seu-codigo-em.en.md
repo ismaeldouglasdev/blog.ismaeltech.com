@@ -21,7 +21,7 @@ Here, I'll explore how to use advanced TypeScript features to create more robust
 
 
 <figure>
-  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em.jpg" alt="The TypeScript logo: static typing that prevents bugs in production." loading="lazy" />
+  <img src="/media/2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em.jpg" alt="The TypeScript logo: static typing that prevents bugs in production." loading="lazy" />
   <figcaption>
     The TypeScript logo: static typing that prevents bugs in production. — Image: <a href="https://commons.wikimedia.org/wiki/File%3ATypescript.svg">Typescript.svg</a> by TypeScript —
     <a href="https://en.wikipedia.org/wiki/Public_domain">Public domain</a> · via Wikimedia Commons

@@ -19,7 +19,7 @@ Isso vai muito além de nostalgia. É uma aula prática de engenharia reversa, d
 Eu entendo um pouco dessa dor de compatibilidade. Desde 2020, trabalho no setor comercial de uma loja de varejo, onde liderei a migração de um banco de dados com mais de 10 mil produtos entre sistemas. Implementamos e customizamos o OSPOS, um sistema de ponto de venda (PDV) open source. O desafio diário é fazer uma pilha de tecnologias, do PHP legado do PDV a integrações com e-commerce, funcionarem em harmonia, mantendo a operação da loja rodando sem interrupções. É um terreno fértil para aprender sobre interfaces estáveis e a importância de testes rigorosos.
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/fheroes2-screenshot.png" alt="Captura de tela do jogo fheroes2 mostrando a interface isométrica clássica, com heróis, castelos e o mapa estratégico" loading="lazy">
+<img src="/media/fheroes2-screenshot.png" alt="Captura de tela do jogo fheroes2 mostrando a interface isométrica clássica, com heróis, castelos e o mapa estratégico" loading="lazy">
 <figcaption>Interface do fheroes2: uma recriação fiel da visão isométrica e da paleta de cores do HOMM2 original. (Fonte: Repositório oficial fheroes2/fheroes2, licença GPLv2)</figcaption>
 </figure>
 
@@ -107,7 +107,7 @@ Este é meu dia a dia. Um PDV como o OSPOS precisa se integrar a emissoras fisca
 * Essa arquitetura permite que a base do sistema evolua sem travar o ecossistema ao redor.
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/modern-legacy-integration.png" alt="Diagrama de arquitetura mostrando um núcleo estável (Core) com interfaces bem definidas, conectado a módulos legados e modernos via adaptadores" loading="lazy">
+<img src="/media/modern-legacy-integration.png" alt="Diagrama de arquitetura mostrando um núcleo estável (Core) com interfaces bem definidas, conectado a módulos legados e modernos via adaptadores" loading="lazy">
 <figcaption>Arquitetura de compatibilidade: um núcleo estável (Core) se comunica com sistemas legados e modernos através de interfaces bem definidas e camadas de adaptação (Adapters).</figcaption>
 </figure>
 

@@ -17,7 +17,7 @@ Já ficou horas encurralado por um bug que desaparece assim que você tenta insp
 
 
 <figure>
-  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug.jpg" alt="DevTools do navegador Blisk: painéis abertos para iPhone 12 e iPad Pro 11." loading="lazy" />
+  <img src="/media/2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug.jpg" alt="DevTools do navegador Blisk: painéis abertos para iPhone 12 e iPad Pro 11." loading="lazy" />
   <figcaption>
     DevTools do navegador Blisk: painéis abertos para iPhone 12 e iPad Pro 11. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AWikipedia-blisk-devtools-iphone-12-and-ipad-pro-11-2021.png">Wikipedia-blisk-devtools-iphone-12-and-ipad-pro-11-2021.png</a> por And85rew —
     <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons

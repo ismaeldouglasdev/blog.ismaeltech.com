@@ -30,7 +30,7 @@ Vite tornou o setup de Tailwind quase trivial. Num projeto React novo:
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-20-tailwind-css-utility-first-na-pratica-pra-projetos-reais-1.jpg" alt="Tailwind CSS: utility-first na prática pra projetos reais" loading="lazy">
+<img src="/media/2026-09-20-tailwind-css-utility-first-na-pratica-pra-projetos-reais-1.jpg" alt="Tailwind CSS: utility-first na prática pra projetos reais" loading="lazy">
 <figcaption>Chataropica is a web-based instant messaging platform accessible at aedtpworld.com/chat, developed by AEDTP World. Built with PHP and Tailwind CSS, it is design. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AChataropica.png">Chataropica.png</a> por Uhvhhvjhh — <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 

@@ -26,7 +26,7 @@ Desde então, quinze anos de atualizações. Novos biomas, novos mobs, novas mec
 O End foi a última, e entrou junto com a 1.0, justamente para o duelo final com o dragão. Depois disso, nada. Quatorze anos sem uma nova dimensão, e agora o jogo finalmente vai ter uma quarta.
 
 <figure>
-  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-26-minecraft-sift-nova-dimensao-meadow.jpg" alt="Personagens de Minecraft Dungeons II em um bioma luminoso, com grama em tom azul-esverdeado e estruturas rosa e dourado emitindo luz." loading="lazy" />
+  <img src="/media/2026-09-26-minecraft-sift-nova-dimensao-meadow.jpg" alt="Personagens de Minecraft Dungeons II em um bioma luminoso, com grama em tom azul-esverdeado e estruturas rosa e dourado emitindo luz." loading="lazy" />
   <figcaption>
     O Sift tem uma paleta deliberadamente diferente do Nether e do End. Imagem: Mojang Studios via XBOX Wire.
   </figcaption>
@@ -41,7 +41,7 @@ Quem jogou o primeiro Dungeons lembra de uma estrutura de níveis separados. O s
 Dito de outro jeito: o Sift vai ser o primeiro lugar onde esse conteúdo é jogável de verdade. Quem quiser ver mobs, blocos e biomas do Sift em ação tem um caminho objetivo, e ele é um jogo separado.
 
 <figure>
-  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-26-minecraft-sift-nova-dimensao-carapace.jpg" alt="Combate em uma área de pedra e azulejos com uma geoda alaranjada brilhante e pilares azuis ao fundo." loading="lazy" />
+  <img src="/media/2026-09-26-minecraft-sift-nova-dimensao-carapace.jpg" alt="Combate em uma área de pedra e azulejos com uma geoda alaranjada brilhante e pilares azuis ao fundo." loading="lazy" />
   <figcaption>
     Uma das áreas reveladas do Sift. Imagem: Mojang Studios via XBOX Wire.
   </figcaption>

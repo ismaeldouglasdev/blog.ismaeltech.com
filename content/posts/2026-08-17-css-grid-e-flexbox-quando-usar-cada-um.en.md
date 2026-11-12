@@ -23,7 +23,7 @@ In this article, we'll explore how Flexbox and Grid work, their main characteris
 
 
 <figure>
-  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-17-css-grid-e-flexbox-quando-usar-cada-um.jpg" alt="Responsive design: the same website adapted to desktop and mobile." loading="lazy" />
+  <img src="/media/2026-08-17-css-grid-e-flexbox-quando-usar-cada-um.jpg" alt="Responsive design: the same website adapted to desktop and mobile." loading="lazy" />
   <figcaption>
     Responsive design: the same website adapted to desktop and mobile. — Image: <a href="https://commons.wikimedia.org/wiki/File%3ADesign_responsivo.png">Design responsivo.png</a> by Diego Mariano —
     <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons
@@ -36,7 +36,7 @@ To understand the fundamental difference, we need to look at the terminology use
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-17-css-grid-e-flexbox-quando-usar-cada-um-1.jpg" alt="CSS Grid vs. Flexbox: When to Use Each One" loading="lazy">
+<img src="/media/2026-08-17-css-grid-e-flexbox-quando-usar-cada-um-1.jpg" alt="CSS Grid vs. Flexbox: When to Use Each One" loading="lazy">
 <figcaption>Representa o box model CSS. Há três retângulos na tela. O centro indica o conteúdo. A borda separa as áreas de preenchimento (padding) e de margem (margin). — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ABox_model_CSS.png">Box model CSS.png</a> por Diego Mariano — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 *   **Flexbox (One-dimensional):** Focuses on a single axis. It organizes items in a row or in a column.

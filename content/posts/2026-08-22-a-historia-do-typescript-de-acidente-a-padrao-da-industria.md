@@ -17,7 +17,7 @@ Em outubro de 2012, a Microsoft fez um anúncio que mudaria o rumo do desenvolvi
 
 
 <figure>
-  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria.jpg" alt="O logotipo do TypeScript, criado pela Microsoft." loading="lazy" />
+  <img src="/media/2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria.jpg" alt="O logotipo do TypeScript, criado pela Microsoft." loading="lazy" />
   <figcaption>
     O logotipo do TypeScript, criado pela Microsoft. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ATypeScript_Logo.svg">TypeScript Logo.svg</a> por Microsoft —
     <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a> · via Wikimedia Commons

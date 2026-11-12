@@ -20,7 +20,7 @@ The first SOLID principle is the Single Responsibility Principle (SRP). This pri
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-30-arquitetura-limpa-em-typescript-principios-solid-aplicados-1.jpg" alt="Clean Architecture in TypeScript: Applying SOLID Principles" loading="lazy">
+<img src="/media/2026-09-30-arquitetura-limpa-em-typescript-principios-solid-aplicados-1.jpg" alt="Clean Architecture in TypeScript: Applying SOLID Principles" loading="lazy">
 <figcaption>درخت مفاهیم معماری نرم افزار. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AASTA.ir_software_architecture_mind_map_printable.png">ASTA.ir software architecture mind map printable.png</a> por Mohammadjavadheydari — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 

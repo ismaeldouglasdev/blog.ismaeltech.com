@@ -15,7 +15,7 @@ Quantas vezes você já precisou extrair texto de um PDF dentro de uma aplicaç�
 Essa foi a motivação exata para o PaperPilot. Um motor de processamento de PDF escrito em Rust, compilado para WebAssembly (WASM) e exposto como um servidor MCP (Model Context Protocol). A ideia é simples: levar o poder do Rust para o navegador e para servidores locais, sem uma única linha de código trafegando por um serviço de terceiros. Privacidade, controle e performance total, diretamente no seu ambiente.
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/paperpilot-architecture-diagram.png" alt="Diagrama de arquitetura do PaperPilot mostrando um PDF sendo processado pelo módulo Rust, compilado para WASM, executado em um Worker Web ou servidor Node.js" loading="lazy">
+<img src="/media/paperpilot-architecture-diagram.png" alt="Diagrama de arquitetura do PaperPilot mostrando um PDF sendo processado pelo módulo Rust, compilado para WASM, executado em um Worker Web ou servidor Node.js" loading="lazy">
 <figcaption>Arquitetura do PaperPilot: Rust → WASM, executável no cliente ou em servidores edge.</figcaption>
 </figure>
 
@@ -123,7 +123,7 @@ async def extract_pdf(file: UploadFile = File(...)):
 A beleza dessa abordagem é a eliminação de um *single point of failure*. Seu serviço não cai porque um provedor de PDF terceirizado mudou seu plano de preços ou teve uma indisponibilidade.
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/wasm-pack-logo.png" alt="Logotipo do wasm-pack, a ferramenta para empacotar código Rust em WASM" loading="lazy" width="400" style="max-width: 200px; height: auto;">
+<img src="/media/wasm-pack-logo.png" alt="Logotipo do wasm-pack, a ferramenta para empacotar código Rust em WASM" loading="lazy" width="400" style="max-width: 200px; height: auto;">
 <figcaption>wasm-pack é a ferramenta fundamental da cadeia de ferramentas Rust/WASM. Fonte: <a href="https://github.com/rustwasm/wasm-pack">Repositório Oficial</a> (Licença MIT/Apache 2.0).</figcaption>
 </figure>
 

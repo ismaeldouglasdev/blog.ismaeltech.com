@@ -20,7 +20,7 @@ The first step to implementing CI/CD with GitHub Actions is to create a workflow
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-10-02-ci-cd-do-zero-github-actions-pra-projetos-node-js-e-react-1.jpg" alt="CI/CD from Scratch: GitHub Actions for Node.js and React Projects" loading="lazy">
+<img src="/media/2026-10-02-ci-cd-do-zero-github-actions-pra-projetos-node-js-e-react-1.jpg" alt="CI/CD from Scratch: GitHub Actions for Node.js and React Projects" loading="lazy">
 <figcaption>วงจร CI/CD. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ACICD_TH.png">CICD TH.png</a> por Wittawin Panta — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 
@@ -96,7 +96,7 @@ One aspect that can significantly improve your pipeline efficiency is dependency
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-10-02-ci-cd-do-zero-github-actions-pra-projetos-node-js-e-react-2.jpg" alt="CI/CD from Scratch: GitHub Actions for Node.js and React Projects" loading="lazy">
+<img src="/media/2026-10-02-ci-cd-do-zero-github-actions-pra-projetos-node-js-e-react-2.jpg" alt="CI/CD from Scratch: GitHub Actions for Node.js and React Projects" loading="lazy">
 <figcaption>Event Platform, desired CI/CD. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AEvent_Platform_value_stream_-_desired_CI-CD.png">Event Platform value stream - desired CI-CD.png</a> por GModena (WMF) — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 ```yaml

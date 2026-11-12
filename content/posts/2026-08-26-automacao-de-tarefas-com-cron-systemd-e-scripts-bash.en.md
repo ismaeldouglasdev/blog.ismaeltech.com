@@ -36,7 +36,7 @@ These examples illustrate the flexibility of `cron` in scheduling tasks for diff
 ---
 
 <figure>
-  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash.jpg" alt="Crontab example: syntax and real-world schedules." loading="lazy" />
+  <img src="/media/2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash.jpg" alt="Crontab example: syntax and real-world schedules." loading="lazy" />
   <figcaption>
     Crontab example: syntax and real-world schedules. — Image: <a href="https://commons.wikimedia.org/wiki/File%3ACrontab.png">Crontab.png</a> by Bersam —
     <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> · via Wikimedia Commons

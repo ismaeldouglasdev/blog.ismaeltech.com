@@ -19,7 +19,7 @@ In October 2012, Microsoft made an announcement that would change the directio
 
 
 <figure>
-  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria.jpg" alt="The TypeScript logo, created by Microsoft." loading="lazy" />
+  <img src="/media/2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria.jpg" alt="The TypeScript logo, created by Microsoft." loading="lazy" />
   <figcaption>
     The TypeScript logo, created by Microsoft. — Image: <a href="https://commons.wikimedia.org/wiki/File%3ATypeScript_Logo.svg">TypeScript Logo.svg</a> by Microsoft —
     <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a> · via Wikimedia Commons

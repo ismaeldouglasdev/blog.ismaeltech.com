@@ -20,7 +20,7 @@ The Single Responsibility Principle (SRP) is the first of the SOLID principles a
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados-1.jpg" alt="Clean Architecture in TypeScript: Applying SOLID Principles" loading="lazy">
+<img src="/media/2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados-1.jpg" alt="Clean Architecture in TypeScript: Applying SOLID Principles" loading="lazy">
 <figcaption>Soon Hyun to Syngman Rhee
 Institution name: USC Korean Heritage Library; Processing funded by a grant from the Library Services and Technology Act (LSTA), Cali. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ASoon_Hyun_to_Syngman_Rhee_%28KADA-shyun04-058%29.jpg">Soon Hyun to Syngman Rhee (KADA-shyun04-058).jpg</a> por Unknown authorUnknown author — <a href="https://creativecommons.org/licenses/">Public domain</a> · via Wikimedia Commons</figcaption>
 </figure>

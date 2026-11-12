@@ -53,7 +53,7 @@ A análise de escape é um dos recursos mais importantes do compilador Go. Ela d
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc-1.jpg" alt="Gerenciamento de memória em Go: escapes, stack e GC" loading="lazy">
+<img src="/media/2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc-1.jpg" alt="Gerenciamento de memória em Go: escapes, stack e GC" loading="lazy">
 <figcaption>Code example of the shortended declaration syntactic sugar in the programming language Go. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ASyntactic_Sugar_example_in_Go.png">Syntactic Sugar example in Go.png</a> por EpicScizor — <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0</a> · via Wikimedia Commons</figcaption>
 </figure>
 

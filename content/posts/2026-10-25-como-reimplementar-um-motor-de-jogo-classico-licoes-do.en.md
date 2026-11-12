@@ -18,7 +18,7 @@ This goes far beyond nostalgia. It’s a practical lesson in reverse engineering
 I know a bit of that compatibility pain. Since 2020, I’ve worked in the commercial department of a retail store, where I led the migration of a database with more than 10,000 products between systems. We implemented and customized OSPOS, an open‑source point‑of‑sale (POS) system. The daily challenge is making a stack of technologies, from the POS’s legacy PHP to e‑commerce integrations, work in harmony, keeping the store’s operation running without interruption. It’s fertile ground for learning about stable interfaces and the importance of rigorous testing.
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/fheroes2-screenshot.png" alt="Screenshot of the fheroes2 game showing the classic isometric interface, with heroes, castles, and the strategic map" loading="lazy">
+<img src="/media/fheroes2-screenshot.png" alt="Screenshot of the fheroes2 game showing the classic isometric interface, with heroes, castles, and the strategic map" loading="lazy">
 <figcaption>fheroes2 interface: a faithful recreation of the original HOMM2 isometric view and color palette. (Source: Official repository fheroes2/fheroes2, GPLv2 license)</figcaption>
 </figure>
 
@@ -106,7 +106,7 @@ This is my day-to-day. A POS like OSPOS needs to integrate with tax issuers, pay
 * This architecture allows the system's base to evolve without freezing the ecosystem around it.
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/modern-legacy-integration.png" alt="Architecture diagram showing a stable core (Core) with well-defined interfaces, connected to legacy and modern modules via adapters" loading="lazy">
+<img src="/media/modern-legacy-integration.png" alt="Architecture diagram showing a stable core (Core) with well-defined interfaces, connected to legacy and modern modules via adapters" loading="lazy">
 <figcaption>Compatibility architecture: a stable core (Core) communicates with legacy and modern systems through well-defined interfaces and adaptation layers (Adapters).</figcaption>
 </figure>
 

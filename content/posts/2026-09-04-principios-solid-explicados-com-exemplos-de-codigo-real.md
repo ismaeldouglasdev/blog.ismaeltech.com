@@ -27,7 +27,7 @@ Aqui eu explico como os cinco princípios SOLID podem impedir que um código evo
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real-1.jpg" alt="Princípios SOLID explicados com exemplos de código real" loading="lazy">
+<img src="/media/2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real-1.jpg" alt="Princípios SOLID explicados com exemplos de código real" loading="lazy">
 <figcaption>Comparison between separate hw/sw design and co-design. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AHardware-Software_codesign.png">Hardware-Software codesign.png</a> por FrancezcoPezce — <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0</a> · via Wikimedia Commons</figcaption>
 </figure>
 

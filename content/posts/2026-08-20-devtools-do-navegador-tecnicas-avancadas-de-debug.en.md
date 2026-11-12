@@ -17,7 +17,7 @@ Have you ever spent hours trapped by a bug that disappears as soon as you try to
 
 
 <figure>
-  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug.jpg" alt="Blisk browser DevTools: panels opened for iPhone 12 and iPad Pro 11." loading="lazy" />
+  <img src="/media/2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug.jpg" alt="Blisk browser DevTools: panels opened for iPhone 12 and iPad Pro 11." loading="lazy" />
   <figcaption>
     Blisk browser DevTools: panels opened for iPhone 12 and iPad Pro 11. — Image: <a href="https://commons.wikimedia.org/wiki/File%3AWikipedia-blisk-devtools-iphone-12-and-ipad-pro-11-2021.png">Wikipedia-blisk-devtools-iphone-12-and-ipad-pro-11-2021.png</a> by And85rew —
     <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons

@@ -21,7 +21,7 @@ Para começar, precisamos configurar nosso projeto React. Se ainda não tem um p
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-24-formularios-react-react-hook-form-zod-pra-validacao-1.jpg" alt="Formulários React: React Hook Form + Zod pra validação perfeita" loading="lazy">
+<img src="/media/2026-09-24-formularios-react-react-hook-form-zod-pra-validacao-1.jpg" alt="Formulários React: React Hook Form + Zod pra validação perfeita" loading="lazy">
 <figcaption>Accounting Services HTML form. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AAccounting_request_html_form.png">Accounting request html form.png</a> por Rikulpatel1 — <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0</a> · via Wikimedia Commons</figcaption>
 </figure>
 

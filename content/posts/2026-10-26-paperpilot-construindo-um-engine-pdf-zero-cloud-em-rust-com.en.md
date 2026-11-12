@@ -14,7 +14,7 @@ How many times have you needed to extract text from a PDF within a web applicati
 That was the exact motivation for PaperPilot. A PDF processing engine written in Rust, compiled to WebAssembly (WASM), and exposed as an MCP (Model Context Protocol) server. The idea is simple: bring the power of Rust to the browser and to local servers, without a single line of code traveling through a third-party service. Privacy, control, and total performance, directly in your environment.
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/paperpilot-architecture-diagram.png" alt="Architecture diagram for PaperPilot showing a PDF being processed by the Rust module, compiled to WASM, running in a Web Worker or Node.js server" loading="lazy">
+<img src="/media/paperpilot-architecture-diagram.png" alt="Architecture diagram for PaperPilot showing a PDF being processed by the Rust module, compiled to WASM, running in a Web Worker or Node.js server" loading="lazy">
 <figcaption>PaperPilot architecture: Rust → WASM, executable on the client or edge servers.</figcaption>
 </figure>
 
@@ -124,7 +124,7 @@ async def extract_pdf(file: UploadFile = File(...)):
 The beauty of this approach is the elimination of a *single point of failure*. Your service won't go down because a third-party PDF provider changed their pricing plan or experienced an outage.
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/wasm-pack-logo.png" alt="wasm-pack logo, the tool for packaging Rust code into WASM" loading="lazy" width="400" style="max-width: 200px; height: auto;">
+<img src="/media/wasm-pack-logo.png" alt="wasm-pack logo, the tool for packaging Rust code into WASM" loading="lazy" width="400" style="max-width: 200px; height: auto;">
 <figcaption>wasm-pack is the fundamental tool in the Rust/WASM toolchain. Source: <a href="https://github.com/rustwasm/wasm-pack">Official Repository</a> (MIT/Apache 2.0 License).</figcaption>
 </figure>
 

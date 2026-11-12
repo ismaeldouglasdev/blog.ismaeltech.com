@@ -21,7 +21,7 @@ To get started, we need to set up our React project. If you do not have a projec
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-24-formularios-react-react-hook-form-zod-pra-validacao-1.jpg" alt="React Forms: Perfect Validation with React Hook Form + Zod" loading="lazy">
+<img src="/media/2026-09-24-formularios-react-react-hook-form-zod-pra-validacao-1.jpg" alt="React Forms: Perfect Validation with React Hook Form + Zod" loading="lazy">
 <figcaption>Accounting Services HTML form. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AAccounting_request_html_form.png">Accounting request html form.png</a> por Rikulpatel1 — <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0</a> · via Wikimedia Commons</figcaption>
 </figure>
 

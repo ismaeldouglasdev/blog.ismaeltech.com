@@ -348,6 +348,6 @@ Os blocos básicos estão aí. LLMs fornecem o raciocínio, RAG fornece o contex
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-10-06-inteligencia-artificial-para-desenvolvedores-llms-rag-e-1.jpg" alt="Inteligência Artificial para desenvolvedores: LLMs, RAG e agentes" loading="lazy">
+<img src="/media/2026-10-06-inteligencia-artificial-para-desenvolvedores-llms-rag-e-1.jpg" alt="Inteligência Artificial para desenvolvedores: LLMs, RAG e agentes" loading="lazy">
 <figcaption>Neural net completion for "artificial intelligence", as done by DALL-E mini hosted on HuggingFace, 4 June 2022 (code under Apache 2.0 license). Upscaled with Re. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AArtificial_intelligence_prompt_completion_by_dalle_mini.jpg">Artificial intelligence prompt completion by dalle mini.jpg</a> por Prompt by JPxG, model by Boris Dayma, upscaler by Xintao Wang, Liangbin Xie et a — <a href="https://creativecommons.org/licenses/">Public domain</a> · via Wikimedia Commons</figcaption>
 </figure>

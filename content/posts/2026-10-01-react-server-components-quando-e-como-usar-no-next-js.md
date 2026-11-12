@@ -30,7 +30,7 @@ A distinção fundamental entre server e client components está no ciclo de vid
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-10-01-react-server-components-quando-e-como-usar-no-next-js-1.jpg" alt="React Server Components: quando e como usar no Next.js" loading="lazy">
+<img src="/media/2026-10-01-react-server-components-quando-e-como-usar-no-next-js-1.jpg" alt="React Server Components: quando e como usar no Next.js" loading="lazy">
 <figcaption>Subsequent secure socket layers (SSL and TLS), implemented several years later using the architecture and key ideas first presented in SNP, enabled secure e-com. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3A2004_ACM_Software_System_Award_Certificate.jpg">2004 ACM Software System Award Certificate.jpg</a> por Ssl-wiki2021 — <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0</a> · via Wikimedia Commons</figcaption>
 </figure>
 

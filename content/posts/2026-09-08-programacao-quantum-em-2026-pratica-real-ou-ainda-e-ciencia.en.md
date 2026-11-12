@@ -19,7 +19,7 @@ Quantum computers are devices that utilize the principles of quantum mechanics t
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia-1.jpg" alt="Quantum Programming in 2026: Reality or Still Science?" loading="lazy">
+<img src="/media/2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia-1.jpg" alt="Quantum Programming in 2026: Reality or Still Science?" loading="lazy">
 <figcaption>25/10/2024. Minister Sir Patrick Vallance officially opens the National Quantum Computing Centre. Picture by Zoe-Rose Herbert / DSIT. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AMinister_Sir_Patrick_Vallance_officially_opens_the_National_Quantum_Computing_Centre_at_Harwell_Science_and_Innovation_Campus%2C_Oxfordshire%2C_United_Kingdom_on_25_October_2024_-_1.jpg">Minister Sir Patrick Vallance officially opens the National Quantum Computing Centre at Harwell Science and Innovation Campus, Oxfordshire, United Kingdom on 25 October 2024 - 1.jpg</a> por Department for Science, Innovation &amp; Technology — <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 ## IBM, Google, IonQ
@@ -27,7 +27,7 @@ The main companies working in the field of quantum programming are IBM, Google, 
 
 
 <figure>
-  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia.jpg" alt="Google's Sycamore chip, a superconducting quantum processor." loading="lazy" />
+  <img src="/media/2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia.jpg" alt="Google's Sycamore chip, a superconducting quantum processor." loading="lazy" />
   <figcaption>
     Google's Sycamore chip, a superconducting quantum processor. — Image: <a href="https://commons.wikimedia.org/wiki/File%3AGoogle_Sycamore_Chip_001.png">Google Sycamore Chip 001.png</a> by Google —
     <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a> · via Wikimedia Commons

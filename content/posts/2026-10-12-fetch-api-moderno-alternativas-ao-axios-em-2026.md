@@ -180,6 +180,6 @@ O cenário de requisições HTTP em JavaScript evoluiu bastante, e hoje temos um
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-10-12-fetch-api-moderno-alternativas-ao-axios-em-2026-1.jpg" alt="Fetch API moderno: alternativas ao axios em 2026" loading="lazy">
+<img src="/media/2026-10-12-fetch-api-moderno-alternativas-ao-axios-em-2026-1.jpg" alt="Fetch API moderno: alternativas ao axios em 2026" loading="lazy">
 <figcaption>Dalian Tiandi Software Park - Model 2011. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ADalian_Tiandi_Software_Park_-_Model.jpg">Dalian Tiandi Software Park - Model.jpg</a> por Yoshi Canopus — <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a> · via Wikimedia Commons</figcaption>
 </figure>

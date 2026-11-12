@@ -23,7 +23,7 @@ O fluxo típico começa com um usuário fornecendo credenciais (e-mail e senha).
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de-1.jpg" alt="Autenticação JWT completa: login, refresh token e proteção de rotas" loading="lazy">
+<img src="/media/2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de-1.jpg" alt="Autenticação JWT completa: login, refresh token e proteção de rotas" loading="lazy">
 <figcaption>DSC_0199. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AASJ_Jet_Airways_-_Airbus_A330-302_-_VT-JWT_-_Flight_JAI229_to_BRU-DEL_%289360691015%29.jpg">ASJ Jet Airways - Airbus A330-302 - VT-JWT - Flight JAI229 to BRU-DEL (9360691015).jpg</a> por Lord of the Wings© from Toronto, Canada — <a href="https://creativecommons.org/licenses/by-sa/2.0">CC BY-SA 2.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 Aqui está um endpoint de login simples em Express com Passport local:
@@ -315,7 +315,7 @@ Escolha a abordagem que melhor se adapta à sua infraestrutura. Na minha experi�
 
 
 <figure>
-  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de.jpg" alt="Cibersegurança vs. segurança da informação: conceitos complementares." loading="lazy" />
+  <img src="/media/2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de.jpg" alt="Cibersegurança vs. segurança da informação: conceitos complementares." loading="lazy" />
   <figcaption>
     Cibersegurança vs. segurança da informação: conceitos complementares. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ACybersecurity_vs_information_security.png">Cybersecurity vs information security.png</a> por Pcoronaf —
     <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons

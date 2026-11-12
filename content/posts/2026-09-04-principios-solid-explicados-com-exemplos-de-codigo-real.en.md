@@ -27,7 +27,7 @@ Here I explain how the five SOLID principles can keep code from evolving into an
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real-1.jpg" alt="SOLID Principles Explained with Real Code Examples" loading="lazy">
+<img src="/media/2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real-1.jpg" alt="SOLID Principles Explained with Real Code Examples" loading="lazy">
 <figcaption>Comparison between separate hw/sw design and co-design. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AHardware-Software_codesign.png">Hardware-Software codesign.png</a> por FrancezcoPezce — <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0</a> · via Wikimedia Commons</figcaption>
 </figure>
 

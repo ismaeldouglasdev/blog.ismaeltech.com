@@ -22,7 +22,7 @@ A seguir, mostro como montar funções, APIs e gatilhos de forma prática e econ
 
 
 <figure>
-  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas.jpg" alt="Servidores da Wikimedia Foundation: a infraestrutura por trás de serviços sob demanda." loading="lazy" />
+  <img src="/media/2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas.jpg" alt="Servidores da Wikimedia Foundation: a infraestrutura por trás de serviços sob demanda." loading="lazy" />
   <figcaption>
     Servidores da Wikimedia Foundation: a infraestrutura por trás de serviços sob demanda. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AWikimedia_Foundation_Servers-8055_08.jpg">Wikimedia Foundation Servers-8055 08.jpg</a> por Victorgrigas —
     <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> · via Wikimedia Commons
@@ -35,7 +35,7 @@ A primeira coisa que precisamos entender é que uma **Lambda** é simplesmente u
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas-1.jpg" alt="Serverless no AWS Lambda: funções, APIs e automações baratas" loading="lazy">
+<img src="/media/2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas-1.jpg" alt="Serverless no AWS Lambda: funções, APIs e automações baratas" loading="lazy">
 <figcaption>Arfa Software Technology Park located at 346-B, Ferozepur Road, Lahore, Pakistan!. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AArfa_Software_Technology_Park%2C_Ferozepur_Road%2C_Lahore.jpg">Arfa Software Technology Park, Ferozepur Road, Lahore.jpg</a> por Shahzaib Damn Cruze — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 ### 1.1 Estrutura mínima de uma função Python  

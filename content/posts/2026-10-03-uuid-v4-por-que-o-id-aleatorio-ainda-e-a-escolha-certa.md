@@ -47,7 +47,7 @@ distingue as versões.
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-10-03-uuid-v4-por-que-o-id-aleatorio-ainda-e-a-escolha-certa-1.jpg" alt="UUID v4: por que o ID aleatório ainda é a escolha certa" loading="lazy">
+<img src="/media/2026-10-03-uuid-v4-por-que-o-id-aleatorio-ainda-e-a-escolha-certa-1.jpg" alt="UUID v4: por que o ID aleatório ainda é a escolha certa" loading="lazy">
 <figcaption>Globally Unique Identifier is a special type of identifier used in software applications in order to provide a reference number which is unique in any context f. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AGlobally_Unique_ID_%2851157352349%29.jpg">Globally Unique ID (51157352349).jpg</a> por Exey Panteleev from Moscow, Russia — <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 

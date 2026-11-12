@@ -18,7 +18,7 @@ When I started building my own projects and structuring interfaces with React, t
 
 
 <figure>
-  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-28-react-server-components-quando-e-como-usar-no-next-js.jpg" alt="The React logo: components that run on both server and client." loading="lazy" />
+  <img src="/media/2026-08-28-react-server-components-quando-e-como-usar-no-next-js.jpg" alt="The React logo: components that run on both server and client." loading="lazy" />
   <figcaption>
     The React logo: components that run on both server and client. — Image: <a href="https://commons.wikimedia.org/wiki/File%3AReact.svg">React.svg</a> by ReactJS —
     <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons

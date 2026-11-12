@@ -34,7 +34,7 @@ Um pod avulso, para você ver a estrutura. Repare que **não tem label** — vol
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-27-kubernetes-pra-iniciantes-conceitos-essenciais-sem-1.jpg" alt="Kubernetes pra iniciantes: conceitos essenciais sem complicação" loading="lazy">
+<img src="/media/2026-09-27-kubernetes-pra-iniciantes-conceitos-essenciais-sem-1.jpg" alt="Kubernetes pra iniciantes: conceitos essenciais sem complicação" loading="lazy">
 <figcaption>December 2023 Developer Satisfaction Survey (DSS): likert chart showing respondents' satisfaction using Wikimedia's production Kubernetes infrastructure. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3A2023-12_DSS_deployment_kubernetes_satisfaction.png">2023-12 DSS deployment kubernetes satisfaction.png</a> por CMyrick-WMF — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 
@@ -132,7 +132,7 @@ Ingress é um conjunto de regras de tráfego na camada 7 (HTTP/HTTPS): ele diz q
 
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-27-kubernetes-pra-iniciantes-conceitos-essenciais-sem-2.jpg" alt="Kubernetes pra iniciantes: conceitos essenciais sem complicação" loading="lazy">
+<img src="/media/2026-09-27-kubernetes-pra-iniciantes-conceitos-essenciais-sem-2.jpg" alt="Kubernetes pra iniciantes: conceitos essenciais sem complicação" loading="lazy">
 <figcaption>December 2023 Developer Satisfaction Survey (DSS): bar chart showing respondents' use of Wikimedia's production Kubernetes infrastructure in the past year. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3A2023-12_DSS_deployment_kubernetes_use.png">2023-12 DSS deployment kubernetes use.png</a> por CMyrick-WMF — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 

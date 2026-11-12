@@ -26,7 +26,7 @@ Since then, fifteen years of updates. New biomes, new mobs, new mechanics, new r
 The End was the last one, and it arrived with 1.0 precisely to host the final fight with the dragon. After that, nothing. Fourteen years without a new dimension, and now the game will finally have a fourth.
 
 <figure>
-  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-26-minecraft-sift-nova-dimensao-meadow.jpg" alt="Minecraft Dungeons II characters in a glowing biome, with blue-green grass and pink and gold structures emitting light." loading="lazy" />
+  <img src="/media/2026-09-26-minecraft-sift-nova-dimensao-meadow.jpg" alt="Minecraft Dungeons II characters in a glowing biome, with blue-green grass and pink and gold structures emitting light." loading="lazy" />
   <figcaption>
     The Sift has a deliberately different palette from the Nether and the End. Image: Mojang Studios via XBOX Wire.
   </figcaption>
@@ -41,7 +41,7 @@ Players of the first Dungeons remember a structure of separate levels. The seque
 Put differently: The Sift will be the first place this content is actually playable. If you want to see the Sift's mobs, blocks and biomes in action there is a direct path, and it happens to be a separate game.
 
 <figure>
-  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-26-minecraft-sift-nova-dimensao-carapace.jpg" alt="Combat in a stone and tile area with a glowing orange geode and blue pillars in the background." loading="lazy" />
+  <img src="/media/2026-09-26-minecraft-sift-nova-dimensao-carapace.jpg" alt="Combat in a stone and tile area with a glowing orange geode and blue pillars in the background." loading="lazy" />
   <figcaption>
     One of the revealed areas of The Sift. Image: Mojang Studios via XBOX Wire.
   </figcaption>

@@ -17,7 +17,7 @@ Quando comecei a construir meus próprios projetos e a estruturar interfaces com
 
 
 <figure>
-  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-28-react-server-components-quando-e-como-usar-no-next-js.jpg" alt="O logo do React: componentes que rodam tanto no servidor quanto no cliente." loading="lazy" />
+  <img src="/media/2026-08-28-react-server-components-quando-e-como-usar-no-next-js.jpg" alt="O logo do React: componentes que rodam tanto no servidor quanto no cliente." loading="lazy" />
   <figcaption>
     O logo do React: componentes que rodam tanto no servidor quanto no cliente. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AReact.svg">React.svg</a> por ReactJS —
     <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons
