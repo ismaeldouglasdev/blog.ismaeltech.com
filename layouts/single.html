@@ -52,12 +52,12 @@
       {{- $seen = $seen | append .RelPermalink }}
     {{- end }}
   {{- end }}
-  {{- if lt (len $picks) 4 }}
+  {{- if lt (len $picks) 6 }}
     {{- range .Site.RegularPages.ByDate.Reverse }}
       {{- if and (ne .RelPermalink $.RelPermalink) (eq .Lang $lang) (not (in $seen .RelPermalink)) }}
         {{- $picks = $picks | append . }}
         {{- $seen = $seen | append .RelPermalink }}
-        {{- if ge (len $picks) 4 }}{{ break }}{{ end }}
+        {{- if ge (len $picks) 6 }}{{ break }}{{ end }}
       {{- end }}
     {{- end }}
   {{- end }}
