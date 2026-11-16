@@ -14,3 +14,27 @@ comments_deleting = "Excluindo..."
 comments_delete_confirm = "Excluir este comentário?"
 pagination_label = "Paginação"
 cover_alt = "Capa do post"
+
+[newsletter_title]
+other = "Receba novos posts por e-mail"
+
+[newsletter_desc]
+other = "Conteúdo prático sobre desenvolvimento, carreira e tecnologia. Sem spam — cancele quando quiser."
+
+[newsletter_email_ph]
+other = "Seu e-mail"
+
+[newsletter_submit]
+other = "Inscrever-se"
+
+[newsletter_sending]
+other = "Enviando..."
+
+[newsletter_success]
+other = "Quase lá! Verifique seu e-mail para confirmar a inscrição."
+
+[newsletter_error]
+other = "Não foi possível inscrever agora. Tente novamente."
+
+[newsletter_note]
+other = "Você receberá um e-mail para confirmar a inscrição (double opt-in)."

@@ -1,33 +1,27 @@
-{{- /* Fontes do estilo clean: Geist (títulos) + DM Sans (corpo) */ -}}
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
-
+<meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f0e0c" media="(prefers-color-scheme: dark)">
+{{- $og := "images/og-default.png" -}}
+{{- with .Params.cover -}}
+  {{- if reflect.IsMap . -}}
+    {{- with (or (index . "image") (index . "src") (index . "url")) -}}{{- $og = . -}}{{- end -}}
+  {{- else -}}
+    {{- $og = . -}}
+  {{- end -}}
+{{- end -}}
+<meta property="og:image" content="{{ $og | absURL }}">
+<meta name="twitter:image" content="{{ $og | absURL }}">
+<script src="/js/preserve-query.js" defer></script>
 <style>
-/* Home: o .first-entry do tema força min-height: 320px, o que abre um
-   "vão" vazio entre o bloco de apresentação e a barra de busca. */
-.first-entry.home-info {
-  min-height: 0;
-  margin-bottom: var(--gap);
-}
+.newsletter-box{margin:28px 0;padding:22px 20px;border:1px solid var(--border);border-radius:14px;background:var(--entry)}
+.newsletter-box h3{margin:0 0 6px;font-size:1.15rem}
+.newsletter-box p{margin:0 0 12px;opacity:.85}
+.newsletter-form{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.newsletter-form input[type=email]{flex:1 1 220px;min-width:0;padding:10px 12px;border:1px solid var(--border);border-radius:10px;background:var(--theme);color:var(--primary)}
+.newsletter-form button{padding:10px 16px;border:0;border-radius:10px;background:var(--primary);color:var(--theme);font-weight:600;cursor:pointer}
+.newsletter-form button:disabled{opacity:.6;cursor:default}
+.newsletter-hp{position:absolute;left:-9999px;opacity:0;height:0;width:0}
+.newsletter-msg{margin:10px 0 0;font-size:.95rem;min-height:1.2em}
+.newsletter-msg.ok{color:#1b7f3b}
+.newsletter-msg.err{color:#b3261e}
+.newsletter-note{margin:8px 0 0;font-size:.85rem;opacity:.7}
 </style>
-
-{{- /* Redireciona para o idioma do navegador (uma vez por navegador).
-       Só redireciona se existir versão traduzida da página (hreflang). */ -}}
-<script>
-(function () {
-  try {
-    if (localStorage.getItem('blog-lang-pref')) return;
-    var nav = (navigator.language || navigator.userLanguage || '').toLowerCase();
-    var isEn = location.pathname === '/en' || location.pathname.indexOf('/en/') === 0;
-    var wantEn = nav.indexOf('en') === 0;
-    var wantPt = nav.indexOf('pt') === 0;
-    if (wantEn === isEn || (!wantEn && !wantPt)) return;
-    var alt = document.querySelector('link[rel="alternate"][hreflang="' + (wantEn ? 'en' : 'pt') + '"]');
-    if (!alt) return;
-    localStorage.setItem('blog-lang-pref', '1');
-    var u = new URL(alt.href, location.origin);
-    location.replace(u.pathname + u.search + u.hash);
-  } catch (e) {}
-})();
-</script>

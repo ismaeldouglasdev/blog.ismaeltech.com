@@ -14,3 +14,27 @@ comments_deleting = "Deleting..."
 comments_delete_confirm = "Delete this comment?"
 pagination_label = "Pagination"
 cover_alt = "Post cover"
+
+[newsletter_title]
+other = "Get new posts by email"
+
+[newsletter_desc]
+other = "Practical content on development, career, and tech. No spam — unsubscribe anytime."
+
+[newsletter_email_ph]
+other = "Your email"
+
+[newsletter_submit]
+other = "Subscribe"
+
+[newsletter_sending]
+other = "Sending..."
+
+[newsletter_success]
+other = "Almost there! Check your email to confirm your subscription."
+
+[newsletter_error]
+other = "Could not subscribe right now. Please try again."
+
+[newsletter_note]
+other = "You'll receive an email to confirm your subscription (double opt-in)."

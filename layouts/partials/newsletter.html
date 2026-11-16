@@ -1,0 +1,48 @@
+<section class="newsletter-box" id="newsletter" aria-label="Newsletter">
+  <h3>{{ i18n "newsletter_title" | default "Receba novos posts por e-mail" }}</h3>
+  <p>{{ i18n "newsletter_desc" | default "Conteúdo prático sobre desenvolvimento, carreira e tecnologia. Sem spam — cancele quando quiser." }}</p>
+  <form id="newsletter-form" class="newsletter-form" novalidate>
+    <input type="text" name="website" tabindex="-1" autocomplete="off" class="newsletter-hp" aria-hidden="true">
+    <input type="email" name="email" required placeholder="{{ i18n "newsletter_email_ph" | default "Seu e-mail" }}" aria-label="E-mail">
+    <button type="submit" id="newsletter-submit">{{ i18n "newsletter_submit" | default "Inscrever-se" }}</button>
+  </form>
+  <p id="newsletter-msg" class="newsletter-msg" role="status" aria-live="polite"></p>
+  <p class="newsletter-note">{{ i18n "newsletter_note" | default "Você receberá um e-mail para confirmar a inscrição (double opt-in)." }}</p>
+</section>
+<script>
+(function() {
+  var form = document.getElementById('newsletter-form');
+  if (!form) return;
+  var msg = document.getElementById('newsletter-msg');
+  var btn = document.getElementById('newsletter-submit');
+  var endpoint = 'https://opt-out.ismaeltech.com/api/newsletter/subscribe';
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    var email = (form.email.value || '').trim();
+    if (!email) return;
+    btn.disabled = true;
+    msg.textContent = '{{ i18n "newsletter_sending" | default "Enviando..." }}';
+    msg.className = 'newsletter-msg';
+    try {
+      var res = await fetch(endpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email, website: form.website.value || '', source: 'blog:' + window.location.pathname })
+      });
+      var data = await res.json().catch(function(){ return {}; });
+      if (res.ok && data.ok) {
+        msg.textContent = '{{ i18n "newsletter_success" | default "Quase lá! Verifique seu e-mail para confirmar a inscrição." }}';
+        msg.className = 'newsletter-msg ok';
+        form.reset();
+      } else {
+        msg.textContent = '{{ i18n "newsletter_error" | default "Não foi possível inscrever agora. Tente novamente." }}';
+        msg.className = 'newsletter-msg err';
+      }
+    } catch (err) {
+      msg.textContent = '{{ i18n "newsletter_error" | default "Não foi possível inscrever agora. Tente novamente." }}';
+      msg.className = 'newsletter-msg err';
+    }
+    btn.disabled = false;
+  });
+})();
+</script>
