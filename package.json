@@ -11,6 +11,6 @@
     "article:publish": "node scripts/publish-article.mjs"
   },
   "devDependencies": {
-    "hugo-bin": "^0.149.2"
+    "hugo-bin": "^0.167.0"
   }
 }
