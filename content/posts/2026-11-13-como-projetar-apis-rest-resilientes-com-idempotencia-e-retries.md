@@ -7,6 +7,7 @@ excerpt: "Falhas de rede e timeouts fazem parte da vida de qualquer API. Veja co
 cover:
   image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-11-13-como-projetar-apis-rest-resilientes-com-idempotencia-e-retries.jpg"
 lang: "pt"
+translationKey: "2026-11-13-como-projetar-apis-rest-resilientes-com-idempotencia-e-retries"
 ---
 
 Falhas de rede e timeouts fazem parte da vida de qualquer API em produção, e ignorar esse fato costuma custar caro: cobranças duplicadas, pedidos criados duas vezes e estados inconsistentes entre serviços. Se você já precisou explicar por que um clique gerou dois registros, sabe que resiliência não é luxo, é requisito. Neste guia prático, você vai ver como projetar APIs REST mais confiáveis combinando idempotência, retries controlados e respostas previsíveis para que o cliente possa tentar de novo sem medo.

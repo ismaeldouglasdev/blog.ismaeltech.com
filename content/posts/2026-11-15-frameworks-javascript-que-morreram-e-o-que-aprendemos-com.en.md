@@ -5,9 +5,9 @@ category: "curiosidade"
 tags: ["javascript", "historia", "frameworks"]
 excerpt: "Have you ever felt that knot in your stomach when choosing a technology for a new project, fearing it might become obsolete before you even launch the first version? The"
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-11-15-frameworks-javascript-que-morreram-e-o-que-aprendemos-com.jpg"
-lang: "en"
-translation_of: "2026-11-15-frameworks-javascript-que-morreram-e-o-que-aprendemos-com"
+  image: "/covers/2026-11-15-frameworks-javascript-que-morreram-e-o-que-aprendemos-com.jpg"
+comments: true
+translationKey: "2026-11-15-frameworks-javascript-que-morreram-e-o-que-aprendemos-com"
 ---
 Have you ever felt that knot in your stomach when choosing a technology for a new project, fearing it might become obsolete before you even launch the first version? The JavaScript ecosystem is notoriously volatile, driven by waves of hype that can propel a tool to stardom in months and condemn it to obscurity in just a few years. But looking at the "graveyard" of frameworks isn't an exercise in nostalgia or pessimism; it is a lesson in architecture. Understanding why giants like AngularJS, Backbone, and Meteor fell out of favor helps us make better decisions today, separating what is a passing trend from what is a solid development standard.
 

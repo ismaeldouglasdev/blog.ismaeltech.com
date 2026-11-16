@@ -8,6 +8,7 @@ share_hook: "O pico que derruba a API quase nunca é um ataque: é um cliente le
 cover:
   image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-11-14-rate-limiting-em-apis-token-bucket-e-janela-deslizante.jpg"
 lang: "pt"
+translationKey: "2026-11-14-rate-limiting-em-apis-token-bucket-e-janela-deslizante"
 ---
 
 Você já recebeu o alerta de madrugada: o p95 explodiu, o banco de dados saturou e nenhuma linha de código mudou desde a tarde. A causa, quando aparece no log, é constrangedora de simples — um único cliente sincronizou dois cron jobs e disparou duzentas requisições por segundo contra um endpoint que custa caro. Ninguém atacou seu sistema; foi falta de freio. Rate limiting é esse freio: um contrato explícito de quanto cada consumidor pode exigir do seu serviço, aplicado antes que o estrago aconteça. Neste guia, você vai ver como os limites funcionam por dentro (token bucket, janela fixa e janela deslizante), onde aplicá-los na arquitetura e como devolver respostas que ensinam o cliente a se comportar em vez de só gritar `429`.

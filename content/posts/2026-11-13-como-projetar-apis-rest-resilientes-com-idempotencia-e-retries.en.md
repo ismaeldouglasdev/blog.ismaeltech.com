@@ -6,8 +6,8 @@ tags: ["api", "rest", "resiliência", "backend", "boas-práticas"]
 excerpt: "Network failures and timeouts are part of any API's life. Learn how to combine idempotency, retries with backoff, and clear limits to avoid duplicates and keep systems stable."
 cover:
   image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-11-13-como-projetar-apis-rest-resilientes-com-idempotencia-e-retries.jpg"
-lang: "en"
-translation_of: "2026-11-13-como-projetar-apis-rest-resilientes-com-idempotencia-e-retries"
+comments: true
+translationKey: "2026-11-13-como-projetar-apis-rest-resilientes-com-idempotencia-e-retries"
 ---
 
 Network failures and timeouts are part of life for any production API, and ignoring that reality often gets expensive: duplicate charges, orders created twice, and inconsistent state across services. If you have ever had to explain why a single click produced two records, you already know resilience is not a luxury, it is a requirement. In this practical guide, you will learn how to design more reliable REST APIs by combining idempotency, controlled retries, and predictable responses so clients can safely try again.

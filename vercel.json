@@ -1,6 +1,26 @@
 {
   "redirects": [
     {
+      "source": "/posts/2026-10-26-paperpilot-construindo-um-engine-pdf-zero-cloud-em-rust-com-en",
+      "destination": "/en/posts/2026-10-26-paperpilot-construindo-um-engine-pdf-zero-cloud-em-rust-com/",
+      "permanent": true
+    },
+    {
+      "source": "/posts/2026-11-13-como-projetar-apis-rest-resilientes-com-idempotencia-e-retries-en",
+      "destination": "/en/posts/2026-11-13-como-projetar-apis-rest-resilientes-com-idempotencia-e-retries/",
+      "permanent": true
+    },
+    {
+      "source": "/posts/2026-11-14-rate-limiting-em-apis-token-bucket-e-janela-deslizante-en",
+      "destination": "/en/posts/2026-11-14-rate-limiting-em-apis-token-bucket-e-janela-deslizante/",
+      "permanent": true
+    },
+    {
+      "source": "/posts/2026-11-15-frameworks-javascript-que-morreram-e-o-que-aprendemos-com-en",
+      "destination": "/en/posts/2026-11-15-frameworks-javascript-que-morreram-e-o-que-aprendemos-com/",
+      "permanent": true
+    },
+    {
       "source": "/2026-08-17-css-grid-e-flexbox-quando-usar-cada-um",
       "destination": "/posts/2026-08-17-css-grid-e-flexbox-quando-usar-cada-um/",
       "permanent": true

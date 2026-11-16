@@ -7,8 +7,8 @@ excerpt: "A traffic spike doesn't have to take your service down. Learn how to c
 share_hook: "The spike that takes an API down is rarely an attack: it's a legitimate client with no pacing. Rate limiting is the missing brake."
 cover:
   image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-11-14-rate-limiting-em-apis-token-bucket-e-janela-deslizante.jpg"
-lang: "en"
-translation_of: "2026-11-14-rate-limiting-em-apis-token-bucket-e-janela-deslizante"
+comments: true
+translationKey: "2026-11-14-rate-limiting-em-apis-token-bucket-e-janela-deslizante"
 ---
 
 You know that early-morning alert: p95 blows up, the database saturates, and not a single line of code changed since the afternoon. The cause, when it shows up in the logs, is embarrassingly simple — one client synced two cron jobs and fired two hundred requests per second against an expensive endpoint. Nobody attacked your system; there was just no brake. Rate limiting is that brake: an explicit contract of how much each consumer may demand from your service, enforced before the damage happens. In this guide, you'll see how limits work under the hood (token bucket, fixed window, and sliding window), where to place them in your architecture, and how to return responses that teach clients to behave instead of just screaming `429`.

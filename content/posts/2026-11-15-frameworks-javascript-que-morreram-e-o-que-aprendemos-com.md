@@ -7,6 +7,7 @@ excerpt: "Você já sentiu aquele frio na barriga ao escolher uma tecnologia par
 cover:
   image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-11-15-frameworks-javascript-que-morreram-e-o-que-aprendemos-com.jpg"
 lang: "pt"
+translationKey: "2026-11-15-frameworks-javascript-que-morreram-e-o-que-aprendemos-com"
 ---
 
 Você já sentiu aquele frio na barriga ao escolher uma tecnologia para um projeto novo, com medo de ela se tornar obsoleta antes mesmo de você lançar a primeira versão? O ecossistema JavaScript é notoriamente volátil, movido por ondas de hype que podem elevar uma ferramenta ao estrelato em meses e condená-la ao esquecimento em poucos anos. Mas olhar para o "cemitério" de frameworks não é um exercício de nostalgia ou pessimismo; é uma lição de arquitetura. Entender por que gigantes como AngularJS, Backbone e Meteor caíram em desuso nos ajuda a tomar decisões melhores hoje, separando o que é tendência passageira do que é padrão sólido de desenvolvimento.
