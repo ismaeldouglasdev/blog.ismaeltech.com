@@ -713,12 +713,12 @@ Applying SOLID is not about following abstract rules; it is about keeping agilit
 
 ## Sources
 
-- [SOLID Principles – Robert C. Martin](https://www.objectmentor.com/resources/articles/SOLID.pdf)
-- [TypeScript Handbook – Interfaces](https://www.typescriptlang.org/docs/handbook/interfaces.html)
-- [Python abc – Abstract Base Classes](https://docs.python.org/3/library/abc.html)
+- [SOLID Principles - Robert C. Martin](https://www.objectmentor.com/resources/articles/SOLID.pdf)
+- [TypeScript Handbook - Interfaces](https://www.typescriptlang.org/docs/handbook/interfaces.html)
+- [Python abc - Abstract Base Classes](https://docs.python.org/3/library/abc.html)
 
 
-## 📸 Cover image credit
+## Cover image credit
 - **Image:** [Laptop coding programs (Unsplash).jpg](https://commons.wikimedia.org/wiki/File%3ALaptop_coding_programs_%28Unsplash%29.jpg)
 - **Author:** Tirza van Dijk tirzavandijk
 - **License:** [CC0](https://creativecommons.org/publicdomain/zero/1.0/) · via Wikimedia Commons

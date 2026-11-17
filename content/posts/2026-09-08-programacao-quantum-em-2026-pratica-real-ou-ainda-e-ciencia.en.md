@@ -29,7 +29,7 @@ The main companies working in the field of quantum programming are IBM, Google, 
 <figure>
   <img src="/media/2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia.jpg" alt="Google's Sycamore chip, a superconducting quantum processor." loading="lazy" />
   <figcaption>
-    Google's Sycamore chip, a superconducting quantum processor. - Image: <a href="https://commons.wikimedia.org/wiki/File%3AGoogle_Sycamore_Chip_001.png">Google Sycamore Chip 001.png</a> by Google  - 
+    Google's Sycamore chip, a superconducting quantum processor. - Image: <a href="https://commons.wikimedia.org/wiki/File%3AGoogle_Sycamore_Chip_001.png">Google Sycamore Chip 001.png</a> by Google - 
     <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>
@@ -62,7 +62,7 @@ Quantum programming is a constantly evolving field, with many companies and expe
 - [IBM Quantum](https://quantumexperience.ng.bluemix.net/)
 - [Google Quantum AI Lab](https://ai.google/research/quantum-ai-lab)
 - [IonQ](https://ionq.com/)
-## 📸 Cover image credit
+## Cover image credit
 - **Image:** [A Wafer of the Latest D-Wave Quantum Computers (39188583425).jpg](https://commons.wikimedia.org/wiki/File%3AA_Wafer_of_the_Latest_D-Wave_Quantum_Computers_%2839188583425%29.jpg)
 - **Author:** Steve Jurvetson from Menlo Park, USA
 - **License:** [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) · via Wikimedia Commons

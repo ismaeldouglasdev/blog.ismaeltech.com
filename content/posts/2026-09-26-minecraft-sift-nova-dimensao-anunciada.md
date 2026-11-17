@@ -97,7 +97,7 @@ Se você quer ver o Sift em movimento, estes são os caminhos oficiais:
 
 E se quiser ver em 2027, a partir de 29 de setembro dá para começar por Dungeons II, que é a única forma de conhecer o Sift antes da chegada ao jogo principal.
 
-## 📸 Crédito da imagem de capa
+## Crédito da imagem de capa
 - **Imagem:** [MCD2 promotional material (The Sift)](https://news.xbox.com/en-us/2026/09/26/minecraft-new-dimension-sift-dungeons-2/)
 - **Autor(a):** Mojang Studios
 - **Licença:** [Mojang Studios - material de imprensa, todos os direitos reservados](https://www.minecraft.net/en-us/usage-guidelines) · via XBOX Wire

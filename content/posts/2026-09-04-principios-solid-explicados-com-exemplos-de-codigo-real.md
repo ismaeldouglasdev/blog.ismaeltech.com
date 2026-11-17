@@ -713,12 +713,12 @@ Aplicar SOLID não é seguir regras abstratas; é manter a agilidade para adicio
 
 ## Fontes
 
-- [SOLID Principles – Robert C. Martin](https://www.objectmentor.com/resources/articles/SOLID.pdf)
-- [TypeScript Handbook – Interfaces](https://www.typescriptlang.org/docs/handbook/interfaces.html)
-- [Python abc – Abstract Base Classes](https://docs.python.org/3/library/abc.html)
+- [SOLID Principles - Robert C. Martin](https://www.objectmentor.com/resources/articles/SOLID.pdf)
+- [TypeScript Handbook - Interfaces](https://www.typescriptlang.org/docs/handbook/interfaces.html)
+- [Python abc - Abstract Base Classes](https://docs.python.org/3/library/abc.html)
 
 
-## 📸 Crédito da imagem de capa
+## Crédito da imagem de capa
 - **Imagem:** [Laptop coding programs (Unsplash).jpg](https://commons.wikimedia.org/wiki/File%3ALaptop_coding_programs_%28Unsplash%29.jpg)
 - **Autor(a):** Tirza van Dijk tirzavandijk
 - **Licença:** [CC0](https://creativecommons.org/publicdomain/zero/1.0/) · via Wikimedia Commons

@@ -173,7 +173,7 @@ export default {
 }
 ```
 
-Now you can use `bg-brand-500`, `text-brand-700`, `p-18`, or any combination. The extended palette integrates seamlessly with existing classes.
+Now you can use `bg-brand-500`, `text-brand-700`, `p-18`, or any combination. The extended palette works alongside existing classes.
 
 ## Reusable components with clsx
 
@@ -517,7 +517,7 @@ For projects that prioritize development speed and visual consistency, utility-f
 - [Headless UI Documentation](https://headlessui.com/)
 - [Tailwind CSS: From Side-Project Byproduct to Multi-Million Dollar Business](https://adamwathan.me/tailwindcss-from-side-project-byproduct-to-multi-mullion-dollar-business/)
 - [The Case for Atomic CSS](https://johnpolacek.github.io/the-case-for-atomic-css/)
-## 📸 Cover image credit
+## Cover image credit
 - **Image:** [Chataropica.png](https://commons.wikimedia.org/wiki/File%3AChataropica.png)
 - **Author:** Uhvhhvjhh
 - **License:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · via Wikimedia Commons

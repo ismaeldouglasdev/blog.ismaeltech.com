@@ -15,7 +15,7 @@ translationKey: "2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node
 
 Imagine que seu e-commerce precisa manter o estoque sincronizado com um marketplace. A cada venda o estoque tem que ser atualizado em milissegundos, senão o cliente compra um produto que já acabou e a reputação da loja despenca. Em um cenário assim, a API do marketplace pode começar a responder com erros de *429 Too Many Requests* e, ao mesmo tempo, o banco de dados fica sobrecarregado com consultas repetidas ao mesmo registro de produto. A solução acaba sendo colocar uma camada de Redis entre a aplicação e o banco, usando o Redis não só como cache, mas também como limitador de taxa e como broker de filas.  
 
-Se você já passou por uma situação parecida – ou ainda não, mas sabe que pode acontecer – este artigo mostra, passo a passo, como montar essas três funções essenciais com Node.js, Docker e poucas linhas de código.
+Se você já passou por uma situação parecida - ou ainda não, mas sabe que pode acontecer - este artigo mostra, passo a passo, como montar essas três funções essenciais com Node.js, Docker e poucas linhas de código.
 
 
 ---
@@ -64,26 +64,26 @@ Execute `docker compose up -d` e o Redis já está pronto para aceitar conexões
 
 ### 2.1. Conceitos rápidos  
 
-* **Write‑through** – toda escrita no banco também atualiza o cache.  
-* **Cache‑aside** – a aplicação lê do cache; se o dado não está lá, consulta o banco, grava no cache e devolve ao cliente.
+* **Write-through** - toda escrita no banco também atualiza o cache.  
+* **Cache-aside** - a aplicação lê do cache; se o dado não está lá, consulta o banco, grava no cache e devolve ao cliente.
 
 
 <figure>
 <img src="/media/2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js-1.jpg" alt="Redis na prática: cache, rate limiting e filas em Node.js" loading="lazy">
 <figcaption>Redis "expire" command sets a timeout in seconds on key. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ARedis%27s_%22EXPIRE%22_%2818563947238%29.jpg">Redis&#x27;s &quot;EXPIRE&quot; (18563947238).jpg</a> por Exey Panteleev from Moscow, Russia - <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a> · via Wikimedia Commons</figcaption>
 </figure>
-No meu dia a dia, o padrão cache‑aside tem sido o mais flexível, principalmente quando a carga de escrita é menor que a de leitura, como no caso da sincronização de estoque.
+No meu dia a dia, o padrão cache-aside tem sido o mais flexível, principalmente quando a carga de escrita é menor que a de leitura, como no caso da sincronização de estoque.
 
 
 <figure>
   <img src="/media/2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js.jpg" alt="Cache de mapeamento direto: o conceito que fundamenta o Redis." loading="lazy" />
   <figcaption>
-    Cache de mapeamento direto: o conceito que fundamenta o Redis. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ADirect-Mapped_Cache.png">Direct-Mapped Cache.png</a> por Snehalc  - 
+    Cache de mapeamento direto: o conceito que fundamenta o Redis. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ADirect-Mapped_Cache.png">Direct-Mapped Cache.png</a> por Snehalc - 
     <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>
 
-### 2.2. Implementando cache‑aside com `redis` (v4)
+### 2.2. Implementando cache-aside com `redis` (v4)
 
 Instale o cliente oficial:
 
@@ -107,7 +107,7 @@ await client.connect();
 export default client;
 ```
 
-Agora, um exemplo de função que busca um produto no PostgreSQL (via `pg`) e usa cache‑aside:
+Agora, um exemplo de função que busca um produto no PostgreSQL (via `pg`) e usa cache-aside:
 
 ```js
 import client from './redisClient.js';
@@ -135,7 +135,7 @@ export async function getProduct(id) {
 
 Esse padrão evita consultas repetidas ao mesmo registro de produto quando o preço precisa ser consultado rapidamente em operações frequentes.
 
-### 2.3. Write‑through simplificado
+### 2.3. Write-through simplificado
 
 Quando a aplicação cria ou atualiza um produto, basta chamar a mesma função de cache:
 
@@ -171,11 +171,11 @@ Assim, o cache nunca fica desatualizado, mesmo que a base de dados seja alterada
 
 ### 3.1. Por que não usar apenas `express-rate-limit`  
 
-Muitos projetos dependem de middleware que guarda contadores em memória. Isso funciona em um único servidor, mas falha assim que você escala para múltiplas instâncias – cada nó tem sua própria contagem. O Redis, por ser centralizado, resolve esse problema.
+Muitos projetos dependem de middleware que guarda contadores em memória. Isso funciona em um único servidor, mas falha assim que você escala para múltiplas instâncias - cada nó tem sua própria contagem. O Redis, por ser centralizado, resolve esse problema.
 
 ### 3.2. Algoritmo de janela deslizante em Lua  
 
-O algoritmo mais preciso para controle de taxa é o *sliding window log*. Ele grava timestamps de requisições em uma lista e remove os que já “saíram” da janela. O código Lua abaixo já está pronto para ser usado como script Redis:
+O algoritmo mais preciso para controle de taxa é o *sliding window log*. Ele grava timestamps de requisições em uma lista e remove os que já "saíram" da janela. O código Lua abaixo já está pronto para ser usado como script Redis:
 
 ```lua
 -- KEYS[1] = chave do usuário (ex.: "rl:12345")
@@ -273,7 +273,7 @@ Esse limitador ajuda a impedir abusos em APIs públicas, mantendo a latência es
 ### 4.1. Quando usar filas  
 
 - Processamento assíncrono de imagens, PDFs ou vídeos.  
-- Envio de e‑mails em lote.  
+- Envio de e-mails em lote.  
 - Integrações que dependem de APIs de terceiros com limites de taxa.
 
 Ao orquestrar chamadas a múltiplos provedores, respeitar cooldowns é fundamental. BullMQ foi a escolha natural porque já funciona sobre Redis e oferece recursos avançados como retries e rate limiting por fila.
@@ -341,7 +341,7 @@ Com BullMQ é possível desacoplar a geração de relatórios pesados. Cada rela
 
 ## 5. Pub/Sub para eventos em tempo real  
 
-O Redis oferece o padrão *publish/subscribe* nativo, útil para notificações leves ou para sincronizar estado entre instâncias. Um caso típico no varejo é avisar ao front‑end que o estoque de um produto mudou.
+O Redis oferece o padrão *publish/subscribe* nativo, útil para notificações leves ou para sincronizar estado entre instâncias. Um caso típico no varejo é avisar ao front-end que o estoque de um produto mudou.
 
 ### 5.1. Publicando um evento
 
@@ -473,7 +473,7 @@ A partir daí, todas as chamadas de cache, rate limiting e filas funcionam de fo
 
 ## 7. Conclusão  
 
-Implementar cache, rate limiting e filas com Redis não é apenas “coisa de grande empresa”. Com esses padrões é possível reduzir a latência de consultas, evitar bloqueios por limites de API e garantir que tarefas críticas sejam processadas mesmo em picos de carga.  
+Implementar cache, rate limiting e filas com Redis não é apenas "coisa de grande empresa". Com esses padrões é possível reduzir a latência de consultas, evitar bloqueios por limites de API e garantir que tarefas críticas sejam processadas mesmo em picos de carga.  
 
 A combinação de Docker, o cliente oficial `redis` e bibliotecas como BullMQ oferece um caminho rápido e confiável.
 
@@ -494,13 +494,13 @@ Além do Redis: **rate limiting** em rede real pede atenção a chave por usuár
 
 ## Fontes  
 
-- [Redis Documentation – Clustering](https://redis.io/docs/manual/scaling/)  
-- [BullMQ – GitHub Repository](https://github.com/taskforcesh/bullmq)  
-- [Node‑Redis (redis) v4 – API Reference](https://github.com/redis/node-redis)  
-- [Rate limiting with Redis and Lua – blog post by Upstash](https://upstash.com/blog/redis-rate-limiting)  
-- [Express Rate Limit – npm package (conceptual comparison)](https://www.npmjs.com/package/express-rate-limit)
+- [Redis Documentation - Clustering](https://redis.io/docs/manual/scaling/)  
+- [BullMQ - GitHub Repository](https://github.com/taskforcesh/bullmq)  
+- [Node-Redis (redis) v4 - API Reference](https://github.com/redis/node-redis)  
+- [Rate limiting with Redis and Lua - blog post by Upstash](https://upstash.com/blog/redis-rate-limiting)  
+- [Express Rate Limit - npm package (conceptual comparison)](https://www.npmjs.com/package/express-rate-limit)
 
-## 📸 Crédito da imagem de capa
+## Crédito da imagem de capa
 - **Imagem:** [Cache Memory-jurvetson.jpg](https://commons.wikimedia.org/wiki/File%3ACache_Memory-jurvetson.jpg)
 - **Autor(a):** Steve Jurvetson from Menlo Park, USA
 - **Licença:** [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) · via Wikimedia Commons

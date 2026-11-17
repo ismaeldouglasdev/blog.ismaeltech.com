@@ -121,7 +121,7 @@ E o ponto que a maioria dos tutoriais pula: **expor para fora é a exceção, n�
 | Tipo | Alcance | Quando usar |
 |---|---|---|
 | `ClusterIP` (padrão) | Só dentro do cluster | comunicação entre serviços, quase sempre |
-| `NodePort` | Cada node numa porta alta (30000–32767) | desenvolvimento local, debug |
+| `NodePort` | Cada node numa porta alta (30000-32767) | desenvolvimento local, debug |
 | `LoadBalancer` | IP público via provedor de nuvem | quando você realmente precisa de IP público |
 
 Usei `NodePort` porque é o que funciona no Minikube sem configurar nada. Em produção, subnetos de Kubernetes costumam usar `LoadBalancer` ou um Ingress - que é a próxima seção.

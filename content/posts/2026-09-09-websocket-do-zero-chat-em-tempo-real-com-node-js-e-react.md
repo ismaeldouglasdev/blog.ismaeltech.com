@@ -221,7 +221,7 @@ Criar um chat em tempo real com WebSockets utilizando Node.js e React é uma tar
 - [Documentação do Mongoose](https://mongoosejs.com/docs/)
 - [Documentação do MongoDB](https://www.mongodb.com/docs/)
 - [Socket.IO Redis Adapter](https://socket.io/docs/v4/adapter/#redis-adapter)
-## 📸 Crédito da imagem de capa
+## Crédito da imagem de capa
 
 <figure>
 <img src="/media/2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react-1.jpg" alt="WebSocket do zero: chat em tempo real com Node.js e React" loading="lazy">

@@ -34,7 +34,7 @@ Esses exemplos ilustram a flexibilidade do `cron` em agendar tarefas para difere
 <figure>
   <img src="/media/2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash.jpg" alt="Exemplo de crontab: sintaxe e agendamentos reais." loading="lazy" />
   <figcaption>
-    Exemplo de crontab: sintaxe e agendamentos reais. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ACrontab.png">Crontab.png</a> por Bersam  - 
+    Exemplo de crontab: sintaxe e agendamentos reais. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ACrontab.png">Crontab.png</a> por Bersam - 
     <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>
@@ -51,37 +51,37 @@ O logging e as notificações são fundamentais para monitorar a execução das 
 ## Exemplos Reais
 Alguns exemplos reais de automação de tarefas incluem:
 
-*   Agendar a execução de um script para backup de dados todos os dias às 23h;
-*   Utilizar um timer do `systemd` para executar um serviço de atualização de software todas as segundas-feiras às 3h da manhã;
-*   Implementar um script Bash para sincronizar o catálogo de produtos com um marketplace todos os dias às 8h da manhã.
+* Agendar a execução de um script para backup de dados todos os dias às 23h;
+* Utilizar um timer do `systemd` para executar um serviço de atualização de software todas as segundas-feiras às 3h da manhã;
+* Implementar um script Bash para sincronizar o catálogo de produtos com um marketplace todos os dias às 8h da manhã.
 
 ## Erros Clássicos
 Alguns erros clássicos ao trabalhar com automação de tarefas incluem:
 
-*   Esquecer de especificar o caminho completo para o script ou comando;
-*   Não testar o script em diferentes cenários e ambientes;
-*   Não implementar mecanismos de tratamento de erros e exceções;
-*   Não monitorar a execução das tarefas e identificar possíveis problemas.
+* Esquecer de especificar o caminho completo para o script ou comando;
+* Não testar o script em diferentes cenários e ambientes;
+* Não implementar mecanismos de tratamento de erros e exceções;
+* Não monitorar a execução das tarefas e identificar possíveis problemas.
 
 ## Conclusão
 A automação de tarefas é fundamental para qualquer sistema ou aplicação, permitindo que as tarefas sejam executadas de forma regular e consistente, sem a necessidade de intervenção humana. Ferramentas como `cron`, `systemd` e scripts Bash são essenciais para automatizar tarefas e garantir a estabilidade e segurança do sistema. Ao seguir as dicas e exemplos apresentados aqui, é possível criar scripts robustos e eficazes para automatizar tarefas e melhorar a eficiência do sistema.
 
 Takeaways práticos:
 
-*   Utilize o `cron` para agendar tarefas em intervalos de tempo específicos;
-*   Implemente mecanismos de tratamento de erros e exceções nos scripts;
-*   Monitore a execução das tarefas e identifique possíveis problemas;
-*   Teste os scripts em diferentes cenários e ambientes;
-*   Utilize ferramentas como `logger` ou `syslog` para registrar eventos e erros.
+* Utilize o `cron` para agendar tarefas em intervalos de tempo específicos;
+* Implemente mecanismos de tratamento de erros e exceções nos scripts;
+* Monitore a execução das tarefas e identifique possíveis problemas;
+* Teste os scripts em diferentes cenários e ambientes;
+* Utilize ferramentas como `logger` ou `syslog` para registrar eventos e erros.
 
 ## Fontes
 
-*   [Documentação oficial do Cron](https://man7.org/linux/man-pages/man5/crontab.5.html)
-*   [Documentação oficial do Systemd](https://www.freedesktop.org/wiki/Software/systemd/)
-*   [Manual do systemd.timer](https://www.freedesktop.org/software/systemd/man/systemd.timer.html)
-*   [Artigo sobre automação de tarefas no Linux](https://linuxconfig.org/linux-cron-jobs)
-*   [Documentação oficial do Bash](https://www.gnu.org/software/bash/manual/bash.html)
-## 📸 Crédito da imagem de capa
+* [Documentação oficial do Cron](https://man7.org/linux/man-pages/man5/crontab.5.html)
+* [Documentação oficial do Systemd](https://www.freedesktop.org/wiki/Software/systemd/)
+* [Manual do systemd.timer](https://www.freedesktop.org/software/systemd/man/systemd.timer.html)
+* [Artigo sobre automação de tarefas no Linux](https://linuxconfig.org/linux-cron-jobs)
+* [Documentação oficial do Bash](https://www.gnu.org/software/bash/manual/bash.html)
+## Crédito da imagem de capa
 - **Imagem:** [Linux-Mint-8-LXDE terminals info.png](https://commons.wikimedia.org/wiki/File%3ALinux-Mint-8-LXDE_terminals_info.png)
 - **Autor(a):** VARGUX
 - **Licença:** [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) · via Wikimedia Commons

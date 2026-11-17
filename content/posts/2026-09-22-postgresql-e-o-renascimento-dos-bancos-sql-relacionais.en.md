@@ -87,7 +87,7 @@ Resuming, PostgreSQL is a relational database that offers many attractive featur
 - [PlanetScale Documentation](https://planetscale.com/docs)
 - [pgvector GitHub Repository](https://github.com/pgvector/pgvector)
 - [PostGIS GitHub Repository](https://github.com/postgis/postgis)
-## 📸 Cover image credit
+## Cover image credit
 - **Image:** [Data center infrastructure in the United States.jpg](https://commons.wikimedia.org/wiki/File%3AData_center_infrastructure_in_the_United_States.jpg)
 - **Author:** DOE/National Renewable Energy Laboratory
 - **License:** [Public domain](https://en.wikipedia.org/wiki/Public_domain) · via Wikimedia Commons

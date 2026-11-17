@@ -367,7 +367,7 @@ A análise de escape determina onde as variáveis são alocadas, o garbage colle
 - [Go Memory Model](https://go.dev/ref/mem)
 - [Profiling Go Programs](https://go.dev/blog/pprof)
 - [Package sync - Pool](https://pkg.go.dev/sync#Pool)
-## 📸 Crédito da imagem de capa
+## Crédito da imagem de capa
 - **Imagem:** [NIST computer scientists Mary Theofanos (14316126446).jpg](https://commons.wikimedia.org/wiki/File%3ANIST_computer_scientists_Mary_Theofanos_%2814316126446%29.jpg)
 - **Autor(a):** National Institute of Standards and Technology
 - **Licença:** [Public domain](https://en.wikipedia.org/wiki/Public_domain) · via Wikimedia Commons

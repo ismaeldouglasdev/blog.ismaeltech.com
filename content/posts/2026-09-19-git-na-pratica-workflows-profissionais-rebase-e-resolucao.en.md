@@ -66,7 +66,7 @@ In summary, Git is a powerful tool that offers many features to manage the workf
 - [Husky: Git Hooks](https://typicode.github.io/husky/#/)
 - [Git Flow](https://nvie.com/posts/a-successful-git-branching-model/)
 - [Trunk-based Development](https://trunkbaseddevelopment.com/)
-## 📸 Cover image credit
+## Cover image credit
 - **Image:** [Git format.png](https://commons.wikimedia.org/wiki/File%3AGit_format.png)
 - **Author:** Julian Kücklich
 - **License:** [CC0](https://creativecommons.org/publicdomain/zero/1.0/) · via Wikimedia Commons

@@ -13,9 +13,9 @@ translationKey: "2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node
 
 ### Why you should care right now  
 
-Imagine an e‑commerce integrating a POS with a marketplace. With each sale, inventory must be updated within milliseconds, otherwise a customer ends up buying a product that’s already out of stock. During testing, the marketplace API started returning *429 Too Many Requests* errors and the database became overloaded with repeated queries. The solution was to add a Redis layer between the application and the database, using it as a cache, a rate limiter, and a queue broker.  
+Imagine an e-commerce integrating a POS with a marketplace. With each sale, inventory must be updated within milliseconds, otherwise a customer ends up buying a product that's already out of stock. During testing, the marketplace API started returning *429 Too Many Requests* errors and the database became overloaded with repeated queries. The solution was to add a Redis layer between the application and the database, using it as a cache, a rate limiter, and a queue broker.  
 
-If you’ve already faced a similar situation – or haven’t yet, but know it could happen – this article shows, step by step, how to build these three essential functions with Node.js, Docker, and just a few lines of code.
+If you've already faced a similar situation - or haven't yet, but know it could happen - this article shows, step by step, how to build these three essential functions with Node.js, Docker, and just a few lines of code.
 
 ## 1. Preparing the environment with Docker  
 
@@ -56,26 +56,26 @@ Run `docker compose up -d` and Redis is ready to accept connections on the defau
 
 ### 2.1. Quick Concepts  
 
-* **Write‑through** – every write to the database also updates the cache.  
-* **Cache‑aside** – the application reads from the cache; if the data isn’t there, it queries the database, writes to the cache, and returns it to the client.
+* **Write-through** - every write to the database also updates the cache.  
+* **Cache-aside** - the application reads from the cache; if the data isn't there, it queries the database, writes to the cache, and returns it to the client.
 
 
 <figure>
 <img src="/media/2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js-1.jpg" alt="Redis in Practice: Caching, Rate Limiting &amp; Queues in Node.js" loading="lazy">
 <figcaption>Redis "expire" command sets a timeout in seconds on key. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ARedis%27s_%22EXPIRE%22_%2818563947238%29.jpg">Redis&#x27;s &quot;EXPIRE&quot; (18563947238).jpg</a> por Exey Panteleev from Moscow, Russia - <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a> · via Wikimedia Commons</figcaption>
 </figure>
-In my day‑to‑day work, the cache‑aside pattern has been the most flexible, especially when the write load is lower than the read load, such as in inventory synchronization.
+In my day-to-day work, the cache-aside pattern has been the most flexible, especially when the write load is lower than the read load, such as in inventory synchronization.
 
 
 <figure>
   <img src="/media/2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js.jpg" alt="Direct-mapped cache: the concept that underpins Redis." loading="lazy" />
   <figcaption>
-    Direct-mapped cache: the concept that underpins Redis. - Image: <a href="https://commons.wikimedia.org/wiki/File%3ADirect-Mapped_Cache.png">Direct-Mapped Cache.png</a> by Snehalc  - 
+    Direct-mapped cache: the concept that underpins Redis. - Image: <a href="https://commons.wikimedia.org/wiki/File%3ADirect-Mapped_Cache.png">Direct-Mapped Cache.png</a> by Snehalc - 
     <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>
 
-### 2.2. Implementing cache‑aside with `redis` (v4)
+### 2.2. Implementing cache-aside with `redis` (v4)
 
 Install the official client:
 
@@ -99,7 +99,7 @@ await client.connect();
 export default client;
 ```
 
-Now, an example function that fetches a product from PostgreSQL (via `pg`) and uses cache‑aside:
+Now, an example function that fetches a product from PostgreSQL (via `pg`) and uses cache-aside:
 
 ```js
 import client from './redisClient.js';
@@ -125,7 +125,7 @@ export async function getProduct(id) {
 }
 ```
 
-### 2.3. Simplified Write‑through
+### 2.3. Simplified Write-through
 
 When the application creates or updates a product, just call the same cache function:
 
@@ -164,7 +164,7 @@ Many projects rely on middleware that stores counters in memory. This works on a
 
 ### 3.2. Sliding window algorithm in Lua  
 
-The most precise algorithm for rate control is the *sliding window log*. It records request timestamps in a list and removes those that have already “left” the window. The Lua code below is ready to be used as a Redis script:
+The most precise algorithm for rate control is the *sliding window log*. It records request timestamps in a list and removes those that have already "left" the window. The Lua code below is ready to be used as a Redis script:
 
 ```lua
 -- KEYS[1] = chave do usuário (ex.: "rl:12345")
@@ -258,7 +258,7 @@ A rate limiter is useful to prevent enrichment APIs from being hammered by bots,
 
 - Asynchronous processing of images, PDFs, or videos.  
 - Batch email sending.  
-- Integrations that depend on third‑party APIs with rate limits.
+- Integrations that depend on third-party APIs with rate limits.
 
 When orchestrating calls to multiple providers with cooldowns, BullMQ is a natural choice because it runs on Redis and offers retries and rate limiting per queue.
 
@@ -318,11 +318,11 @@ events.on('completed', ({ jobId }) => {
 });
 ```
 
-With BullMQ it’s easy to decouple heavy report generation from the main application. Each report goes to a queue, is processed in the background, and the user receives a notification when ready.
+With BullMQ it's easy to decouple heavy report generation from the main application. Each report goes to a queue, is processed in the background, and the user receives a notification when ready.
 
-## 5. Pub/Sub for real‑time events  
+## 5. Pub/Sub for real-time events  
 
-Redis provides a native *publish/subscribe* pattern, useful for lightweight notifications or for synchronizing state across instances. A typical retail scenario is notifying the front‑end that a product’s stock has changed.
+Redis provides a native *publish/subscribe* pattern, useful for lightweight notifications or for synchronizing state across instances. A typical retail scenario is notifying the front-end that a product's stock has changed.
 
 ### 5.1. Publishing an event
 
@@ -447,7 +447,7 @@ From that point on, all cache calls, rate limiting, and queues operate transpare
 
 ## 7. Conclusion  
 
-Implementing caching, rate limiting, and queues with Redis is not just “big‑company stuff”. These patterns can cut query latency significantly, avoid blocks due to API limits, and ensure that critical tasks are processed even under load spikes.  
+Implementing caching, rate limiting, and queues with Redis is not just "big-company stuff". These patterns can cut query latency significantly, avoid blocks due to API limits, and ensure that critical tasks are processed even under load spikes.  
 
 The combination of Docker, the official `redis` client, and libraries such as BullMQ provides a fast and reliable path.
 
@@ -465,12 +465,12 @@ Beyond Redis: **rate limiting** on a real network needs a key per user rather th
 
 ## Sources  
 
-- [Redis Documentation – Clustering](https://redis.io/docs/manual/scaling/)  
-- [BullMQ – GitHub Repository](https://github.com/taskforcesh/bullmq)  
-- [Node‑Redis (redis) v4 – API Reference](https://github.com/redis/node-redis)  
-- [Rate limiting with Redis and Lua – blog post by Upstash](https://upstash.com/blog/redis-rate-limiting)  
-- [Express Rate Limit – npm package (conceptual comparison)](https://www.npmjs.com/package/express-rate-limit)
-## 📸 Cover image credit
+- [Redis Documentation - Clustering](https://redis.io/docs/manual/scaling/)  
+- [BullMQ - GitHub Repository](https://github.com/taskforcesh/bullmq)  
+- [Node-Redis (redis) v4 - API Reference](https://github.com/redis/node-redis)  
+- [Rate limiting with Redis and Lua - blog post by Upstash](https://upstash.com/blog/redis-rate-limiting)  
+- [Express Rate Limit - npm package (conceptual comparison)](https://www.npmjs.com/package/express-rate-limit)
+## Cover image credit
 - **Image:** [Cache Memory-jurvetson.jpg](https://commons.wikimedia.org/wiki/File%3ACache_Memory-jurvetson.jpg)
 - **Author:** Steve Jurvetson from Menlo Park, USA
 - **License:** [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) · via Wikimedia Commons

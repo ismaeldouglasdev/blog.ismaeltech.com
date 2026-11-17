@@ -151,7 +151,7 @@ O mais importante: pela primeira vez na história, escolher Linux não significa
 - [Linux Hardware Compatibility - Kernel Documentation](https://www.kernel.org/doc/html/latest/)
 - [NVIDIA Linux Driver Release Notes](https://docs.nvidia.com/datacenter/tesla/)
 
-## 📸 Crédito da imagem de capa
+## Crédito da imagem de capa
 - **Imagem:** [Tux, the Linux penguin I.jpg](https://commons.wikimedia.org/wiki/File:Tux,_the_Linux_penguin_I.jpg)
 - **Autor(a):** Renato.pierri
 - **Licença:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) · via Wikimedia Commons

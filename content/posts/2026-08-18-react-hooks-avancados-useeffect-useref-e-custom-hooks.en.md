@@ -15,18 +15,18 @@ translationKey: "2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hook
 
 ## Introduction: Why Hooks Changed React?
 
-> **“In 2018, 85 % of React projects had already adopted Hooks.”** – State of React Survey 2023  
+> **"In 2018, 85 % of React projects had already adopted Hooks."** - State of React Survey 2023  
 
-If you started coding in React before version 16.8, you probably still remember the saga of *class components*: `componentDidMount`, `componentWillUnmount`, `this.setState`, and the endless battle with method *binding*. It was a period of limited productivity and, let’s face it, verbose code.
+If you started coding in React before version 16.8, you probably still remember the saga of *class components*: `componentDidMount`, `componentWillUnmount`, `this.setState`, and the endless battle with method *binding*. It was a period of limited productivity and, let's face it, verbose code.
 
 Then, Hooks arrived as a silent revolution. They brought two core promises:
 
-1. **Simple composition of state logic** – no inheritance hierarchies or complicated “wrapper components”.  
-2. **Direct access to the lifecycle** – everything inside the same function, without needing to create classes.
+1. **Simple composition of state logic** - no inheritance hierarchies or complicated "wrapper components".  
+2. **Direct access to the lifecycle** - everything inside the same function, without needing to create classes.
 
-But, like any powerful tool, Hooks require deep understanding. It’s not enough to use `useState` and `useEffect` superficially; to truly unlock React’s potential, we need to master *advanced hooks*: `useEffect` with proper cleanup, `useRef` for persistent values and DOM references, and, of course, create our own reusable *custom hooks*.
+But, like any powerful tool, Hooks require deep understanding. It's not enough to use `useState` and `useEffect` superficially; to truly unlock React's potential, we need to master *advanced hooks*: `useEffect` with proper cleanup, `useRef` for persistent values and DOM references, and, of course, create our own reusable *custom hooks*.
 
-In this article, we’ll dive into the details that make a difference in the day‑to‑day life of a full‑stack developer. Grab your keyboard, open VS Code, and follow the real‑world examples you can copy‑paste into your projects.
+In this article, we'll walk through the details that make a difference in the day-to-day life of a full-stack developer. Grab your keyboard, open VS Code, and follow the real-world examples you can copy-paste into your projects.
 
 ---
 
@@ -34,7 +34,7 @@ In this article, we’ll dive into the details that make a difference in the day
 <figure>
   <img src="/media/2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks.jpg" alt="The React logo, the open source JavaScript library that popularized Hooks." loading="lazy" />
   <figcaption>
-    The React logo, the open source JavaScript library that popularized Hooks. - Image: <a href="https://commons.wikimedia.org/wiki/File%3AReact-icon.svg">React-icon.svg</a> by Facebook  - 
+    The React logo, the open source JavaScript library that popularized Hooks. - Image: <a href="https://commons.wikimedia.org/wiki/File%3AReact-icon.svg">React-icon.svg</a> by Facebook - 
     <a href="https://en.wikipedia.org/wiki/Public_domain">Public domain</a> · via Wikimedia Commons
   </figcaption>
 </figure>
@@ -61,9 +61,9 @@ useEffect(() => {
 
 - The **first argument** is the function that will be executed **after** rendering.
 - The **returned value** (if any) will be called **before** the next effect execution or when the component unmounts.
-- The **second argument** (dependency array) controls *when* the effect should re‑run.
+- The **second argument** (dependency array) controls *when* the effect should re-run.
 
-### Example 1 – Data fetch with cancellation
+### Example 1 - Data fetch with cancellation
 
 Imagine a component that fetches a user's details on mount. If the user navigates away before the request finishes, we need to abort the call to avoid *memory leaks* and state updates in unmounted components.
 
@@ -106,11 +106,11 @@ function useUser(id: string) {
 **Practical tips**
 
 - **Always include the variables used inside the effect** (`id` in the example) in the dependency list. The ESLint plugin `react-hooks/exhaustive-deps` helps detect missing ones.
-- **AbortController** works in modern browsers and in Node (via `node-fetch`). For legacy support, use libraries like `axios` that already have built‑in cancellation.
+- **AbortController** works in modern browsers and in Node (via `node-fetch`). For legacy support, use libraries like `axios` that already have built-in cancellation.
 
-### Example 2 – `setInterval` with cleanup
+### Example 2 - `setInterval` with cleanup
 
-A simple second‑by‑second counter seems easy, but if we don’t clear the interval, the timer will keep running even after the component unmounts.
+A simple second-by-second counter seems easy, but if we don't clear the interval, the timer will keep running even after the component unmounts.
 
 ```tsx
 import { useEffect, useState } from 'react';
@@ -128,11 +128,11 @@ export function Timer() {
 }
 ```
 
-**Key point**: if you put `seconds` in the dependency list, the effect will re‑run on every update, creating multiple timers. Therefore, use the functional form of `setState` (`s => s + 1`) to access the latest value without needing `seconds` as a dependency.
+**Key point**: if you put `seconds` in the dependency list, the effect will re-run on every update, creating multiple timers. Therefore, use the functional form of `setState` (`s => s + 1`) to access the latest value without needing `seconds` as a dependency.
 
 ### When to use multiple `useEffect`s
 
-There's no problem splitting the logic into several effects, each handling a different concern. This improves readability and avoids over‑engineering of dependencies.
+There's no problem splitting the logic into several effects, each handling a different concern. This improves readability and avoids over-engineering of dependencies.
 
 ```tsx
 useEffect(() => {
@@ -152,10 +152,10 @@ useEffect(() => {
 
 ### What does `useRef` actually store?
 
-- **A DOM reference** – widely used for focusing inputs, measuring elements, or integrating third-party libraries.
-- **A mutable value that persists across renders** – unlike `useState`, changing `ref.current` does **not** trigger a new render.
+- **A DOM reference** - widely used for focusing inputs, measuring elements, or integrating third-party libraries.
+- **A mutable value that persists across renders** - unlike `useState`, changing `ref.current` does **not** trigger a new render.
 
-### Example 1 – Focusing a text field on mount
+### Example 1 - Focusing a text field on mount
 
 ```tsx
 import { useEffect, useRef } from 'react';
@@ -171,7 +171,7 @@ export function SearchBox() {
 }
 ```
 
-### Example 2 – Storing the previous value of a prop
+### Example 2 - Storing the previous value of a prop
 
 We often need to compare the current value of a prop with the previous one (for example, to trigger animations). `useRef` allows us to store the "previous value" without causing a re-render.
 
@@ -200,7 +200,7 @@ export function PriceTag({ price }: { price: number }) {
 }
 ```
 
-### Example 3 – Render counter without re-rendering
+### Example 3 - Render counter without re-rendering
 
 ```tsx
 import { useRef } from 'react';
@@ -217,9 +217,9 @@ export function RenderCounter() {
 
 ### Advanced tips
 
-1. **Avoid using `ref` as "state"** – changing `ref.current` does not update the UI. If the UI depends on the value, use `useState`.
-2. **References to third-party components** – when integrating with libraries like `Chart.js` or `Mapbox`, create the canvas or container with a `ref` and initialize the library inside a `useEffect` with a cleanup function that destroys the instance.
-3. **Persistence across routes** – `useRef` can store temporary data that doesn't need to be serialized in the URL or in `localStorage`. It is ideal for storing API "caches" that don't justify full persistence.
+1. **Avoid using `ref` as "state"** - changing `ref.current` does not update the UI. If the UI depends on the value, use `useState`.
+2. **References to third-party components** - when integrating with libraries like `Chart.js` or `Mapbox`, create the canvas or container with a `ref` and initialize the library inside a `useEffect` with a cleanup function that destroys the instance.
+3. **Persistence across routes** - `useRef` can store temporary data that doesn't need to be serialized in the URL or in `localStorage`. It is ideal for storing API "caches" that don't justify full persistence.
 
 ---
 
@@ -227,7 +227,7 @@ export function RenderCounter() {
 
 Creating *custom hooks* is the art of **extracting reusable logic** and **isolating side effects**. When well-designed, they make code more declarative and testable.
 
-### 1. `useFetch` – Generic fetch with loading and error states
+### 1. `useFetch` - Generic fetch with loading and error states
 
 ```tsx
 import { useEffect, useState } from 'react';
@@ -297,7 +297,7 @@ function UsersList() {
 
 > **Tip:** Always include `JSON.stringify(options)` in the dependencies if you want changes to headers or query params to re-trigger the request. If the options are static, pass an object memoized with `useMemo`.
 
-### 2. `useLocalStorage` – Sync state with `localStorage`
+### 2. `useLocalStorage` - Sync state with `localStorage`
 
 ```tsx
 import { useState, useEffect } from 'react';
@@ -340,10 +340,10 @@ function ThemeToggle() {
 
 **Best practices**
 
-- **Selective persistence** – not every state deserves to be in `localStorage`. Evaluate if the data will be reused across sessions.
-- **Versioning** – when changing the structure of the stored object, consider clearing the key or migrating the data to avoid `JSON.parse` failures.
+- **Selective persistence** - not every state deserves to be in `localStorage`. Evaluate if the data will be reused across sessions.
+- **Versioning** - when changing the structure of the stored object, consider clearing the key or migrating the data to avoid `JSON.parse` failures.
 
-### 3. `useDebounce` – Debounce values or callbacks
+### 3. `useDebounce` - Debounce values or callbacks
 
 Ideal for "type-ahead" searches, where we want to wait for the user to stop typing before firing the request.
 
@@ -427,7 +427,7 @@ export function useDebouncedCallback<T extends unknown[]>(
 - [React Docs: useRef](https://react.dev/reference/react/useRef)
 - [Kent C. Dodds: Custom Hooks](https://kentcdodds.com/blog/how-to-use-react-hooks-effectively)
 
-## 📸 Cover image credit
+## Cover image credit
 - **Image:** [Programming.jpg](https://commons.wikimedia.org/wiki/File%3AProgramming.jpg)
 - **Author:** Lorenzo Cafaro
 - **License:** [CC0](https://creativecommons.org/publicdomain/zero/1.0/) · via Wikimedia Commons

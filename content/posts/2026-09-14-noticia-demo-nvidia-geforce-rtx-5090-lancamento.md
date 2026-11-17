@@ -69,7 +69,7 @@ Para quem está no meio-termo, esperar as reviews completas e a chegada da RTX 5
 - [Discussão no r/hardware](https://www.reddit.com/r/hardware/): discussão da comunidade sobre preço e valor
 - [Previsão de preço no Adrenaline](https://www.adrenaline.com.br/hardware/nvidia-rtx-5090-preco-brasil/): estimativa para o mercado brasileiro
 
-## 📸 Crédito da imagem de capa
+## Crédito da imagem de capa
 - **Imagem:** [ZOTAC Gaming's GeForce RTX 50 Series Graphics Carda.jpg](https://commons.wikimedia.org/wiki/File:ZOTAC_Gaming%27s_GeForce_RTX_50_Series_Graphics_Carda.jpg)
 - **Autor(a):** Alphaaloy
 - **Licença:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) · via Wikimedia Commons

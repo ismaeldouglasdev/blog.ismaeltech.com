@@ -26,11 +26,11 @@ React Context is built-in, requires no external dependencies, and works. True. B
 
 Context is great for values that change infrequently: themes, authentication, global configurations. For example, in an NGO project I worked on (Mensageiros da Esperança), context works well for storing the logged-in user and permissions: these only change at login/logout.
 
-The problem arises when you try to use Context for state that changes frequently: form inputs, cart product lists, loading status. Each update triggers re-renders in all consumers, even if the value consumed by that specific component hasn’t changed. This is the infamous "over-rendering."
+The problem arises when you try to use Context for state that changes frequently: form inputs, cart product lists, loading status. Each update triggers re-renders in all consumers, even if the value consumed by that specific component hasn't changed. This is the infamous "over-rendering."
 
-In one of my first React projects (a Linux theming dashboard), I started with Context for everything. The result? When the user changed the Hyprland transparency slider (yes, that was app state), the entire app re-rendered, including package lists, theme previews, and settings. It wasn’t sustainable.
+In one of my first React projects (a Linux theming dashboard), I started with Context for everything. The result? When the user changed the Hyprland transparency slider (yes, that was app state), the entire app re-rendered, including package lists, theme previews, and settings. It wasn't sustainable.
 
-Context is simple to understand, but its internal implementation (the provider as a component with its own state) creates a rendering dependency that’s often heavier than it appears.
+Context is simple to understand, but its internal implementation (the provider as a component with its own state) creates a rendering dependency that's often heavier than it appears.
 
 ## Zustand: Simple API, Real Results
 
@@ -39,7 +39,7 @@ Zustand emerged as a response to this complexity. Its API is minimal: you essent
 
 <figure>
 <img src="/media/2026-09-10-gerenciamento-de-estados-react-context-vs-zustand-vs-jotai-1.jpg" alt="State management: React Context vs Zustand vs Jotai" loading="lazy">
-<figcaption>Chemist Tesia Irwin tests a 3D printer on July 28, 2022, at Swamp Works at NASA’s Kennedy Space Center in Florida, as part of the Relevant Environment Additive. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AREACT_Demonstration_%28KSC-20220728-PH-FMX02_0029%29.jpeg">REACT Demonstration (KSC-20220728-PH-FMX02 0029).jpeg</a> por Frank Michaux - <a href="https://creativecommons.org/licenses/">Public domain</a> · via Wikimedia Commons</figcaption>
+<figcaption>Chemist Tesia Irwin tests a 3D printer on July 28, 2022, at Swamp Works at NASA's Kennedy Space Center in Florida, as part of the Relevant Environment Additive. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AREACT_Demonstration_%28KSC-20220728-PH-FMX02_0029%29.jpeg">REACT Demonstration (KSC-20220728-PH-FMX02 0029).jpeg</a> por Frank Michaux - <a href="https://creativecommons.org/licenses/">Public domain</a> · via Wikimedia Commons</figcaption>
 </figure>
 
 ```ts
@@ -151,7 +151,7 @@ Performance isn't just about how many milliseconds it takes to update: it's abou
 
 <figure>
 <img src="/media/2026-09-10-gerenciamento-de-estados-react-context-vs-zustand-vs-jotai-2.jpg" alt="State management: React Context vs Zustand vs Jotai" loading="lazy">
-<figcaption>Chemist Tesia Irwin tests a 3D printer on July 28, 2022, at Swamp Works at NASA’s Kennedy Space Center in Florida, as part of the Relevant Environment Additive. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AREACT_Demonstration_%28KSC-20220728-PH-FMX02_0030%29.jpeg">REACT Demonstration (KSC-20220728-PH-FMX02 0030).jpeg</a> por Frank Michaux - <a href="https://creativecommons.org/licenses/">Public domain</a> · via Wikimedia Commons</figcaption>
+<figcaption>Chemist Tesia Irwin tests a 3D printer on July 28, 2022, at Swamp Works at NASA's Kennedy Space Center in Florida, as part of the Relevant Environment Additive. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AREACT_Demonstration_%28KSC-20220728-PH-FMX02_0030%29.jpeg">REACT Demonstration (KSC-20220728-PH-FMX02 0030).jpeg</a> por Frank Michaux - <a href="https://creativecommons.org/licenses/">Public domain</a> · via Wikimedia Commons</figcaption>
 </figure>
 
 In the traditional context (without memoization), every context update triggers re-renders in all components that consume that context, even if the specific value used by each one doesn't change. React has no way of knowing this, since the object returned by the provider is new on every render.
@@ -204,15 +204,15 @@ The easiest part to migrate was persistence: the Context already saved the cart 
 
 ## Conclusion
 
-State management in React isn’t about choosing the most popular option: it’s about choosing what solves your problem with the minimum complexity.
+State management in React isn't about choosing the most popular option: it's about choosing what solves your problem with the minimum complexity.
 
-- **Context** is still the simplest option for stable state and values that don’t change frequently. But don’t be fooled: with dynamic state, it can quickly become a performance nightmare.
+- **Context** is still the simplest option for stable state and values that don't change frequently. But don't be fooled: with dynamic state, it can quickly become a performance nightmare.
 
 - **Zustand** is my default choice today: simple API, good performance, and flexible enough to support custom middleware. It strikes the right balance between minimalism and power.
 
 - **Jotai** shines in applications where state is naturally modular: dashboards, editing tools, anything with many interdependent values.
 
-Ultimately, the best state management is the one you understand and can maintain. It’s not worth swapping Zustand for Context just because it’s native, or vice versa. But knowing when each makes sense? That’s what separates a project that scales from one that collapses at the first new feature.
+Ultimately, the best state management is the one you understand and can maintain. It's not worth swapping Zustand for Context just because it's native, or vice versa. But knowing when each makes sense? That's what separates a project that scales from one that collapses at the first new feature.
 
 ### Practical takeaways
 
@@ -222,7 +222,7 @@ Ultimately, the best state management is the one you understand and can maintain
 - Never use Context for frequently changing state without memoization, or use `useContext` with `useMemo` in the provider and `React.memo` on consumers (though this already erodes the simplicity).
 - Test performance with the DevTools Profiler: see how many components re-render on a single update.
 
-State management is invisible until it breaks. Investing time to choose the right tool matters more than picking something “right” today only to rewrite it tomorrow.
+State management is invisible until it breaks. Investing time to choose the right tool matters more than picking something "right" today only to rewrite it tomorrow.
 
 ## Sources
 
@@ -232,7 +232,7 @@ State management is invisible until it breaks. Investing time to choose the righ
 - [Zustand Documentation](https://zustand-demo.pmnd.rs/)
 - [Jotai Documentation](https://jotai.org/)
 - [React Docs: useMemo](https://react.dev/reference/react/useMemo)
-## 📸 Cover image credit
+## Cover image credit
 - **Image:** [Infrared photography of computer hardware - DSC05331.jpg](https://commons.wikimedia.org/wiki/File%3AInfrared_photography_of_computer_hardware_-_DSC05331.jpg)
 - **Author:** Smrao
 - **License:** [CC0](https://creativecommons.org/publicdomain/zero/1.0/) · via Wikimedia Commons

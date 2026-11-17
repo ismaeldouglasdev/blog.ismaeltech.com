@@ -12,7 +12,7 @@ translationKey: "2026-10-03-nginx-como-reverse-proxy-ssl-load-balancing-e-cachin
 
 Putting a web application in production by directly exposing the Node.js, Python, or Go port to the public internet is asking for trouble. Application servers are excellent for processing business rules, handling asynchronous I/O, and responding to dynamic requests. However, they were rarely designed to efficiently handle the heavy burden of TLS negotiation, slow network attacks, buffering of massive uploads, or serving static files.
 
-This is where Nginx enters as a game-changer. Created in the early 2000s by Igor Sysoev to solve the famous C10k problem (sustaining ten thousand simultaneous connections on a single machine), Nginx uses an event-driven asynchronous architecture. Instead of spawning a heavy thread for each TCP connection, it processes thousands of clients with minimal memory consumption.
+This is where Nginx stands out. Created in the early 2000s by Igor Sysoev to solve the famous C10k problem (sustaining ten thousand simultaneous connections on a single machine), Nginx uses an event-driven asynchronous architecture. Instead of spawning a heavy thread for each TCP connection, it processes thousands of clients with minimal memory consumption.
 
 Configuring Nginx as a reverse proxy transforms the architecture of any application. It works as a shielding and performance layer: it handles SSL termination, distributes load across instances, applies response caching, and protects the backend from request abuse.
 

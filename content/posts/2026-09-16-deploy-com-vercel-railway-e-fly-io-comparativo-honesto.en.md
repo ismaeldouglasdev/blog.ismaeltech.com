@@ -37,7 +37,7 @@ Fly.io is a deployment platform that focuses on global web applications. With Fl
 
 <figure>
 <img src="/media/2026-09-16-deploy-com-vercel-railway-e-fly-io-comparativo-honesto-2.jpg" alt="Honest Comparison: Deploying with Vercel, Railway, and Fly.io" loading="lazy">
-<figcaption>ESA’s EarthCARE satellite mission will soon be launched to answer some critical scientific questions related to the role that clouds and aerosols play in reflec. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AEarthCARE_solar_wing_deployed_ESA24376876.jpeg">EarthCARE solar wing deployed ESA24376876.jpeg</a> por European Space Agency - <a href="https://creativecommons.org/licenses/by-sa/3.0/igo/deed.en">CC BY-SA 3.0 igo</a> · via Wikimedia Commons</figcaption>
+<figcaption>ESA's EarthCARE satellite mission will soon be launched to answer some critical scientific questions related to the role that clouds and aerosols play in reflec. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AEarthCARE_solar_wing_deployed_ESA24376876.jpeg">EarthCARE solar wing deployed ESA24376876.jpeg</a> por European Space Agency - <a href="https://creativecommons.org/licenses/by-sa/3.0/igo/deed.en">CC BY-SA 3.0 igo</a> · via Wikimedia Commons</figcaption>
 </figure>
 
 An example of how to use Fly.io is to create a React project and deploy it using the command `fly init && fly deploy`. This will create a global web application and deploy it on the Fly.io platform.
@@ -73,7 +73,7 @@ Practical takeaways:
 - [Fly.io Docs: Getting Started](https://fly.io/docs/getting-started)
 - [React Docs: Hooks](https://react.dev/reference/react/hooks)
 - [Next.js Docs: Deployment](https://nextjs.org/docs/deployment)
-## 📸 Cover image credit
+## Cover image credit
 - **Image:** [Crimean Railway 4.jpg](https://commons.wikimedia.org/wiki/File%3ACrimean_Railway_4.jpg)
 - **Author:** Unknown; scanned by me
 - **License:** [Public domain](https://en.wikipedia.org/wiki/Public_domain) · via Wikimedia Commons

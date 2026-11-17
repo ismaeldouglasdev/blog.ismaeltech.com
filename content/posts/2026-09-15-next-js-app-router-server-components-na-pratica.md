@@ -60,7 +60,7 @@ Takeaways práticos:
 - [Next.js GitHub Repository](https://github.com/vercel/next.js)
 - [Documentação oficial do Next.js: Migração do Pages Router](https://nextjs.org/docs/migration/pages-router)
 - [Artigo sobre Server Components no blog do Vercel](https://vercel.com/blog/server-components-in-nextjs)
-## 📸 Crédito da imagem de capa
+## Crédito da imagem de capa
 - **Imagem:** [Basic-Mobile-app-server-interaction.png](https://commons.wikimedia.org/wiki/File%3ABasic-Mobile-app-server-interaction.png)
 - **Autor(a):** ShekinahDad
 - **Licença:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) · via Wikimedia Commons

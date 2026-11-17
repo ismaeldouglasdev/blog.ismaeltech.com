@@ -18,7 +18,7 @@ Quando se trata de gerenciar dependências em projetos JavaScript, o npm é o gi
 <figure>
   <img src="/media/2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco.jpg" alt="O logo do npm, o maior registro de pacotes do mundo." loading="lazy" />
   <figcaption>
-    O logo do npm, o maior registro de pacotes do mundo. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ANpm-logo.svg">Npm-logo.svg</a> por Boboss74  - 
+    O logo do npm, o maior registro de pacotes do mundo. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ANpm-logo.svg">Npm-logo.svg</a> por Boboss74 - 
     <a href="https://en.wikipedia.org/wiki/Public_domain">Public domain</a> · via Wikimedia Commons
   </figcaption>
 </figure>
@@ -46,7 +46,7 @@ Isso instalará o pacote react e suas dependências.
 <figure>
   <img src="/media/2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco-deno.jpg" alt="O logo do Deno, runtime de JavaScript/TypeScript seguro por padrão." loading="lazy" />
   <figcaption>
-    O logo do Deno, runtime de JavaScript/TypeScript seguro por padrão. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ADeno.svg">Deno.svg</a> por Kevin Qian  - 
+    O logo do Deno, runtime de JavaScript/TypeScript seguro por padrão. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ADeno.svg">Deno.svg</a> por Kevin Qian - 
     <a href="https://opensource.org/license/mit">MIT</a> · via Wikimedia Commons
   </figcaption>
 </figure>
@@ -79,7 +79,7 @@ Takeaways práticos:
 - [Documentação oficial do pnpm](https://pnpm.js.org/)
 - [Documentação oficial do Bun](https://bun.sh/)
 - [Documentação oficial do Deno](https://deno.land/)
-## 📸 Crédito da imagem de capa
+## Crédito da imagem de capa
 - **Imagem:** [VS Code Screenshot.png](https://commons.wikimedia.org/wiki/File%3AVS_Code_Screenshot.png)
 - **Autor(a):** Cycling2
 - **Licença:** [CC0](https://creativecommons.org/publicdomain/zero/1.0/) · via Wikimedia Commons

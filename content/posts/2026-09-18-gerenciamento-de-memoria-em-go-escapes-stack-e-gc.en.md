@@ -368,7 +368,7 @@ Escape analysis determines where variables are allocated, the garbage collector 
 - [Go Memory Model](https://go.dev/ref/mem)
 - [Profiling Go Programs](https://go.dev/blog/pprof)
 - [Package sync - Pool](https://pkg.go.dev/sync#Pool)
-## 📸 Cover image credit
+## Cover image credit
 - **Image:** [NIST computer scientists Mary Theofanos (14316126446).jpg](https://commons.wikimedia.org/wiki/File%3ANIST_computer_scientists_Mary_Theofanos_%2814316126446%29.jpg)
 - **Author:** National Institute of Standards and Technology
 - **License:** [Public domain](https://en.wikipedia.org/wiki/Public_domain) via Wikimedia Commons

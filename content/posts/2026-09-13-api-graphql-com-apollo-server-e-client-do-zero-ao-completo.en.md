@@ -781,7 +781,7 @@ The initial investment in learning GraphQL quickly pays off when you realize you
 - [GraphQL Specification](https://graphql.org/learn/)
 - [GraphQL Code Generator](https://the-guild.dev/graphql/codegen)
 - [React Apollo Hooks Guide](https://www.apollographql.com/docs/react/api/react/hooks/)
-## 📸 Cover image credit
+## Cover image credit
 - **Image:** [Bob van Luijt presenting Weaviate's GraphQL APi.jpg](https://commons.wikimedia.org/wiki/File%3ABob_van_Luijt_presenting_Weaviate%27s_GraphQL_APi.jpg)
 - **Author:** Bvl85
 - **License:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) · via Wikimedia Commons

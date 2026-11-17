@@ -78,9 +78,9 @@ RAG significa *Retrieval-Augmented Generation* (Geração Aumentada por Recupera
 Imagine que você quer que um assistente ajude desenvolvedores a usar a API interna do seu SaaS. A documentação está em 50 páginas de um Confluence. Um usuário pergunta: "Como crio um webhook para o evento `invoice.paid`?".
 
 Um sistema RAG funciona assim:
-1.  **Indexação:** Todos os documentos são quebrados em pedaços (chunks), convertidos em vetores numéricos (embeddings) usando um modelo como o `text-embedding-3-small` e armazenados em um banco de dados vetorial (como o Pinecone, Weaviate ou um local como o Chroma).
-2.  **Recuperação (Retrieval):** Quando chega uma pergunta, ela também é convertida em um vetor. O sistema busca no banco vetorial os pedaços de texto mais semanticamente similares à pergunta.
-3.  **Geração (Generation):** Os textos recuperados são injetados como contexto em um prompt para a LLM, que então formula uma resposta precisa e fundamentada.
+1. **Indexação:** Todos os documentos são quebrados em pedaços (chunks), convertidos em vetores numéricos (embeddings) usando um modelo como o `text-embedding-3-small` e armazenados em um banco de dados vetorial (como o Pinecone, Weaviate ou um local como o Chroma).
+2. **Recuperação (Retrieval):** Quando chega uma pergunta, ela também é convertida em um vetor. O sistema busca no banco vetorial os pedaços de texto mais semanticamente similares à pergunta.
+3. **Geração (Generation):** Os textos recuperados são injetados como contexto em um prompt para a LLM, que então formula uma resposta precisa e fundamentada.
 
 Aqui está um esqueleto funcional de um RAG simples com Python, FastAPI e Chroma:
 
@@ -148,10 +148,10 @@ Para memória de longo prazo de agentes, é comum indexar interações passadas 
 Uma LLM com RAG é um oráculo bem-informado. Mas ainda é um oráculo, preso ao domínio das palavras. *Function calling* (ou tool use) é o mecanismo que permite ao modelo interagir com o mundo exterior. Você define ferramentas (funções) que o modelo pode "escolher" chamar, fornecendo os argumentos necessários em um formato estruturado (geralmente JSON). Seu código então executa a função e retorna o resultado para o modelo, que pode continuar o raciocínio.
 
 Isso é transformador. De repente, seu assistente pode:
-*   Buscar a previsão do tempo em uma API.
-*   Inserir um ticket no Jira.
-*   Consultar o saldo no banco de dados PostgreSQL.
-*   Enviar um e-mail via SendGrid.
+* Buscar a previsão do tempo em uma API.
+* Inserir um ticket no Jira.
+* Consultar o saldo no banco de dados PostgreSQL.
+* Enviar um e-mail via SendGrid.
 
 Veja um exemplo que consulta um banco de dados fictício de usuários:
 
@@ -240,19 +240,19 @@ Esse padrão é o alicerce para os agentes: eles precisam invocar comandos do si
 ### Agentes Autônomos: Orquestrando pensamento e ação
 
 Um agente é um sistema que junta tudo: LLM para raciocínio, RAG para memória e *function calling* para ação. Ele opera em um loop. O modelo de ReAct (Reason + Act) é um padrão comum:
-1.  **Pensar (Think):** O modelo analisa o objetivo, o histórico e as ferramentas disponíveis.
-2.  **Agir (Act):** Decide chamar uma ferramenta (ou parar). Gora os argumentos.
-3.  **Observar (Observe):** Recebe a observação (resultado da ferramenta) e a adiciona ao contexto.
-4.  **Repetir:** Continua até chegar a uma conclusão final.
+1. **Pensar (Think):** O modelo analisa o objetivo, o histórico e as ferramentas disponíveis.
+2. **Agir (Act):** Decide chamar uma ferramenta (ou parar). Gora os argumentos.
+3. **Observar (Observe):** Recebe a observação (resultado da ferramenta) e a adiciona ao contexto.
+4. **Repetir:** Continua até chegar a uma conclusão final.
 
 O agente:
-*   *Pensa:* "Preciso buscar as tasks do backlog, filtrar por menção ao bug #123, e depois atualizar o campo `team`."
-*   *Ato:* Chama a ferramenta `get_tasks(filter="backlog")`.
-*   *Observa:* Recebe uma lista de 15 tasks.
-*   *Pensa:* "Agora preciso filtrar essas 15 localmente, pois a API não tem filtro por tag. Vou analisar os títulos e descrições."
-*   *Ato:* (Processamento interno) Identifica 3 tasks relevantes.
-*   *Pensa:* "Agora chamo a ferramenta para atualizar cada uma."
-*   *Ato:* Chama `update_task(task_id=xyz, fields={"team": "frontend"})` para cada uma.
+* *Pensa:* "Preciso buscar as tasks do backlog, filtrar por menção ao bug #123, e depois atualizar o campo `team`."
+* *Ato:* Chama a ferramenta `get_tasks(filter="backlog")`.
+* *Observa:* Recebe uma lista de 15 tasks.
+* *Pensa:* "Agora preciso filtrar essas 15 localmente, pois a API não tem filtro por tag. Vou analisar os títulos e descrições."
+* *Ato:* (Processamento interno) Identifica 3 tasks relevantes.
+* *Pensa:* "Agora chamo a ferramenta para atualizar cada uma."
+* *Ato:* Chama `update_task(task_id=xyz, fields={"team": "frontend"})` para cada uma.
 
 Frameworks como LangChain, LlamaIndex e o mais recente Microsoft Autogen facilitam a construção desses fluxos. A complexidade real está no design do fluxo de trabalho e no tratamento robusto de erros.
 
@@ -310,10 +310,10 @@ async def resilient_completion(prompt, max_retries=3):
 ### Custo, Latência e Considerações Práticas
 
 Essa nova capacidade tem um preço, e não só monetário. O custo das APIs de LLM pode escalar rapidamente. Uma chamada ao GPT-4 para um prompt grande pode custar centavos de dólar. Milhares de chamadas por dia viram uma conta significativa. Estratégias são fundamentais:
-*   **Cache de embeddings e respostas:** Se muitas perguntas são similares, cache-as.
-*   **Prompt eficiente:** Seja conciso. Evite contexto desnecessário.
-*   **Modelos em camadas:** Use modelos menores e mais baratos (GPT-3.5, Haiku) sempre que possível, reservando os grandes (GPT-4, Sonnet) para problemas complexos.
-*   **Modelos locais:** Para tarefas específicas (classificação de texto, extração de entidades), um modelo menor e especializado rodando localmente (via Transformers.js, Ollama, ou ONNX Runtime) pode ter custo zero e latência baixa.
+* **Cache de embeddings e respostas:** Se muitas perguntas são similares, cache-as.
+* **Prompt eficiente:** Seja conciso. Evite contexto desnecessário.
+* **Modelos em camadas:** Use modelos menores e mais baratos (GPT-3.5, Haiku) sempre que possível, reservando os grandes (GPT-4, Sonnet) para problemas complexos.
+* **Modelos locais:** Para tarefas específicas (classificação de texto, extração de entidades), um modelo menor e especializado rodando localmente (via Transformers.js, Ollama, ou ONNX Runtime) pode ter custo zero e latência baixa.
 
 A latência é outra inimiga. Uma cadeia de RAG com múltiplas buscas vetoriais e chamadas de LLM pode levar vários segundos. Isso é inaceitável para uma interface síncrona. A solução está em operações assíncronas, streaming de respostas (onde o modelo vai escrevendo a resposta token por token) e pré-computação de embeddings.
 
@@ -324,27 +324,27 @@ Por fim, a confiabilidade. LLMs podem "alucinar" - inventar fatos, URLs de docum
 A IA generativa não vai substituir desenvolvedores tão cedo. Mas desenvolvedores que usam IA generativa sim substituirão os que não usam. Ela é uma multiplicadora de força, uma ferramenta para automatizar o tedioso, explorar soluções rapidamente e acessar conhecimento específico em segundos.
 
 O valor está na integração prática. Não se trata de construir um assistente generalista de primeira tentativa. Comece pequeno:
-1.  Automatize a geração de *boilerplate* de código no seu editor (via Copilot ou um plugin próprio).
-2.  Implemente um Q&A sobre sua documentação técnica interna usando RAG.
-3.  Crie um *script* assistido por IA para analisar logs ou gerar relatórios a partir do banco de dados.
+1. Automatize a geração de *boilerplate* de código no seu editor (via Copilot ou um plugin próprio).
+2. Implemente um Q&A sobre sua documentação técnica interna usando RAG.
+3. Crie um *script* assistido por IA para analisar logs ou gerar relatórios a partir do banco de dados.
 
 Os blocos básicos estão aí. LLMs fornecem o raciocínio, RAG fornece o contexto especializado e *function calling* fornece os braços para agir no mundo digital. Cabe a nós, desenvolvedores, orquestrar essas capacidades para construir software mais robusto, resolver problemas de negócio reais e, quem sabe, ganhar algumas horas no dia para focar no que realmente importa: a arquitetura, a experiência do usuário e os problemas desafiadores que ainda exigem criatividade humana pura.
 
 **Takeaways práticos:**
-*   Use LLMs via API (OpenAI, Anthropic, Google) para prototipagem rápida e geração de código *boilerplate*.
-*   Implemente RAG quando precisar que a IA acesse conhecimento específico, interno e atualizado da sua empresa ou projeto.
-*   Estenda a utilidade da IA com *function calling*, permitindo que ela interaja com suas APIs, bancos de dados e serviços.
-*   Projete agentes como fluxos de trabalho (pensar-agir-observar) para tarefas multi-etapa complexas.
-*   Em produção, nunca dependa de um único modelo ou provedor. Implemente roteamento e fallbacks para resiliência.
-*  Monitore custo e latência desde o início. Otimizar prompts e usar caches pode reduzir sua conta em uma ordem de grandeza.
+* Use LLMs via API (OpenAI, Anthropic, Google) para prototipagem rápida e geração de código *boilerplate*.
+* Implemente RAG quando precisar que a IA acesse conhecimento específico, interno e atualizado da sua empresa ou projeto.
+* Estenda a utilidade da IA com *function calling*, permitindo que ela interaja com suas APIs, bancos de dados e serviços.
+* Projete agentes como fluxos de trabalho (pensar-agir-observar) para tarefas multi-etapa complexas.
+* Em produção, nunca dependa de um único modelo ou provedor. Implemente roteamento e fallbacks para resiliência.
+* Monitore custo e latência desde o início. Otimizar prompts e usar caches pode reduzir sua conta em uma ordem de grandeza.
 
 ## Fontes
 
-*   [Documentação oficial da OpenAI: API Chat Completions](https://platform.openai.com/docs/api-reference/chat)
-*   [Documentação do LangChain: Conceitos de Agentes e Tools](https://python.langchain.com/docs/concepts/#agents)
-*   [Paper original "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks" (Lewis et al., 2020)](https://arxiv.org/abs/2005.11401)
-*   [Chroma DB: Guia de Início Rápido para Bancos de Dados Vetoriais](https://docs.trychroma.com/getting-started)
-*   [Anthropic Claude: Documentação da API de Mensagens](https://docs.anthropic.com/en/api/messages)
+* [Documentação oficial da OpenAI: API Chat Completions](https://platform.openai.com/docs/api-reference/chat)
+* [Documentação do LangChain: Conceitos de Agentes e Tools](https://python.langchain.com/docs/concepts/#agents)
+* [Paper original "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks" (Lewis et al., 2020)](https://arxiv.org/abs/2005.11401)
+* [Chroma DB: Guia de Início Rápido para Bancos de Dados Vetoriais](https://docs.trychroma.com/getting-started)
+* [Anthropic Claude: Documentação da API de Mensagens](https://docs.anthropic.com/en/api/messages)
 
 
 <figure>

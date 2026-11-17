@@ -66,7 +66,7 @@ On the other hand, NoSQL databases were designed with scalability in mind. They 
 <figure>
   <img src="/media/2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um.jpg" alt="Data center: the infrastructure behind scalability." loading="lazy" />
   <figcaption>
-    Data center: the infrastructure behind scalability. - Image: <a href="https://commons.wikimedia.org/wiki/File%3AData_Center_Fish_Eye_View_%28noirlab-racks-155%29.jpg">Data Center Fish Eye View (noirlab-racks-155).jpg</a> by International Gemini Observatory/NOIRLab/NSF/AURA/Manuel Paredes  - 
+    Data center: the infrastructure behind scalability. - Image: <a href="https://commons.wikimedia.org/wiki/File%3AData_Center_Fish_Eye_View_%28noirlab-racks-155%29.jpg">Data Center Fish Eye View (noirlab-racks-155).jpg</a> by International Gemini Observatory/NOIRLab/NSF/AURA/Manuel Paredes - 
     <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>
@@ -109,7 +109,7 @@ The choice between relational and NoSQL databases should be grounded in your pro
 - [Redis Documentation](https://redis.io/documentation)
 - [Understanding NoSQL Databases](https://www.red-gate.com/simple-talk/sql/database-administration/understanding-nosql-databases/)
 - [ACID Transactions in Databases](https://en.wikipedia.org/wiki/ACID)
-## 📸 Cover image credit
+## Cover image credit
 - **Image:** [Cable racks at grid computing center, Fermilab with blue lights.jpg](https://commons.wikimedia.org/wiki/File%3ACable_racks_at_grid_computing_center%2C_Fermilab_with_blue_lights.jpg)
 - **Author:** ENERGY.GOV
 - **License:** [Public domain](https://en.wikipedia.org/wiki/Public_domain) · via Wikimedia Commons

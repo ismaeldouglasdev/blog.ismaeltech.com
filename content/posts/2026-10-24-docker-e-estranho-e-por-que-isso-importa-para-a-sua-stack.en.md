@@ -68,7 +68,7 @@ These problems multiply in production environments. In the inventory-service pro
 
 ## Practical Solutions: How to Tame the Weirdness
 
-Recognizing that Docker is weird is the first step. The second is adopting practices that reduce this weirdness in day‑to‑day work.
+Recognizing that Docker is weird is the first step. The second is adopting practices that reduce this weirdness in day-to-day work.
 
 ### 1. Optimize your Dockerfiles to leverage the cache
 
@@ -91,11 +91,11 @@ COPY . .
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0"]
 ```
 
-For Node.js projects, the same principle applies: copy `package.json` and `package‑lock.json`, run `npm ci` (which is more deterministic than `npm install`), and only then copy the remainder.
+For Node.js projects, the same principle applies: copy `package.json` and `package-lock.json`, run `npm ci` (which is more deterministic than `npm install`), and only then copy the remainder.
 
 ### 2. Use Docker Compose for local orchestration
 
-Docker Compose isn’t just for production. It standardizes the development environment, defining volumes, networks, and environment variables in a single file. This reduces the “weirdness” of remembering long `docker run` flags.
+Docker Compose isn't just for production. It standardizes the development environment, defining volumes, networks, and environment variables in a single file. This reduces the "weirdness" of remembering long `docker run` flags.
 
 ```yaml
 # Robust docker-compose.yml for full‑stack development
@@ -132,7 +132,7 @@ volumes:
 
 ### 3. Master volumes for persistence and performance
 
-Named volumes are your friends. They isolate data from the container lifecycle. For development, bind mounts are convenient, but watch out for permissions. If you’re on Linux and the container runs as the `root` user, files created inside the container may belong to `root` on the host, locking you out of your IDE.
+Named volumes are your friends. They isolate data from the container lifecycle. For development, bind mounts are convenient, but watch out for permissions. If you're on Linux and the container runs as the `root` user, files created inside the container may belong to `root` on the host, locking you out of your IDE.
 
 One solution is to force the container to run with the same UID/GID as your host user:
 
@@ -164,7 +164,7 @@ In my ricing environment with Arch Linux and Hyprland, testing containers with P
 Multi‑stage builds are one of the most powerful features for reducing the bloat of huge images. You use a temporary container to compile and build (with all the heavy tools) and copy only the necessary artifacts into a minimal final image.
 
 ```dockerfile
-# Multi‑stage build for a React app with Nginx
+# Multi-stage build for a React app with Nginx
 FROM node:20-alpine as builder
 WORKDIR /app
 COPY package.json package-lock.json ./

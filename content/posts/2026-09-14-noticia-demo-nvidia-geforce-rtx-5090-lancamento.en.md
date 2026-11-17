@@ -69,7 +69,7 @@ For those in the middle ground, waiting for the full reviews and the arrival of 
 - [r/hardware discussion](https://www.reddit.com/r/hardware/): community discussion on price and value
 - [Price forecast on Adrenaline](https://www.adrenaline.com.br/hardware/nvidia-rtx-5090-preco-brasil/): estimate for the Brazilian market
 
-## 📸 Cover image credit
+## Cover image credit
 - **Image:** [ZOTAC Gaming's GeForce RTX 50 Series Graphics Carda.jpg](https://commons.wikimedia.org/wiki/File:ZOTAC_Gaming%27s_GeForce_RTX_50_Series_Graphics_Carda.jpg)
 - **Author:** Alphaaloy
 - **License:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) · via Wikimedia Commons

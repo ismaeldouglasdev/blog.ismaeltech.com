@@ -23,7 +23,7 @@ Aqui, vou explorar como utilizar recursos avançados do TypeScript para criar in
 <figure>
   <img src="/media/2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em.jpg" alt="O logo do TypeScript: tipagem estática que evita bugs em produção." loading="lazy" />
   <figcaption>
-    O logo do TypeScript: tipagem estática que evita bugs em produção. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ATypescript.svg">Typescript.svg</a> por TypeScript  - 
+    O logo do TypeScript: tipagem estática que evita bugs em produção. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ATypescript.svg">Typescript.svg</a> por TypeScript - 
     <a href="https://en.wikipedia.org/wiki/Public_domain">Public domain</a> · via Wikimedia Commons
   </figcaption>
 </figure>
@@ -44,9 +44,9 @@ O código repetitivo é o inimigo da manutenção. Quando trabalhamos com APIs, 
 
 O TypeScript oferece uma série de Utility Types que permitem manipular tipos existentes para criar novos com menos digitação e mais clareza.
 
-*   **Partial**: Transforma todas as propriedades de um tipo em opcionais. É extremamente útil ao lidar com formulários de atualização de dados, onde o usuário pode escolher o que alterar. Quando desenvolvo interfaces em React, esse type economiza horas de trabalho definindo campos como `name?: string, email?: string`.
-*   **Pick**: Permite selecionar um subconjunto de propriedades de um tipo. Em sistemas de segurança, ao lidar com documentação de compliance como SOC 2, às vezes queremos criar um tipo de "Dados para Log" que retira informações sensíveis (PII) do tipo original, mantendo apenas o necessário para auditoria.
-*   **Omit**: O inverso do Pick. Remove propriedades específicas. Isso é prático ao criar DTOs de resposta de API, onde você pode omitir campos internos do servidor que não devem ser expostos ao cliente.
+* **Partial**: Transforma todas as propriedades de um tipo em opcionais. É extremamente útil ao lidar com formulários de atualização de dados, onde o usuário pode escolher o que alterar. Quando desenvolvo interfaces em React, esse type economiza horas de trabalho definindo campos como `name?: string, email?: string`.
+* **Pick**: Permite selecionar um subconjunto de propriedades de um tipo. Em sistemas de segurança, ao lidar com documentação de compliance como SOC 2, às vezes queremos criar um tipo de "Dados para Log" que retira informações sensíveis (PII) do tipo original, mantendo apenas o necessário para auditoria.
+* **Omit**: O inverso do Pick. Remove propriedades específicas. Isso é prático ao criar DTOs de resposta de API, onde você pode omitir campos internos do servidor que não devem ser expostos ao cliente.
 
 Essas ferramentas traduzem tipos complexos em definições limpas, facilitando a leitura do código por outras pessoas e permitindo que mudanças no modelo de dados sejam propagadas automaticamente através do sistema.
 
@@ -79,7 +79,7 @@ Um cenário comum é uma chamada que retorna um usuário ou uma lista de usuári
 Pense numa função que busca usuários. Ela pode falhar (retorna um objeto de erro) ou ter sucesso (retorna um array). Ao tipar isso corretamente, o desenvolvedor que consome essa API sabe que, se a resposta não for um erro, ele poderá iterar sobre a lista sem verificar se é null ou undefined.
 
 Este padrão é fundamental para APIs robustas. Ele elimina a necessidade de blocos `try/catch` excessivos para validação de dados e garante que os dados vindos da rede estejam estruturados conforme o contrato. Em sistemas comerciais, essa precisão evita perdas financeiras ou falhas na interface.
-## 📸 Crédito da imagem de capa
+## Crédito da imagem de capa
 - **Imagem:** [Programming code.jpg](https://commons.wikimedia.org/wiki/File%3AProgramming_code.jpg)
 - **Autor(a):** Martin Vorel
 - **Licença:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) · via Wikimedia Commons

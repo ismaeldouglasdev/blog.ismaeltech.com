@@ -25,7 +25,7 @@ In this article, we'll explore how Flexbox and Grid work, their main characteris
 <figure>
   <img src="/media/2026-08-17-css-grid-e-flexbox-quando-usar-cada-um.jpg" alt="Responsive design: the same website adapted to desktop and mobile." loading="lazy" />
   <figcaption>
-    Responsive design: the same website adapted to desktop and mobile. - Image: <a href="https://commons.wikimedia.org/wiki/File%3ADesign_responsivo.png">Design responsivo.png</a> by Diego Mariano  - 
+    Responsive design: the same website adapted to desktop and mobile. - Image: <a href="https://commons.wikimedia.org/wiki/File%3ADesign_responsivo.png">Design responsivo.png</a> by Diego Mariano - 
     <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>
@@ -39,8 +39,8 @@ To understand the fundamental difference, we need to look at the terminology use
 <img src="/media/2026-08-17-css-grid-e-flexbox-quando-usar-cada-um-1.jpg" alt="CSS Grid vs. Flexbox: When to Use Each One" loading="lazy">
 <figcaption>Representa o box model CSS. Há três retângulos na tela. O centro indica o conteúdo. A borda separa as áreas de preenchimento (padding) e de margem (margin). - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ABox_model_CSS.png">Box model CSS.png</a> por Diego Mariano - <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
 </figure>
-*   **Flexbox (One-dimensional):** Focuses on a single axis. It organizes items in a row or in a column.
-*   **CSS Grid (Two-dimensional):** Focuses on two axes simultaneously. It organizes items in rows and columns at the same time.
+* **Flexbox (One-dimensional):** Focuses on a single axis. It organizes items in a row or in a column.
+* **CSS Grid (Two-dimensional):** Focuses on two axes simultaneously. It organizes items in rows and columns at the same time.
 
 This distinction is not just theoretical; it defines the type of problem that each tool solves best.
 
@@ -50,9 +50,9 @@ Flexbox was designed to solve problems of *alignment* and *space distribution*. 
 
 ### When to Use Flexbox?
 
-1.  **Navigation (Menus):** This is the classic application. You want menu items to occupy equal space or align to the right/left.
-2.  **Central Alignment:** Positioning a card or modal exactly in the middle of the screen is trivial with Flexbox.
-3.  **Item Rows:** When you have a list of products or buttons that should adjust to the text size inside them.
+1. **Navigation (Menus):** This is the classic application. You want menu items to occupy equal space or align to the right/left.
+2. **Central Alignment:** Positioning a card or modal exactly in the middle of the screen is trivial with Flexbox.
+3. **Item Rows:** When you have a list of products or buttons that should adjust to the text size inside them.
 
 ### Practical Example: Navigation Menu
 
@@ -89,7 +89,7 @@ Here's the CSS needed to make this work:
 - [CSS-Tricks: A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - [CSS-Tricks: A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 - [Smashing Magazine: CSS Grid vs Flexbox](https://www.smashingmagazine.com/2020/05/css-grid-vs-flexbox/)
-## 📸 Cover image credit
+## Cover image credit
 - **Image:** [Responsive design - Commons Android app.jpg](https://commons.wikimedia.org/wiki/File%3AResponsive_design_-_Commons_Android_app.jpg)
 - **Author:** User:tfinc
 - **License:** [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) · via Wikimedia Commons

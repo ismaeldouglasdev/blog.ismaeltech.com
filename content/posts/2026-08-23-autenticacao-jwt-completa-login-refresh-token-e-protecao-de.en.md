@@ -15,13 +15,13 @@ translationKey: "2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-prot
 
 ## Introduction: JWT vs Sessions
 
-When a web application starts getting more than a few users, the cookie‑based session approach simply doesn't scale. It's the classic scenario for anyone running an application that grows: traffic goes up, the server‑side session store becomes a bottleneck, database latency spikes, and the natural response is to migrate to JWT tokens. Instead of storing a session ID in a database and checking it on every request, we can sign data and verify it anywhere.
+When a web application starts getting more than a few users, the cookie-based session approach simply doesn't scale. It's the classic scenario for anyone running an application that grows: traffic goes up, the server-side session store becomes a bottleneck, database latency spikes, and the natural response is to migrate to JWT tokens. Instead of storing a session ID in a database and checking it on every request, we can sign data and verify it anywhere.
 
 JWT has become the standard for modern APIs, mainly because it works well with microservices and mobile clients. However, convenience comes with responsibilities. A careless implementation can turn an apparently secure system into an easy target for attackers. This article walks through the full authentication lifecycle: from the first login to credential renewal and route protection. I'll share solutions I've used in production, pitfalls I've had to fix, and practical tips that work in the real world. Nothing here is theoretical; every code snippet has been tested and works.
 
 ## The Complete Login Flow
 
-The typical flow starts with a user providing credentials (email and password). In the backend, you verify the credentials, issue a signed access token and a refresh token (if you’re using refresh rotation). The access token is short‑lived, usually about 15 minutes, while the refresh token lasts longer, such as 7 days. The client stores the access token in memory (or localStorage for SPAs) and the refresh token in a secure httpOnly cookie (for added security). In practice, I always use a cookie for the refresh token because it prevents it from being exposed to XSS.
+The typical flow starts with a user providing credentials (email and password). In the backend, you verify the credentials, issue a signed access token and a refresh token (if you're using refresh rotation). The access token is short-lived, usually about 15 minutes, while the refresh token lasts longer, such as 7 days. The client stores the access token in memory (or localStorage for SPAs) and the refresh token in a secure httpOnly cookie (for added security). In practice, I always use a cookie for the refresh token because it prevents it from being exposed to XSS.
 
 
 <figure>
@@ -112,7 +112,7 @@ const refreshToken = jwt.sign(
 );
 ```
 
-In many systems, the refresh token is a long‑lived JWT signed with a different secret. When you receive a refresh token, you verify its signature, decode the user ID, and compare the stored token with the one provided. If they match, you issue a new access token and, optionally, a new refresh token (rotation). One thing I've noticed is that you should invalidate the old refresh token before issuing a new one; otherwise, you can end up with excess tokens in the database.
+In many systems, the refresh token is a long-lived JWT signed with a different secret. When you receive a refresh token, you verify its signature, decode the user ID, and compare the stored token with the one provided. If they match, you issue a new access token and, optionally, a new refresh token (rotation). One thing I've noticed is that you should invalidate the old refresh token before issuing a new one; otherwise, you can end up with excess tokens in the database.
 
 ## Route Protection Middleware
 
@@ -226,7 +226,7 @@ In my experience, many APIs simply renew the access token without rotating the r
 
 ## Blacklist and Invalidation
 
-Although refresh‑token rotation reduces the lifespan of compromised tokens, you may still need to revoke tokens prematurely - e.g., when a user logs out or changes their password. Two common approaches are: a database blacklist and an in‑memory blacklist based on Redis.
+Although refresh-token rotation reduces the lifespan of compromised tokens, you may still need to revoke tokens prematurely - e.g., when a user logs out or changes their password. Two common approaches are: a database blacklist and an in-memory blacklist based on Redis.
 
 ### Database Blacklist
 
@@ -294,10 +294,10 @@ async function checkBlacklist(req, res, next) {
 
 You can apply `checkBlacklist` after `authenticateToken` to ensure revoked tokens are rejected.
 
-### In‑Memory Blacklist (Redis)
+### In-Memory Blacklist (Redis)
 
 ---  
-For distributed systems where multiple servers need to share the blacklist state, Redis is a good option. Store the `jti` with a TTL corresponding to the token’s expiration. The middleware simply checks `redis.get(jti)`.  
+For distributed systems where multiple servers need to share the blacklist state, Redis is a good option. Store the `jti` with a TTL corresponding to the token's expiration. The middleware simply checks `redis.get(jti)`.  
 ---
 
 ```js
@@ -321,7 +321,7 @@ Choose the approach that best fits your infrastructure. In my experience, Redis 
 <figure>
   <img src="/media/2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de.jpg" alt="Cybersecurity vs. information security: complementary concepts." loading="lazy" />
   <figcaption>
-    Cybersecurity vs. information security: complementary concepts. - Image: <a href="https://commons.wikimedia.org/wiki/File%3ACybersecurity_vs_information_security.png">Cybersecurity vs information security.png</a> by Pcoronaf  - 
+    Cybersecurity vs. information security: complementary concepts. - Image: <a href="https://commons.wikimedia.org/wiki/File%3ACybersecurity_vs_information_security.png">Cybersecurity vs information security.png</a> by Pcoronaf - 
     <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>
@@ -344,12 +344,12 @@ Always verify the issuer and audience (`issuer` and `audience`). This prevents t
 
 ### 4. Using Long Expiration Intervals
 
-A 24‑hour access token increases the risk of misuse. Keep the access token short (5‑15 minutes) and use the refresh token to obtain new tokens. A longer refresh token (days) is acceptable because it is stored more securely.
+A 24-hour access token increases the risk of misuse. Keep the access token short (5-15 minutes) and use the refresh token to obtain new tokens. A longer refresh token (days) is acceptable because it is stored more securely.
 
 ### 5. Storing Secrets in Source Code
 
 Keep `JWT_SECRET` and `JWT_REFRESH_SECRET` in environment variables, never in the source code.
-## 📸 Cover image credit
+## Cover image credit
 - **Image:** [DOM Security Lock and Key.JPG](https://commons.wikimedia.org/wiki/File%3ADOM_Security_Lock_and_Key.JPG)
 - **Author:** ItalianLocksmith
 - **License:** [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) · via Wikimedia Commons

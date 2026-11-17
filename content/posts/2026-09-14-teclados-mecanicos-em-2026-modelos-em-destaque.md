@@ -74,7 +74,7 @@ Se você está vindo de um teclado de membrana, qualquer um dos três vai ser um
 - [NuPhy Air75 V2, página oficial](https://nuphy.com/products/air75-v2): especificações e bateria
 - [r/MechanicalKeyboards](https://www.reddit.com/r/MechanicalKeyboards/): discussões da comunidade
 
-## 📸 Crédito da imagem de capa
+## Crédito da imagem de capa
 - **Imagem:** [Beautiful Mechanical Keyboard.jpg](https://commons.wikimedia.org/wiki/File:Beautiful_Mechanical_Keyboard.jpg)
 - **Autor(a):** Anirban Saha
 - **Licença:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) · via Wikimedia Commons

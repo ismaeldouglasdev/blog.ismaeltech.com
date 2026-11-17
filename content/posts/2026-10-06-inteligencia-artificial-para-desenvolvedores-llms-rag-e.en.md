@@ -80,9 +80,9 @@ RAG stands for *Retrieval-Augmented Generation*. It's the technique that solves 
 Imagine you want an assistant to help developers use your SaaS's internal API. The documentation is in 50 pages of Confluence. A user asks: "How do I create a webhook for the `invoice.paid` event?".
 
 A RAG system works like this:
-1.  **Indexing:** All documents are broken into pieces (chunks), converted into numeric vectors (embeddings) using a model like `text-embedding-3-small`, and stored in a vector database (like Pinecone, Weaviate, or a local one like Chroma).
-2.  **Retrieval:** When a question arrives, it is also converted into a vector. The system searches the vector database for the text pieces most semantically similar to the question.
-3.  **Generation:** The retrieved texts are injected as context into a prompt for the LLM, which then formulates a precise, grounded answer.
+1. **Indexing:** All documents are broken into pieces (chunks), converted into numeric vectors (embeddings) using a model like `text-embedding-3-small`, and stored in a vector database (like Pinecone, Weaviate, or a local one like Chroma).
+2. **Retrieval:** When a question arrives, it is also converted into a vector. The system searches the vector database for the text pieces most semantically similar to the question.
+3. **Generation:** The retrieved texts are injected as context into a prompt for the LLM, which then formulates a precise, grounded answer.
 
 Here is a functional skeleton for a simple RAG with Python, FastAPI, and Chroma:
 
@@ -244,19 +244,19 @@ This pattern is the foundation for agents, allowing them to invoke system comman
 ### Autonomous Agents: Orchestrating Thought and Action
 
 An agent is a system that brings it all together: an LLM for reasoning, RAG for memory, and *function calling* for action. It operates in a loop. The ReAct (Reason + Act) model is a common pattern:
-1.  **Think:** The model analyzes the goal, history, and available tools.
-2.  **Act:** Decides to call a tool (or stop). Generates the arguments.
-3.  **Observe:** Receives the observation (tool result) and adds it to the context.
-4.  **Repeat:** Continues until reaching a final conclusion.
+1. **Think:** The model analyzes the goal, history, and available tools.
+2. **Act:** Decides to call a tool (or stop). Generates the arguments.
+3. **Observe:** Receives the observation (tool result) and adds it to the context.
+4. **Repeat:** Continues until reaching a final conclusion.
 
 In a task manager application, an agent could have the task: "Prioritize the backlog tasks related to bug #123 and assign them to the frontend team". The agent:
-*   *Thinks:* "I need to fetch the backlog tasks, filter by mention of bug #123, and then update the `team` field."
-*   *Acts:* Calls the tool `get_tasks(filter="backlog")`.
-*   *Observes:* Receives a list of 15 tasks.
-*   *Thinks:* "Now I need to filter these 15 locally, since the API doesn't have a tag filter. I'll analyze the titles and descriptions."
-*   *Acts:* (Internal processing) Identifies 3 relevant tasks.
-*   *Thinks:* "Now I call the tool to update each one."
-*   *Acts:* Calls `update_task(task_id=xyz, fields={"team": "frontend"})` for each one.
+* *Thinks:* "I need to fetch the backlog tasks, filter by mention of bug #123, and then update the `team` field."
+* *Acts:* Calls the tool `get_tasks(filter="backlog")`.
+* *Observes:* Receives a list of 15 tasks.
+* *Thinks:* "Now I need to filter these 15 locally, since the API doesn't have a tag filter. I'll analyze the titles and descriptions."
+* *Acts:* (Internal processing) Identifies 3 relevant tasks.
+* *Thinks:* "Now I call the tool to update each one."
+* *Acts:* Calls `update_task(task_id=xyz, fields={"team": "frontend"})` for each one.
 
 Frameworks like LangChain, LlamaIndex, and the more recent Microsoft Autogen make building these flows easier. The real complexity lies in workflow design and robust error handling.
 
@@ -315,10 +315,10 @@ raise Exception("All providers failed.")
 ### Cost, Latency, and Practical Considerations
 
 This new capability comes at a cost, and not just a monetary one. LLM API costs can scale quickly. A single call to GPT-4 for a large prompt can cost several cents. Thousands of calls per day turn into a significant bill. Strategic approaches are fundamental:
-*   **Embedding and response caching:** If many questions are similar, cache them.
-*   **Efficient prompting:** Be concise. Avoid unnecessary context.
-*   **Tiered models:** Use smaller, cheaper models (GPT-3.5, Haiku) whenever possible, reserving larger ones (GPT-4, Sonnet) for complex problems.
-*   **Local models:** For specific tasks (text classification, entity extraction), a smaller, specialized model running locally (via Transformers.js, Ollama, or ONNX Runtime) can have zero cost and low latency.
+* **Embedding and response caching:** If many questions are similar, cache them.
+* **Efficient prompting:** Be concise. Avoid unnecessary context.
+* **Tiered models:** Use smaller, cheaper models (GPT-3.5, Haiku) whenever possible, reserving larger ones (GPT-4, Sonnet) for complex problems.
+* **Local models:** For specific tasks (text classification, entity extraction), a smaller, specialized model running locally (via Transformers.js, Ollama, or ONNX Runtime) can have zero cost and low latency.
 
 Latency is another enemy. A RAG chain with multiple vector searches and LLM calls can take several seconds. This is unacceptable for a synchronous interface. The solution lies in asynchronous operations, response streaming (where the model writes the response token by token), and pre-computation of embeddings.
 
@@ -328,27 +328,27 @@ Finally, reliability. LLMs can "hallucinate" â invent facts, documentation 
 
 Generative AI will not replace developers any time soon. But developers who use generative AI *will* replace those who don't. It is a force multiplier, a tool to automate the tedious, explore solutions rapidly, and access specific knowledge in seconds.
 
-1.  Automate the generation of code *boilerplate* in your editor (via Copilot or your own plugin).
-2.  Implement a Q&A on your internal technical documentation using RAG.
-3.  Create an AI-assisted *script* to analyze logs or generate reports from the database.
+1. Automate the generation of code *boilerplate* in your editor (via Copilot or your own plugin).
+2. Implement a Q&A on your internal technical documentation using RAG.
+3. Create an AI-assisted *script* to analyze logs or generate reports from the database.
 
 The basic building blocks are there. LLMs provide the reasoning, RAG provides the specialized context, and *function calling* provides the arms to act in the digital world. It's up to us, developers, to orchestrate these capabilities to build more robust software, solve real business problems, and, perhaps, gain a few hours in the day to focus on what really matters: architecture, user experience, and the challenging problems that still demand pure human creativity.
 
 **Practical Takeaways:**
-*   Use LLMs via API (OpenAI, Anthropic, Google) for rapid prototyping and generating *boilerplate* code.
-*   Implement RAG when you need the AI to access specific, internal, and up-to-date knowledge from your company or project.
-*   Extend the AI's utility with *function calling*, allowing it to interact with your APIs, databases, and services.
-*   Design agents as workflows (think-act-observe) for complex multi-step tasks.
-*   In production, never rely on a single model or provider. Implement routing and fallbacks for resilience.
-*   Monitor cost and latency from the start. Optimizing prompts and using caches can reduce your bill by an order of magnitude.
+* Use LLMs via API (OpenAI, Anthropic, Google) for rapid prototyping and generating *boilerplate* code.
+* Implement RAG when you need the AI to access specific, internal, and up-to-date knowledge from your company or project.
+* Extend the AI's utility with *function calling*, allowing it to interact with your APIs, databases, and services.
+* Design agents as workflows (think-act-observe) for complex multi-step tasks.
+* In production, never rely on a single model or provider. Implement routing and fallbacks for resilience.
+* Monitor cost and latency from the start. Optimizing prompts and using caches can reduce your bill by an order of magnitude.
 
 ## Sources
 
-*   [Official OpenAI documentation: Chat Completions API](https://platform.openai.com/docs/api-reference/chat)
-*   [LangChain documentation: Agents and Tools Concepts](https://python.langchain.com/docs/concepts/#agents)
-*   [Original paper "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks" (Lewis et al., 2020)](https://arxiv.org/abs/2005.11401)
-*   [Chroma DB: Quickstart Guide for Vector Databases](https://docs.trychroma.com/getting-started)
-*   [Anthropic Claude: Messages API Documentation](https://docs.anthropic.com/en/api/messages)
+* [Official OpenAI documentation: Chat Completions API](https://platform.openai.com/docs/api-reference/chat)
+* [LangChain documentation: Agents and Tools Concepts](https://python.langchain.com/docs/concepts/#agents)
+* [Original paper "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks" (Lewis et al., 2020)](https://arxiv.org/abs/2005.11401)
+* [Chroma DB: Quickstart Guide for Vector Databases](https://docs.trychroma.com/getting-started)
+* [Anthropic Claude: Messages API Documentation](https://docs.anthropic.com/en/api/messages)
 
 
 <figure>

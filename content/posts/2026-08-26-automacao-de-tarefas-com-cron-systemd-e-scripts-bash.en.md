@@ -38,7 +38,7 @@ These examples illustrate the flexibility of `cron` in scheduling tasks for diff
 <figure>
   <img src="/media/2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash.jpg" alt="Crontab example: syntax and real-world schedules." loading="lazy" />
   <figcaption>
-    Crontab example: syntax and real-world schedules. - Image: <a href="https://commons.wikimedia.org/wiki/File%3ACrontab.png">Crontab.png</a> by Bersam  - 
+    Crontab example: syntax and real-world schedules. - Image: <a href="https://commons.wikimedia.org/wiki/File%3ACrontab.png">Crontab.png</a> by Bersam - 
     <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>
@@ -61,19 +61,19 @@ Logging and notifications are essential for monitoring task execution and identi
 ## Real-World Examples
 Some real-world examples of task automation include:
 
-*   Scheduling a script to run a data backup every day at 11 PM;
-*   Using a `systemd` timer to run a software update service every Monday at 3 AM;
-*   Implementing a Bash script to synchronize the product catalog with a marketplace every day at 8 AM.
+* Scheduling a script to run a data backup every day at 11 PM;
+* Using a `systemd` timer to run a software update service every Monday at 3 AM;
+* Implementing a Bash script to synchronize the product catalog with a marketplace every day at 8 AM.
 
 ---
 
 ## Classic Errors
 Some classic errors when working with task automation include:
 
-*   Forgetting to specify the full path to the script or command;
-*   Not testing the script in different scenarios and environments;
-*   Not implementing error and exception handling mechanisms;
-*   Not monitoring task execution and identifying potential problems.
+* Forgetting to specify the full path to the script or command;
+* Not testing the script in different scenarios and environments;
+* Not implementing error and exception handling mechanisms;
+* Not monitoring task execution and identifying potential problems.
 
 ---
 
@@ -82,22 +82,22 @@ Automation of tasks is fundamental to any system or application, allowing tasks 
 
 Practical takeaways:
 
-*   Use `cron` to schedule tasks at specific time intervals;
-*   Implement error and exception handling mechanisms in scripts;
-*   Monitor task execution and identify potential problems;
-*   Test scripts in different scenarios and environments;
-*   Use tools like `logger` or `syslog` to log events and errors.
+* Use `cron` to schedule tasks at specific time intervals;
+* Implement error and exception handling mechanisms in scripts;
+* Monitor task execution and identify potential problems;
+* Test scripts in different scenarios and environments;
+* Use tools like `logger` or `syslog` to log events and errors.
 
 ---
 
 ## Sources
 
-*   [Official Cron documentation](https://man7.org/linux/man-pages/man5/crontab.5.html)
-*   [Official Systemd documentation](https://www.freedesktop.org/wiki/Software/systemd/)
-*   [systemd.timer manual](https://www.freedesktop.org/software/systemd/man/systemd.timer.html)
-*   [Article on automating tasks in Linux](https://linuxconfig.org/linux-cron-jobs)
-*   [Official Bash documentation](https://www.gnu.org/software/bash/manual/bash.html)
-## 📸 Cover image credit
+* [Official Cron documentation](https://man7.org/linux/man-pages/man5/crontab.5.html)
+* [Official Systemd documentation](https://www.freedesktop.org/wiki/Software/systemd/)
+* [systemd.timer manual](https://www.freedesktop.org/software/systemd/man/systemd.timer.html)
+* [Article on automating tasks in Linux](https://linuxconfig.org/linux-cron-jobs)
+* [Official Bash documentation](https://www.gnu.org/software/bash/manual/bash.html)
+## Cover image credit
 - **Image:** [Linux-Mint-8-LXDE terminals info.png](https://commons.wikimedia.org/wiki/File%3ALinux-Mint-8-LXDE_terminals_info.png)
 - **Author:** VARGUX
 - **License:** [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) · via Wikimedia Commons

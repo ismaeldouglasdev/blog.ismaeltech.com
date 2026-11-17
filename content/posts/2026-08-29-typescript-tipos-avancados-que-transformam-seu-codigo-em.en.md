@@ -23,7 +23,7 @@ Here, I'll explore how to use advanced TypeScript features to create more robust
 <figure>
   <img src="/media/2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em.jpg" alt="The TypeScript logo: static typing that prevents bugs in production." loading="lazy" />
   <figcaption>
-    The TypeScript logo: static typing that prevents bugs in production. - Image: <a href="https://commons.wikimedia.org/wiki/File%3ATypescript.svg">Typescript.svg</a> by TypeScript  - 
+    The TypeScript logo: static typing that prevents bugs in production. - Image: <a href="https://commons.wikimedia.org/wiki/File%3ATypescript.svg">Typescript.svg</a> by TypeScript - 
     <a href="https://en.wikipedia.org/wiki/Public_domain">Public domain</a> · via Wikimedia Commons
   </figcaption>
 </figure>
@@ -46,9 +46,9 @@ Repetitive code is the enemy of maintenance. When we work with APIs, DTOs (Data 
 
 TypeScript offers a number of Utility Types that allow us to manipulate existing types to create new ones with less typing and more clarity.
 
-*   **Partial**: Transforms all properties of a type into optional ones. It is extremely useful when dealing with data update forms, where the user can choose what to change. When I develop interfaces in React, this type saves hours of work by defining fields as `name?: string, email?: string`.
-*   **Pick**: Allows you to select a subset of properties from a type. In security systems, such as SOC 2 compliance documentation, we sometimes want to create a "Log Data" type that removes sensitive information (PII) from the original type, keeping only what is necessary for auditing.
-*   **Omit**: The inverse of Pick. It removes specific properties. This is handy when creating API response DTOs, where you can omit internal server fields that should not be exposed to the client.
+* **Partial**: Transforms all properties of a type into optional ones. It is extremely useful when dealing with data update forms, where the user can choose what to change. When I develop interfaces in React, this type saves hours of work by defining fields as `name?: string, email?: string`.
+* **Pick**: Allows you to select a subset of properties from a type. In security systems, such as SOC 2 compliance documentation, we sometimes want to create a "Log Data" type that removes sensitive information (PII) from the original type, keeping only what is necessary for auditing.
+* **Omit**: The inverse of Pick. It removes specific properties. This is handy when creating API response DTOs, where you can omit internal server fields that should not be exposed to the client.
 
 These tools translate complex types into clean definitions, making the code easier to read for others and allowing changes in the data model to be automatically propagated throughout the system.
 
@@ -81,7 +81,7 @@ A common scenario is a call that returns a user or a list of users. Instead of c
 Think of a function that searches for users. It can fail (returning an error object) or succeed (returning an array). By typing this correctly, the developer consuming this API knows that if the response isn't an error, they can iterate over the list without checking whether it's null or undefined.
 
 This pattern is fundamental for robust APIs. It eliminates the need for excessive `try/catch` blocks for data validation and ensures that data coming from the network is structured according to the contract. In commercial projects, such as the POS system and integrations I manage, this precision prevents financial losses or interface failures.
-## 📸 Cover image credit
+## Cover image credit
 - **Image:** [Programming code.jpg](https://commons.wikimedia.org/wiki/File%3AProgramming_code.jpg)
 - **Author:** Martin Vorel
 - **License:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) · via Wikimedia Commons

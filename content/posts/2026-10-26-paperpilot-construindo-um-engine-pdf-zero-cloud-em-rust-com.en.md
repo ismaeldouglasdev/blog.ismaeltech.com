@@ -1,5 +1,5 @@
 ---
-title: "PaperPilot: Building a Zero‑Cloud PDF Engine in Rust with WASM and MCP"
+title: "PaperPilot: Building a Zero-Cloud PDF Engine in Rust with WASM and MCP"
 date: "2026-10-26"
 category: "tutorial"
 tags: ["rust", "wasm", "pdf", "mcp", "open-source"]
@@ -193,20 +193,20 @@ For us, full-stack developers, this radically expands our range of possibilities
 
 ### Practical Takeaways
 
-*   **Control > Blind Convenience:** Evaluate whether depending on an external API for a core feature is an acceptable risk. Having control over the *stack* can be worth the initial development effort.
-*   **WASM is Production-Ready:** The tooling (Rust + `wasm-pack`) and runtimes (browsers, Node.js, Cloudflare Workers) are mature enough for business-critical functionality.
-*   **Standardize Integration:** Using a protocol like MCP (or even a simple REST API) to wrap your WASM logic makes consumption consistent, whether in the frontend, backend, or CLI tools.
-*   **Think About the Offline Experience:** Features that rely on local processing, like PaperPilot's text extraction, can be a differentiator for applications that need to work in scenarios with intermittent connectivity.
+* **Control > Blind Convenience:** Evaluate whether depending on an external API for a core feature is an acceptable risk. Having control over the *stack* can be worth the initial development effort.
+* **WASM is Production-Ready:** The tooling (Rust + `wasm-pack`) and runtimes (browsers, Node.js, Cloudflare Workers) are mature enough for business-critical functionality.
+* **Standardize Integration:** Using a protocol like MCP (or even a simple REST API) to wrap your WASM logic makes consumption consistent, whether in the frontend, backend, or CLI tools.
+* **Think About the Offline Experience:** Features that rely on local processing, like PaperPilot's text extraction, can be a differentiator for applications that need to work in scenarios with intermittent connectivity.
 
-*   **Start with a Prototype:** The barrier to entry for Rust + WASM has dropped dramatically. In an afternoon, you can have a functional prototype of a feature that previously required complex integration with third-party services.
+* **Start with a Prototype:** The barrier to entry for Rust + WASM has dropped dramatically. In an afternoon, you can have a functional prototype of a feature that previously required complex integration with third-party services.
 
 The code doesn't need to leave your machine to be powerful. Sometimes the most robust solution is the one that never touches the internet.
 
 ## Sources
 
--   [The Rust Programming Language (Official Book)](https://doc.rust-lang.org/book/)
--   [Rust and WebAssembly (wasm-bindgen, wasm-pack)](https://rustwasm.github.io/docs/book/)
--   [Model Context Protocol (MCP) – Anthropic](https://spec.modelcontextprotocol.io/specification/)
--   [MDN Web Docs: WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly)
--   [`lopdf` – Rust PDF library](https://crates.io/crates/lopdf)
--   [Cloudflare Workers: Running WASM](https://developers.cloudflare.com/workers/runtime-apis/webassembly/)
+- [The Rust Programming Language (Official Book)](https://doc.rust-lang.org/book/)
+- [Rust and WebAssembly (wasm-bindgen, wasm-pack)](https://rustwasm.github.io/docs/book/)
+- [Model Context Protocol (MCP) - Anthropic](https://spec.modelcontextprotocol.io/specification/)
+- [MDN Web Docs: WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly)
+- [`lopdf` - Rust PDF library](https://crates.io/crates/lopdf)
+- [Cloudflare Workers: Running WASM](https://developers.cloudflare.com/workers/runtime-apis/webassembly/)

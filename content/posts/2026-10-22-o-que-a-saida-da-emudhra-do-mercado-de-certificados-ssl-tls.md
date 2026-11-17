@@ -95,10 +95,10 @@ A grande vantagem aqui é a abstração: a possível futura desconfiança de uma
 **Opção 3: Gerando e instalando um certificado manualmente de outra CA**
 
 Para ambientes empresariais ou com requisitos específicos, você pode comprar um certificado de uma CA comercial (DigiCert, Sectigo, etc.). O processo geral é:
-1.  Gerar uma Solicitação de Assinatura de Certificado (CSR) no seu servidor.
-2.  Enviar o CSR ao fornecedor e validar o domínio.
-3.  Receber os arquivos do certificado (.crt) e da cadeia intermediária.
-4.  Instalá-los e configurar o servidor web.
+1. Gerar uma Solicitação de Assinatura de Certificado (CSR) no seu servidor.
+2. Enviar o CSR ao fornecedor e validar o domínio.
+3. Receber os arquivos do certificado (.crt) e da cadeia intermediária.
+4. Instalá-los e configurar o servidor web.
 
 Um exemplo de configuração de bloco server no Nginx com os novos arquivos ficaria assim:
 
@@ -143,18 +143,18 @@ A saída da eMudhra não é uma emergência global, mas é um lembrete pontual e
 
 Para resumir, seu plano de ação deve ser:
 
-*   **Verifique agora**: Use `openssl` ou uma ferramenta online para auditar todos os seus domínios públicos e internos ativos.
-*   **Priorize a substituição**: Se encontrar certificados da eMudhra, agende a substituição para a CA atual do seu projeto (Let's Encrypt, Cloudflare, ou outra comercial) antes que problemas de validação ocorram.
-*   **Monitore a cadeia de confiança**: Adicione uma verificação de emissor e data de expiração ao seu monitoramento de infraestrutura. Ferramentas como Nagios, Prometheus Blackbox Exporter ou scripts customizados podem fazer isso.
-*   **Pense em resiliência**: Avalie se faz sentido para seu projeto usar uma CDN que abstraia o gerenciamento de SSL ou até mesmo considerar a aquisição de certificados de longa duração (onde aplicável) para reduzir a frequência de pontos de falha.
+* **Verifique agora**: Use `openssl` ou uma ferramenta online para auditar todos os seus domínios públicos e internos ativos.
+* **Priorize a substituição**: Se encontrar certificados da eMudhra, agende a substituição para a CA atual do seu projeto (Let's Encrypt, Cloudflare, ou outra comercial) antes que problemas de validação ocorram.
+* **Monitore a cadeia de confiança**: Adicione uma verificação de emissor e data de expiração ao seu monitoramento de infraestrutura. Ferramentas como Nagios, Prometheus Blackbox Exporter ou scripts customizados podem fazer isso.
+* **Pense em resiliência**: Avalie se faz sentido para seu projeto usar uma CDN que abstraia o gerenciamento de SSL ou até mesmo considerar a aquisição de certificados de longa duração (onde aplicável) para reduzir a frequência de pontos de falha.
 
 A web é construída sobre camadas de confiança delegada. Cabe a nós, desenvolvedores, garantir que quando uma dessas camadas se desfaz, nossos projetos não desabem junto, mas tenham a robustez para transitar suavemente para a próxima. Afinal, a única constante na tecnologia é a mudança, e nossa maior habilidade é nos adaptarmos a ela.
 
 ## Fontes
 
--   [Let's Encrypt Documentation: Getting Started](https://letsencrypt.org/getting-started/)
--   [Certificate Transparency (CT) - Google Developers](https://developers.google.com/certificate-transparency)
--   [Mozilla Root Store Policy](https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/policy/)
--   [OpenSSL Man Pages: s_client](https://www.openssl.org/docs/manmaster/man1/openssl-s_client.html)
--   [Cloudflare SSL/TLS Documentation](https://developers.cloudflare.com/ssl/)
--   [ACME Protocol (IETF RFC 8555)](https://datatracker.ietf.org/doc/html/rfc8555)
+- [Let's Encrypt Documentation: Getting Started](https://letsencrypt.org/getting-started/)
+- [Certificate Transparency (CT) - Google Developers](https://developers.google.com/certificate-transparency)
+- [Mozilla Root Store Policy](https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/policy/)
+- [OpenSSL Man Pages: s_client](https://www.openssl.org/docs/manmaster/man1/openssl-s_client.html)
+- [Cloudflare SSL/TLS Documentation](https://developers.cloudflare.com/ssl/)
+- [ACME Protocol (IETF RFC 8555)](https://datatracker.ietf.org/doc/html/rfc8555)

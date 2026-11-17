@@ -317,7 +317,7 @@ Escolha a abordagem que melhor se adapta à sua infraestrutura. Na minha experi�
 <figure>
   <img src="/media/2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de.jpg" alt="Cibersegurança vs. segurança da informação: conceitos complementares." loading="lazy" />
   <figcaption>
-    Cibersegurança vs. segurança da informação: conceitos complementares. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ACybersecurity_vs_information_security.png">Cybersecurity vs information security.png</a> por Pcoronaf  - 
+    Cibersegurança vs. segurança da informação: conceitos complementares. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ACybersecurity_vs_information_security.png">Cybersecurity vs information security.png</a> por Pcoronaf - 
     <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>
@@ -345,7 +345,7 @@ Um access token de 24 horas aumenta o risco de uso indevido. Mantenha o access t
 ### 5. Armazenar Segredos em Código-Fonte
 
 Mantenha `JWT_SECRET` e `JWT_REFRESH_SECRET` fora do código-fonte, em variáveis de ambiente.
-## 📸 Crédito da imagem de capa
+## Crédito da imagem de capa
 - **Imagem:** [DOM Security Lock and Key.JPG](https://commons.wikimedia.org/wiki/File%3ADOM_Security_Lock_and_Key.JPG)
 - **Autor(a):** ItalianLocksmith
 - **Licença:** [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) · via Wikimedia Commons

@@ -18,12 +18,18 @@ function slugify(text) {
     .slice(0, 80);
 }
 
-function stripEmDashes(text) {
+function stripAiTells(text) {
   let inFence = false;
   return text.split('\n').map(line => {
     if (/^\s*```/.test(line)) inFence = !inFence;
     if (inFence) return line;
-    return line.replace(/\s*\u2014\s*/g, ', ').replace(/\u2014/g, ', ');
+    return line
+      .replace(/\s*\u2014\s*/g, ', ')
+      .replace(/[\u2010\u2011\u2012\u2013\u2015\u2212]/g, '-')
+      .replace(/[\u201c\u201d]/g, '"')
+      .replace(/[\u2018\u2019]/g, "'")
+      .replace(/[\u{1F000}-\u{1FAFF}\u{2600}-\u{27BF}\u{FE0F}\u{2B00}-\u{2BFF}]/gu, '')
+      .replace(/(?<=\S)  +(?=\S)/g, ' ');
   }).join('\n');
 }
 
@@ -156,7 +162,7 @@ Regras:
   // Build final .md file
   const slug = slugify(title);
   const frontmatter = buildFrontmatter(title, description, tags, slug);
-  const content = stripEmDashes(`${frontmatter}\n${article}\n`);
+  const content = stripAiTells(`${frontmatter}\n${article}\n`);
 
   const filePath = path.join(POSTS_DIR, `${slug}.md`);
   fs.writeFileSync(filePath, content);

@@ -19,12 +19,12 @@ Se você começou a programar em React antes da versão 16.8, provavelmente ai
 
 Então, os Hooks chegaram como uma revolução silenciosa. Eles trouxeram duas promessas centrais:
 
-1. **Composição simples de lógica de estado** – nada de hierarquias de herança ou “wrapper components” complicados.  
-2. **Acesso direto ao ciclo de vida** – tudo dentro da mesma função, sem precisar criar classes.
+1. **Composição simples de lógica de estado** - nada de hierarquias de herança ou "wrapper components" complicados.  
+2. **Acesso direto ao ciclo de vida** - tudo dentro da mesma função, sem precisar criar classes.
 
 Mas, como toda ferramenta poderosa, os Hooks exigem compreensão profunda. Não basta usar `useState` e `useEffect` de forma superficial; para realmente extrair o potencial do React, precisamos dominar os *hooks avançados*: `useEffect` com limpeza correta, `useRef` para valores persistentes e referências ao DOM, e, claro, criar nossos próprios *custom hooks* reutilizáveis.
 
-Neste artigo, vamos mergulhar nos detalhes que fazem a diferença no dia‑a‑dia de um desenvolvedor full‑stack. Prepare o teclado, abra o VS Code e acompanhe os exemplos reais que você poderá copiar‑colar nos seus projetos.
+Neste artigo, vamos mergulhar nos detalhes que fazem a diferença no dia-a-dia de um desenvolvedor full-stack. Prepare o teclado, abra o VS Code e acompanhe os exemplos reais que você poderá copiar-colar nos seus projetos.
 
 ---  
 
@@ -32,7 +32,7 @@ Neste artigo, vamos mergulhar nos detalhes que fazem a diferença no dia‑a‑d
 <figure>
   <img src="/media/2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks.jpg" alt="O logo do React, a biblioteca JavaScript de código aberto que popularizou os Hooks." loading="lazy" />
   <figcaption>
-    O logo do React, a biblioteca JavaScript de código aberto que popularizou os Hooks. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AReact-icon.svg">React-icon.svg</a> por Facebook  - 
+    O logo do React, a biblioteca JavaScript de código aberto que popularizou os Hooks. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AReact-icon.svg">React-icon.svg</a> por Facebook - 
     <a href="https://en.wikipedia.org/wiki/Public_domain">Public domain</a> · via Wikimedia Commons
   </figcaption>
 </figure>
@@ -59,9 +59,9 @@ useEffect(() => {
 
 - O **primeiro argumento** é a função que será executada **após** a renderização.
 - O **valor retornado** (se houver) será chamado **antes** da próxima execução do efeito ou quando o componente for desmontado.
-- O **segundo argumento** (array de dependências) controla *quando* o efeito deve ser re‑executado.
+- O **segundo argumento** (array de dependências) controla *quando* o efeito deve ser re-executado.
 
-### Exemplo 1 – Fetch de dados com cancelamento
+### Exemplo 1 - Fetch de dados com cancelamento
 
 Imagine um componente que busca detalhes de um usuário ao montar. Se o usuário navegar para outra página antes da requisição terminar, precisamos abortar a chamada para evitar *memory leaks* e atualizações de estado em componentes desmontados.
 
@@ -106,7 +106,7 @@ function useUser(id: string) {
 - **Sempre inclua as variáveis usadas dentro do efeito** (`id` no exemplo) na lista de dependências. O ESLint plugin `react-hooks/exhaustive-deps` ajuda a detectar ausências.
 - **AbortController** funciona em navegadores modernos e em Node (via `node-fetch`). Se precisar de suporte a navegadores legados, use bibliotecas como `axios` que já possuem cancelamento interno.
 
-### Exemplo 2 – `setInterval` com cleanup
+### Exemplo 2 - `setInterval` com cleanup
 
 Um contador que incrementa a cada segundo parece simples, mas se não limparmos o intervalo, o timer continuará rodando mesmo após o componente ser desmontado.
 
@@ -130,7 +130,7 @@ export function Timer() {
 
 ### Quando usar múltiplos `useEffect`
 
-Não há problema algum em dividir a lógica em vários efeitos, cada um responsável por uma preocupação diferente. Isso aumenta a legibilidade e evita *over‑engineering* de dependências.
+Não há problema algum em dividir a lógica em vários efeitos, cada um responsável por uma preocupação diferente. Isso aumenta a legibilidade e evita *over-engineering* de dependências.
 
 ```tsx
 useEffect(() => {
@@ -152,10 +152,10 @@ useEffect(() => {
 
 ### O que o `useRef` realmente armazena?
 
-- **Referência ao DOM** – muito usado para focar inputs, medir elementos ou integrar bibliotecas de terceiros.
-- **Valor mutável que persiste entre renders** – ao contrário de `useState`, mudar `ref.current` **não** dispara nova renderização.
+- **Referência ao DOM** - muito usado para focar inputs, medir elementos ou integrar bibliotecas de terceiros.
+- **Valor mutável que persiste entre renders** - ao contrário de `useState`, mudar `ref.current` **não** dispara nova renderização.
 
-### Exemplo 1 – Focar um campo de texto ao montar
+### Exemplo 1 - Focar um campo de texto ao montar
 
 ```tsx
 import { useEffect, useRef } from 'react';
@@ -171,9 +171,9 @@ export function SearchBox() {
 }
 ```
 
-### Exemplo 2 – Guardar o valor anterior de uma prop
+### Exemplo 2 - Guardar o valor anterior de uma prop
 
-Muitas vezes precisamos comparar o valor atual de uma prop com o anterior (por exemplo, para disparar animações). `useRef` permite armazenar o “valor anterior” sem causar re‑render.
+Muitas vezes precisamos comparar o valor atual de uma prop com o anterior (por exemplo, para disparar animações). `useRef` permite armazenar o "valor anterior" sem causar re-render.
 
 ```tsx
 import { useEffect, useRef } from 'react';
@@ -200,7 +200,7 @@ export function PriceTag({ price }: { price: number }) {
 }
 ```
 
-### Exemplo 3 – Contador de renderizações sem re‑render
+### Exemplo 3 - Contador de renderizações sem re-render
 
 ```tsx
 import { useRef } from 'react';
@@ -217,17 +217,17 @@ export function RenderCounter() {
 
 ### Dicas avançadas
 
-1. **Evite usar `ref` como “state”** – mudar `ref.current` não atualiza a UI. Se a UI depende do valor, use `useState`.
-2. **Referências a componentes de terceiros** – ao integrar com bibliotecas como `Chart.js` ou `Mapbox`, crie o canvas ou container com `ref` e inicialize a biblioteca dentro de um `useEffect` com cleanup que destrua a instância.
-3. **Persistência entre rotas** – `useRef` pode guardar dados temporários que não precisam ser serializados no URL nem no `localStorage`. Ideal para armazenar “caches” de API que não justificam persistência completa.
+1. **Evite usar `ref` como "state"** - mudar `ref.current` não atualiza a UI. Se a UI depende do valor, use `useState`.
+2. **Referências a componentes de terceiros** - ao integrar com bibliotecas como `Chart.js` ou `Mapbox`, crie o canvas ou container com `ref` e inicialize a biblioteca dentro de um `useEffect` com cleanup que destrua a instância.
+3. **Persistência entre rotas** - `useRef` pode guardar dados temporários que não precisam ser serializados no URL nem no `localStorage`. Ideal para armazenar "caches" de API que não justificam persistência completa.
 
 ---  
 
 ## Custom Hooks reais que você precisa conhecer
 
-Criar *custom hooks* é a arte de **extrair lógica reutilizável** e **isolar side‑effects**. Quando bem projetados, eles tornam o código mais declarativo e testável.
+Criar *custom hooks* é a arte de **extrair lógica reutilizável** e **isolar side-effects**. Quando bem projetados, eles tornam o código mais declarativo e testável.
 
-### 1. `useFetch` – Busca genérica com estado de loading e erro
+### 1. `useFetch` - Busca genérica com estado de loading e erro
 
 ```tsx
 import { useEffect, useState } from 'react';
@@ -297,7 +297,7 @@ function UsersList() {
 
 > **Dica:** Sempre inclua `JSON.stringify(options)` nas dependências se quiser que mudanças em headers ou query params reinicializem a requisição. Caso as opções sejam estáticas, passe um objeto memoizado com `useMemo`.
 
-### 2. `useLocalStorage` – Sincroniza estado com `localStorage`
+### 2. `useLocalStorage` - Sincroniza estado com `localStorage`
 
 ```tsx
 import { useState, useEffect } from 'react';
@@ -340,12 +340,12 @@ function ThemeToggle() {
 
 **Boas práticas**
 
-- **Persistência seletiva** – nem todo estado merece ficar no `localStorage`. Avalie se o dado será reutilizado entre sessões.
-- **Versionamento** – ao mudar a estrutura do objeto armazenado, considere limpar a chave ou migrar os dados para evitar `JSON.parse` falho.
+- **Persistência seletiva** - nem todo estado merece ficar no `localStorage`. Avalie se o dado será reutilizado entre sessões.
+- **Versionamento** - ao mudar a estrutura do objeto armazenado, considere limpar a chave ou migrar os dados para evitar `JSON.parse` falho.
 
-### 3. `useDebounce` – Debounce de valores ou callbacks
+### 3. `useDebounce` - Debounce de valores ou callbacks
 
-Ideal para buscas “type‑ahead”, onde queremos esperar o usuário parar de digitar antes de disparar a requisição.
+Ideal para buscas "type-ahead", onde queremos esperar o usuário parar de digitar antes de disparar a requisição.
 
 ```tsx
 import { useEffect, useState } from 'react';
@@ -408,14 +408,14 @@ export function useDebouncedCallback<T extends unknown[]>(
 
 ---  
 
-## Erros comuns e como evitá‑los
+## Erros comuns e como evitá-los
 
 | Erro | Por que acontece | Como corrigir |
 |------|------------------|----------------|
-| **Dependências incompletas no `useEffect`** | O ESLint pode ser desativado ou ignorado; desenvolvedores acham que “não muda, então não preciso”. | Deixe o plugin `react-hooks/exhaustive-deps` ativo. Quando a dependência é um objeto ou função, use `useMemo` ou `useCallback` para estabilizá‑la. |
-| **Loop infinito de renders** | `useEffect` que altera estado que está na sua própria lista de dependências. | Separe a lógica: use um `useRef` para armazenar valores que não precisam disparar re‑render, ou mova a atualização de estado para outro efeito que não dependa do mesmo valor. |
+| **Dependências incompletas no `useEffect`** | O ESLint pode ser desativado ou ignorado; desenvolvedores acham que "não muda, então não preciso". | Deixe o plugin `react-hooks/exhaustive-deps` ativo. Quando a dependência é um objeto ou função, use `useMemo` ou `useCallback` para estabilizá-la. |
+| **Loop infinito de renders** | `useEffect` que altera estado que está na sua própria lista de dependências. | Separe a lógica: use um `useRef` para armazenar valores que não precisam disparar re-render, ou mova a atualização de estado para outro efeito que não dependa do mesmo valor. |
 | **Stale closure (fechamento com valores antigos)** | Funções criadas dentro do efeito capturam o estado no momento da criação e não são atualizadas. | Inclua as variáveis no array de dependências ou use a forma funcional de `setState` (`setCount(c => c + 1)`). |
-| **Uso indevido de `useRef` como estado** | Alterar `ref.current` não dispara render, levando a UI desatualizada. | Quando a UI depende do valor, use `useState`. Reserve `useRef` para “armazenamento mutável” ou acesso ao DOM. |
+| **Uso indevido de `useRef` como estado** | Alterar `ref.current` não dispara render, levando a UI desatualizada. | Quando a UI depende do valor, use `useState`. Reserve `useRef` para "armazenamento mutável" ou acesso ao DOM. |
 | **Custom Hook que não limpa recursos** | Bibliotecas externas (ex.: `Chart.js`, `WebSocket`) permanecem ativas após desmontar. | Sempre retorne uma função de limpeza no `useEffect` interno do hook. |
 | **Serialização de objetos complexos nas dependências** | `useEffect([obj])` sempre cria novo efeito, pois `obj` tem referência diferente a cada render. | Use `useMemo(() => obj, [obj.prop1, obj.prop2])` ou transforme o objeto em string (`JSON.stringify`) se for pequeno e estável. |
 | **Excesso de abstração** | Criar hooks para tudo pode gerar camadas desnecessárias
@@ -427,7 +427,7 @@ export function useDebouncedCallback<T extends unknown[]>(
 - [React Docs: useRef](https://react.dev/reference/react/useRef)
 - [Kent C. Dodds: Custom Hooks](https://kentcdodds.com/blog/how-to-use-react-hooks-effectively)
 
-## 📸 Crédito da imagem de capa
+## Crédito da imagem de capa
 - **Imagem:** [Programming.jpg](https://commons.wikimedia.org/wiki/File%3AProgramming.jpg)
 - **Autor(a):** Lorenzo Cafaro
 - **Licença:** [CC0](https://creativecommons.org/publicdomain/zero/1.0/) · via Wikimedia Commons

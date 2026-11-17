@@ -517,7 +517,7 @@ Para projetos que priorizam velocidade de desenvolvimento e consistência visual
 - [Headless UI Documentation](https://headlessui.com/)
 - [Tailwind CSS: From Side-Project Byproduct to Multi-Million Dollar Business](https://adamwathan.me/tailwindcss-from-side-project-byproduct-to-multi-mullion-dollar-business/)
 - [The Case for Atomic CSS](https://johnpolacek.github.io/the-case-for-atomic-css/)
-## 📸 Crédito da imagem de capa
+## Crédito da imagem de capa
 - **Imagem:** [Chataropica.png](https://commons.wikimedia.org/wiki/File%3AChataropica.png)
 - **Autor(a):** Uhvhhvjhh
 - **Licença:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · via Wikimedia Commons

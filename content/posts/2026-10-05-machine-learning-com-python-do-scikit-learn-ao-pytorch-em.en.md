@@ -12,7 +12,7 @@ translationKey: "2026-10-05-machine-learning-com-python-do-scikit-learn-ao-pytor
 
 ## Introduction
 
-Machine Learning (ML) is an ever-expanding field, and its application is becoming increasingly common across various sectors. The ability to transform data into effective decisions is a valuable skill for developers and companies alike. Here, I will show you how to use Python and its popular libraries, such as scikit-learn and PyTorch, to build and implement machine learning models. For those just starting out, understanding how these tools work can be a game-changer when developing effective solutions.
+Machine Learning (ML) has grown quickly, and its application is becoming increasingly common across various sectors. The ability to transform data into effective decisions is a valuable skill for developers and companies alike. Here, I will show you how to use Python and its popular libraries, such as scikit-learn and PyTorch, to build and implement machine learning models. For those just starting out, understanding how these tools work can be a significant advantage when developing effective solutions.
 
 ```markdown
 ## scikit-learn for Classification
@@ -95,8 +95,8 @@ import torch.optim as optim
 class SimpleNN(nn.Module):
     def __init__(self):
         super(SimpleNN, self).__init__()
-        self.fc1 = nn.Linear(4, 10)  # 4 input features, 10 neurons
-        self.fc2 = nn.Linear(10, 3)   # 10 neurons for 3 output classes
+        self.fc1 = nn.Linear(4, 10) # 4 input features, 10 neurons
+        self.fc2 = nn.Linear(10, 3) # 10 neurons for 3 output classes
 
     def forward(self, x):
         x = torch.relu(self.fc1(x))
@@ -185,7 +185,7 @@ The choice between scikit-learn and PyTorch depends on the problem you are tryin
 <figure>
 <img src="/media/2026-10-05-machine-learning-com-python-do-scikit-learn-ao-pytorch-em-2.jpg" alt="Machine Learning with Python: From scikit-learn to PyTorch in 2026" loading="lazy">
 <figcaption>Estimating Greenhouse Gas Concentration from Space using Machine Learning
-This year, two satellites are challenging the usual methods for calculating Greenhouse. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AEstimating_Greenhouse_Gas_Concentration_from_Space_using_Machine_Learning_at_Laboratoire_LMD_-_54482717148.jpg">Estimating Greenhouse Gas Concentration from Space using Machine Learning at Laboratoire LMD - 54482717148.jpg</a> por Ecole  polytechnique / Jérémy Barande - <a href="https://creativecommons.org/licenses/by-sa/2.0">CC BY-SA 2.0</a> · via Wikimedia Commons</figcaption>
+This year, two satellites are challenging the usual methods for calculating Greenhouse. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AEstimating_Greenhouse_Gas_Concentration_from_Space_using_Machine_Learning_at_Laboratoire_LMD_-_54482717148.jpg">Estimating Greenhouse Gas Concentration from Space using Machine Learning at Laboratoire LMD - 54482717148.jpg</a> por Ecole polytechnique / Jérémy Barande - <a href="https://creativecommons.org/licenses/by-sa/2.0">CC BY-SA 2.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 
 ## Conclusion

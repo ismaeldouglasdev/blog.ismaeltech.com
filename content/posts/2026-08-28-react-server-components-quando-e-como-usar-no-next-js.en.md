@@ -20,7 +20,7 @@ When I started building my own projects and structuring interfaces with React, t
 <figure>
   <img src="/media/2026-08-28-react-server-components-quando-e-como-usar-no-next-js.jpg" alt="The React logo: components that run on both server and client." loading="lazy" />
   <figcaption>
-    The React logo: components that run on both server and client. - Image: <a href="https://commons.wikimedia.org/wiki/File%3AReact.svg">React.svg</a> by ReactJS  - 
+    The React logo: components that run on both server and client. - Image: <a href="https://commons.wikimedia.org/wiki/File%3AReact.svg">React.svg</a> by ReactJS - 
     <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>
@@ -165,12 +165,12 @@ The Server Components model in Next.js requires a mindset shift in how we design
 - [Next.js Documentation: Server Components](https://nextjs.org/docs/app/building-your-application/rendering/server-components)
 - [React Documentation: Server Components](https://react.dev/reference/react/components)
 - [Next.js Documentation: Server Actions and Mutations](https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions-and-mutations)
-## 📸 Cover image credit
+## Cover image credit
 - **Image:** [React.svg](https://commons.wikimedia.org/wiki/File%3AReact.svg)
 - **Author:** ReactJS
 - **License:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) · via Wikimedia Commons
 
-## 📸 Cover image credit
+## Cover image credit
 - **Image:** [BalticServers data center.jpg](https://commons.wikimedia.org/wiki/File%3ABalticServers_data_center.jpg)
 - **Author:** BalticServers.com
 - **License:** [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) · via Wikimedia Commons

@@ -11,9 +11,9 @@ translationKey: "2026-10-22-o-que-a-saida-da-emudhra-do-mercado-de-certificados-
 ---
 Your website or API could be about to go offline for millions of users without you having made a single change to your code. The only cause? One of the trust seals that guarantees the secure connection has simply ceased to exist.
 
-That’s what recently happened with eMudhra, a Root Certificate Authority (CA) approved by Microsoft and Apple, which announced its exit from the public SSL/TLS certificate market. Overnight, certificates issued by it could become invalid, causing modern browsers to block access to your domains with a frightening "your connection is not private" warning. The impact is silent, global, and affects everything from a developer's personal blog to critical business APIs.
+That's what recently happened with eMudhra, a Root Certificate Authority (CA) approved by Microsoft and Apple, which announced its exit from the public SSL/TLS certificate market. Overnight, certificates issued by it could become invalid, causing modern browsers to block access to your domains with a frightening "your connection is not private" warning. The impact is silent, global, and affects everything from a developer's personal blog to critical business APIs.
 
-You may not have heard of eMudhra, but you’ve likely already encountered their work. The practical question every developer, DevOps engineer, or product owner needs to answer now is straightforward: how do I know if my project is one of the affected ones and, if it is, what should I do about it?
+You may not have heard of eMudhra, but you've likely already encountered their work. The practical question every developer, DevOps engineer, or product owner needs to answer now is straightforward: how do I know if my project is one of the affected ones and, if it is, what should I do about it?
 
 ## What Happened and Why It Matters
 
@@ -100,10 +100,10 @@ The major advantage here is abstraction: the potential future distrust of a CA b
 **Option 3: Generating and Installing a Manual Certificate from Another CA**
 
 For enterprise environments or those with specific requirements, you can purchase a certificate from a commercial CA (DigiCert, Sectigo, etc.). The general process is:
-1.  Generate a Certificate Signing Request (CSR) on your server.
-2.  Send the CSR to the vendor and validate the domain.
-3.  Receive the certificate (.crt) and intermediate chain files.
-4.  Install and configure the web server.
+1. Generate a Certificate Signing Request (CSR) on your server.
+2. Send the CSR to the vendor and validate the domain.
+3. Receive the certificate (.crt) and intermediate chain files.
+4. Install and configure the web server.
 
 An example Nginx server block configuration with the new files would look like this:
 

@@ -113,11 +113,11 @@ Para quem está começando agora ou escalando seus projetos, a lição é clara:
 
 ### Takeaways Práticos
 
-*   **Evite "Black Boxes":** Frameworks que escondem muita complexidade (como o Meteor fazia com DDP) dificultam o debug quando o sistema escala.
-*   **Cuidado com Quebras de Compatibilidade:** Se a equipe principal anuncia uma reescrita total (Angular 1 vs 2), considere migrar para outra tecnologia imediatamente.
-*   **Padrões > Ferramentas:** Aprenda os conceitos (MVC, Componentes, Estado Declarativo). As ferramentas mudam, mas os padrões persistem.
-*   **Simplicidade Vence:** O Backbone morreu, mas sua filosofia de "fazer uma coisa e fazer bem" (embora ele fosse *muito* manual) prevaleceu na filosofia de bibliotecas modernas como React.
-*   **Comunidade é Segurança:** Antes de adotar um framework novo, olhe o tamanho da comunidade, a frequência de commits e a quantidade de issues abertas. Uma tecnologia sem manutenção é um passivo de segurança.
+* **Evite "Black Boxes":** Frameworks que escondem muita complexidade (como o Meteor fazia com DDP) dificultam o debug quando o sistema escala.
+* **Cuidado com Quebras de Compatibilidade:** Se a equipe principal anuncia uma reescrita total (Angular 1 vs 2), considere migrar para outra tecnologia imediatamente.
+* **Padrões > Ferramentas:** Aprenda os conceitos (MVC, Componentes, Estado Declarativo). As ferramentas mudam, mas os padrões persistem.
+* **Simplicidade Vence:** O Backbone morreu, mas sua filosofia de "fazer uma coisa e fazer bem" (embora ele fosse *muito* manual) prevaleceu na filosofia de bibliotecas modernas como React.
+* **Comunidade é Segurança:** Antes de adotar um framework novo, olhe o tamanho da comunidade, a frequência de commits e a quantidade de issues abertas. Uma tecnologia sem manutenção é um passivo de segurança.
 
 ## Fontes
 

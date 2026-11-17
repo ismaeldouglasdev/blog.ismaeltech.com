@@ -29,7 +29,7 @@ As principais empresas que estão trabalhando na área de programação quântic
 <figure>
   <img src="/media/2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia.jpg" alt="Chip Sycamore da Google, um processador quântico supercondutor." loading="lazy" />
   <figcaption>
-    Chip Sycamore da Google, um processador quântico supercondutor. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AGoogle_Sycamore_Chip_001.png">Google Sycamore Chip 001.png</a> por Google  - 
+    Chip Sycamore da Google, um processador quântico supercondutor. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AGoogle_Sycamore_Chip_001.png">Google Sycamore Chip 001.png</a> por Google - 
     <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>
@@ -62,7 +62,7 @@ A programação quântica é um campo em constante evolução, com muitas empres
 - [IBM Quantum](https://quantumexperience.ng.bluemix.net/)
 - [Google Quantum AI Lab](https://ai.google/research/quantum-ai-lab)
 - [IonQ](https://ionq.com/)
-## 📸 Crédito da imagem de capa
+## Crédito da imagem de capa
 - **Imagem:** [A Wafer of the Latest D-Wave Quantum Computers (39188583425).jpg](https://commons.wikimedia.org/wiki/File%3AA_Wafer_of_the_Latest_D-Wave_Quantum_Computers_%2839188583425%29.jpg)
 - **Autor(a):** Steve Jurvetson from Menlo Park, USA
 - **Licença:** [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) · via Wikimedia Commons

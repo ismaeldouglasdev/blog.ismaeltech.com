@@ -25,7 +25,7 @@ A premissa central da Testing Library é que o código do seu componente é uma 
 
 <figure>
 <img src="/media/2026-09-26-testing-library-testes-de-react-que-refletem-o-uso-real-1.jpg" alt="Testing Library: testes de React que refletem o uso real" loading="lazy">
-<figcaption>A team at NASA’s Kennedy Space Center in Florida tests a 3D printer on July 28, 2022, at the Florida spaceport’s Swamp Works, as part of the Relevant Environmen. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AREACT_Demonstration_%28KSC-20220728-PH-FMX02_0011%29.jpeg">REACT Demonstration (KSC-20220728-PH-FMX02 0011).jpeg</a> por Frank Michaux - <a href="https://creativecommons.org/licenses/">Public domain</a> · via Wikimedia Commons</figcaption>
+<figcaption>A team at NASA's Kennedy Space Center in Florida tests a 3D printer on July 28, 2022, at the Florida spaceport's Swamp Works, as part of the Relevant Environmen. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AREACT_Demonstration_%28KSC-20220728-PH-FMX02_0011%29.jpeg">REACT Demonstration (KSC-20220728-PH-FMX02 0011).jpeg</a> por Frank Michaux - <a href="https://creativecommons.org/licenses/">Public domain</a> · via Wikimedia Commons</figcaption>
 </figure>
 
 Testar a implementação é um erro de estratégia. Se você escreve um teste que verifica `container.querySelector('.btn-primary')`, você está assumindo que a classe CSS nunca mudará. Se amanhã você decide usar Tailwind ou CSS Modules, seu teste quebra. Se você escreve `container.getByRole('button', { name: 'Salvar' })`, você está testando a acessibilidade e a funcionalidade. A única maneira de um usuário interagir com uma interface web é através de roles, labels, textos e atributos HTML padrão.
@@ -66,7 +66,7 @@ Testar componentes estáticos é fácil. Testar interatividade é onde a Testing
 
 <figure>
 <img src="/media/2026-09-26-testing-library-testes-de-react-que-refletem-o-uso-real-2.jpg" alt="Testing Library: testes de React que refletem o uso real" loading="lazy">
-<figcaption>A team at NASA’s Kennedy Space Center in Florida tests a 3D printer on July 28, 2022, at the Florida spaceport’s Swamp Works, as part of the Relevant Environmen. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AREACT_Demonstration_%28KSC-20220728-PH-FMX02_0027%29.jpeg">REACT Demonstration (KSC-20220728-PH-FMX02 0027).jpeg</a> por Frank Michaux - <a href="https://creativecommons.org/licenses/">Public domain</a> · via Wikimedia Commons</figcaption>
+<figcaption>A team at NASA's Kennedy Space Center in Florida tests a 3D printer on July 28, 2022, at the Florida spaceport's Swamp Works, as part of the Relevant Environmen. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AREACT_Demonstration_%28KSC-20220728-PH-FMX02_0027%29.jpeg">REACT Demonstration (KSC-20220728-PH-FMX02 0027).jpeg</a> por Frank Michaux - <a href="https://creativecommons.org/licenses/">Public domain</a> · via Wikimedia Commons</figcaption>
 </figure>
 
 `UserEvent.click()`: Simula um clique completo, incluindo focos, mouse down, mouse up e click.
@@ -177,12 +177,12 @@ Para quem constrói sistemas reais, como integrações de varejo ou dashboards c
 
 Takeaways práticos:
 
-*   Priorize sempre queries baseadas em acessibilidade (`getByRole`, `getByLabelText`). Use `getByTestId` apenas como último recurso.
-*   Simule interações de usuário reais com `userEvent`. Evite disparar eventos manualmente com `fireEvent`, a menos que tenha uma razão específica e documentada.
-*   Use `findBy` para esperar por elementos assíncronos. Nunca use `setTimeout` para sincronização de testes.
-*   Mocke camadas de dados (APIs, hooks de estado remoto) para isolar testes de componentes.
-*   View a code coverage como uma métrica de diagnóstico, não como uma meta a ser atingida a qualquer custo. Testes comportamentais valem mais que linhas executadas.
-*   Escreva testes que verifiquem o que o usuário vê e faz, não o que o componente faz internamente.
+* Priorize sempre queries baseadas em acessibilidade (`getByRole`, `getByLabelText`). Use `getByTestId` apenas como último recurso.
+* Simule interações de usuário reais com `userEvent`. Evite disparar eventos manualmente com `fireEvent`, a menos que tenha uma razão específica e documentada.
+* Use `findBy` para esperar por elementos assíncronos. Nunca use `setTimeout` para sincronização de testes.
+* Mocke camadas de dados (APIs, hooks de estado remoto) para isolar testes de componentes.
+* View a code coverage como uma métrica de diagnóstico, não como uma meta a ser atingida a qualquer custo. Testes comportamentais valem mais que linhas executadas.
+* Escreva testes que verifiquem o que o usuário vê e faz, não o que o componente faz internamente.
 
 ## Fontes
 

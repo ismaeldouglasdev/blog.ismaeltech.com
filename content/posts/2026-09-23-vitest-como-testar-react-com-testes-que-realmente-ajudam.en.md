@@ -24,7 +24,7 @@ Tests are not optional. They are essential for ensuring software quality and con
 ```markdown
 ## Setup with Vite
 
-To get started, we need to set up our environment. Vitest integrates seamlessly with Vite, which is a modern project build tool. To begin, create a new project using Vite if you don't have one yet:
+To get started, we need to set up our environment. Vitest works naturally with Vite, which is a modern project build tool. To begin, create a new project using Vite if you don't have one yet:
 
 ```bash
 npm create vite@latest my-project --template react

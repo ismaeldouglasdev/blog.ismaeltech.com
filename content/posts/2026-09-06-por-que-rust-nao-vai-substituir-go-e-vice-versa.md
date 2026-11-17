@@ -27,7 +27,7 @@ Um dos principais pontos fortes de Go é sua simplicidade. A linguagem tem um co
 <figure>
   <img src="/media/2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa.jpg" alt="O gopher, mascote do Go, segurando uma chave-inglesa." loading="lazy" />
   <figcaption>
-    O gopher, mascote do Go, segurando uma chave-inglesa. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AGo_gopher_pencil_wrench.jpg">Go gopher pencil wrench.jpg</a> por Renee French  - 
+    O gopher, mascote do Go, segurando uma chave-inglesa. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AGo_gopher_pencil_wrench.jpg">Go gopher pencil wrench.jpg</a> por Renee French - 
     <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>
@@ -63,7 +63,7 @@ Takeaways práticos:
 - [Go by Example](https://gobyexample.com/)
 - [The Rust Programming Language](https://doc.rust-lang.org/book/)
 - [Go vs Rust: Which is Better for Your Next Project?](https://www.freecodecamp.org/news/go-vs-rust-which-is-better-for-your-next-project/)
-## 📸 Crédito da imagem de capa
+## Crédito da imagem de capa
 - **Imagem:** [RustCodeOnScreen.jpg](https://commons.wikimedia.org/wiki/File%3ARustCodeOnScreen.jpg)
 - **Autor(a):** Slashme
 - **Licença:** [CC0](https://creativecommons.org/publicdomain/zero/1.0/) · via Wikimedia Commons

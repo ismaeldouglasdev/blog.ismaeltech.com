@@ -19,7 +19,7 @@ Em outubro de 2012, a Microsoft fez um anúncio que mudaria o rumo do desenvolvi
 <figure>
   <img src="/media/2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria.jpg" alt="O logotipo do TypeScript, criado pela Microsoft." loading="lazy" />
   <figcaption>
-    O logotipo do TypeScript, criado pela Microsoft. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ATypeScript_Logo.svg">TypeScript Logo.svg</a> por Microsoft  - 
+    O logotipo do TypeScript, criado pela Microsoft. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ATypeScript_Logo.svg">TypeScript Logo.svg</a> por Microsoft - 
     <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>
@@ -93,7 +93,7 @@ Resumindo, o TypeScript é uma linguagem que passou de um projeto experimental p
 - [Angular Docs: TypeScript](https://angular.io/guide/typescript-configuration)
 - [React Docs: TypeScript](https://react.dev/reference/react/types)
 - [Vue.js Docs: TypeScript](https://vuejs.org/v2/guide/typescript.html)
-## 📸 Crédito da imagem de capa
+## Crédito da imagem de capa
 - **Imagem:** [Code on computer monitor (Unsplash).jpg](https://commons.wikimedia.org/wiki/File%3ACode_on_computer_monitor_%28Unsplash%29.jpg)
 - **Autor(a):** Markus Spiske markusspiske
 - **Licença:** [CC0](https://creativecommons.org/publicdomain/zero/1.0/) · via Wikimedia Commons

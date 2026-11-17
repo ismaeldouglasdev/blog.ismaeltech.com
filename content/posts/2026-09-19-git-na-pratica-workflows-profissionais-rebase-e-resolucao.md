@@ -59,7 +59,7 @@ Resumindo, o Git é uma ferramenta poderosa que oferece muitos recursos para ger
 - [Husky: Git Hooks](https://typicode.github.io/husky/#/)
 - [Git Flow](https://nvie.com/posts/a-successful-git-branching-model/)
 - [Trunk-based Development](https://trunkbaseddevelopment.com/)
-## 📸 Crédito da imagem de capa
+## Crédito da imagem de capa
 - **Imagem:** [Git format.png](https://commons.wikimedia.org/wiki/File%3AGit_format.png)
 - **Autor(a):** Julian Kücklich
 - **Licença:** [CC0](https://creativecommons.org/publicdomain/zero/1.0/) · via Wikimedia Commons

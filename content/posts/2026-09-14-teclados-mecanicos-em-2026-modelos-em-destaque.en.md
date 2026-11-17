@@ -74,7 +74,7 @@ If you're coming from a membrane keyboard, any of the three will be a noticeable
 - [NuPhy Air75 V2, official page](https://nuphy.com/products/air75-v2): specifications and battery
 - [r/MechanicalKeyboards](https://www.reddit.com/r/MechanicalKeyboards/): community discussions
 
-## 📸 Cover image credit
+## Cover image credit
 - **Image:** [Beautiful Mechanical Keyboard.jpg](https://commons.wikimedia.org/wiki/File:Beautiful_Mechanical_Keyboard.jpg)
 - **Author:** Anirban Saha
 - **License:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) · via Wikimedia Commons

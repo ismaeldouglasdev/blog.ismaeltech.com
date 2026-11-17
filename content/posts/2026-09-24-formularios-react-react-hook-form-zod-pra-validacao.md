@@ -226,7 +226,7 @@ Aqui, exploramos como criar formulários eficientes e robustos em React usando o
 - [React Docs: Forms](https://react.dev/learn/forms)
 - [MDN Web Docs: Form data](https://developer.mozilla.org/en-US/docs/Web/API/FormData)
 - [React Hook Form GitHub](https://github.com/react-hook-form/react-hook-form)
-## 📸 Crédito da imagem de capa
+## Crédito da imagem de capa
 - **Imagem:** [111031-F-ZZ999-102 (6349579508).jpg](https://commons.wikimedia.org/wiki/File%3A111031-F-ZZ999-102_%286349579508%29.jpg)
 - **Autor(a):** NATO Training Mission-Afghanistan
 - **Licença:** [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) · via Wikimedia Commons

@@ -106,17 +106,17 @@ Although modern Angular and NestJS use DI in a more robust way, the concept popu
 
 ## Conclusion
 
-Looking back isn't about living in the past. It’s about recognizing that choosing a technology is a long-term commitment. Frameworks that have died often failed not because of a lack of technical features, but because they failed to evolve alongside the web or alienated their community with drastic breaking changes.
+Looking back isn't about living in the past. It's about recognizing that choosing a technology is a long-term commitment. Frameworks that have died often failed not because of a lack of technical features, but because they failed to evolve alongside the web or alienated their community with drastic breaking changes.
 
 For those starting out now or scaling their projects, the lesson is clear: prefer technologies that adopt native web standards, have an active and transparent community, and allow you to understand what is happening "under the hood." Magic is great for an MVP, but sustainability is what pays the bills in the long run.
 
 ### Practical Takeaways
 
-*   **Avoid "Black Boxes":** Frameworks that hide too much complexity (like Meteor did with DDP) make debugging difficult when the system scales.
-*   **Beware of Breaking Changes:** If the core team announces a total rewrite (Angular 1 vs 2), consider migrating to another technology immediately.
-*   **Patterns > Tools:** Learn the concepts (MVC, Components, Declarative State). Tools change, but patterns persist.
-*   **Simplicity Wins:** Backbone died, but its philosophy of "doing one thing and doing it well" (even though it was *very* manual) prevailed in the philosophy of modern libraries like React.
-*   **Community is Security:** Before adopting a new framework, look at the size of the community, the frequency of commits, and the number of open issues. A technology without maintenance is a security liability.
+* **Avoid "Black Boxes":** Frameworks that hide too much complexity (like Meteor did with DDP) make debugging difficult when the system scales.
+* **Beware of Breaking Changes:** If the core team announces a total rewrite (Angular 1 vs 2), consider migrating to another technology immediately.
+* **Patterns > Tools:** Learn the concepts (MVC, Components, Declarative State). Tools change, but patterns persist.
+* **Simplicity Wins:** Backbone died, but its philosophy of "doing one thing and doing it well" (even though it was *very* manual) prevailed in the philosophy of modern libraries like React.
+* **Community is Security:** Before adopting a new framework, look at the size of the community, the frequency of commits, and the number of open issues. A technology without maintenance is a security liability.
 
 ## Sources
 

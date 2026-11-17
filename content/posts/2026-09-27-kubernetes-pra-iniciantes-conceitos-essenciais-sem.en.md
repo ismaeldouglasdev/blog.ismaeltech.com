@@ -121,7 +121,7 @@ And the point most tutorials skip: **exposing outward is the exception, not the 
 | Type | Reach | When to use |
 |---|---|---|
 | `ClusterIP` (default) | Inside the cluster only | service-to-service traffic, almost always |
-| `NodePort` | Every node on a high port (30000–32767) | local development, debugging |
+| `NodePort` | Every node on a high port (30000-32767) | local development, debugging |
 | `LoadBalancer` | Public IP via the cloud provider | when you genuinely need a public IP |
 
 I used `NodePort` because it works in Minikube with no extra setup. In production, Kubernetes networking usually relies on `LoadBalancer` or an Ingress - which is the next section.

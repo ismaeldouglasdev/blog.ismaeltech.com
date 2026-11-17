@@ -3,19 +3,19 @@ title: "Reimplementing a classic game engine: lessons from the fheroes2 project"
 date: "2026-10-25"
 category: "tutorial"
 tags: ["reverse-engineering", "c++", "jogos", "engenharia-de-software", "open-source"]
-excerpt: "How do you rebuild a classic game without the original source code, preserving pixel‑by‑pixel nostalgia, without getting stuck in MS‑DOS mode?"
+excerpt: "How do you rebuild a classic game without the original source code, preserving pixel-by-pixel nostalgia, without getting stuck in MS-DOS mode?"
 cover:
   image: "/covers/2026-10-25-como-reimplementar-um-motor-de-jogo-classico-licoes-do.jpg"
 comments: true
 translationKey: "2026-10-25-como-reimplementar-um-motor-de-jogo-classico-licoes-do"
 ---
-How do you rebuild a classic game without the original source code, preserving pixel‑by‑pixel nostalgia, without getting stuck in MS‑DOS mode?
+How do you rebuild a classic game without the original source code, preserving pixel-by-pixel nostalgia, without getting stuck in MS-DOS mode?
 
-Ask the team behind **fheroes2**, an open‑source project that reimplements the classic *Heroes of Might and Magic II* (1996) from scratch. They have no access to New World Computing’s original engine. All they have is the 1996 final binary, a pile of data (sprites, maps, sounds) and the collective memory of thousands of players. The challenge is monumental: recreate the game physics, the opponent AI, the isometric rendering, and that “just right” feel that defines a cult title. Any subtle deviation, a wrong damage calculation, a non‑optimal movement path, is immediately flagged by the community.
+Ask the team behind **fheroes2**, an open-source project that reimplements the classic *Heroes of Might and Magic II* (1996) from scratch. They have no access to New World Computing's original engine. All they have is the 1996 final binary, a pile of data (sprites, maps, sounds) and the collective memory of thousands of players. The challenge is monumental: recreate the game physics, the opponent AI, the isometric rendering, and that "just right" feel that defines a cult title. Any subtle deviation, a wrong damage calculation, a non-optimal movement path, is immediately flagged by the community.
 
-This goes far beyond nostalgia. It’s a practical lesson in reverse engineering, resilient system design, and long‑term compatibility maintenance. The same lessons you face when modernizing a legacy API, migrating a critical database, or building an internal tool that must coexist with old systems.
+This goes far beyond nostalgia. It's a practical lesson in reverse engineering, resilient system design, and long-term compatibility maintenance. The same lessons you face when modernizing a legacy API, migrating a critical database, or building an internal tool that must coexist with old systems.
 
-I know a bit of that compatibility pain. Since 2020, I’ve worked in the commercial department of a retail store, where I led the migration of a database with more than 10,000 products between systems. We implemented and customized OSPOS, an open‑source point‑of‑sale (POS) system. The daily challenge is making a stack of technologies, from the POS’s legacy PHP to e‑commerce integrations, work in harmony, keeping the store’s operation running without interruption. It’s fertile ground for learning about stable interfaces and the importance of rigorous testing.
+I know a bit of that compatibility pain. Since 2020, I've worked in the commercial department of a retail store, where I led the migration of a database with more than 10,000 products between systems. We implemented and customized OSPOS, an open-source point-of-sale (POS) system. The daily challenge is making a stack of technologies, from the POS's legacy PHP to e-commerce integrations, work in harmony, keeping the store's operation running without interruption. It's fertile ground for learning about stable interfaces and the importance of rigorous testing.
 
 <figure>
 <img src="/media/fheroes2-screenshot.png" alt="Screenshot of the fheroes2 game showing the classic isometric interface, with heroes, castles, and the strategic map" loading="lazy">

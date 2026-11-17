@@ -19,7 +19,7 @@ Quando comecei a construir meus próprios projetos e a estruturar interfaces com
 <figure>
   <img src="/media/2026-08-28-react-server-components-quando-e-como-usar-no-next-js.jpg" alt="O logo do React: componentes que rodam tanto no servidor quanto no cliente." loading="lazy" />
   <figcaption>
-    O logo do React: componentes que rodam tanto no servidor quanto no cliente. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AReact.svg">React.svg</a> por ReactJS  - 
+    O logo do React: componentes que rodam tanto no servidor quanto no cliente. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AReact.svg">React.svg</a> por ReactJS - 
     <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>
@@ -164,7 +164,7 @@ O modelo de Server Components no Next.js exige uma mudança de mentalidade na fo
 - [Next.js Documentation: Server Components](https://nextjs.org/docs/app/building-your-application/rendering/server-components)
 - [React Documentation: Server Components](https://react.dev/reference/react/components)
 - [Next.js Documentation: Server Actions and Mutations](https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions-and-mutations)
-## 📸 Crédito da imagem de capa
+## Crédito da imagem de capa
 - **Imagem:** [BalticServers data center.jpg](https://commons.wikimedia.org/wiki/File%3ABalticServers_data_center.jpg)
 - **Autor(a):** BalticServers.com
 - **Licença:** [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) · via Wikimedia Commons

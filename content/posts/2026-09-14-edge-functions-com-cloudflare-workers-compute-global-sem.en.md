@@ -341,7 +341,7 @@ Cost is also a valid decision factor. For low to medium traffic applications, Wo
 - [Cloudflare R2 Documentation](https://developers.cloudflare.com/r2/)
 - [Cloudflare Workers AI Documentation](https://developers.cloudflare.com/workers-ai/)
 - [Wrangler CLI GitHub Repository](https://github.com/cloudflare/wrangler)
-## 📸 Cover image credit
+## Cover image credit
 - **Image:** [EDGE Shadow 25 loitering munition.jpg](https://commons.wikimedia.org/wiki/File%3AEDGE_Shadow_25_loitering_munition.jpg)
 - **Author:** Unknown authorUnknown author
 - **License:** [Public domain](https://en.wikipedia.org/wiki/Public_domain) · via Wikimedia Commons

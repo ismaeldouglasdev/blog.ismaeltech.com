@@ -369,7 +369,7 @@ A economia também é um fator de decisão válido. Para aplicações de baixo a
 - [Cloudflare R2 Documentation](https://developers.cloudflare.com/r2/)
 - [Cloudflare Workers AI Documentation](https://developers.cloudflare.com/workers-ai/)
 - [Wrangler CLI GitHub Repository](https://github.com/cloudflare/wrangler)
-## 📸 Crédito da imagem de capa
+## Crédito da imagem de capa
 - **Imagem:** [EDGE Shadow 25 loitering munition.jpg](https://commons.wikimedia.org/wiki/File%3AEDGE_Shadow_25_loitering_munition.jpg)
 - **Autor(a):** Unknown author
 - **Licença:** [Public domain](https://en.wikipedia.org/wiki/Public_domain) · via Wikimedia Commons

@@ -31,13 +31,13 @@ http2shell is a Remote Code Execution (RCE) exploit that targets misconfigured H
 
 Let's break down the attack into steps:
 
-1.  **Reconnaissance**: The attacker identifies a server that accepts HTTP/2 (usually on port 443 with ALPN or via a web server's response). Tools like `nmap` or `h2scan` can detect this.
-2.  **Crafting malicious frames**: HTTP/2 splits communication into frames, HEADERS, DATA, SETTINGS, etc. The attacker assembles a sequence of frames where:
-    *   A HEADERS frame contains excessively long headers or headers with special characters that exceed the server's buffer limits.
-    *   DATA frames are sent out of order or with invalid stream flags (e.g. END_STREAM on a stream that was never opened).
-    *   Contamination occurs when the server, while attempting to reconstruct the stream, interprets this malformed data as valid instructions for its internal state machine.
-3.  **Exploiting vulnerable parsers**: Many HTTP/2 implementations in interpreted languages (Node.js, Python, PHP) use bindings to native C/C++ libraries (like `nghttp2`, `llhttp`). If there is a buffer overflow or use-after-free vulnerability in these libraries, the attacker can overwrite function pointers in memory, redirecting execution to shellcode embedded within the frames themselves.
-4.  **Remote execution**: If successful, the shellcode executes in the context of the server process. In Node.js, this could mean the ability to run shell commands with the permissions of the user running the process (often root in containers). In Python, it could lead to importing malicious modules or calling `os.system()`.
+1. **Reconnaissance**: The attacker identifies a server that accepts HTTP/2 (usually on port 443 with ALPN or via a web server's response). Tools like `nmap` or `h2scan` can detect this.
+2. **Crafting malicious frames**: HTTP/2 splits communication into frames, HEADERS, DATA, SETTINGS, etc. The attacker assembles a sequence of frames where:
+    * A HEADERS frame contains excessively long headers or headers with special characters that exceed the server's buffer limits.
+    * DATA frames are sent out of order or with invalid stream flags (e.g. END_STREAM on a stream that was never opened).
+    * Contamination occurs when the server, while attempting to reconstruct the stream, interprets this malformed data as valid instructions for its internal state machine.
+3. **Exploiting vulnerable parsers**: Many HTTP/2 implementations in interpreted languages (Node.js, Python, PHP) use bindings to native C/C++ libraries (like `nghttp2`, `llhttp`). If there is a buffer overflow or use-after-free vulnerability in these libraries, the attacker can overwrite function pointers in memory, redirecting execution to shellcode embedded within the frames themselves.
+4. **Remote execution**: If successful, the shellcode executes in the context of the server process. In Node.js, this could mean the ability to run shell commands with the permissions of the user running the process (often root in containers). In Python, it could lead to importing malicious modules or calling `os.system()`.
 
 Here is a simplified example of how a malicious HEADERS frame could be constructed in Python using the `h2` library (for educational purposes):
 
@@ -50,7 +50,7 @@ conn = h2.connection.H2Connection(config=config)
 ```
 
 # Create headers with an excessively long value to attempt buffer overflow
-malicious_header = ('x-custom-header', 'A' * 10000)  # 10k characters
+malicious_header = ('x-custom-header', 'A' * 10000) # 10k characters
 
 headers = [
     (':method', 'GET'),
@@ -172,10 +172,10 @@ from hypercorn.config import Config
 
 config = Config()
 config.bind = ["0.0.0.0:443"]
-config.lifetime_timeout = 30  # close idle connections
+config.lifetime_timeout = 30 # close idle connections
 config.keep_alive_timeout = 20
-config.max_incomplete_events = 100  # limit incomplete events
-config.h2_backend = "h2"  # force use of pure Python h2 library (slower, but more secure)
+config.max_incomplete_events = 100 # limit incomplete events
+config.h2_backend = "h2" # force use of pure Python h2 library (slower, but more secure)
 ```
 
 **For Nginx (as reverse proxy):**
@@ -188,9 +188,9 @@ server {
     ssl_ciphers HIGH:!aNULL:!MD5;
     
     # Critical HTTP/2 limits
-    http2_max_field_size 4k;       # Maximum size of a header field
-    http2_max_header_size 16k;     # Maximum total header size
-    http2_max_requests 1000;       # Maximum requests per connection
+    http2_max_field_size 4k; # Maximum size of a header field
+    http2_max_header_size 16k; # Maximum total header size
+    http2_max_requests 1000; # Maximum requests per connection
     http2_max_concurrent_streams 128; # Limit concurrent streams
     
     location / {
