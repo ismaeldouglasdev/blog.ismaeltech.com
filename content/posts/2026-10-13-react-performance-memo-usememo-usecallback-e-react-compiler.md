@@ -14,7 +14,7 @@ translationKey: "2026-10-13-react-performance-memo-usememo-usecallback-e-react-c
 
 Quando uma lista cresce e a cada interação o navegador trava ou pisca, o problema raramente é "falta de poder de CPU". Na maioria dos casos, é renderização desnecessária no React. Entender quando memoizar, como o React Compiler ajuda e onde usar `useMemo` e `useCallback` faz a diferença entre uma interface fluida e uma frustrante.
 
-A dor aparece no Chrome DevTools: centenas de componentes renderizando em cascata, muitos deles recebendo novas props mesmo quando a consulta de fundo não retornou novos dados. A primeira tentativa costuma ser envolver tudo com `React.memo`, mas isso apenas mascara o sintoma — as renderizações desnecessárias continuam ocorrendo no nível mais profundo.
+A dor aparece no Chrome DevTools: centenas de componentes renderizando em cascata, muitos deles recebendo novas props mesmo quando a consulta de fundo não retornou novos dados. A primeira tentativa costuma ser envolver tudo com `React.memo`, mas isso apenas mascara o sintoma - as renderizações desnecessárias continuam ocorrendo no nível mais profundo.
 
 Esse padrão surge sempre que componentes recalculam expressões caras, criam novos objetos e funções a cada render ou recebem props que mudam de identidade sem mudar de valor. O resultado é uma cascata de re-renderizações que pode ser evitada com as ferramentas certas.
 
@@ -27,7 +27,7 @@ Otimização não é um passo opcional "quando sobra tempo". É uma resposta dir
 
 <figure>
 <img src="/media/2026-10-13-react-performance-memo-usememo-usecallback-e-react-compiler-1.jpg" alt="React performance: memo, useMemo, useCallback e React Compiler" loading="lazy">
-<figcaption>Don Edwards San Francisco Bay National Wildlife Refuge. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AACE_EMD_F40PH_Fremont_-_San_Jose.jpg">ACE EMD F40PH Fremont - San Jose.jpg</a> por Kabelleger / David Gubler (http://www.bahnbilder.ch) — <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a> · via Wikimedia Commons</figcaption>
+<figcaption>Don Edwards San Francisco Bay National Wildlife Refuge. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AACE_EMD_F40PH_Fremont_-_San_Jose.jpg">ACE EMD F40PH Fremont - San Jose.jpg</a> por Kabelleger / David Gubler (http://www.bahnbilder.ch) - <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 
 <figure>
@@ -35,7 +35,7 @@ Otimização não é um passo opcional "quando sobra tempo". É uma resposta dir
 <figcaption>Cover image do artigo</figcaption>
 </figure>
 
-Considere um componente `<ProductGrid>` que recebe duas props: `items` (o array filtrado) e `onSelect` (um manipulador de clique). O manipulador é uma função de seta que não depende de dados externos, então sua identidade permanece estável se for criada fora do componente. Como `items` é uma nova referência a cada digitação (porque a string de consulta é transformada em um novo array), o memo ainda dispara uma renderização — mas apenas para a grade, e não para toda a árvore de layout acima dela.
+Considere um componente `<ProductGrid>` que recebe duas props: `items` (o array filtrado) e `onSelect` (um manipulador de clique). O manipulador é uma função de seta que não depende de dados externos, então sua identidade permanece estável se for criada fora do componente. Como `items` é uma nova referência a cada digitação (porque a string de consulta é transformada em um novo array), o memo ainda dispara uma renderização - mas apenas para a grade, e não para toda a árvore de layout acima dela.
 
 O ganho real aparece quando você combina `React.memo` com um gerenciamento de estado mais granular. Manter o conjunto de seleção separado do array de itens, por exemplo com `useReducer`, evita que a seleção de um item force a grade inteira a renderizar de novo.
 
@@ -45,7 +45,7 @@ Em resumo, `React.memo` funciona melhor quando existe um limite claro de quais p
 
 ## useMemo: cache de cálculos pesados
 
-`useMemo` armazena o resultado de uma expressão cara entre renders. A utilidade é mais evidente quando o cálculo é mais caro que uma simples atribuição — ordenação, filtragem ou agregação de um array grande, por exemplo.
+`useMemo` armazena o resultado de uma expressão cara entre renders. A utilidade é mais evidente quando o cálculo é mais caro que uma simples atribuição - ordenação, filtragem ou agregação de um array grande, por exemplo.
 
 ```js
 // antes
@@ -72,7 +72,7 @@ Outro caso clássico é renderizar estruturas profundas, como um visualizador de
 `useCallback` memoiza funções para que a identidade permaneça a mesma entre renders. O objetivo é evitar que um novo manipulador force um componente filho memoizado a renderizar de novo.
 
 
-Um caso típico: um `<CartButton>` envolvido com `React.memo` recebe um manipulador `onAddToCart`. Se o manipulador é uma função de seta definida dentro do componente pai, ele ganha uma nova referência a cada render, e a comparação de props sempre falha — o memo nunca ajuda.
+Um caso típico: um `<CartButton>` envolvido com `React.memo` recebe um manipulador `onAddToCart`. Se o manipulador é uma função de seta definida dentro do componente pai, ele ganha uma nova referência a cada render, e a comparação de props sempre falha - o memo nunca ajuda.
 
 ```js
 // problema
@@ -84,7 +84,7 @@ const handleAdd = useCallback(() => { /* lógica */ }, []);
 
 Se `handleAdd` precisasse de valores de estado, esses valores entrariam na lista de dependências. Quando o manipulador não acessa nenhum estado do React, uma lista vazia é suficiente.
 
-Há uma armadilha comum: o "stale closure". Você passa um manipulador para um componente filho, o filho o armazena em um closure e o expõe mais tarde — criando um ciclo de referência que anula o propósito da memoização. A solução é extrair a lógica para uma função pura fora do componente e então envolver essa função com `useCallback`. A identidade permanece estável e o ciclo se quebra.
+Há uma armadilha comum: o "stale closure". Você passa um manipulador para um componente filho, o filho o armazena em um closure e o expõe mais tarde - criando um ciclo de referência que anula o propósito da memoização. A solução é extrair a lógica para uma função pura fora do componente e então envolver essa função com `useCallback`. A identidade permanece estável e o ciclo se quebra.
 
 Use `useCallback` quando um manipulador for passado a um componente memoizado ou armazenado em estado que dispara um efeito. Use `useMemo` para valores computados que você precisa comparar ou armazenar. Misturar os dois incorretamente gera uma falsa sensação de segurança e mais uso de memória.
 
@@ -94,7 +94,7 @@ O React Compiler altera o modelo mental de quando a memoização é necessária.
 
 Um exemplo prático é um componente `<LazySection>` que renderiza um bloco pesado só depois de um clique em "Expandir". Antes do compilador, era preciso envolver o componente com `React.memo` e gerenciar estado de suspensão manualmente. Com o compilador habilitado, o mesmo código funciona sem declarações extras de memoização: ele detecta que o componente não renderiza no mount inicial e insere o caminho necessário.
 
-O compilador trabalha melhor com a sintaxe moderna de hooks, sem hooks em componentes de classe, e se integra ao React DevTools para exibir a árvore de memoização. Mas não é solução mágica: ainda é preciso escrever componentes puros e evitar efeitos colaterais na fase de render. Um `useEffect` que busca dados do backend precisa continuar explícito — o compilador não pode inferir que esse efeito deve ser ignorado.
+O compilador trabalha melhor com a sintaxe moderna de hooks, sem hooks em componentes de classe, e se integra ao React DevTools para exibir a árvore de memoização. Mas não é solução mágica: ainda é preciso escrever componentes puros e evitar efeitos colaterais na fase de render. Um `useEffect` que busca dados do backend precisa continuar explícito - o compilador não pode inferir que esse efeito deve ser ignorado.
 
 Uma armadilha é que o compilador pode ser agressivo demais com componentes que dependem de contexto. Com um `ThemeContext`, por exemplo, o objeto de contexto é uma nova referência a cada render do provedor, o que provoca renderizações desnecessárias em toda a árvore. A correção costuma ser memoizar o valor do provedor (`useMemo` no objeto de contexto) ou separar contextos por responsabilidade.
 
@@ -104,11 +104,11 @@ Em resumo, o React Compiler reduz a necessidade de declarações manuais, mas os
 
 Depois de aplicar `React.memo`, `useMemo` e `useCallback`, o próximo passo é validar se as mudanças reduziram de fato o trabalho de renderização. O React DevTools Profiler registra cada renderização de componente, com tempo de CPU, tempo de render e renderizações adicionais.
 
-Um teste A/B simples ajuda: compare a grade sem memoização com a versão memoizada, medindo o tempo por digitação. É comum ver ganhos grandes — de ~120 ms para ~38 ms por tecla, por exemplo — mas também um aumento no uso de memória, que só aparece depois de alguns minutos de execução. Meça os dois lados antes de comemorar.
+Um teste A/B simples ajuda: compare a grade sem memoização com a versão memoizada, medindo o tempo por digitação. É comum ver ganhos grandes - de ~120 ms para ~38 ms por tecla, por exemplo - mas também um aumento no uso de memória, que só aparece depois de alguns minutos de execução. Meça os dois lados antes de comemorar.
 
 O profiler também revela problemas ocultos. Uma lista de artigos que parece renderizar demais pode ter como causa um `useEffect` que reconstrói um índice de busca a cada mudança; mover esse índice para `useMemo` elimina vários picos por ciclo.
 
-Use o profiler com moderação. Execuções longas distorcem os números; capture um perfil que represente um fluxo típico de usuário. Em conjuntos grandes, é comum descobrir que a maior parte do tempo de CPU é gasta reavaliando nós fora do viewport — o que pede memoização na função de renderização recursiva ou limitação da profundidade ao que está visível.
+Use o profiler com moderação. Execuções longas distorcem os números; capture um perfil que represente um fluxo típico de usuário. Em conjuntos grandes, é comum descobrir que a maior parte do tempo de CPU é gasta reavaliando nós fora do viewport - o que pede memoização na função de renderização recursiva ou limitação da profundidade ao que está visível.
 
 Por fim, o profiler mostra renderizações extras causadas por atualizações de contexto ou máquinas de estado mal construídas. Um reducer que cria um novo objeto de ação a cada dispatch faz toda a árvore comparar referências novas; retornar referências estáveis elimina o problema.
 

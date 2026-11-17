@@ -15,13 +15,13 @@ translationKey: "2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-ind
 
 ## Introduction
 
-In October 2012, Microsoft made an announcement that would change the direction of JavaScript development: **TypeScript**. At the time, teams maintaining large JavaScript applications were facing an increasingly obvious problem — code that grew quickly and became impossible to maintain without static typing. TypeScript was created precisely to address that pain, promising to bring the safety and maintainability of static typing without abandoning the JavaScript ecosystem. More than a decade later, it has become the de‑facto industry standard. This is the story of how an internal experimental project became the foundation of virtually every modern framework.
+In October 2012, Microsoft made an announcement that would change the direction of JavaScript development: **TypeScript**. At the time, teams maintaining large JavaScript applications were facing an increasingly obvious problem - code that grew quickly and became impossible to maintain without static typing. TypeScript was created precisely to address that pain, promising to bring the safety and maintainability of static typing without abandoning the JavaScript ecosystem. More than a decade later, it has become the de‑facto industry standard. This is the story of how an internal experimental project became the foundation of virtually every modern framework.
 
 
 <figure>
   <img src="/media/2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria.jpg" alt="The TypeScript logo, created by Microsoft." loading="lazy" />
   <figcaption>
-    The TypeScript logo, created by Microsoft. — Image: <a href="https://commons.wikimedia.org/wiki/File%3ATypeScript_Logo.svg">TypeScript Logo.svg</a> by Microsoft —
+    The TypeScript logo, created by Microsoft. - Image: <a href="https://commons.wikimedia.org/wiki/File%3ATypeScript_Logo.svg">TypeScript Logo.svg</a> by Microsoft  - 
     <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>

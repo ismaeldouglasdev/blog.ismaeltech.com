@@ -39,7 +39,7 @@ Zustand surgiu como resposta a essa complexidade. Sua API é mínima: basicament
 
 <figure>
 <img src="/media/2026-09-10-gerenciamento-de-estados-react-context-vs-zustand-vs-jotai-1.jpg" alt="Gerenciamento de estados: React Context vs Zustand vs Jotai" loading="lazy">
-<figcaption>Chemist Tesia Irwin tests a 3D printer on July 28, 2022, at Swamp Works at NASA’s Kennedy Space Center in Florida, as part of the Relevant Environment Additive. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AREACT_Demonstration_%28KSC-20220728-PH-FMX02_0029%29.jpeg">REACT Demonstration (KSC-20220728-PH-FMX02 0029).jpeg</a> por Frank Michaux — <a href="https://creativecommons.org/licenses/">Public domain</a> · via Wikimedia Commons</figcaption>
+<figcaption>Chemist Tesia Irwin tests a 3D printer on July 28, 2022, at Swamp Works at NASA’s Kennedy Space Center in Florida, as part of the Relevant Environment Additive. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AREACT_Demonstration_%28KSC-20220728-PH-FMX02_0029%29.jpeg">REACT Demonstration (KSC-20220728-PH-FMX02 0029).jpeg</a> por Frank Michaux - <a href="https://creativecommons.org/licenses/">Public domain</a> · via Wikimedia Commons</figcaption>
 </figure>
 
 ```ts
@@ -80,7 +80,7 @@ export const useStockStore = create<StockState>((set) => ({
 }));
 ```
 
-O Zustand é prático quando é preciso de estado global fácil de testar e persistir. Com middleware como `persist`, é possível salvar o estado no localStorage — útil quando a sincronização com APIs externas falha.
+O Zustand é prático quando é preciso de estado global fácil de testar e persistir. Com middleware como `persist`, é possível salvar o estado no localStorage - útil quando a sincronização com APIs externas falha.
 
 Uma coisa que me chamou atenção: o Zustand evita o "wrapper hell" do Context. Você usa o hook direto no componente, sem precisar aninhar providers ou se preocupar com renderizações desnecessárias. O seletor do `useStore` permite pegar só o que o componente precisa:
 
@@ -153,7 +153,7 @@ Performance não é só sobre quantos ms leva para atualizar: é sobre quantos c
 
 <figure>
 <img src="/media/2026-09-10-gerenciamento-de-estados-react-context-vs-zustand-vs-jotai-2.jpg" alt="Gerenciamento de estados: React Context vs Zustand vs Jotai" loading="lazy">
-<figcaption>Chemist Tesia Irwin tests a 3D printer on July 28, 2022, at Swamp Works at NASA’s Kennedy Space Center in Florida, as part of the Relevant Environment Additive. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AREACT_Demonstration_%28KSC-20220728-PH-FMX02_0030%29.jpeg">REACT Demonstration (KSC-20220728-PH-FMX02 0030).jpeg</a> por Frank Michaux — <a href="https://creativecommons.org/licenses/">Public domain</a> · via Wikimedia Commons</figcaption>
+<figcaption>Chemist Tesia Irwin tests a 3D printer on July 28, 2022, at Swamp Works at NASA’s Kennedy Space Center in Florida, as part of the Relevant Environment Additive. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AREACT_Demonstration_%28KSC-20220728-PH-FMX02_0030%29.jpeg">REACT Demonstration (KSC-20220728-PH-FMX02 0030).jpeg</a> por Frank Michaux - <a href="https://creativecommons.org/licenses/">Public domain</a> · via Wikimedia Commons</figcaption>
 </figure>
 
 No contexto tradicional (sem memoização), cada atualização de contexto dispara re-renders em todos os componentes que consumem aquele contexto, mesmo que o valor específico usado por cada um não mude. O React não tem como saber disso, já que o objeto retornado pelo provider é novo a cada render.

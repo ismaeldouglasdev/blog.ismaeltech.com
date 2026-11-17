@@ -62,7 +62,7 @@ Run `docker compose up -d` and Redis is ready to accept connections on the defau
 
 <figure>
 <img src="/media/2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js-1.jpg" alt="Redis in Practice: Caching, Rate Limiting &amp; Queues in Node.js" loading="lazy">
-<figcaption>Redis "expire" command sets a timeout in seconds on key. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ARedis%27s_%22EXPIRE%22_%2818563947238%29.jpg">Redis&#x27;s &quot;EXPIRE&quot; (18563947238).jpg</a> por Exey Panteleev from Moscow, Russia — <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a> · via Wikimedia Commons</figcaption>
+<figcaption>Redis "expire" command sets a timeout in seconds on key. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ARedis%27s_%22EXPIRE%22_%2818563947238%29.jpg">Redis&#x27;s &quot;EXPIRE&quot; (18563947238).jpg</a> por Exey Panteleev from Moscow, Russia - <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 In my day‑to‑day work, the cache‑aside pattern has been the most flexible, especially when the write load is lower than the read load, such as in inventory synchronization.
 
@@ -70,7 +70,7 @@ In my day‑to‑day work, the cache‑aside pattern has been the most flexible,
 <figure>
   <img src="/media/2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js.jpg" alt="Direct-mapped cache: the concept that underpins Redis." loading="lazy" />
   <figcaption>
-    Direct-mapped cache: the concept that underpins Redis. — Image: <a href="https://commons.wikimedia.org/wiki/File%3ADirect-Mapped_Cache.png">Direct-Mapped Cache.png</a> by Snehalc —
+    Direct-mapped cache: the concept that underpins Redis. - Image: <a href="https://commons.wikimedia.org/wiki/File%3ADirect-Mapped_Cache.png">Direct-Mapped Cache.png</a> by Snehalc  - 
     <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>
@@ -160,7 +160,7 @@ Thus, the cache never becomes outdated, even if the database is altered by anoth
 
 ### 3.1. Why not just use `express-rate-limit`  
 
-Many projects rely on middleware that stores counters in memory. This works on a single server, but it breaks as soon as you scale to multiple instances—each node has its own count. Redis, being centralized, solves this problem.
+Many projects rely on middleware that stores counters in memory. This works on a single server, but it breaks as soon as you scale to multiple instances - each node has its own count. Redis, being centralized, solves this problem.
 
 ### 3.2. Sliding window algorithm in Lua  
 
@@ -352,7 +352,7 @@ This flow allows the frontend to be updated in real time when stock changes.
 
 In production environments, a standalone Redis can become a single point of failure. **Cluster** mode distributes key slots across multiple nodes, enabling horizontal scalability.
 
-It is worth being precise about what it delivers, because it is easy to over-promise here: **cluster on its own does not give fault tolerance.** What it gives is slot distribution and the ability to grow horizontally. Fault tolerance comes from a different feature, replicas, and the example below uses `--cluster-replicas 0` precisely because it is the simplest to set up locally. With zero replicas, if one of the three nodes dies, its slots become unavailable — there is no copy to fail over to.
+It is worth being precise about what it delivers, because it is easy to over-promise here: **cluster on its own does not give fault tolerance.** What it gives is slot distribution and the ability to grow horizontally. Fault tolerance comes from a different feature, replicas, and the example below uses `--cluster-replicas 0` precisely because it is the simplest to set up locally. With zero replicas, if one of the three nodes dies, its slots become unavailable - there is no copy to fail over to.
 
 When you actually want to survive losing a node:
 
@@ -423,7 +423,7 @@ docker exec -it redis-node-1 redis-cli --cluster create \
   --cluster-replicas 0
 ```
 
-Look at the `networks` block above. `redis-cli --cluster create` needs **fixed** addresses, and Compose does not provide them on its own: the Docker subnet is assigned dynamically and changes from machine to machine. Without the explicit `ipv4_address`, the command works on your machine and fails on your colleague's — which is the definition of "works on my machine".
+Look at the `networks` block above. `redis-cli --cluster create` needs **fixed** addresses, and Compose does not provide them on its own: the Docker subnet is assigned dynamically and changes from machine to machine. Without the explicit `ipv4_address`, the command works on your machine and fails on your colleague's - which is the definition of "works on my machine".
 
 ### 6.2. Connecting a Node.js client to the cluster
 
@@ -455,11 +455,11 @@ The combination of Docker, the official `redis` client, and libraries such as Bu
 
 What this post builds is already fine for low-traffic production. The known gaps, in the order I would face them:
 
-1. **Cache stampede** — cache-aside has a race: when a key expires, every simultaneous request falls through to the database at once. [`ttl-lru`](https://github.com/luin/redis-lru) (needs Redis >= 6.2) fixes it with a stampede lock, or the simple pattern of guarding the rebuild per key. Measure before optimizing: the symptom is latency under spike, not errors.
-2. **Invalidation** — the 10-minute TTL in the example is a guess. When data changes by event (the inventory flow in this post), the right move is to invalidate on write, and the Pub/Sub from section 5 is the natural hook.
-3. **Truly distributed rate limiting** — the Lua script assumes a single Redis. With a cluster, the key has to land in a single slot (use hashtags `{user123}`, otherwise the `ZADD` and `ZREMRANGEBYSCORE` on different nodes break the algorithm).
-4. **Observability** — `SLOWLOG GET`, `INFO memory` and `LATENCY DOCTOR` tell you why Redis got slow before you guess.
-5. **Auth and TLS** — the local compose exposes port 6379 on the host with no password. In any shared environment, `requirepass` plus `redis://:password@host` are not optional.
+1. **Cache stampede** - cache-aside has a race: when a key expires, every simultaneous request falls through to the database at once. [`ttl-lru`](https://github.com/luin/redis-lru) (needs Redis >= 6.2) fixes it with a stampede lock, or the simple pattern of guarding the rebuild per key. Measure before optimizing: the symptom is latency under spike, not errors.
+2. **Invalidation** - the 10-minute TTL in the example is a guess. When data changes by event (the inventory flow in this post), the right move is to invalidate on write, and the Pub/Sub from section 5 is the natural hook.
+3. **Truly distributed rate limiting** - the Lua script assumes a single Redis. With a cluster, the key has to land in a single slot (use hashtags `{user123}`, otherwise the `ZADD` and `ZREMRANGEBYSCORE` on different nodes break the algorithm).
+4. **Observability** - `SLOWLOG GET`, `INFO memory` and `LATENCY DOCTOR` tell you why Redis got slow before you guess.
+5. **Auth and TLS** - the local compose exposes port 6379 on the host with no password. In any shared environment, `requirepass` plus `redis://:password@host` are not optional.
 
 Beyond Redis: **rate limiting** on a real network needs a key per user rather than per IP, otherwise an entire NAT (an office, a school, a carrier) shares one bucket.
 

@@ -225,7 +225,7 @@ Criar um chat em tempo real com WebSockets utilizando Node.js e React é uma tar
 
 <figure>
 <img src="/media/2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react-1.jpg" alt="WebSocket do zero: chat em tempo real com Node.js e React" loading="lazy">
-<figcaption>Resolved. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AEncrypted_Websocket_Issue.png">Encrypted Websocket Issue.png</a> por VaYshaleee — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
+<figcaption>Resolved. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AEncrypted_Websocket_Issue.png">Encrypted Websocket Issue.png</a> por VaYshaleee - <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 
 - **Imagem:** [Apollo Guidance Computer (AGC).jpg](https://commons.wikimedia.org/wiki/File%3AApollo_Guidance_Computer_%28AGC%29.jpg)

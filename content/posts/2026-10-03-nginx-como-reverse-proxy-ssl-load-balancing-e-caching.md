@@ -56,7 +56,7 @@ Subir um servico sem criptografia hoje e inviavel. Alem da questao basica de pri
 
 <figure>
 <img src="/media/2026-10-03-nginx-como-reverse-proxy-ssl-load-balancing-e-caching-1.jpg" alt="Nginx como reverse proxy: SSL, load balancing e caching" loading="lazy">
-<figcaption>HTTP header returned by nginx with curl executed from Ubuntu. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AEncabezado_HTTP_devuelto_por_nginx_con_curl_ejecutado_desde_Ubuntu.jpg">Encabezado HTTP devuelto por nginx con curl ejecutado desde Ubuntu.jpg</a> por Jimmy Olano — <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a> · via Wikimedia Commons</figcaption>
+<figcaption>HTTP header returned by nginx with curl executed from Ubuntu. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AEncabezado_HTTP_devuelto_por_nginx_con_curl_ejecutado_desde_Ubuntu.jpg">Encabezado HTTP devuelto por nginx con curl ejecutado desde Ubuntu.jpg</a> por Jimmy Olano - <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 
 A combinacao de Nginx com o Certbot da Electronic Frontier Foundation (EFF) torna a emissao e renovacao de certificados SSL/TLS da Let's Encrypt praticamente automatica no Linux.
@@ -168,7 +168,7 @@ Fazer o backend responder requisicoes identicas de dados estaticos ou consultas 
 
 <figure>
 <img src="/media/2026-10-03-nginx-como-reverse-proxy-ssl-load-balancing-e-caching-2.jpg" alt="Nginx como reverse proxy: SSL, load balancing e caching" loading="lazy">
-<figcaption>nginx statistics. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AMonitorix-nginx.png">Monitorix-nginx.png</a> por Mikaku — <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a> · via Wikimedia Commons</figcaption>
+<figcaption>nginx statistics. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AMonitorix-nginx.png">Monitorix-nginx.png</a> por Mikaku - <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 
 Configurar cache envolve duas etapas: declarar a zona de memoria no contexto `http` e aplicar a regra dentro do bloco `location`.

@@ -4,7 +4,7 @@ date: "2026-08-18"
 category: "tutorial"
 tags: ["react", "hooks", "javascript", "frontend"]
 excerpt: "Desde a versão 16.8 do React, os Hooks se tornaram o padrão da comunidade. Domine useEffect, useRef e custom hooks com exemplos de produção."
-share_hook: "useEffect com cleanup, useRef para DOM e valores persistentes, e os custom hooks que você realmente usa — com os erros que mais aparecem."
+share_hook: "useEffect com cleanup, useRef para DOM e valores persistentes, e os custom hooks que você realmente usa - com os erros que mais aparecem."
 cover:
   image: "/covers/2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks.jpg"
 comments: true
@@ -13,7 +13,7 @@ translationKey: "2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hook
 
 ## Introdução: Por que os Hooks mudaram o React? 
 
-Desde que chegaram ao React na versão 16.8, no início de 2019, os Hooks se tornaram o padrão de facto da comunidade — praticamente toda biblioteca e tutorial moderno parte deles hoje.
+Desde que chegaram ao React na versão 16.8, no início de 2019, os Hooks se tornaram o padrão de facto da comunidade - praticamente toda biblioteca e tutorial moderno parte deles hoje.
 
 Se você começou a programar em React antes da versão 16.8, provavelmente ainda tem na memória a saga dos *class components*: `componentDidMount`, `componentWillUnmount`, `this.setState`, e a eterna luta contra o *binding* de métodos. Foi um período de produtividade limitada e, convenhamos, de código verboso.
 
@@ -32,7 +32,7 @@ Neste artigo, vamos mergulhar nos detalhes que fazem a diferença no dia‑a‑d
 <figure>
   <img src="/media/2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks.jpg" alt="O logo do React, a biblioteca JavaScript de código aberto que popularizou os Hooks." loading="lazy" />
   <figcaption>
-    O logo do React, a biblioteca JavaScript de código aberto que popularizou os Hooks. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AReact-icon.svg">React-icon.svg</a> por Facebook —
+    O logo do React, a biblioteca JavaScript de código aberto que popularizou os Hooks. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AReact-icon.svg">React-icon.svg</a> por Facebook  - 
     <a href="https://en.wikipedia.org/wiki/Public_domain">Public domain</a> · via Wikimedia Commons
   </figcaption>
 </figure>

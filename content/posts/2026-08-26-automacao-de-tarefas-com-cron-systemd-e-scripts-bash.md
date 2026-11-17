@@ -34,7 +34,7 @@ Esses exemplos ilustram a flexibilidade do `cron` em agendar tarefas para difere
 <figure>
   <img src="/media/2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash.jpg" alt="Exemplo de crontab: sintaxe e agendamentos reais." loading="lazy" />
   <figcaption>
-    Exemplo de crontab: sintaxe e agendamentos reais. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ACrontab.png">Crontab.png</a> por Bersam —
+    Exemplo de crontab: sintaxe e agendamentos reais. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ACrontab.png">Crontab.png</a> por Bersam  - 
     <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>

@@ -4,7 +4,7 @@ date: "2026-08-30"
 category: "curiosidade"
 tags: ["npm", "bun", "deno", "javascript"]
 excerpt: "Bun e Deno estão ganhando espaço no ecossistema JavaScript: velocidade, TypeScript nativo, segurança e por que o npm ainda vai durar."
-share_hook: "Os problemas reais do npm, o que Bun e Deno resolvem — e se vale migrar ou só ficar no Yarn ou pnpm."
+share_hook: "Os problemas reais do npm, o que Bun e Deno resolvem - e se vale migrar ou só ficar no Yarn ou pnpm."
 cover:
   image: "/covers/2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco.jpg"
 comments: true
@@ -18,7 +18,7 @@ Quando se trata de gerenciar dependências em projetos JavaScript, o npm é o gi
 <figure>
   <img src="/media/2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco.jpg" alt="O logo do npm, o maior registro de pacotes do mundo." loading="lazy" />
   <figcaption>
-    O logo do npm, o maior registro de pacotes do mundo. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ANpm-logo.svg">Npm-logo.svg</a> por Boboss74 —
+    O logo do npm, o maior registro de pacotes do mundo. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ANpm-logo.svg">Npm-logo.svg</a> por Boboss74  - 
     <a href="https://en.wikipedia.org/wiki/Public_domain">Public domain</a> · via Wikimedia Commons
   </figcaption>
 </figure>
@@ -46,7 +46,7 @@ Isso instalará o pacote react e suas dependências.
 <figure>
   <img src="/media/2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco-deno.jpg" alt="O logo do Deno, runtime de JavaScript/TypeScript seguro por padrão." loading="lazy" />
   <figcaption>
-    O logo do Deno, runtime de JavaScript/TypeScript seguro por padrão. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ADeno.svg">Deno.svg</a> por Kevin Qian —
+    O logo do Deno, runtime de JavaScript/TypeScript seguro por padrão. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ADeno.svg">Deno.svg</a> por Kevin Qian  - 
     <a href="https://opensource.org/license/mit">MIT</a> · via Wikimedia Commons
   </figcaption>
 </figure>

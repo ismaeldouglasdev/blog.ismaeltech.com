@@ -19,7 +19,7 @@ Vercel é uma plataforma de deploy que se concentra em aplicações web modernas
 
 <figure>
 <img src="/media/2026-09-16-deploy-com-vercel-railway-e-fly-io-comparativo-honesto-1.jpg" alt="Deploy com Vercel, Railway e Fly.io: comparativo honesto" loading="lazy">
-<figcaption>An image representing a DMZ and Corporate Zone deployment on the cloud. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ADMZ_and_Corporate_Deployment_Architecture_On_Cloud.png">DMZ and Corporate Deployment Architecture On Cloud.png</a> por Fantail-P — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
+<figcaption>An image representing a DMZ and Corporate Zone deployment on the cloud. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ADMZ_and_Corporate_Deployment_Architecture_On_Cloud.png">DMZ and Corporate Deployment Architecture On Cloud.png</a> por Fantail-P - <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 
 Um exemplo de como usar Vercel é criar um projeto Next.js e deployá-lo usando o comando `vercel build && vercel deploy`. Isso irá compilar o seu projeto e deployá-lo na plataforma Vercel.
@@ -35,7 +35,7 @@ Fly.io é uma plataforma de deploy que se concentra em aplicações web globais.
 
 <figure>
 <img src="/media/2026-09-16-deploy-com-vercel-railway-e-fly-io-comparativo-honesto-2.jpg" alt="Deploy com Vercel, Railway e Fly.io: comparativo honesto" loading="lazy">
-<figcaption>ESA’s EarthCARE satellite mission will soon be launched to answer some critical scientific questions related to the role that clouds and aerosols play in reflec. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AEarthCARE_solar_wing_deployed_ESA24376876.jpeg">EarthCARE solar wing deployed ESA24376876.jpeg</a> por European Space Agency — <a href="https://creativecommons.org/licenses/by-sa/3.0/igo/deed.en">CC BY-SA 3.0 igo</a> · via Wikimedia Commons</figcaption>
+<figcaption>ESA’s EarthCARE satellite mission will soon be launched to answer some critical scientific questions related to the role that clouds and aerosols play in reflec. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AEarthCARE_solar_wing_deployed_ESA24376876.jpeg">EarthCARE solar wing deployed ESA24376876.jpeg</a> por European Space Agency - <a href="https://creativecommons.org/licenses/by-sa/3.0/igo/deed.en">CC BY-SA 3.0 igo</a> · via Wikimedia Commons</figcaption>
 </figure>
 
 Um exemplo de como usar Fly.io é criar um projeto React e deployá-lo usando o comando `fly init && fly deploy`. Isso irá criar uma aplicação web global e deployá-la na plataforma Fly.io.

@@ -33,7 +33,7 @@ Antes de entrar em pânico, o primeiro passo é um diagnóstico simples. A boa n
 
 <figure>
 <img src="/media/2026-10-22-o-que-a-saida-da-emudhra-do-mercado-de-certificados-ssl-tls-1.jpg" alt="O que a saída da eMudhra do mercado de certificados SSL/TLS significa para você, desenvolv" loading="lazy">
-<figcaption>Brief explanation of how SSL certificates function. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3A1258X489_How-SSL-Certificates-Work.jpg">1258X489 How-SSL-Certificates-Work.jpg</a> por Drew Carver1 — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
+<figcaption>Brief explanation of how SSL certificates function. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3A1258X489_How-SSL-Certificates-Work.jpg">1258X489 How-SSL-Certificates-Work.jpg</a> por Drew Carver1 - <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 
 **1. A inspeção direta no navegador**
@@ -128,7 +128,7 @@ A situação da eMudhra serve como um alerta para um problema estrutural maior. 
 
 <figure>
 <img src="/media/2026-10-22-o-que-a-saida-da-emudhra-do-mercado-de-certificados-ssl-tls-2.jpg" alt="O que a saída da eMudhra do mercado de certificados SSL/TLS significa para você, desenvolv" loading="lazy">
-<figcaption>MOBILE EV SSL CERTIFICATE. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AMOBILE_EV_SSL_CERTIFICATE.jpg">MOBILE EV SSL CERTIFICATE.jpg</a> por Русский Хакер — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
+<figcaption>MOBILE EV SSL CERTIFICATE. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AMOBILE_EV_SSL_CERTIFICATE.jpg">MOBILE EV SSL CERTIFICATE.jpg</a> por Русский Хакер - <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 
 É um dilema clássico entre segurança e estabilidade. Como desenvolvedores, nossa tendência é abstrair esse risco: configuramos o `ACMEv2` no Certbot uma vez e esquecemos que existe. O problema é que os sistemas mais críticos costumam ser justamente aqueles em que confiamos cegamente, sem mapear seus pontos únicos de falha (SPOF). A CA emissora é um deles, e quase ninguém a monitora.

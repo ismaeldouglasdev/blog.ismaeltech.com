@@ -16,15 +16,15 @@ Este texto não é sobre parar de usar IA ou de instalar extensões. É sobre en
 
 ## O que as ferramentas coletam (e por que "telemetria" não é só métrica)
 
-Telemetria, na definição da indústria, é a coleta automática de dados de uso: comandos executados, tempo de carregamento, erros, plugins instalados, hardware. Em tese, serve para melhorar o produto. Na prática, o escopo varia enormemente entre ferramentas — e o rótulo "telemetria" esconde categorias bem diferentes.
+Telemetria, na definição da indústria, é a coleta automática de dados de uso: comandos executados, tempo de carregamento, erros, plugins instalados, hardware. Em tese, serve para melhorar o produto. Na prática, o escopo varia enormemente entre ferramentas - e o rótulo "telemetria" esconde categorias bem diferentes.
 
 Vale separar em três camadas:
 
 1. **Telemetria do editor**: eventos de uso, estabilidade, desempenho. No VS Code, por exemplo, há um controle granular (desligar tudo, ou enviar apenas dados de erro).
-2. **Contexto de IA**: quando você usa um assistente, o trecho de código, o arquivo aberto, as mensagens do chat e às vezes o conteúdo do repositório inteiro podem ser enviados para inferência. Isso não é telemetria no sentido clássico — é o produto funcionando. E quase sempre é opcional.
+2. **Contexto de IA**: quando você usa um assistente, o trecho de código, o arquivo aberto, as mensagens do chat e às vezes o conteúdo do repositório inteiro podem ser enviados para inferência. Isso não é telemetria no sentido clássico - é o produto funcionando. E quase sempre é opcional.
 3. **Extensões e plugins**: cada extensão é um programa de terceiros com as próprias permissões. Muitas embutem analytics próprios (Google Analytics, Segment, telemetria do fabricante) sem relação com o editor.
 
-Quando alguém diz "desativei a telemetria", geralmente só desligou a camada 1. As camadas 2 e 3 continuam ativas — e são justamente as que carregam conteúdo, não apenas métricas.
+Quando alguém diz "desativei a telemetria", geralmente só desligou a camada 1. As camadas 2 e 3 continuam ativas - e são justamente as que carregam conteúdo, não apenas métricas.
 
 ## O ponto cego: código proprietário em contexto de IA
 
@@ -35,7 +35,7 @@ Ferramentas de assistência ao vivo mudaram a natureza do risco. Antes, o pior c
 - o diff de uma alteração antes do commit;
 - o conteúdo de um chat com decisões de arquitetura e endpoints.
 
-A política de cada fornecedor muda o jogo. Alguns usam os dados para treinar modelos; outros prometem não treinar, mas mantêm retenção por um período; outros processam tudo em memória e descartam. A diferença entre essas promessas raramente aparece no fluxo de instalação — ela está num documento de privacidade que quase ninguém abre.
+A política de cada fornecedor muda o jogo. Alguns usam os dados para treinar modelos; outros prometem não treinar, mas mantêm retenção por um período; outros processam tudo em memória e descartam. A diferença entre essas promessas raramente aparece no fluxo de instalação - ela está num documento de privacidade que quase ninguém abre.
 
 O risco não é só jurídico. Existe o vazamento acidental (um segredo em contexto), a exposição de propriedade intelectual de terceiros e o problema de conformidade: enviar dados pessoais de usuários para fora do país sem base legal é uma violação direta de LGPD e GDPR, independentemente da intenção.
 
@@ -43,7 +43,7 @@ O risco não é só jurídico. Existe o vazamento acidental (um segredo em conte
 
 Vale olhar os documentos oficiais em vez de confiar em configuração padrão:
 
-- **VS Code**: a página de telemetria do projeto documenta exatamente o que é coletado, quando é enviado e como desligar (`telemetry.telemetryLevel`). É uma das documentações mais claras do mercado — use-a como referência.
+- **VS Code**: a página de telemetria do projeto documenta exatamente o que é coletado, quando é enviado e como desligar (`telemetry.telemetryLevel`). É uma das documentações mais claras do mercado - use-a como referência.
 - **GitHub Copilot**: a documentação oficial descreve quais dados de contexto são enviados para inferência, como sugestões são geradas e o que acontece com o código depois. Leia com atenção a seção de retenção e de uso para treinamento.
 - **Extensões**: não há política única. Cada uma tem a sua. Extensões populares de lint, formatação e deploy frequentemente embutem coleta própria.
 
@@ -100,7 +100,7 @@ Com o proxy ativo, abra o editor, use o assistente, salve arquivos e observe os 
 
 ## Conclusão
 
-Telemetria e assistentes de IA não são vilões por natureza — são ferramentas com custo de privacidade embutido, e esse custo raramente aparece no preço. A diferença entre uso consciente e exposição acidental está em três hábitos: configurar explicitamente em vez de aceitar defaults, auditar o tráfego pelo menos uma vez e tratar o repositório como perímetro de segurança. Nenhum fornecedor vai fazer esse trabalho por você, porque nenhum fornecedor conhece o seu contrato, o seu cliente e o seu risco.
+Telemetria e assistentes de IA não são vilões por natureza - são ferramentas com custo de privacidade embutido, e esse custo raramente aparece no preço. A diferença entre uso consciente e exposição acidental está em três hábitos: configurar explicitamente em vez de aceitar defaults, auditar o tráfego pelo menos uma vez e tratar o repositório como perímetro de segurança. Nenhum fornecedor vai fazer esse trabalho por você, porque nenhum fornecedor conhece o seu contrato, o seu cliente e o seu risco.
 
 O código que você escreve hoje carrega decisões que vão além do commit. Vale saber para onde ele vai antes de apertar "aceitar".
 

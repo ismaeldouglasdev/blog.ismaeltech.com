@@ -28,7 +28,7 @@ Aqui eu explico como os cinco princípios SOLID podem impedir que um código evo
 
 <figure>
 <img src="/media/2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real-1.jpg" alt="Princípios SOLID explicados com exemplos de código real" loading="lazy">
-<figcaption>Comparison between separate hw/sw design and co-design. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AHardware-Software_codesign.png">Hardware-Software codesign.png</a> por FrancezcoPezce — <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0</a> · via Wikimedia Commons</figcaption>
+<figcaption>Comparison between separate hw/sw design and co-design. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AHardware-Software_codesign.png">Hardware-Software codesign.png</a> por FrancezcoPezce - <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0</a> · via Wikimedia Commons</figcaption>
 </figure>
 
 <figure>
@@ -161,7 +161,7 @@ Quando é preciso acrescentar um novo canal de venda (Shopee). Cada vez que eu a
 
 ### Exemplo em Python
 
-Antes, o motor conhecia cada canal por nome — e cada canal novo exigia um `if` novo dentro dele:
+Antes, o motor conhecia cada canal por nome - e cada canal novo exigia um `if` novo dentro dele:
 
 ```python
 from typing import List, Protocol
@@ -249,7 +249,7 @@ class SyncEngine:
             adapter.push(items)
 ```
 
-A classe `SyncEngine` não conhece detalhes de nenhum canal. Quando surge um novo marketplace, basta implementar `ChannelAdapter` e registrar a instância na lista passada ao construtor — o laço de iteração não muda.
+A classe `SyncEngine` não conhece detalhes de nenhum canal. Quando surge um novo marketplace, basta implementar `ChannelAdapter` e registrar a instância na lista passada ao construtor - o laço de iteração não muda.
 
 ---
 
@@ -272,7 +272,7 @@ class ShopeeAdapter(ChannelAdapter):
         # ...
 ```
 
-O contrato `ChannelAdapter.push` aceita qualquer lista. `ShopeeAdapter` ajoutou uma **precondição mais forte**: um chamador que foi escrito contra o contrato e antes podia passar 10 mil itens de uma vez agora leva uma exceção ao receber um `ShopeeAdapter`. A subclasse é menos substitutível que a superclasse — exatamente o oposto do que LSP pede.
+O contrato `ChannelAdapter.push` aceita qualquer lista. `ShopeeAdapter` ajoutou uma **precondição mais forte**: um chamador que foi escrito contra o contrato e antes podia passar 10 mil itens de uma vez agora leva uma exceção ao receber um `ShopeeAdapter`. A subclasse é menos substitutível que a superclasse - exatamente o oposto do que LSP pede.
 
 A correção é mover a responsabilidade para dentro do adapter, em vez de despejá-la no chamador:
 
@@ -435,7 +435,7 @@ export interface PostgresPool {
 }
 ```
 
-Depois, as implementações — cada uma escondendo o seu driver:
+Depois, as implementações - cada uma escondendo o seu driver:
 
 ```ts
 export class SqliteLeadRepository implements LeadRepository {
@@ -499,7 +499,7 @@ Um caso comum é sincronizar catálogo e estoque com múltiplos marketplaces sem
 
 ### Arquitetura final
 
-São dois processos, e a separação é deliberada — o ingest e o fan-out para canais têm ciclos de falha diferentes:
+São dois processos, e a separação é deliberada - o ingest e o fan-out para canais têm ciclos de falha diferentes:
 
 ```
      ┌──────────────────────── ingest (TypeScript) ─────────────────────────┐
@@ -508,7 +508,7 @@ São dois processos, e a separação é deliberada — o ingest e o fan-out para
      │        │                  │                          │               │
      │        └──────────────────┴──────────────────────────┘               │
      │                           │                                          │
-     │  SlackNotifier — notifica o time, fora do caminho do fan-out         │
+     │  SlackNotifier - notifica o time, fora do caminho do fan-out         │
      │───────────────────────────┼──────────────────────────────────────────│
                                 │ publica snapshot
                                 ▼
@@ -544,11 +544,11 @@ São dois processos, e a separação é deliberada — o ingest e o fan-out para
 
 Os papéis de cada princípio nesse desenho:
 
-* **SRP** — buscar, normalizar, persistir, notificar e publicar são cinco responsabilidades, em cinco unidades. O `SyncEngine` itera adapters; ele não sabe o que é um produto.
-* **OCP** — acrescentar canal é escrever um adapter novo e registrá-lo na lista. O `SyncEngine` e o `SyncOrchestrator` não são tocados.
-* **LSP** — todos os adapters honram o mesmo contrato: quem chama `push` entrega um lote e não conhece o teto de 50 itens da Shopee. A restrição mora dentro do adapter.
-* **ISP** — o `SyncOrchestrator` consome `Notifier`, e só isso. É a mesma ideia do exemplo do Python acima: cada consumidor declara o mínimo que usa, e um notificador que só envia mensagem não é obrigado a implementar métricas.
-* **DIP** — o `SyncOrchestrator` depende de quatro *ports* (`ProductFetcher`, `ProductNormalizerPort`, `InventoryRepositoryPort`, `Notifier`); o `SyncEngine` depende de `ChannelAdapter`. Nenhum dos dois importa a implementação concreta do outro lado.
+* **SRP** - buscar, normalizar, persistir, notificar e publicar são cinco responsabilidades, em cinco unidades. O `SyncEngine` itera adapters; ele não sabe o que é um produto.
+* **OCP** - acrescentar canal é escrever um adapter novo e registrá-lo na lista. O `SyncEngine` e o `SyncOrchestrator` não são tocados.
+* **LSP** - todos os adapters honram o mesmo contrato: quem chama `push` entrega um lote e não conhece o teto de 50 itens da Shopee. A restrição mora dentro do adapter.
+* **ISP** - o `SyncOrchestrator` consome `Notifier`, e só isso. É a mesma ideia do exemplo do Python acima: cada consumidor declara o mínimo que usa, e um notificador que só envia mensagem não é obrigado a implementar métricas.
+* **DIP** - o `SyncOrchestrator` depende de quatro *ports* (`ProductFetcher`, `ProductNormalizerPort`, `InventoryRepositoryPort`, `Notifier`); o `SyncEngine` depende de `ChannelAdapter`. Nenhum dos dois importa a implementação concreta do outro lado.
 
 ### Código de composição (TypeScript)
 
@@ -596,10 +596,10 @@ export class SyncOrchestrator {
 }
 ```
 
-E a camada que escolhe as implementações — o único lugar do sistema que conhece classes concretas:
+E a camada que escolhe as implementações - o único lugar do sistema que conhece classes concretas:
 
 ```ts
-// ospos-client.ts — o adapter que traduz HTTP em OsposClient.
+// ospos-client.ts - o adapter que traduz HTTP em OsposClient.
 import axios from "axios";
 import type { OsposClient, OsposProductRow } from "./fetcher";
 
@@ -652,7 +652,7 @@ orchestrator
   .catch((err) => console.error("Erro na sincronização", err));
 ```
 
-Quatro argumentos, quatro parâmetros: o código compila, e essa é a parte que mais importa. Uma versão anterior deste post passava cinco argumentos para um construtor de quatro — o exemplo de DIP estava mentindo sobre a própria arquitetura.
+Quatro argumentos, quatro parâmetros: o código compila, e essa é a parte que mais importa. Uma versão anterior deste post passava cinco argumentos para um construtor de quatro - o exemplo de DIP estava mentindo sobre a própria arquitetura.
 
 O relatório de vendas por categoria, que abriu este post, entrou depois dessa separação. Ele não ampliou `InventoryRepositoryPort` nem tocou em `SyncOrchestrator`: ganhou a própria porta de leitura, porque consulta e escrita são responsabilidades diferentes.
 
@@ -694,7 +694,7 @@ Sinais de que você está aplicando demais:
 * **O diagrama tem mais setas do que o problema original.** Se o time não consegue explicar a estrutura numa frase, ela está grande demais.
 * **Nenhum teste exige a troca.** Se você nunca vai trocar a implementação, a abstração não pagou o custo.
 
-Para a maioria dos CRMs e catálogos pequenos, uma função, um repositório e um `if` por canal chegam mais longe. Reserve a estrutura completa para quando a dor aparecer — a dor é o sinal, não a sensação de que "deveria ter".
+Para a maioria dos CRMs e catálogos pequenos, uma função, um repositório e um `if` por canal chegam mais longe. Reserve a estrutura completa para quando a dor aparecer - a dor é o sinal, não a sensação de que "deveria ter".
 
 ---
 

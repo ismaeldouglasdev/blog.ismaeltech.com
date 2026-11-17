@@ -11,7 +11,7 @@ translationKey: "2026-09-14-noticia-demo-nvidia-geforce-rtx-5090-lancamento"
 ---
 
 
-NVIDIA presented the GeForce RTX 5090 at CES 2026, bringing the Blackwell architecture to the consumer market. It is the generation promising the biggest jump in ray tracing and artificial intelligence since the move to tensor cores — but also the most expensive in the history of the xx90 lineup. The question on everyone's mind: is it worth the price?
+NVIDIA presented the GeForce RTX 5090 at CES 2026, bringing the Blackwell architecture to the consumer market. It is the generation promising the biggest jump in ray tracing and artificial intelligence since the move to tensor cores - but also the most expensive in the history of the xx90 lineup. The question on everyone's mind: is it worth the price?
 
 ## What changed in the Blackwell architecture
 
@@ -26,7 +26,7 @@ The launch price in the US is US$ 1,999. It is high, but consistent with the pre
 
 <figure>
 <img src="/media/2026-09-14-noticia-demo-nvidia-geforce-rtx-5090-lancamento-1.jpg" alt="NVIDIA unveils GeForce RTX 5090: specs, price and what to expect" loading="lazy">
-<figcaption>NVIDIA 12VHPWR adapter. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3A2023_Adapter_NVIDIA_12VHPWR_%281%29.jpg">2023 Adapter NVIDIA 12VHPWR (1).jpg</a> por Jacek Halicki — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
+<figcaption>NVIDIA 12VHPWR adapter. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3A2023_Adapter_NVIDIA_12VHPWR_%281%29.jpg">2023 Adapter NVIDIA 12VHPWR (1).jpg</a> por Jacek Halicki - <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 
 Availability is expected by the end of January 2026, with limited initial stock. The community already warns that scalpers should make purchasing difficult in the first months, so anyone wanting one at launch needs stock alerts and patience.
@@ -53,7 +53,7 @@ The most recurring criticism is fair: for those gaming at 1440p, a US$ 1,999 car
 
 <figure>
 <img src="/media/2026-09-14-noticia-demo-nvidia-geforce-rtx-5090-lancamento-2.jpg" alt="NVIDIA unveils GeForce RTX 5090: specs, price and what to expect" loading="lazy">
-<figcaption>NVIDIA 12VHPWR adapter. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3A2023_Adapter_NVIDIA_12VHPWR_%282%29.jpg">2023 Adapter NVIDIA 12VHPWR (2).jpg</a> por Jacek Halicki — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
+<figcaption>NVIDIA 12VHPWR adapter. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3A2023_Adapter_NVIDIA_12VHPWR_%282%29.jpg">2023 Adapter NVIDIA 12VHPWR (2).jpg</a> por Jacek Halicki - <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 
 ## Preliminary verdict

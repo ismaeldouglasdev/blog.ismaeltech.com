@@ -4,7 +4,7 @@ date: "2026-08-28"
 category: "tutorial"
 tags: ["react", "server-components", "nextjs"]
 excerpt: "React Server Components permitem renderizar componentes no servidor, reduzindo o bundle no cliente. Saiba como o Next.js mudou a arquitetura frontend com essa abordagem."
-share_hook: "Server ou Client Component, data fetching no servidor, streaming com Suspense e Server Actions — e quando cada um é a escolha certa."
+share_hook: "Server ou Client Component, data fetching no servidor, streaming com Suspense e Server Actions - e quando cada um é a escolha certa."
 cover:
   image: "/covers/2026-08-28-react-server-components-quando-e-como-usar-no-next-js.jpg"
 comments: true
@@ -19,7 +19,7 @@ Quando comecei a construir meus próprios projetos e a estruturar interfaces com
 <figure>
   <img src="/media/2026-08-28-react-server-components-quando-e-como-usar-no-next-js.jpg" alt="O logo do React: componentes que rodam tanto no servidor quanto no cliente." loading="lazy" />
   <figcaption>
-    O logo do React: componentes que rodam tanto no servidor quanto no cliente. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AReact.svg">React.svg</a> por ReactJS —
+    O logo do React: componentes que rodam tanto no servidor quanto no cliente. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AReact.svg">React.svg</a> por ReactJS  - 
     <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>

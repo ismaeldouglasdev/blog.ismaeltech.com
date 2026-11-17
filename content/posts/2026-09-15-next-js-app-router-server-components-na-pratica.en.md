@@ -19,8 +19,8 @@ Before diving into the details of the Next.js App Router, it's essential to unde
 
 
 <figure class="video-embed">
-<iframe src="https://www.youtube-nocookie.com/embed/DrxiNfbr63s" title="Introdução ao App Router do Next.js — Next.js Conf" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<figcaption>Vídeo oficial de apresentação do App Router pelo time do Next.js. — <a href="https://www.youtube.com/watch?v=DrxiNfbr63s">YouTube</a></figcaption>
+<iframe src="https://www.youtube-nocookie.com/embed/DrxiNfbr63s" title="Introdução ao App Router do Next.js - Next.js Conf" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<figcaption>Vídeo oficial de apresentação do App Router pelo time do Next.js. - <a href="https://www.youtube.com/watch?v=DrxiNfbr63s">YouTube</a></figcaption>
 </figure>
 
 <figure>

@@ -14,7 +14,7 @@ translationKey: "2026-10-13-react-performance-memo-usememo-usecallback-e-react-c
 
 When a list grows and every interaction makes the browser stutter or flash, the problem is rarely "not enough CPU". Most of the time, it is unnecessary rendering in React. Knowing when to memoize, how React Compiler helps, and where `useMemo` and `useCallback` fit makes the difference between a fluid interface and a frustrating one.
 
-The pain shows up in Chrome DevTools: hundreds of components rendering in a cascade, many of them receiving new props even when the background query returned no new data. The first attempt is usually wrapping everything with `React.memo`, but that only masks the symptom — the unnecessary renders keep happening deeper in the tree.
+The pain shows up in Chrome DevTools: hundreds of components rendering in a cascade, many of them receiving new props even when the background query returned no new data. The first attempt is usually wrapping everything with `React.memo`, but that only masks the symptom - the unnecessary renders keep happening deeper in the tree.
 
 This pattern appears whenever components recompute expensive expressions, create new objects and functions on every render, or receive props that change identity without changing value. The result is a re-render cascade that the right tools can prevent.
 
@@ -27,7 +27,7 @@ Optimization is not an optional step "for when there is time". It is a direct an
 
 <figure>
 <img src="/media/2026-10-13-react-performance-memo-usememo-usecallback-e-react-compiler-1.jpg" alt="React performance: memo, useMemo, useCallback, and React Compiler" loading="lazy">
-<figcaption>Don Edwards San Francisco Bay National Wildlife Refuge. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AACE_EMD_F40PH_Fremont_-_San_Jose.jpg">ACE EMD F40PH Fremont - San Jose.jpg</a> por Kabelleger / David Gubler (http://www.bahnbilder.ch) — <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a> · via Wikimedia Commons</figcaption>
+<figcaption>Don Edwards San Francisco Bay National Wildlife Refuge. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AACE_EMD_F40PH_Fremont_-_San_Jose.jpg">ACE EMD F40PH Fremont - San Jose.jpg</a> por Kabelleger / David Gubler (http://www.bahnbilder.ch) - <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 
 <figure>
@@ -35,7 +35,7 @@ Optimization is not an optional step "for when there is time". It is a direct an
 <figcaption>Cover image do artigo</figcaption>
 </figure>
 
-Consider a `<ProductGrid>` component that receives two props: `items` (the filtered array) and `onSelect` (a click handler). If the handler is an arrow function that does not depend on external data, its identity stays stable when created outside the component. Because `items` is a new reference on every keystroke (the query string is transformed into a new array), memo still triggers a render — but only for the grid, not for the whole layout tree above it.
+Consider a `<ProductGrid>` component that receives two props: `items` (the filtered array) and `onSelect` (a click handler). If the handler is an arrow function that does not depend on external data, its identity stays stable when created outside the component. Because `items` is a new reference on every keystroke (the query string is transformed into a new array), memo still triggers a render - but only for the grid, not for the whole layout tree above it.
 
 The real gain appears when you combine `React.memo` with more granular state management. Keeping the selection set separate from the items array, for example with `useReducer`, prevents selecting one item from forcing the entire grid to render again.
 
@@ -45,7 +45,7 @@ In short, `React.memo` works best when there is a clear boundary of which props 
 
 ## useMemo: caching expensive computations
 
-`useMemo` stores the result of an expensive expression between renders. It is most useful when the computation costs more than a simple assignment — sorting, filtering, or aggregating a large array, for instance.
+`useMemo` stores the result of an expensive expression between renders. It is most useful when the computation costs more than a simple assignment - sorting, filtering, or aggregating a large array, for instance.
 
 ```js
 // before
@@ -84,7 +84,7 @@ const handleAdd = useCallback(() => { /* logic */ }, []);
 
 If `handleAdd` needed state values, those values would go into the dependency list. When the handler does not access any React state, an empty list is enough.
 
-There is a common trap: the stale closure. You pass a handler to a child component, the child stores it in a closure and exposes it later — creating a reference cycle that defeats memoization. The fix is to extract the logic into a pure function outside the component and then wrap that function with `useCallback`. Identity stays stable and the cycle breaks.
+There is a common trap: the stale closure. You pass a handler to a child component, the child stores it in a closure and exposes it later - creating a reference cycle that defeats memoization. The fix is to extract the logic into a pure function outside the component and then wrap that function with `useCallback`. Identity stays stable and the cycle breaks.
 
 Use `useCallback` when a handler is passed to a memoized component or stored in state that triggers an effect. Use `useMemo` for computed values you need to compare or store. Mixing the two incorrectly creates a false sense of safety and more memory usage.
 
@@ -94,7 +94,7 @@ React Compiler changes the mental model of when memoization is needed. It analyz
 
 A practical example is a `<LazySection>` component that renders a heavy block only after an "Expand" click. Before the compiler, you had to wrap the component with `React.memo` and manage suspend state manually. With the compiler enabled, the same code works without extra memoization declarations: it detects that the component does not render on initial mount and inserts the necessary path.
 
-The compiler works best with modern hook syntax, no hooks in class components, and integrates with React DevTools to show the memoization tree. But it is not magic: you still need pure components and no side effects during render. A `useEffect` that fetches data from the backend must stay explicit — the compiler cannot infer that this effect should be excluded.
+The compiler works best with modern hook syntax, no hooks in class components, and integrates with React DevTools to show the memoization tree. But it is not magic: you still need pure components and no side effects during render. A `useEffect` that fetches data from the backend must stay explicit - the compiler cannot infer that this effect should be excluded.
 
 One trap is that the compiler can be too aggressive with components that depend on context. With a `ThemeContext`, for example, the context object is a new reference on every provider render, which causes unnecessary renders across the tree. The fix is usually memoizing the provider value (`useMemo` on the context object) or splitting contexts by responsibility.
 
@@ -104,11 +104,11 @@ In short, React Compiler reduces the need for manual declarations, but the limit
 
 After applying `React.memo`, `useMemo`, and `useCallback`, the next step is validating whether the changes actually reduced rendering work. The React DevTools Profiler records every component render, with CPU time, render time, and additional renders.
 
-A simple A/B test helps: compare the grid without memoization against the memoized version, measuring time per keystroke. Big gains are common — from ~120 ms to ~38 ms per key, for example — but so is increased memory usage, which only shows up after a few minutes. Measure both sides before celebrating.
+A simple A/B test helps: compare the grid without memoization against the memoized version, measuring time per keystroke. Big gains are common - from ~120 ms to ~38 ms per key, for example - but so is increased memory usage, which only shows up after a few minutes. Measure both sides before celebrating.
 
 The profiler also reveals hidden problems. A list that seems to render too much may be caused by a `useEffect` rebuilding a search index on every change; moving that index into `useMemo` eliminates several spikes per cycle.
 
-Use the profiler sparingly. Long runs distort numbers; capture a profile that represents a typical user flow. With large datasets, it is common to find that most CPU time goes to re-evaluating nodes outside the viewport — which calls for memoizing the recursive render function or limiting depth to what is visible.
+Use the profiler sparingly. Long runs distort numbers; capture a profile that represents a typical user flow. With large datasets, it is common to find that most CPU time goes to re-evaluating nodes outside the viewport - which calls for memoizing the recursive render function or limiting depth to what is visible.
 
 Finally, the profiler shows extra renders caused by context updates or poorly built state machines. A reducer that creates a new action object on every dispatch makes the whole tree compare new references; returning stable references eliminates the problem.
 

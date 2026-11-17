@@ -4,7 +4,7 @@ date: "2026-09-03"
 category: "tutorial"
 tags: ["redis", "cache", "backend"]
 excerpt: "Redis na prática: cache, rate limiting e filas em Node.js."
-share_hook: "Cache, rate limiting com janela deslizante, filas com BullMQ e pub/sub — tudo num Redis que roda em Docker."
+share_hook: "Cache, rate limiting com janela deslizante, filas com BullMQ e pub/sub - tudo num Redis que roda em Docker."
 cover:
   image: "/covers/2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js.jpg"
 comments: true
@@ -70,7 +70,7 @@ Execute `docker compose up -d` e o Redis já está pronto para aceitar conexões
 
 <figure>
 <img src="/media/2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js-1.jpg" alt="Redis na prática: cache, rate limiting e filas em Node.js" loading="lazy">
-<figcaption>Redis "expire" command sets a timeout in seconds on key. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ARedis%27s_%22EXPIRE%22_%2818563947238%29.jpg">Redis&#x27;s &quot;EXPIRE&quot; (18563947238).jpg</a> por Exey Panteleev from Moscow, Russia — <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a> · via Wikimedia Commons</figcaption>
+<figcaption>Redis "expire" command sets a timeout in seconds on key. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ARedis%27s_%22EXPIRE%22_%2818563947238%29.jpg">Redis&#x27;s &quot;EXPIRE&quot; (18563947238).jpg</a> por Exey Panteleev from Moscow, Russia - <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 No meu dia a dia, o padrão cache‑aside tem sido o mais flexível, principalmente quando a carga de escrita é menor que a de leitura, como no caso da sincronização de estoque.
 
@@ -78,7 +78,7 @@ No meu dia a dia, o padrão cache‑aside tem sido o mais flexível, principalme
 <figure>
   <img src="/media/2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js.jpg" alt="Cache de mapeamento direto: o conceito que fundamenta o Redis." loading="lazy" />
   <figcaption>
-    Cache de mapeamento direto: o conceito que fundamenta o Redis. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ADirect-Mapped_Cache.png">Direct-Mapped Cache.png</a> por Snehalc —
+    Cache de mapeamento direto: o conceito que fundamenta o Redis. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ADirect-Mapped_Cache.png">Direct-Mapped Cache.png</a> por Snehalc  - 
     <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>
@@ -261,7 +261,7 @@ app.use(async (req, res, next) => {
 });
 ```
 
-Detalhe que costuma passar batido: o script Lua usa `redis.call("TIME")`, ou seja, o **relógio do Redis**, e nao o da aplicacao. E o que voce quer aqui — se o relógio da sua máquina estivesse adiantado, ele contaria entradas que ainda nao sairam da janela. Usar o tempo do servidor de dados tambem evita um segundo problema: quando voce roda o Redis em varios nos com relogios diferentes, todos precisam concordar sobre "agora".
+Detalhe que costuma passar batido: o script Lua usa `redis.call("TIME")`, ou seja, o **relógio do Redis**, e nao o da aplicacao. E o que voce quer aqui - se o relógio da sua máquina estivesse adiantado, ele contaria entradas que ainda nao sairam da janela. Usar o tempo do servidor de dados tambem evita um segundo problema: quando voce roda o Redis em varios nos com relogios diferentes, todos precisam concordar sobre "agora".
 
 Esse limitador ajuda a impedir abusos em APIs públicas, mantendo a latência estável mesmo sob pico de tráfego.
 
@@ -374,7 +374,7 @@ Esse fluxo permite atualizar a interface em tempo real quando o estoque é alter
 
 Em ambientes de produção, o Redis *standalone* pode se tornar um ponto único de falha. O modo **cluster** distribui slots de chave entre múltiplos nós, permitindo escalabilidade horizontal.
 
-Vale ser preciso sobre o que ele entrega, porque é fácil prometer demais aqui: **cluster por si só não dá tolerância a falhas.** O que dá é a distribuição de slots e a possibilidade de cresc horizontalmente. A tolerância a falhas vem de outro recurso, os *replicas*, e o exemplo abaixo usa `--cluster-replicas 0` justamente porque é o mais simples de montar localmente. Com zero réplicas, se um dos três nós morrer, os slots dele ficam indisponíveis — não há replicação para onde ir.
+Vale ser preciso sobre o que ele entrega, porque é fácil prometer demais aqui: **cluster por si só não dá tolerância a falhas.** O que dá é a distribuição de slots e a possibilidade de cresc horizontalmente. A tolerância a falhas vem de outro recurso, os *replicas*, e o exemplo abaixo usa `--cluster-replicas 0` justamente porque é o mais simples de montar localmente. Com zero réplicas, se um dos três nós morrer, os slots dele ficam indisponíveis - não há replicação para onde ir.
 
 Quando quiser realmente sobreviver à queda de um nó, o caminho é:
 
@@ -438,7 +438,7 @@ volumes:
   node3-data:
 ```
 
-Repare no bloco `networks`. O `redis-cli --cluster create` precisa de endereços **fixos**, e o Compose não os garante sozinho: a sub-rede do Docker é atribuída dinamicamente e muda de máquina para máquina. Sem o `ipv4_address` explícito, o comando abaixo funciona na sua máquina e falha na do colega — que é a definição de "funciona na minha máquina".
+Repare no bloco `networks`. O `redis-cli --cluster create` precisa de endereços **fixos**, e o Compose não os garante sozinho: a sub-rede do Docker é atribuída dinamicamente e muda de máquina para máquina. Sem o `ipv4_address` explícito, o comando abaixo funciona na sua máquina e falha na do colega - que é a definição de "funciona na minha máquina".
 
 Depois de subir os containers, crie o cluster:
 
@@ -481,11 +481,11 @@ A combinação de Docker, o cliente oficial `redis` e bibliotecas como BullMQ of
 
 O que este post monta já serve para produção de tráfego baixo. Os furos conhecidos, na ordem em que eu os enfrentaria:
 
-1. **Cache stampede** — o padrão cache-aside tem uma corrida: quando uma chave expira, todas as requisições simultâneas caem no banco ao mesmo tempo. [`ttl-lru`](https://github.com/luin/redis-lru) (precisa de Redis ≥ 6.2) resolve com lock de stampede, ou é o padrão simples de travar a reconstrução por chave. Vale medir antes de otimizar: o sintoma é latência em pico, não erro.
-2. **Invalidação** — o TTL de 10 minutos do exemplo é um chute. Quando o dado muda por evento (o fluxo de estoque deste post), o certo é invalidar na escrita, e o Pub/Sub da seção 5 é o gancho natural para isso.
-3. **Rate limit distribuído de verdade** — o script Lua assume um Redis só. Com cluster, a chave precisa cair num slot só (use hashtags `{user123}`, senão o *ZADD* e o *ZREMRANGEBYSCORE* em nós diferentes quebram o algoritmo).
-4. **Observabilidade** — `SLOWLOG GET`, `INFO memory` e `LATENCY DOCTOR` dizem por que o Redis ficou lento antes de você adivinhar.
-5. **Autenticação e TLS** — o compose local abre a porta 6379 no host sem senha. Em qualquer ambiente compartilhado, `requirepass` + `redis://:senha@host` não são opcionais.
+1. **Cache stampede** - o padrão cache-aside tem uma corrida: quando uma chave expira, todas as requisições simultâneas caem no banco ao mesmo tempo. [`ttl-lru`](https://github.com/luin/redis-lru) (precisa de Redis ≥ 6.2) resolve com lock de stampede, ou é o padrão simples de travar a reconstrução por chave. Vale medir antes de otimizar: o sintoma é latência em pico, não erro.
+2. **Invalidação** - o TTL de 10 minutos do exemplo é um chute. Quando o dado muda por evento (o fluxo de estoque deste post), o certo é invalidar na escrita, e o Pub/Sub da seção 5 é o gancho natural para isso.
+3. **Rate limit distribuído de verdade** - o script Lua assume um Redis só. Com cluster, a chave precisa cair num slot só (use hashtags `{user123}`, senão o *ZADD* e o *ZREMRANGEBYSCORE* em nós diferentes quebram o algoritmo).
+4. **Observabilidade** - `SLOWLOG GET`, `INFO memory` e `LATENCY DOCTOR` dizem por que o Redis ficou lento antes de você adivinhar.
+5. **Autenticação e TLS** - o compose local abre a porta 6379 no host sem senha. Em qualquer ambiente compartilhado, `requirepass` + `redis://:senha@host` não são opcionais.
 
 Além do Redis: **rate limiting** em rede real pede atenção a chave por usuário e não só por IP, senão uma rede NAT inteiro (escritório, escola, carrier) compartilha o mesmo balde.
 

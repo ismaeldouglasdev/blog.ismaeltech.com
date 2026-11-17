@@ -24,7 +24,7 @@ In practice, the impact on real-world applications is devastating. Many manageme
 
 <figure>
 <img src="/media/2026-10-21-php2shell-o-que-a-falha-de-rce-descoberta-por-ia-ensina-1.jpg" alt="PHP2Shell: What an AI-Discovered RCE Vulnerability Teaches Full-Stack Developers" loading="lazy">
-<figcaption>This image contains an example of a "hello world" application running in PHP 7.4 including the index.php source file, the localhost server instance running in t. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3A%22Hello_World%22_Application_in_PHP.png">&quot;Hello World&quot; Application in PHP.png</a> por DirkDouse — <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0</a> · via Wikimedia Commons</figcaption>
+<figcaption>This image contains an example of a "hello world" application running in PHP 7.4 including the index.php source file, the localhost server instance running in t. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3A%22Hello_World%22_Application_in_PHP.png">&quot;Hello World&quot; Application in PHP.png</a> por DirkDouse - <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0</a> · via Wikimedia Commons</figcaption>
 </figure>
 
 An attacker exploiting this vulnerability doesn't need credentials. They don't need to trick an employee with a phishing email. They just need to scan the internet for servers that respond in a specific way to a malformed HTTP request. Once inside, access to the server allows for the installation of cryptominers, ransomware, or the creation of a foothold for attacks on other servers on the same network. In e‑commerce environments, where the integration between physical POS systems and online inventory is vital (omnichannel), service interruption means real‑time loss of sales.
@@ -56,7 +56,7 @@ Maintaining security requires constant vigilance. If you manage servers, check r
 
 <figure>
 <img src="/media/2026-10-21-php2shell-o-que-a-falha-de-rce-descoberta-por-ia-ensina-2.jpg" alt="PHP2Shell: What an AI-Discovered RCE Vulnerability Teaches Full-Stack Developers" loading="lazy">
-<figcaption>Código en PHP. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ACodigo_php.jpg">Codigo php.jpg</a> por lmonk72 — <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0</a> · via Wikimedia Commons</figcaption>
+<figcaption>Código en PHP. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ACodigo_php.jpg">Codigo php.jpg</a> por lmonk72 - <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0</a> · via Wikimedia Commons</figcaption>
 </figure>
 
 ## Sources

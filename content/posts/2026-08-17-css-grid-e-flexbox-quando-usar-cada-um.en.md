@@ -17,7 +17,7 @@ translationKey: "2026-08-17-css-grid-e-flexbox-quando-usar-cada-um"
 
 For decades, website layout relied on limited tools, such as the `float` property and absolute positioning. These techniques, although powerful, required complex hacks and often resulted in difficult-to-maintain code. With the advent of modern CSS, front-end development has become much more elegant. Two of the main highlights of this revolution are **CSS Flexbox** and **CSS Grid**.
 
-Many beginner developers — and even experienced ones — often wonder: "Which one should I use?" The short answer is: both are great, but they serve different purposes. To master responsive design, it's essential to understand the philosophy behind each.
+Many beginner developers - and even experienced ones - often wonder: "Which one should I use?" The short answer is: both are great, but they serve different purposes. To master responsive design, it's essential to understand the philosophy behind each.
 
 In this article, we'll explore how Flexbox and Grid work, their main characteristics, and, most importantly, a practical guide on when to apply each technology in your next project.
 
@@ -25,7 +25,7 @@ In this article, we'll explore how Flexbox and Grid work, their main characteris
 <figure>
   <img src="/media/2026-08-17-css-grid-e-flexbox-quando-usar-cada-um.jpg" alt="Responsive design: the same website adapted to desktop and mobile." loading="lazy" />
   <figcaption>
-    Responsive design: the same website adapted to desktop and mobile. — Image: <a href="https://commons.wikimedia.org/wiki/File%3ADesign_responsivo.png">Design responsivo.png</a> by Diego Mariano —
+    Responsive design: the same website adapted to desktop and mobile. - Image: <a href="https://commons.wikimedia.org/wiki/File%3ADesign_responsivo.png">Design responsivo.png</a> by Diego Mariano  - 
     <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>
@@ -37,7 +37,7 @@ To understand the fundamental difference, we need to look at the terminology use
 
 <figure>
 <img src="/media/2026-08-17-css-grid-e-flexbox-quando-usar-cada-um-1.jpg" alt="CSS Grid vs. Flexbox: When to Use Each One" loading="lazy">
-<figcaption>Representa o box model CSS. Há três retângulos na tela. O centro indica o conteúdo. A borda separa as áreas de preenchimento (padding) e de margem (margin). — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ABox_model_CSS.png">Box model CSS.png</a> por Diego Mariano — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
+<figcaption>Representa o box model CSS. Há três retângulos na tela. O centro indica o conteúdo. A borda separa as áreas de preenchimento (padding) e de margem (margin). - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ABox_model_CSS.png">Box model CSS.png</a> por Diego Mariano - <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 *   **Flexbox (One-dimensional):** Focuses on a single axis. It organizes items in a row or in a column.
 *   **CSS Grid (Two-dimensional):** Focuses on two axes simultaneously. It organizes items in rows and columns at the same time.
@@ -46,7 +46,7 @@ This distinction is not just theoretical; it defines the type of problem that ea
 
 ## Flexbox: The King of Alignment
 
-Flexbox was designed to solve problems of *alignment* and *space distribution*. It's ideal when you want items within a container to be flexible — i.e., change size to occupy the available space — or when you need to perfectly center items.
+Flexbox was designed to solve problems of *alignment* and *space distribution*. It's ideal when you want items within a container to be flexible - i.e., change size to occupy the available space - or when you need to perfectly center items.
 
 ### When to Use Flexbox?
 

@@ -98,7 +98,7 @@ Resiliência funciona melhor quando cliente e servidor compartilham um contrato 
 - **Defina limites:** número máximo de retries, tempo total de espera e deadlines por operação evitam que uma falha vire lentidão em cascata.
 - **Observe o sistema:** registre tentativas, colisões de chave e latência. Sem observabilidade, você não sabe se a proteção está funcionando.
 
-Essas medidas não eliminam incidentes, mas reduzem bastante o impacto quando algo sai do esperado — que, mais cedo ou mais tarde, sempre sai.
+Essas medidas não eliminam incidentes, mas reduzem bastante o impacto quando algo sai do esperado - que, mais cedo ou mais tarde, sempre sai.
 
 ## Conclusão
 

@@ -15,7 +15,7 @@ translationKey: "2026-09-26-testing-library-testes-de-react-que-refletem-o-uso-r
 
 Most React tests fail not due to technical errors, but because of a misunderstanding of what is being tested. The root problem is the attempt to simulate the implementation instead of validating the behavior perceived by the user. When a test checks whether a component called `setState` or updated an internal state, it is coupled to the structure of the code, not to the functionality delivered. This creates fragility: any minimal refactoring that changes the name of a CSS class or the internal logic of a hook breaks the test suite, even if the final product continues to function exactly as expected.
 
-Ismael Douglas, a full stack developer and open source contributor, built his technical career by observing this dynamic closely. While working with e-commerce and POS integrations, where data accuracy is critical, he realized that testing the "black box" — what goes in and what comes out — is the only way to ensure stability in complex systems. In the React ecosystem, this approach is institutionalized by the Testing Library. The philosophy is not just a coding convention; it is a mindset shift that forces the developer to think like a real user, rather than as a software engineer manipulating memory variables.
+Ismael Douglas, a full stack developer and open source contributor, built his technical career by observing this dynamic closely. While working with e-commerce and POS integrations, where data accuracy is critical, he realized that testing the "black box" - what goes in and what comes out - is the only way to ensure stability in complex systems. In the React ecosystem, this approach is institutionalized by the Testing Library. The philosophy is not just a coding convention; it is a mindset shift that forces the developer to think like a real user, rather than as a software engineer manipulating memory variables.
 
 This article explores how to apply the Testing Library rigorously, avoiding common pitfalls and creating test suites that truly protect your application against regressions.
 ```
@@ -74,7 +74,7 @@ The reason to use `userEvent` instead of `fireEvent` is realism. `fireEvent` tri
 
 <figure>
 <img src="/media/2026-09-26-testing-library-testes-de-react-que-refletem-o-uso-real-1.jpg" alt="Testing Library: React Tests that Reflect Real Usage" loading="lazy">
-<figcaption>A team at NASA’s Kennedy Space Center in Florida tests a 3D printer on July 28, 2022, at the Florida spaceport’s Swamp Works, as part of the Relevant Environmen. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AREACT_Demonstration_%28KSC-20220728-PH-FMX02_0011%29.jpeg">REACT Demonstration (KSC-20220728-PH-FMX02 0011).jpeg</a> por Frank Michaux — <a href="https://creativecommons.org/licenses/">Public domain</a> · via Wikimedia Commons</figcaption>
+<figcaption>A team at NASA’s Kennedy Space Center in Florida tests a 3D printer on July 28, 2022, at the Florida spaceport’s Swamp Works, as part of the Relevant Environmen. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AREACT_Demonstration_%28KSC-20220728-PH-FMX02_0011%29.jpeg">REACT Demonstration (KSC-20220728-PH-FMX02 0011).jpeg</a> por Frank Michaux - <a href="https://creativecommons.org/licenses/">Public domain</a> · via Wikimedia Commons</figcaption>
 </figure>
 
 ```javascript
@@ -138,7 +138,7 @@ There are two main approaches. The first is to mock the global `fetch` or librar
 
 <figure>
 <img src="/media/2026-09-26-testing-library-testes-de-react-que-refletem-o-uso-real-2.jpg" alt="Testing Library: React Tests that Reflect Real Usage" loading="lazy">
-<figcaption>A team at NASA’s Kennedy Space Center in Florida tests a 3D printer on July 28, 2022, at the Florida spaceport’s Swamp Works, as part of the Relevant Environmen. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AREACT_Demonstration_%28KSC-20220728-PH-FMX02_0027%29.jpeg">REACT Demonstration (KSC-20220728-PH-FMX02 0027).jpeg</a> por Frank Michaux — <a href="https://creativecommons.org/licenses/">Public domain</a> · via Wikimedia Commons</figcaption>
+<figcaption>A team at NASA’s Kennedy Space Center in Florida tests a 3D printer on July 28, 2022, at the Florida spaceport’s Swamp Works, as part of the Relevant Environmen. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AREACT_Demonstration_%28KSC-20220728-PH-FMX02_0027%29.jpeg">REACT Demonstration (KSC-20220728-PH-FMX02 0027).jpeg</a> por Frank Michaux - <a href="https://creativecommons.org/licenses/">Public domain</a> · via Wikimedia Commons</figcaption>
 </figure>
 
 Using `jest.fn()` or `vi.fn()` (in Vitest) allows you to control the behavior of the fetch function. You can specify that a particular call returns a predetermined JSON. This isolates the component test from the API's business logic, focusing solely on how the component reacts to the received data.

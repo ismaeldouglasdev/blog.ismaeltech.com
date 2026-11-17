@@ -17,7 +17,7 @@ precisa mesclar dois ambientes, importar dados, receber eventos de outra máquin
 que não passou pelo seu banco, e o `1` deixa de ser uma verdade.
 
 É nesse momento que a maioria das pessoas chega ao UUID. E chega achando que o
-UUID resolve um problema de unicidade. Resolve, sim — mas essa é a parte menos
+UUID resolve um problema de unicidade. Resolve, sim - mas essa é a parte menos
 interessante dele.
 
 ## O que o UUID realmente é
@@ -30,7 +30,7 @@ hexadecimais:
 9f8e7d6c-5b4a-4392-8180-7f6e5d4c3b2a
 ```
 
-O "universalmente" é o que incomoda. Não é uma propriedade mágica do número — é
+O "universalmente" é o que incomoda. Não é uma propriedade mágica do número - é
 uma propriedade do **processo que o gera**. Ninguém coordena esses IDs. Cada
 máquina, cada serviço, cada browser gera os seus, e a chance de colisão entre
 dois deles é desprezível.
@@ -48,7 +48,7 @@ distingue as versões.
 
 <figure>
 <img src="/media/2026-10-03-uuid-v4-por-que-o-id-aleatorio-ainda-e-a-escolha-certa-1.jpg" alt="UUID v4: por que o ID aleatório ainda é a escolha certa" loading="lazy">
-<figcaption>Globally Unique Identifier is a special type of identifier used in software applications in order to provide a reference number which is unique in any context f. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AGlobally_Unique_ID_%2851157352349%29.jpg">Globally Unique ID (51157352349).jpg</a> por Exey Panteleev from Moscow, Russia — <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a> · via Wikimedia Commons</figcaption>
+<figcaption>Globally Unique Identifier is a special type of identifier used in software applications in order to provide a reference number which is unique in any context f. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AGlobally_Unique_ID_%2851157352349%29.jpg">Globally Unique ID (51157352349).jpg</a> por Exey Panteleev from Moscow, Russia - <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 
 <figure>
@@ -59,8 +59,8 @@ distingue as versões.
 Num UUID v4 como `9f8e7d6c-5b4a-4392-8180-7f6e5d4c3b2a`:
 
 - O primeiro bloco `9f8e7d6c` são 32 bits aleatórios
-- O segundo bloco `5b4a` começa com o nibble `4` — o **identificador de versão**
-- O terceiro bloco `4392` começa com `4`, `5`, `8` ou `9` — o **variante** (o
+- O segundo bloco `5b4a` começa com o nibble `4` - o **identificador de versão**
+- O terceiro bloco `4392` começa com `4`, `5`, `8` ou `9` - o **variante** (o
   layout binário reservado pela RFC)
 - O resto é aleatório
 
@@ -85,7 +85,7 @@ levam milissegundos.
 
 Existem saídas para ambos, e vale conhecer antes de escolher. **UUID v7** é a
 resposta direta: tem 48 bits de timestamp no topo e o resto aleatório. Continua
-sendo UUID — mesmo formato, mesma compatibilidade — mas ordena por tempo, o que
+sendo UUID - mesmo formato, mesma compatibilidade - mas ordena por tempo, o que
 resolve page split e deixa o índice behave como o de um inteiro crescente. Para
 a maioria dos sistemas novos, é a escolha que eu faria sem pensar muito.
 
@@ -140,8 +140,8 @@ export function gerarLote(quantidade) {
 }
 ```
 
-Se o ambiente não tiver `crypto.randomUUID()` — o caso é raro, mas existe no
-Node antigo e em contexto não seguro — o fallback é `crypto.getRandomValues()`
+Se o ambiente não tiver `crypto.randomUUID()` - o caso é raro, mas existe no
+Node antigo e em contexto não seguro - o fallback é `crypto.getRandomValues()`
 com a versão e a variante ajustadas à mão:
 
 ```js
@@ -155,7 +155,7 @@ function uuidV4Fallback() {
 ```
 
 Para gerar um ou alguns, isso basta. Quando precisar de dezenas, dá para fazer
-por conta própria — mas nesse ponto a pergunta que vale é se você está gerando
+por conta própria - mas nesse ponto a pergunta que vale é se você está gerando
 milhares de ids no cliente por request, sinal de que a arquitetura pede
 discussão.
 

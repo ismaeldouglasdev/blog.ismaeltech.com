@@ -33,7 +33,7 @@ O Workers utiliza o padrão Service Worker como modelo de programação, o que s
 <figure>
 <img src="/media/2026-09-14-edge-functions-com-cloudflare-workers-compute-global-sem-1.jpg" alt="Edge Functions com Cloudflare Workers: compute global sem servidor" loading="lazy">
 <figcaption>Rob Reid's new book After On was published tonight! We were there to celebrate in the Haight.
-Despite its heft, my son read the book in one day, as we read the. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AEmergent_AI_that_controls_the_world_seed_funded_by_DFJ_and_Norwest_%2836159024422%29.jpg">Emergent AI that controls the world seed funded by DFJ and Norwest (36159024422).jpg</a> por Steve Jurvetson from Los Altos, USA — <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a> · via Wikimedia Commons</figcaption>
+Despite its heft, my son read the book in one day, as we read the. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AEmergent_AI_that_controls_the_world_seed_funded_by_DFJ_and_Norwest_%2836159024422%29.jpg">Emergent AI that controls the world seed funded by DFJ and Norwest (36159024422).jpg</a> por Steve Jurvetson from Los Altos, USA - <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 
 <figure>

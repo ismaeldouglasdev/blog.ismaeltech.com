@@ -22,7 +22,7 @@ Modern web infrastructure relies on a trust network called Public Key Infrastruc
 
 <figure>
 <img src="/media/2026-10-22-o-que-a-saida-da-emudhra-do-mercado-de-certificados-ssl-tls-1.jpg" alt="What eMudhra&#x27;s departure from the SSL/TLS certificate market means for you, the developer" loading="lazy">
-<figcaption>Brief explanation of how SSL certificates function. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3A1258X489_How-SSL-Certificates-Work.jpg">1258X489 How-SSL-Certificates-Work.jpg</a> por Drew Carver1 — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
+<figcaption>Brief explanation of how SSL certificates function. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3A1258X489_How-SSL-Certificates-Work.jpg">1258X489 How-SSL-Certificates-Work.jpg</a> por Drew Carver1 - <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 
 When a CA like eMudhra ceases to operate in the public market, the process of "distrust" begins. First, it stops issuing new certificates. Then, existing certificates continue to work until their expiration date, but there is a major catch. If the CA does not keep its validation servers (OCSP) and revocation lists (CRL) online, browsers attempting to verify a certificate's validity may fail this check. Depending on their configuration, they may treat this failure as a sign that the certificate is invalid or potentially compromised, blocking access.
@@ -38,7 +38,7 @@ Before panicking, the first step is a simple diagnosis. The good news is you don
 
 <figure>
 <img src="/media/2026-10-22-o-que-a-saida-da-emudhra-do-mercado-de-certificados-ssl-tls-2.jpg" alt="What eMudhra&#x27;s departure from the SSL/TLS certificate market means for you, the developer" loading="lazy">
-<figcaption>MOBILE EV SSL CERTIFICATE. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AMOBILE_EV_SSL_CERTIFICATE.jpg">MOBILE EV SSL CERTIFICATE.jpg</a> por Русский Хакер — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
+<figcaption>MOBILE EV SSL CERTIFICATE. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AMOBILE_EV_SSL_CERTIFICATE.jpg">MOBILE EV SSL CERTIFICATE.jpg</a> por Русский Хакер - <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 
 **1. Direct inspection in the browser**

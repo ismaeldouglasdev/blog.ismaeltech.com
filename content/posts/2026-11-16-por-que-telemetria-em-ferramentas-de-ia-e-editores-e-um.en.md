@@ -22,10 +22,10 @@ Telemetry, in the industry definition, is the automatic collection of usage data
 It helps to separate three layers:
 
 1. **Editor telemetry**: usage events, stability, performance. VS Code, for example, offers a granular control (turn everything off, or send only error data).
-2. **AI context**: when you use an assistant, the code snippet, the open file, the chat messages and sometimes the entire repository content can be sent for inference. That is not telemetry in the classic sense — it is the product working. And it is almost always optional.
+2. **AI context**: when you use an assistant, the code snippet, the open file, the chat messages and sometimes the entire repository content can be sent for inference. That is not telemetry in the classic sense - it is the product working. And it is almost always optional.
 3. **Extensions and plugins**: each extension is a third-party program with its own permissions. Many bundle their own analytics (Google Analytics, Segment, vendor telemetry) unrelated to the editor.
 
-When someone says "I disabled telemetry", they usually turned off layer 1 only. Layers 2 and 3 stay active — and those are exactly the ones that carry content, not just metrics.
+When someone says "I disabled telemetry", they usually turned off layer 1 only. Layers 2 and 3 stay active - and those are exactly the ones that carry content, not just metrics.
 
 ## The blind spot: proprietary code in AI context
 
@@ -36,7 +36,7 @@ Live assistance tools changed the nature of the risk. Before, the worst telemetr
 - the diff of a change before the commit;
 - the content of a chat with architecture decisions and endpoints.
 
-Each vendor's policy changes the game. Some use the data to train models; others promise not to train but keep it for a retention period; others process everything in memory and discard it. The difference between those promises rarely shows up in the install flow — it lives in a privacy document almost nobody opens.
+Each vendor's policy changes the game. Some use the data to train models; others promise not to train but keep it for a retention period; others process everything in memory and discard it. The difference between those promises rarely shows up in the install flow - it lives in a privacy document almost nobody opens.
 
 The risk is not only legal. There is accidental leakage (a secret in context), third-party intellectual property exposure, and the compliance problem: sending personal data from users across borders without a legal basis is a direct LGPD and GDPR violation, regardless of intent.
 
@@ -44,7 +44,7 @@ The risk is not only legal. There is accidental leakage (a secret in context), t
 
 Read the official documents instead of trusting defaults:
 
-- **VS Code**: the project's telemetry page documents exactly what is collected, when it is sent and how to turn it off (`telemetry.telemetryLevel`). It is one of the clearest documents in the market — use it as a reference.
+- **VS Code**: the project's telemetry page documents exactly what is collected, when it is sent and how to turn it off (`telemetry.telemetryLevel`). It is one of the clearest documents in the market - use it as a reference.
 - **GitHub Copilot**: the official documentation describes which context data is sent for inference, how suggestions are generated and what happens to the code afterwards. Pay close attention to the retention and training sections.
 - **Extensions**: no single policy. Each one has its own. Popular lint, formatting and deploy extensions frequently bundle their own collection.
 
@@ -101,7 +101,7 @@ With the proxy running, open the editor, use the assistant, save files and watch
 
 ## Conclusion
 
-Telemetry and AI assistants are not villains by nature — they are tools with a privacy cost baked in, and that cost rarely appears in the price. The difference between conscious use and accidental exposure comes down to three habits: configure explicitly instead of accepting defaults, audit the traffic at least once, and treat the repository as a security perimeter. No vendor will do this work for you, because no vendor knows your contract, your client and your risk.
+Telemetry and AI assistants are not villains by nature - they are tools with a privacy cost baked in, and that cost rarely appears in the price. The difference between conscious use and accidental exposure comes down to three habits: configure explicitly instead of accepting defaults, audit the traffic at least once, and treat the repository as a security perimeter. No vendor will do this work for you, because no vendor knows your contract, your client and your risk.
 
 The code you write today carries decisions beyond the commit. It is worth knowing where it goes before you click "accept".
 

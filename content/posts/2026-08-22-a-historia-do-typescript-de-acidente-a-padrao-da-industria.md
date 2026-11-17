@@ -13,13 +13,13 @@ translationKey: "2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-ind
 
 ## Introdução
 
-Em outubro de 2012, a Microsoft fez um anúncio que mudaria o rumo do desenvolvimento JavaScript: o TypeScript. Na época, equipes que mantinham aplicações JavaScript grandes enfrentavam um problema cada vez mais evidente — código que crescia rápido e se tornava impossível de manter sem tipagem estática. O TypeScript surgiu exatamente para atacar essa dor, prometendo trazer a segurança e a manutenibilidade da tipagem estática sem abandonar o ecossistema JavaScript. Mais de uma década depois, ele se tornou o padrão de facto da indústria. Esta é a história de como um projeto experimental interno virou a base de praticamente todo framework moderno.
+Em outubro de 2012, a Microsoft fez um anúncio que mudaria o rumo do desenvolvimento JavaScript: o TypeScript. Na época, equipes que mantinham aplicações JavaScript grandes enfrentavam um problema cada vez mais evidente - código que crescia rápido e se tornava impossível de manter sem tipagem estática. O TypeScript surgiu exatamente para atacar essa dor, prometendo trazer a segurança e a manutenibilidade da tipagem estática sem abandonar o ecossistema JavaScript. Mais de uma década depois, ele se tornou o padrão de facto da indústria. Esta é a história de como um projeto experimental interno virou a base de praticamente todo framework moderno.
 
 
 <figure>
   <img src="/media/2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria.jpg" alt="O logotipo do TypeScript, criado pela Microsoft." loading="lazy" />
   <figcaption>
-    O logotipo do TypeScript, criado pela Microsoft. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ATypeScript_Logo.svg">TypeScript Logo.svg</a> por Microsoft —
+    O logotipo do TypeScript, criado pela Microsoft. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ATypeScript_Logo.svg">TypeScript Logo.svg</a> por Microsoft  - 
     <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>

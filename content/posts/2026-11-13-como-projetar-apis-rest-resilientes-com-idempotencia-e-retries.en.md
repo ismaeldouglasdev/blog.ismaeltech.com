@@ -98,7 +98,7 @@ Resilience works best when client and server share a clear contract:
 - **Set limits:** a maximum number of retries, a total wait budget, and per-operation deadlines prevent a failure from turning into cascading latency.
 - **Observe the system:** log attempts, key collisions, and latency. Without observability, you cannot tell whether your protections are working.
 
-These measures do not eliminate incidents, but they significantly reduce the impact when something goes wrong — which, sooner or later, it always does.
+These measures do not eliminate incidents, but they significantly reduce the impact when something goes wrong - which, sooner or later, it always does.
 
 ## Conclusion
 

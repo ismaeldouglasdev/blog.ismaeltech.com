@@ -27,7 +27,7 @@ buildDrafts = false
   [markup.goldmark]
     [markup.goldmark.renderer]
       # Posts usam HTML cru (<figure>, <img>, <details>, <table>) que o
-      # goldmark descarta por padrão — sem isso imagens e figuras somem.
+      # goldmark descarta por padrão - sem isso imagens e figuras somem.
       unsafe = true
 
 [pagination]

@@ -16,7 +16,7 @@ translationKey: "2026-08-17-css-grid-e-flexbox-quando-usar-cada-um"
 
 Por décadas, o layout de websites dependeu de ferramentas limitadas, como a propriedade `float` e a posição absoluta. Essas técnicas, embora poderosas, exigiam hacks complexos e muitas vezes resultavam em código difícil de manter. Com o surgimento do CSS moderno, o desenvolvimento front-end tornou-se muito mais elegante. Dois dos principais destaques dessa revolução são o **CSS Flexbox** e o **CSS Grid**.
 
-Muitos desenvolvedores iniciantes — e até experientes — frequentemente ficam na dúvida: "Qual devo usar?". A resposta curta é: ambos são ótimos, mas têm propósitos diferentes. Para dominar o design responsivo, é essencial entender a filosofia por trás de cada um.
+Muitos desenvolvedores iniciantes - e até experientes - frequentemente ficam na dúvida: "Qual devo usar?". A resposta curta é: ambos são ótimos, mas têm propósitos diferentes. Para dominar o design responsivo, é essencial entender a filosofia por trás de cada um.
 
 Neste artigo, vamos explorar como o Flexbox e o Grid funcionam, suas principais características e, o mais importante, um guia prático de quando aplicar cada tecnologia no seu próximo projeto.
 
@@ -24,7 +24,7 @@ Neste artigo, vamos explorar como o Flexbox e o Grid funcionam, suas principais 
 <figure>
   <img src="/media/2026-08-17-css-grid-e-flexbox-quando-usar-cada-um.jpg" alt="Design responsivo: o mesmo site adaptado para desktop e mobile." loading="lazy" />
   <figcaption>
-    Design responsivo: o mesmo site adaptado para desktop e mobile. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ADesign_responsivo.png">Design responsivo.png</a> por Diego Mariano —
+    Design responsivo: o mesmo site adaptado para desktop e mobile. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ADesign_responsivo.png">Design responsivo.png</a> por Diego Mariano  - 
     <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>
@@ -36,7 +36,7 @@ Para entender a diferença fundamental, precisamos olhar para a terminologia usa
 
 <figure>
 <img src="/media/2026-08-17-css-grid-e-flexbox-quando-usar-cada-um-1.jpg" alt="CSS Grid e Flexbox: quando usar cada um" loading="lazy">
-<figcaption>Representa o box model CSS. Há três retângulos na tela. O centro indica o conteúdo. A borda separa as áreas de preenchimento (padding) e de margem (margin). — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ABox_model_CSS.png">Box model CSS.png</a> por Diego Mariano — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
+<figcaption>Representa o box model CSS. Há três retângulos na tela. O centro indica o conteúdo. A borda separa as áreas de preenchimento (padding) e de margem (margin). - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ABox_model_CSS.png">Box model CSS.png</a> por Diego Mariano - <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 *   **Flexbox (One-dimensional):** Focado em um único eixo. Ele organiza itens em uma linha (row) ou em uma coluna (column).
 *   **CSS Grid (Two-dimensional):** Focado em dois eixos simultaneamente. Ele organiza itens em linhas e colunas ao mesmo tempo.
@@ -45,7 +45,7 @@ Essa distinção não é apenas teórica; ela define o tipo de problema que cada
 
 ## Flexbox: O Rei do Alinhamento
 
-O Flexbox foi projetado para resolver problemas de *alinhamento* e *distribuição de espaço*. Ele é ideal quando você quer que os itens dentro de um container sejam flexíveis — ou seja, mudem de tamanho para ocupar o espaço disponível — ou quando você precisa centralizar itens perfeitamente.
+O Flexbox foi projetado para resolver problemas de *alinhamento* e *distribuição de espaço*. Ele é ideal quando você quer que os itens dentro de um container sejam flexíveis - ou seja, mudem de tamanho para ocupar o espaço disponível - ou quando você precisa centralizar itens perfeitamente.
 
 ### Quando usar Flexbox?
 

@@ -14,7 +14,7 @@ translationKey: "2026-09-26-testing-library-testes-de-react-que-refletem-o-uso-r
 
 A maioria dos testes de React falha não por erro técnico, mas por má interpretação do que está sendo testado. O problema raiz é a tentativa de simular a implementação em vez de validar o comportamento percebido pelo usuário. Quando um teste verifica se um componente chamou `setState` ou atualizou um estado interno, ele está acoplado à estrutura do código, não à funcionalidade entregue. Isso gera fragilidade: qualquer refatoração mínima que altere o nome de uma classe CSS ou a lógica interna de um hook quebra a suite de testes, mesmo que o produto final continue funcionando exatamente como esperado.
 
-Em integrações de e-commerce e sistemas de vendas, onde a precisão dos dados é crítica, testar a "caixa preta" — o que entra e o que sai — é a única forma de garantir estabilidade em sistemas complexos. No ecossistema React, essa abordagem é institucionalizada pela Testing Library. A filosofia não é apenas uma convenção de código; é uma mudança de mentalidade que força o desenvolvedor a pensar como um usuário real, e não como um engenheiro de software manipulando variáveis de memória.
+Em integrações de e-commerce e sistemas de vendas, onde a precisão dos dados é crítica, testar a "caixa preta" - o que entra e o que sai - é a única forma de garantir estabilidade em sistemas complexos. No ecossistema React, essa abordagem é institucionalizada pela Testing Library. A filosofia não é apenas uma convenção de código; é uma mudança de mentalidade que força o desenvolvedor a pensar como um usuário real, e não como um engenheiro de software manipulando variáveis de memória.
 
 Este artigo explora como aplicar a Testing Library de forma rigorosa, evitando as armadilhas comuns e criando suítes de testes que realmente protegem sua aplicação contra regressões.
 
@@ -25,7 +25,7 @@ A premissa central da Testing Library é que o código do seu componente é uma 
 
 <figure>
 <img src="/media/2026-09-26-testing-library-testes-de-react-que-refletem-o-uso-real-1.jpg" alt="Testing Library: testes de React que refletem o uso real" loading="lazy">
-<figcaption>A team at NASA’s Kennedy Space Center in Florida tests a 3D printer on July 28, 2022, at the Florida spaceport’s Swamp Works, as part of the Relevant Environmen. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AREACT_Demonstration_%28KSC-20220728-PH-FMX02_0011%29.jpeg">REACT Demonstration (KSC-20220728-PH-FMX02 0011).jpeg</a> por Frank Michaux — <a href="https://creativecommons.org/licenses/">Public domain</a> · via Wikimedia Commons</figcaption>
+<figcaption>A team at NASA’s Kennedy Space Center in Florida tests a 3D printer on July 28, 2022, at the Florida spaceport’s Swamp Works, as part of the Relevant Environmen. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AREACT_Demonstration_%28KSC-20220728-PH-FMX02_0011%29.jpeg">REACT Demonstration (KSC-20220728-PH-FMX02 0011).jpeg</a> por Frank Michaux - <a href="https://creativecommons.org/licenses/">Public domain</a> · via Wikimedia Commons</figcaption>
 </figure>
 
 Testar a implementação é um erro de estratégia. Se você escreve um teste que verifica `container.querySelector('.btn-primary')`, você está assumindo que a classe CSS nunca mudará. Se amanhã você decide usar Tailwind ou CSS Modules, seu teste quebra. Se você escreve `container.getByRole('button', { name: 'Salvar' })`, você está testando a acessibilidade e a funcionalidade. A única maneira de um usuário interagir com uma interface web é através de roles, labels, textos e atributos HTML padrão.
@@ -66,7 +66,7 @@ Testar componentes estáticos é fácil. Testar interatividade é onde a Testing
 
 <figure>
 <img src="/media/2026-09-26-testing-library-testes-de-react-que-refletem-o-uso-real-2.jpg" alt="Testing Library: testes de React que refletem o uso real" loading="lazy">
-<figcaption>A team at NASA’s Kennedy Space Center in Florida tests a 3D printer on July 28, 2022, at the Florida spaceport’s Swamp Works, as part of the Relevant Environmen. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AREACT_Demonstration_%28KSC-20220728-PH-FMX02_0027%29.jpeg">REACT Demonstration (KSC-20220728-PH-FMX02 0027).jpeg</a> por Frank Michaux — <a href="https://creativecommons.org/licenses/">Public domain</a> · via Wikimedia Commons</figcaption>
+<figcaption>A team at NASA’s Kennedy Space Center in Florida tests a 3D printer on July 28, 2022, at the Florida spaceport’s Swamp Works, as part of the Relevant Environmen. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AREACT_Demonstration_%28KSC-20220728-PH-FMX02_0027%29.jpeg">REACT Demonstration (KSC-20220728-PH-FMX02 0027).jpeg</a> por Frank Michaux - <a href="https://creativecommons.org/licenses/">Public domain</a> · via Wikimedia Commons</figcaption>
 </figure>
 
 `UserEvent.click()`: Simula um clique completo, incluindo focos, mouse down, mouse up e click.
