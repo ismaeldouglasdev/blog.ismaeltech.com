@@ -134,14 +134,14 @@ Não há problema algum em dividir a lógica em vários efeitos, cada um respons
 
 ```tsx
 useEffect(() => {
-  // efeito A – escuta eventos de resize
+  // efeito A - escuta eventos de resize
   const onResize = () => console.log(window.innerWidth);
   window.addEventListener('resize', onResize);
   return () => window.removeEventListener('resize', onResize);
 }, []); // efeito A não depende de props/state
 
 useEffect(() => {
-  // efeito B – busca dados quando `userId` mudar
+  // efeito B - busca dados quando `userId` mudar
   fetchUser(userId);
 }, [userId]); // efeito B depende apenas de userId
 ```
@@ -316,7 +316,7 @@ export function useLocalStorage<T>(key: string, initialValue: T) {
     try {
       window.localStorage.setItem(key, JSON.stringify(value));
     } catch {
-      // falha silenciosa – pode ser quota excedida
+      // falha silenciosa - pode ser quota excedida
     }
   }, [key, value]);
 

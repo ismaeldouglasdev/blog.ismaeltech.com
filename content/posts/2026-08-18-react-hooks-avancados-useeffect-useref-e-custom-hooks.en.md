@@ -136,14 +136,14 @@ There's no problem splitting the logic into several effects, each handling a dif
 
 ```tsx
 useEffect(() => {
-  // effect A – listens to resize events
+  // effect A - listens to resize events
   const onResize = () => console.log(window.innerWidth);
   window.addEventListener('resize', onResize);
   return () => window.removeEventListener('resize', onResize);
 }, []); // effect A has no props/state dependencies
 
 useEffect(() => {
-  // effect B – fetch data when `userId` changes
+  // effect B - fetch data when `userId` changes
   fetchUser(userId);
 }, [userId]); // effect B depends only on userId
 ```
@@ -316,7 +316,7 @@ export function useLocalStorage<T>(key: string, initialValue: T) {
     try {
       window.localStorage.setItem(key, JSON.stringify(value));
     } catch {
-      // silent failure – could be quota exceeded
+      // silent failure - could be quota exceeded
     }
   }, [key, value]);
 

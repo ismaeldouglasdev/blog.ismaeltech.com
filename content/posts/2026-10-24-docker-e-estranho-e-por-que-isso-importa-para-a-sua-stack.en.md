@@ -157,7 +157,7 @@ Podman is an alternative to Docker that does not require a daemon running as roo
 <figcaption>Podman provides a Docker‑compatible CLI interface, but without the need for a root‑running daemon. Source: Official Podman repository (Apache 2.0 license).</figcaption>
 </figure>
 
-In my ricing environment with Arch Linux and Hyprland, testing containers with Podman eliminated the need to manage the Docker service and gave me more control over containers as user processes. For new projects, it’s worth experimenting with.
+In my ricing environment with Arch Linux and Hyprland, testing containers with Podman eliminated the need to manage the Docker service and gave me more control over containers as user processes. For new projects, it's worth experimenting with.
 
 ### 5. Use multi‑stage builds for lean final images
 
