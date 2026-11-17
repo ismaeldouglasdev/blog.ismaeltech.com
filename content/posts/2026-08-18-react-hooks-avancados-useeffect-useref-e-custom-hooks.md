@@ -50,7 +50,7 @@ O `useEffect` substitui os métodos de ciclo de vida das classes (`componentDidM
 </figure>
 ```tsx
 useEffect(() => {
-  // efeito colateral (side‑effect)
+  // efeito colateral (side-effect)
   return () => {
     // função de limpeza (cleanup)
   };

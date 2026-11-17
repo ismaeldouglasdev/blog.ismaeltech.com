@@ -98,7 +98,7 @@ For Node.js projects, the same principle applies: copy `package.json` and `packa
 Docker Compose isn't just for production. It standardizes the development environment, defining volumes, networks, and environment variables in a single file. This reduces the "weirdness" of remembering long `docker run` flags.
 
 ```yaml
-# Robust docker-compose.yml for full‑stack development
+# Robust docker-compose.yml for full-stack development
 services:
   frontend:
     build: ./frontend
@@ -154,14 +154,14 @@ Podman is an alternative to Docker that does not require a daemon running as roo
 
 <figure>
 <img src="https://raw.githubusercontent.com/containers/podman/main/docs/source/pictures/podman-logo.png" alt="Logo of Podman, a daemonless Docker alternative" loading="lazy">
-<figcaption>Podman provides a Docker‑compatible CLI interface, but without the need for a root‑running daemon. Source: Official Podman repository (Apache 2.0 license).</figcaption>
+<figcaption>Podman provides a Docker-compatible CLI interface, but without the need for a root-running daemon. Source: Official Podman repository (Apache 2.0 license).</figcaption>
 </figure>
 
 In my ricing environment with Arch Linux and Hyprland, testing containers with Podman eliminated the need to manage the Docker service and gave me more control over containers as user processes. For new projects, it's worth experimenting with.
 
-### 5. Use multi‑stage builds for lean final images
+### 5. Use multi-stage builds for lean final images
 
-Multi‑stage builds are one of the most powerful features for reducing the bloat of huge images. You use a temporary container to compile and build (with all the heavy tools) and copy only the necessary artifacts into a minimal final image.
+Multi-stage builds are one of the most powerful features for reducing the bloat of huge images. You use a temporary container to compile and build (with all the heavy tools) and copy only the necessary artifacts into a minimal final image.
 
 ```dockerfile
 # Multi-stage build for a React app with Nginx

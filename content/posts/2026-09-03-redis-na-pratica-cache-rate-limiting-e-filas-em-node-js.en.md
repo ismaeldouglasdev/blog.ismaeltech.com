@@ -297,8 +297,8 @@ const worker = new Worker(
   async job => {
     if (job.name === 'send-email') {
       const { to, subject, body } = job.data;
-      // aqui chamaria o serviço de e‑mail real
-      console.log(`Enviando e‑mail para ${to}`);
+      // aqui chamaria o serviço de e-mail real
+      console.log(`Enviando e-mail para ${to}`);
     }
   },
   { connection: client }

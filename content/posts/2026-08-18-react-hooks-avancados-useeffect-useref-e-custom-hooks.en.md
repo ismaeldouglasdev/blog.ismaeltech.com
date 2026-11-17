@@ -52,7 +52,7 @@ The `useEffect` replaces class lifecycle methods (`componentDidMount`, `componen
 </figure>
 ```tsx
 useEffect(() => {
-  // side‑effect (colateral effect)
+  // side-effect (colateral effect)
   return () => {
     // cleanup function
   };
