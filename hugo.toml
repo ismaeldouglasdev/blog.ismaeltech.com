@@ -29,6 +29,10 @@ buildDrafts = false
       # Posts usam HTML cru (<figure>, <img>, <details>, <table>) que o
       # goldmark descarta por padrão - sem isso imagens e figuras somem.
       unsafe = true
+    [markup.goldmark.extensions]
+      # Hugo 0.169+ liga o typographer por padrão: aspas retas viram
+      # curvas (" ") e -- vira en-dash no render (tells de IA).
+      typographer = false
 
 [pagination]
   pagerSize = 10
