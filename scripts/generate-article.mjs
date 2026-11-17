@@ -18,6 +18,15 @@ function slugify(text) {
     .slice(0, 80);
 }
 
+function stripEmDashes(text) {
+  let inFence = false;
+  return text.split('\n').map(line => {
+    if (/^\s*```/.test(line)) inFence = !inFence;
+    if (inFence) return line;
+    return line.replace(/\s*\u2014\s*/g, ', ').replace(/\u2014/g, ', ');
+  }).join('\n');
+}
+
 async function call9Router(prompt, system) {
   const body = {
     model: 'combo-round-robin',
@@ -147,7 +156,7 @@ Regras:
   // Build final .md file
   const slug = slugify(title);
   const frontmatter = buildFrontmatter(title, description, tags, slug);
-  const content = `${frontmatter}\n${article}\n`;
+  const content = stripEmDashes(`${frontmatter}\n${article}\n`);
 
   const filePath = path.join(POSTS_DIR, `${slug}.md`);
   fs.writeFileSync(filePath, content);
