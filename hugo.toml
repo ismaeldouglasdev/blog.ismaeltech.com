@@ -46,12 +46,13 @@ buildDrafts = false
   DateFormat = "02/01/2006"
   defaultTheme = "light"
   disableThemeToggle = false
+  # Comentários: layouts/partials/comments.html (Cloudflare Worker + D1)
+  # Default ligado; posts podem desligar com "comments: false" no front matter.
+  comments = true
 
   [params.homeInfoParams]
     Title = "Ismael Douglas"
     Content = "Artigos sobre desenvolvimento web, sistemas sob medida, automação e tecnologia. Escrevo sobre o que construo e o que aprendo."
-
-  # Comentários: layouts/partials/comments.html (Cloudflare Worker + D1)
 
   [params.related]
     includeNewer = true
@@ -63,13 +64,19 @@ buildDrafts = false
     ]
 
 [outputs]
-  home = ["HTML", "RSS", "JSON", "search"]
+  home = ["HTML", "RSS", "JSON", "search", "llms"]
 
 [outputFormats]
   [outputFormats.search]
     mediatype = "application/json"
     baseName = "index"
     isPlainText = false
+    notAlternative = true
+
+  [outputFormats.llms]
+    mediaType = "text/plain"
+    baseName = "llms"
+    isPlainText = true
     notAlternative = true
 
 [taxonomies]

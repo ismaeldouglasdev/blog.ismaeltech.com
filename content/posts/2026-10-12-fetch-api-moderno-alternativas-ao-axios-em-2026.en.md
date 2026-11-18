@@ -3,13 +3,12 @@ title: "Modern Fetch API: Alternatives to Axios in 2026"
 date: "2026-10-12"
 category: "article"
 tags: ["javascript", "fetch", "api"]
-excerpt: "markdown Modern Fetch API: alternatives to axios in 2026"
+excerpt: "Axios is still popular, but the modern Fetch API and newer client libraries cover most use cases. See what changed in native fetch, interceptors, retries and timeouts."
 cover:
   image: "/covers/2026-10-12-fetch-api-moderno-alternativas-ao-axios-em-2026.jpg"
 comments: true
 translationKey: "2026-10-12-fetch-api-moderno-alternativas-ao-axios-em-2026"
 ---
-```markdown
 ## Modern Fetch API: alternatives to axios in 2026
 
 In a world where APIs are essential for building responsive and dynamic web applications, the efficiency of HTTP requests is an increasingly relevant topic. Axios, one of the most popular libraries for this purpose, has been a great ally for many developers over the years. However, with the advancement of JavaScript and improvements in the Fetch API, new alternatives and approaches are emerging that can make development even faster and more efficient.
@@ -55,7 +54,6 @@ const fetchWithInterceptors = async (url, options = {}) => {
     const errorData = await response.json();
     throw new Error(errorData.message);
   }
-```
 
   return response.json();
 };

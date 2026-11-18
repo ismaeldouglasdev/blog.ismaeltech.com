@@ -1,0 +1,15 @@
+# {{ site.Title }}
+
+> {{ site.Params.description }}
+
+{{ if eq .Lang "pt" }}Versão em inglês: {{ "en/llms.txt" | absURL }}{{ else if eq .Lang "en" }}Portuguese version: {{ "llms.txt" | absURL }}{{ end }}
+
+## Posts
+
+{{ range .Site.RegularPages.ByDate.Reverse -}}
+- [{{ .Title }}]({{ .Permalink }}) - {{ .Date.Format "2006-01-02" }}{{ with .Params.excerpt }}: {{ . }}{{ end }}
+{{ end }}
+## Links
+
+- [Sitemap]({{ "sitemap.xml" | absURL }})
+- [RSS]({{ "index.xml" | absURL }})
