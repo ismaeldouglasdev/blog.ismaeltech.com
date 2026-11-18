@@ -1,15 +1,17 @@
 <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0f0e0c" media="(prefers-color-scheme: dark)">
-{{- $og := "images/og-default.png" -}}
+{{- $cover := "" -}}
 {{- with .Params.cover -}}
   {{- if reflect.IsMap . -}}
-    {{- with (or (index . "image") (index . "src") (index . "url")) -}}{{- $og = . -}}{{- end -}}
+    {{- with (or (index . "image") (index . "src") (index . "url")) -}}{{- $cover = . -}}{{- end -}}
   {{- else -}}
-    {{- $og = . -}}
+    {{- $cover = . -}}
   {{- end -}}
 {{- end -}}
-<meta property="og:image" content="{{ $og | absURL }}">
-<meta name="twitter:image" content="{{ $og | absURL }}">
+{{- if not $cover -}}
+<meta property="og:image" content="{{ "images/og-default.png" | absURL }}">
+<meta name="twitter:image" content="{{ "images/og-default.png" | absURL }}">
+{{- end -}}
 <style>
 .newsletter-box{margin:28px 0;padding:22px 20px;border:1px solid var(--border);border-radius:14px;background:var(--entry)}
 .newsletter-box h3{margin:0 0 6px;font-size:1.15rem}
