@@ -5,7 +5,7 @@ category: "tutorial"
 tags: ["api", "rest", "resiliência", "backend", "boas-práticas"]
 excerpt: "Network failures and timeouts are part of any API's life. Learn how to combine idempotency, retries with backoff, and clear limits to avoid duplicates and keep systems stable."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-11-13-como-projetar-apis-rest-resilientes-com-idempotencia-e-retries.jpg"
+  image: "/covers/2026-11-13-como-projetar-apis-rest-resilientes-com-idempotencia-e-retries.jpg"
 comments: true
 translationKey: "2026-11-13-como-projetar-apis-rest-resilientes-com-idempotencia-e-retries"
 ---
@@ -40,7 +40,7 @@ Idempotency-Key: 8d5f1b5c-5f0b-4f3b-a2b1-1d2a9c0e4f10
 On the server side, the key must be tied to the correct context (for example, client + endpoint + key) and kept for a reasonable retention period. Storing the key without the request/result does not solve the problem: the goal is to return the same response (or an equivalent state) when a retry arrives.
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-11-13-como-projetar-apis-rest-resilientes-com-idempotencia-e-retries-1.jpg" alt="Safe retry flow with an idempotency key between client, API, and service" loading="lazy">
+<img src="/media/2026-11-13-como-projetar-apis-rest-resilientes-com-idempotencia-e-retries-1.jpg" alt="Safe retry flow with an idempotency key between client, API, and service" loading="lazy">
 <figcaption>With a persisted Idempotency-Key, the client can resend the same request after a timeout without creating duplicate side effects.</figcaption>
 </figure>
 
@@ -85,7 +85,7 @@ def post_with_retry(url, payload, headers, attempts=5):
 Notice two points: the example limits the number of attempts and only retries transient failures. In critical systems, combine this with **per-call timeouts**, a **circuit breaker**, and metrics to understand whether retries are helping or simply amplifying the problem.
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-11-13-como-projetar-apis-rest-resilientes-com-idempotencia-e-retries-2.jpg" alt="Chart showing exponential backoff with jitter between request attempts" loading="lazy">
+<img src="/media/2026-11-13-como-projetar-apis-rest-resilientes-com-idempotencia-e-retries-2.jpg" alt="Chart showing exponential backoff with jitter between request attempts" loading="lazy">
 <figcaption>Exponential backoff spaces out attempts, and jitter reduces synchronized traffic spikes during incidents.</figcaption>
 </figure>
 

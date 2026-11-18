@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" width="900" height="620" role="img" aria-labelledby="title desc">
+  <title id="title">Reverse engineering cycle</title>
+  <desc id="desc">A four step cycle: analyze the binary, extract rules and data, model the logic and state, then rebuild a clean engine.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+
+  <circle cx="450" cy="310" r="232" fill="none" stroke="#e2e8f0" stroke-width="2" stroke-dasharray="8 10"/>
+
+  <path d="M560,110 C650,110 730,170 730,260" fill="none" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M730,360 C730,450 650,510 560,510" fill="none" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M340,510 C250,510 170,450 170,360" fill="none" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M170,260 C170,170 250,110 340,110" fill="none" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <rect x="340" y="60" width="220" height="100" rx="16" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="450" y="105" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#1e3a8a">Analyze</text>
+  <text x="450" y="132" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#1e40af">disassemble and trace</text>
+  <circle cx="362" cy="82" r="14" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+  <text x="362" y="87" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#2563eb">1</text>
+
+  <rect x="620" y="260" width="220" height="100" rx="16" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="730" y="305" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#14532d">Extract</text>
+  <text x="730" y="332" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#166534">rules and data</text>
+  <circle cx="642" cy="282" r="14" fill="#ffffff" stroke="#16a34a" stroke-width="2"/>
+  <text x="642" y="287" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#16a34a">2</text>
+
+  <rect x="340" y="460" width="220" height="100" rx="16" fill="#fef3c7" stroke="#d97706" stroke-width="2.5"/>
+  <text x="450" y="505" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#78350f">Model</text>
+  <text x="450" y="532" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#92400e">logic and state</text>
+  <circle cx="362" cy="482" r="14" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
+  <text x="362" y="487" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#d97706">3</text>
+
+  <rect x="60" y="260" width="220" height="100" rx="16" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+  <text x="170" y="305" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#4c1d95">Rebuild</text>
+  <text x="170" y="332" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#5b21b6">clean engine</text>
+  <circle cx="82" cy="282" r="14" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
+  <text x="82" y="287" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#7c3aed">4</text>
+
+  <text x="450" y="272" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#475569">binary</text>
+  <line x1="450" y1="288" x2="450" y2="326" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="450" y="356" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#475569">behavior</text>
+</svg>

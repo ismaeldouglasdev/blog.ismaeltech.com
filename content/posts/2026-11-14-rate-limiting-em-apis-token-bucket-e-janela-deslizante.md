@@ -6,7 +6,7 @@ tags: ["api", "rate-limiting", "backend", "resiliência", "boas-práticas"]
 excerpt: "Um pico de tráfego não precisa derrubar seu serviço. Veja como escolher entre token bucket e janela deslizante, onde aplicar o limite e como responder com 429 e Retry-After."
 share_hook: "O pico que derruba a API quase nunca é um ataque: é um cliente legítimo sem controle de ritmo. Rate limiting é o freio que falta."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-11-14-rate-limiting-em-apis-token-bucket-e-janela-deslizante.jpg"
+  image: "/covers/2026-11-14-rate-limiting-em-apis-token-bucket-e-janela-deslizante.jpg"
 lang: "pt"
 translationKey: "2026-11-14-rate-limiting-em-apis-token-bucket-e-janela-deslizante"
 ---
@@ -24,7 +24,7 @@ Dito isso, rate limiting não é milagre. Ele não substitui autenticação (lim
 O algoritmo mais usado em produção é o *token bucket*. A ideia é literal: existe um balde com capacidade para N tokens. Um "registro" (drip) repõe tokens em ritmo fixo - digamos, 10 por segundo. Cada requisição precisa consumir um token para passar. Se o balde tem tokens, a requisição é aprovada na hora; se está vazio, ela recebe `429 Too Many Requests`.
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-11-14-rate-limiting-em-apis-token-bucket-e-janela-deslizante-1.jpg" alt="Fluxo do token bucket com recarga fixa de tokens, decisão por requisição e caminho de aprovação ou 429" loading="lazy">
+<img src="/media/2026-11-14-rate-limiting-em-apis-token-bucket-e-janela-deslizante-1.jpg" alt="Fluxo do token bucket com recarga fixa de tokens, decisão por requisição e caminho de aprovação ou 429" loading="lazy">
 <figcaption>No token bucket, a recarga é constante e a aprovação consome um token: picos curtos passam, o ritmo médio fica limitado.</figcaption>
 </figure>
 
@@ -44,7 +44,7 @@ A **janela deslizante** (sliding window) elimina a borda ao medir o intervalo "r
 Quando usar cada um? Janela fixa serve para cotas grosseiras (consumo diário de um plano). Token bucket serve para proteger endpoints de rajada (login, webhooks). Janela deslizante serve para contratos de API públicos, onde o número do limite precisa ser honesto na prática, não só na média.
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-11-14-rate-limiting-em-apis-token-bucket-e-janela-deslizante-2.jpg" alt="Sequência de 429 com Retry-After e headers X-RateLimit entre cliente e API, com espera e nova tentativa bem-sucedida" loading="lazy">
+<img src="/media/2026-11-14-rate-limiting-em-apis-token-bucket-e-janela-deslizante-2.jpg" alt="Sequência de 429 com Retry-After e headers X-RateLimit entre cliente e API, com espera e nova tentativa bem-sucedida" loading="lazy">
 <figcaption>O 429 com Retry-After transforma um erro em contrato: o cliente sabe quando voltar sem piorar a sobrecarga.</figcaption>
 </figure>
 

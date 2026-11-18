@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600" role="img" aria-labelledby="title desc">
+  <title id="title">HTTP/1.1 versus HTTP/2</title>
+  <desc id="desc">HTTP/1.1 processes one request at a time, so a slow response blocks the next. HTTP/2 multiplexes several streams over a single connection.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+
+  <rect x="32" y="32" width="552" height="536" rx="18" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
+  <rect x="616" y="32" width="552" height="536" rx="18" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
+
+  <text x="64" y="88" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#0f172a">HTTP/1.1</text>
+  <text x="64" y="118" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#64748b">one request at a time</text>
+
+  <rect x="80" y="160" width="220" height="64" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="190" y="199" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="17" font-weight="600" fill="#1e3a8a">Request 1</text>
+
+  <line x1="190" y1="224" x2="190" y2="252" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="80" y="258" width="220" height="64" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="190" y="297" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="17" font-weight="600" fill="#14532d">Request 2</text>
+
+  <line x1="190" y1="322" x2="190" y2="350" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="80" y="356" width="220" height="64" rx="12" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="190" y="395" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="17" font-weight="600" fill="#78350f">Request 3</text>
+
+  <path d="M324,160 L324,420" stroke="#dc2626" stroke-width="2" stroke-dasharray="6 6"/>
+  <path d="M316,160 L332,160 M316,420 L332,420" stroke="#dc2626" stroke-width="2"/>
+  <text x="344" y="282" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#dc2626">head-of-line</text>
+  <text x="344" y="304" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#dc2626">blocking</text>
+
+  <text x="64" y="500" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#64748b">A slow response delays every request behind it.</text>
+
+  <text x="648" y="88" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#0f172a">HTTP/2</text>
+  <text x="648" y="118" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#64748b">multiplexed streams on one connection</text>
+
+  <line x1="680" y1="150" x2="680" y2="440" stroke="#94a3b8" stroke-width="3"/>
+  <circle cx="680" cy="200" r="6" fill="#ffffff" stroke="#2563eb" stroke-width="3"/>
+  <circle cx="680" cy="280" r="6" fill="#ffffff" stroke="#16a34a" stroke-width="3"/>
+  <circle cx="680" cy="360" r="6" fill="#ffffff" stroke="#d97706" stroke-width="3"/>
+
+  <line x1="686" y1="200" x2="1060" y2="200" stroke="#bfdbfe" stroke-width="6"/>
+  <rect x="720" y="191" width="60" height="18" rx="9" fill="#2563eb"/>
+  <rect x="840" y="191" width="70" height="18" rx="9" fill="#2563eb"/>
+  <rect x="960" y="191" width="50" height="18" rx="9" fill="#2563eb"/>
+
+  <line x1="686" y1="280" x2="1060" y2="280" stroke="#bbf7d0" stroke-width="6"/>
+  <rect x="700" y="271" width="70" height="18" rx="9" fill="#16a34a"/>
+  <rect x="820" y="271" width="50" height="18" rx="9" fill="#16a34a"/>
+  <rect x="930" y="271" width="80" height="18" rx="9" fill="#16a34a"/>
+
+  <line x1="686" y1="360" x2="1060" y2="360" stroke="#fde68a" stroke-width="6"/>
+  <rect x="740" y="351" width="50" height="18" rx="9" fill="#d97706"/>
+  <rect x="860" y="351" width="60" height="18" rx="9" fill="#d97706"/>
+  <rect x="980" y="351" width="40" height="18" rx="9" fill="#d97706"/>
+
+  <text x="1070" y="205" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#475569">stream 1</text>
+  <text x="1070" y="285" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#475569">stream 2</text>
+  <text x="1070" y="365" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#475569">stream 3</text>
+
+  <text x="648" y="500" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#64748b">One connection, several streams in parallel.</text>
+</svg>

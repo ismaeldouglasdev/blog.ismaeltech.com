@@ -14,7 +14,7 @@ How many times have you needed to extract text from a PDF within a web applicati
 That was the exact motivation for PaperPilot. A PDF processing engine written in Rust, compiled to WebAssembly (WASM), and exposed as an MCP (Model Context Protocol) server. The idea is simple: bring the power of Rust to the browser and to local servers, without a single line of code traveling through a third-party service. Privacy, control, and total performance, directly in your environment.
 
 <figure>
-<img src="/media/paperpilot-architecture-diagram.png" alt="Architecture diagram for PaperPilot showing a PDF being processed by the Rust module, compiled to WASM, running in a Web Worker or Node.js server" loading="lazy">
+<img src="/media/paperpilot-architecture-diagram.webp" alt="Architecture diagram for PaperPilot showing a PDF being processed by the Rust module, compiled to WASM, running in a Web Worker or Node.js server" loading="lazy">
 <figcaption>PaperPilot architecture: Rust → WASM, executable on the client or edge servers.</figcaption>
 </figure>
 

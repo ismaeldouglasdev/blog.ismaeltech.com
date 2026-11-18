@@ -38,7 +38,7 @@ Here, the `RUN npm ci` layer is cached if `package.json` doesn't change. But if 
 The other side of the weirdness is the **ephemeral filesystem**. A container, by default, does not persist data. When it's removed, everything inside it disappears. That's why volumes and bind mounts exist, but they bring their own problems with permissions and synchronization.
 
 <figure>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Docker-linux-interfaces.svg/1920px-Docker-linux-interfaces.svg.png" alt="Diagram of Docker architecture showing interfaces with the Linux kernel" loading="lazy">
+<img src="/media/docker-linux-interfaces.png" alt="Diagram of Docker architecture showing interfaces with the Linux kernel" loading="lazy">
 <figcaption>Docker architecture: multiple layers of abstraction over the Linux kernel. Image adapted from Wikimedia Commons (CC BY-SA).</figcaption>
 </figure>
 
@@ -153,7 +153,7 @@ USER appuser
 Podman is an alternative to Docker that does not require a daemon running as root. It is compatible with Dockerfiles and docker-compose, but with a simpler security model. For local development, especially on Linux, Podman can avoid those socket permission issues and daemon conflicts.
 
 <figure>
-<img src="https://raw.githubusercontent.com/containers/podman/main/docs/source/pictures/podman-logo.png" alt="Logo of Podman, a daemonless Docker alternative" loading="lazy">
+<img src="/media/podman-logo.png" alt="Logo of Podman, a daemonless Docker alternative" loading="lazy">
 <figcaption>Podman provides a Docker-compatible CLI interface, but without the need for a root-running daemon. Source: Official Podman repository (Apache 2.0 license).</figcaption>
 </figure>
 

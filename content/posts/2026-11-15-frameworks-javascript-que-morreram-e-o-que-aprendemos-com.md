@@ -5,7 +5,7 @@ category: "curiosidade"
 tags: ["javascript", "historia", "frameworks"]
 excerpt: "Você já sentiu aquele frio na barriga ao escolher uma tecnologia para um projeto novo, com medo de ela se tornar obsoleta antes mesmo de você lançar a primeira versão? O"
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-11-15-frameworks-javascript-que-morreram-e-o-que-aprendemos-com.jpg"
+  image: "/covers/2026-11-15-frameworks-javascript-que-morreram-e-o-que-aprendemos-com.jpg"
 lang: "pt"
 translationKey: "2026-11-15-frameworks-javascript-que-morreram-e-o-que-aprendemos-com"
 ---

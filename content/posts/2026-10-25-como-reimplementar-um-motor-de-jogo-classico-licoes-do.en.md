@@ -50,8 +50,8 @@ void test_creature_damage() {
 This "black box testing" method is fundamental. Without the source code, there's no way to know *why* the damage is 3. They only know that it *must be* 3 for the player's experience to be identical. Any discrepancy is a bug in the new engine.
 
 <figure>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Reverse_engineering_process_diagram.svg/800px-Reverse_engineering_process_diagram.svg.png" alt="Diagrama de fluxo do processo de engenharia reversa: Análise, Extração de Informação, Modelagem e Reconstrução" loading="lazy">
-<figcaption>Simplified diagram of the reverse engineering cycle. The fheroes2 project follows a similar flow: analyze the binary, extract game rules, model the logic, and rebuild the engine. (Source: Wikimedia Commons, adapted, CC BY-SA 3.0 license)</figcaption>
+<img src="/media/reverse-engineering-cycle.svg" alt="Reverse engineering process flow: analysis, information extraction, modeling, and reconstruction" loading="lazy">
+<figcaption>The reverse engineering cycle: analyze the binary, extract game rules, model the logic, and rebuild the engine.</figcaption>
 </figure>
 
 ## Architecture and main technical challenges

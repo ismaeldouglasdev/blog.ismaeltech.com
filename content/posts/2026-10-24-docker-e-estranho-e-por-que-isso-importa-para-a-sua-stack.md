@@ -39,7 +39,7 @@ Aqui, a camada do `RUN npm ci` é cacheada se o `package.json` não mudar. Mas s
 A outra face da estranheza é o **filesystem efêmero**. Um contêiner, por padrão, não persiste dados. Quando ele é removido, tudo dentro dele some. É por isso que volumes e bind mounts existem, mas eles trazem seus próprios problemas de permissão e sincronia.
 
 <figure>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Docker-linux-interfaces.svg/1920px-Docker-linux-interfaces.svg.png" alt="Diagrama de arquitetura do Docker mostrando interfaces com o kernel Linux" loading="lazy">
+<img src="/media/docker-linux-interfaces.png" alt="Diagrama de arquitetura do Docker mostrando interfaces com o kernel Linux" loading="lazy">
 <figcaption>Arquitetura do Docker: múltiplas camadas de abstração sobre o kernel Linux. Imagem adaptada de Wikimedia Commons (CC BY-SA).</figcaption>
 </figure>
 
@@ -153,7 +153,7 @@ USER appuser
 Podman é uma alternativa ao Docker que não requer um daemon rodando como root. Ele é compatível com Dockerfiles e docker-compose, mas com um modelo de segurança mais simples. Para desenvolvimento local, especialmente em Linux, Podman pode evitar aqueles problemas de permissão de socket e conflitos de daemon.
 
 <figure>
-<img src="https://raw.githubusercontent.com/containers/podman/main/docs/source/pictures/podman-logo.png" alt="Logo do Podman, uma alternativa ao Docker sem daemon" loading="lazy">
+<img src="/media/podman-logo.png" alt="Logo do Podman, uma alternativa ao Docker sem daemon" loading="lazy">
 <figcaption>Podman oferece uma interface CLI compatível com Docker, mas sem a necessidade de um daemon rodando como root. Fonte: Repositório oficial do Podman (licença Apache 2.0).</figcaption>
 </figure>
 

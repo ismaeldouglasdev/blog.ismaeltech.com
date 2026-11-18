@@ -5,7 +5,7 @@ category: "article"
 tags: ["telemetria", "privacidade", "seguranca", "ia", "editores"]
 excerpt: "Seu editor sabe o que você digita antes de você salvar. Entenda o que sai da sua máquina, o que dizem as políticas e como auditar cada conexão."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-11-16-por-que-telemetria-em-ferramentas-de-ia-e-editores-e-um.jpg"
+  image: "/covers/2026-11-16-por-que-telemetria-em-ferramentas-de-ia-e-editores-e-um.jpg"
 lang: "pt"
 translationKey: "2026-11-16-por-que-telemetria-em-ferramentas-de-ia-e-editores-e-um"
 ---

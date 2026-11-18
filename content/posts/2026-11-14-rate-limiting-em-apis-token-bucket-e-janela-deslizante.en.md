@@ -6,7 +6,7 @@ tags: ["api", "rate-limiting", "backend", "resiliência", "boas-práticas"]
 excerpt: "A traffic spike doesn't have to take your service down. Learn how to choose between token bucket and sliding window, where to apply the limit, and how to answer with 429 and Retry-After."
 share_hook: "The spike that takes an API down is rarely an attack: it's a legitimate client with no pacing. Rate limiting is the missing brake."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-11-14-rate-limiting-em-apis-token-bucket-e-janela-deslizante.jpg"
+  image: "/covers/2026-11-14-rate-limiting-em-apis-token-bucket-e-janela-deslizante.jpg"
 comments: true
 translationKey: "2026-11-14-rate-limiting-em-apis-token-bucket-e-janela-deslizante"
 ---
@@ -24,7 +24,7 @@ That said, rate limiting is no silver bullet. It doesn't replace authentication 
 The algorithm most used in production is the *token bucket*. The idea is literal: there's a bucket with capacity for N tokens. A drip refills tokens at a fixed rate - say, 10 per second. Every request must consume a token to pass. If the bucket has tokens, the request is approved on the spot; if it's empty, it gets `429 Too Many Requests`.
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-11-14-rate-limiting-em-apis-token-bucket-e-janela-deslizante-1.jpg" alt="Token bucket flow with fixed token refill, per-request decision, and an approve or 429 path" loading="lazy">
+<img src="/media/2026-11-14-rate-limiting-em-apis-token-bucket-e-janela-deslizante-1.jpg" alt="Token bucket flow with fixed token refill, per-request decision, and an approve or 429 path" loading="lazy">
 <figcaption>In a token bucket, the refill is constant and approval consumes a token: short bursts pass, the average pace stays limited.</figcaption>
 </figure>
 
@@ -44,7 +44,7 @@ The **sliding window** removes the boundary by measuring a "rolling" interval in
 When to use each? Fixed window suits coarse quotas (daily usage of a plan). Token bucket suits burst-prone endpoints (login, webhooks). Sliding window suits public API contracts, where the limit number needs to be honest in practice, not just on average.
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-11-14-rate-limiting-em-apis-token-bucket-e-janela-deslizante-2.jpg" alt="429 sequence with Retry-After and X-RateLimit headers between client and API, with a wait and a successful retry" loading="lazy">
+<img src="/media/2026-11-14-rate-limiting-em-apis-token-bucket-e-janela-deslizante-2.jpg" alt="429 sequence with Retry-After and X-RateLimit headers between client and API, with a wait and a successful retry" loading="lazy">
 <figcaption>A 429 with Retry-After turns an error into a contract: the client knows when to come back without worsening the overload.</figcaption>
 </figure>
 

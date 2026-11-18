@@ -5,7 +5,7 @@ category: "tutorial"
 tags: ["rust", "wasm", "pdf", "mcp", "open-source"]
 excerpt: "Quantas vezes você já precisou extrair texto de um PDF dentro de uma aplicação web e se viu refém de uma API externa? Você envia o arquivo, espera pela resposta e torce para"
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-26-paperpilot-construindo-um-engine-pdf-zero-cloud-em-rust-com.jpg"
+  image: "/covers/2026-10-26-paperpilot-construindo-um-engine-pdf-zero-cloud-em-rust-com.jpg"
 lang: "pt"
 translationKey: "2026-10-26-paperpilot-construindo-um-engine-pdf-zero-cloud-em-rust-com"
 ---
@@ -15,7 +15,7 @@ Quantas vezes você já precisou extrair texto de um PDF dentro de uma aplicaç�
 Essa foi a motivação exata para o PaperPilot. Um motor de processamento de PDF escrito em Rust, compilado para WebAssembly (WASM) e exposto como um servidor MCP (Model Context Protocol). A ideia é simples: levar o poder do Rust para o navegador e para servidores locais, sem uma única linha de código trafegando por um serviço de terceiros. Privacidade, controle e performance total, diretamente no seu ambiente.
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/paperpilot-architecture-diagram.png" alt="Diagrama de arquitetura do PaperPilot mostrando um PDF sendo processado pelo módulo Rust, compilado para WASM, executado em um Worker Web ou servidor Node.js" loading="lazy">
+<img src="/media/paperpilot-architecture-diagram.webp" alt="Diagrama de arquitetura do PaperPilot mostrando um PDF sendo processado pelo módulo Rust, compilado para WASM, executado em um Worker Web ou servidor Node.js" loading="lazy">
 <figcaption>Arquitetura do PaperPilot: Rust → WASM, executável no cliente ou em servidores edge.</figcaption>
 </figure>
 

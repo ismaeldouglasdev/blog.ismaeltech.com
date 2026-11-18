@@ -5,7 +5,7 @@ category: "article"
 tags: ["telemetry", "privacy", "security", "ai", "editors"]
 excerpt: "Your editor knows what you type before you save. Understand what leaves your machine, what the policies say, and how to audit every connection."
 cover:
-  image: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-11-16-por-que-telemetria-em-ferramentas-de-ia-e-editores-e-um.jpg"
+  image: "/covers/2026-11-16-por-que-telemetria-em-ferramentas-de-ia-e-editores-e-um.jpg"
 lang: "en"
 translation_of: "2026-11-16-por-que-telemetria-em-ferramentas-de-ia-e-editores-e-um"
 translationKey: "2026-11-16-por-que-telemetria-em-ferramentas-de-ia-e-editores-e-um"

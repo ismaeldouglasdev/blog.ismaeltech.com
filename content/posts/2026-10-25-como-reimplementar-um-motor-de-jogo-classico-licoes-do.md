@@ -51,8 +51,8 @@ void test_creature_damage() {
 Esse método de "teste de caixa-preta" é fundamental. Sem os fontes, não há como saber *por que* o dano é 3. Sabe-se apenas que *deve ser* 3 para que a experiência do jogador seja idêntica. Qualquer discrepância é um bug no motor novo.
 
 <figure>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Reverse_engineering_process_diagram.svg/800px-Reverse_engineering_process_diagram.svg.png" alt="Diagrama de fluxo do processo de engenharia reversa: Análise, Extração de Informação, Modelagem e Reconstrução" loading="lazy">
-<figcaption>Diagrama simplificado do ciclo de engenharia reversa. O fheroes2 segue um fluxo similar: analisar o binário, extrair regras de jogo, modelar a lógica e reconstruir o motor. (Fonte: Wikimedia Commons, adaptado, licença CC BY-SA 3.0)</figcaption>
+<img src="/media/reverse-engineering-cycle.svg" alt="Diagrama de fluxo do processo de engenharia reversa: Análise, Extração de Informação, Modelagem e Reconstrução" loading="lazy">
+<figcaption>Diagrama do ciclo de engenharia reversa: analisar o binário, extrair regras de jogo, modelar a lógica e reconstruir o motor.</figcaption>
 </figure>
 
 ## Arquitetura e principais desafios técnicos
