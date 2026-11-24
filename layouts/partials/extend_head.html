@@ -13,9 +13,12 @@
 <meta name="twitter:image" content="{{ "images/og-default.png" | absURL }}">
 {{- end -}}
 <style>
-.newsletter-box{margin:28px 0;padding:22px 20px;border:1px solid var(--border);border-radius:14px;background:var(--entry)}
-.newsletter-box h3{margin:0 0 6px;font-size:1.15rem}
-.newsletter-box p{margin:0 0 12px;opacity:.85}
+.newsletter-box{position:fixed;right:18px;bottom:18px;z-index:90;width:min(360px,calc(100vw - 32px));max-height:calc(100dvh - 36px);overflow:auto;margin:0;padding:18px 18px 16px;border:1px solid var(--border);border-radius:14px;background:var(--entry);box-shadow:var(--clean-shadow-hover)}
+.newsletter-close{position:absolute;top:6px;right:6px;width:44px;height:44px;display:grid;place-items:center;border:0;border-radius:10px;background:transparent;color:var(--secondary);font-size:1.5rem;line-height:1;cursor:pointer}
+.newsletter-close:hover{background:var(--clean-bg-subtle);color:var(--primary)}
+.newsletter-close:focus-visible{outline:2px solid var(--primary);outline-offset:2px}
+.newsletter-box h3{margin:0 40px 6px 0;font-size:1.05rem}
+.newsletter-box p{margin:0 0 10px;opacity:.85}
 .newsletter-form{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
 .newsletter-form input[type=email]{flex:1 1 220px;min-width:0;padding:10px 12px;border:1px solid var(--border);border-radius:10px;background:var(--theme);color:var(--primary)}
 .newsletter-form button{padding:10px 16px;border:0;border-radius:10px;background:var(--primary);color:var(--theme);font-weight:600;cursor:pointer}
@@ -25,4 +28,5 @@
 .newsletter-msg.ok{color:#1b7f3b}
 .newsletter-msg.err{color:#b3261e}
 .newsletter-note{margin:8px 0 0;font-size:.85rem;opacity:.7}
+@media (max-width:480px){.newsletter-box{left:12px;right:12px;bottom:12px;width:auto;max-height:calc(100dvh - 24px);padding:16px 14px 14px}.newsletter-form input[type=email]{flex-basis:100%}.newsletter-form button{width:100%}}
 </style>
