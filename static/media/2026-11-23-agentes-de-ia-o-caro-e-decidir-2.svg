@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" role="img" aria-labelledby="t2 d2">
+<title id="t2">Separacao entre julgamento e execucao</title>
+<desc id="d2">Modelo caro faz auditoria e plano, plano vira arquivo, modelo barato executa e testa, humano revisa.</desc>
+<rect width="1000" height="360" fill="#f6f7f9"/>
+<g font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#ffffff">
+<rect x="40" y="60" width="250" height="110" rx="12" fill="#264653"/>
+<text x="60" y="100">EXPENSIVE MODEL</text><text x="60" y="132">audit + plan</text><text x="60" y="158">judgment here</text>
+<rect x="375" y="60" width="250" height="110" rx="12" fill="#457b52"/>
+<text x="395" y="100">plans/001.md</text><text x="395" y="132">verification gates</text><text x="395" y="158">STOP conditions</text>
+<rect x="710" y="60" width="250" height="110" rx="12" fill="#e9c46a" fill-opacity="0.95"/>
+<text x="730" y="100" fill="#142234">CHEAP MODEL</text><text x="730" y="132" fill="#142234">implement + test</text><text x="730" y="158" fill="#142234">typing here</text>
+</g>
+<g stroke="#264653" stroke-width="4" fill="none">
+<path d="M290 115 L370 115"/><path d="M625 115 L705 115"/>
+</g>
+<g font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#142234">
+<rect x="240" y="245" width="520" height="70" rx="10" fill="#e8edf2"/>
+<text x="270" y="288">Human reviews the diff against the plan, then merges</text>
+</g>
+<path d="M835 170 C835 280 770 280 765 280" stroke="#264653" stroke-width="4" fill="none"/>
+</svg>

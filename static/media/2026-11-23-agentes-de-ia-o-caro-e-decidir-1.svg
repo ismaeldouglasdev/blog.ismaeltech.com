@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 430" role="img" aria-labelledby="t d">
+<title id="t">A escada da decisao antes de escrever codigo</title>
+<desc id="d">Sete degraus, do primeiro testes necessario, ate a menor solucao util.</desc>
+<rect width="1000" height="430" fill="#f6f7f9"/>
+<g font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#142234">
+<rect x="40" y="40" width="920" height="60" rx="10" fill="#e8edf2"/>
+<text x="60" y="78">Before writing code, stop at the first rung that holds</text>
+</g>
+<g font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#ffffff">
+<rect x="60" y="130" width="880" height="38" rx="6" fill="#264653"/><text x="80" y="156">1. Does this need to exist?</text>
+<rect x="100" y="176" width="840" height="38" rx="6" fill="#2a5a68"/><text x="120" y="202">2. Is it already in this codebase?</text>
+<rect x="140" y="222" width="800" height="38" rx="6" fill="#2e6d75"/><text x="160" y="248">3. Does the standard library do it?</text>
+<rect x="180" y="268" width="760" height="38" rx="6" fill="#328080"/><text x="200" y="294">4. Is it a native platform feature?</text>
+<rect x="220" y="314" width="720" height="38" rx="6" fill="#369486"/><text x="240" y="340">5. Is an installed dependency enough?</text>
+<rect x="260" y="360" width="680" height="38" rx="6" fill="#3aa88c"/><text x="280" y="386">6. Can it be one line? 7. Minimum + one test</text>
+</g>
+</svg>
