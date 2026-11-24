@@ -102,6 +102,11 @@ buildDrafts = false
   url = "https://ismaeltech.com/#sobre"
   weight = 4
 
+[[languages.pt.menu.main]]
+  name = "Ferramentas"
+  url = "https://ismaeltech.com/ferramentas"
+  weight = 5
+
 [[languages.en.menu.main]]
   name = "Home"
   url = "/en/"
@@ -121,3 +126,8 @@ buildDrafts = false
   name = "About"
   url = "https://ismaeltech.com/#sobre"
   weight = 4
+
+[[languages.en.menu.main]]
+  name = "Tools"
+  url = "https://ismaeltech.com/ferramentas"
+  weight = 5
