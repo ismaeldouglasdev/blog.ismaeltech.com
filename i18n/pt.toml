@@ -18,8 +18,11 @@ cover_alt = "Capa do post"
 [newsletter_title]
 other = "Receba novos posts por e-mail"
 
+[newsletter_close]
+other = "Fechar newsletter"
+
 [newsletter_desc]
-other = "Conteúdo prático sobre desenvolvimento, carreira e tecnologia. Sem spam — cancele quando quiser."
+other = "Conteúdo prático sobre desenvolvimento, carreira e tecnologia. Sem spam. Cancele quando quiser."
 
 [newsletter_email_ph]
 other = "Seu e-mail"
