@@ -1,37 +1,37 @@
 <aside class="newsletter-box" id="newsletter" role="dialog" aria-labelledby="newsletter-title">
   <button type="button" class="newsletter-close" id="newsletter-close" aria-label="{{ i18n "newsletter_close" | default "Fechar newsletter" }}">&times;</button>
   <h3 id="newsletter-title">{{ i18n "newsletter_title" | default "Receba novos posts por e-mail" }}</h3>
-  <p>{{ i18n "newsletter_desc" | default "Conteúdo prático sobre desenvolvimento, carreira e tecnologia. Sem spam. Cancele quando quiser." }}</p>
+  <p class="newsletter-desc">{{ i18n "newsletter_desc" | default "Conteúdo prático sobre desenvolvimento, carreira e tecnologia. Sem spam. Cancele quando quiser." }}</p>
   <form id="newsletter-form" class="newsletter-form" novalidate>
     <input type="text" name="website" tabindex="-1" autocomplete="off" class="newsletter-hp" aria-hidden="true">
     <input type="email" name="email" required placeholder="{{ i18n "newsletter_email_ph" | default "Seu e-mail" }}" aria-label="E-mail">
     <button type="submit" id="newsletter-submit">{{ i18n "newsletter_submit" | default "Inscrever-se" }}</button>
   </form>
   <p id="newsletter-msg" class="newsletter-msg" role="status" aria-live="polite"></p>
-  <p class="newsletter-note">{{ i18n "newsletter_note" | default "Você receberá um e-mail para confirmar a inscrição (double opt-in)." }}</p>
 </aside>
 <script>
 (function() {
   var box = document.getElementById('newsletter');
-  var close = document.getElementById('newsletter-close');
   var storageKey = 'newsletter-dismissed';
-  if (box && close) {
+  function hide() {
+    if (!box) return;
+    box.hidden = true;
+    box.style.display = 'none';
+  }
+  function dismiss() {
+    hide();
+    try { window.localStorage.setItem(storageKey, '1'); } catch (err) {}
+  }
+  if (box) {
     var dismissed = false;
     try { dismissed = window.localStorage.getItem(storageKey) === '1'; } catch (err) {}
-    if (dismissed) {
-      box.hidden = true;
-    } else {
-      close.addEventListener('click', function() {
-        box.hidden = true;
-        try { window.localStorage.setItem(storageKey, '1'); } catch (err) {}
-      });
-      document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && !box.hidden) {
-          box.hidden = true;
-          try { window.localStorage.setItem(storageKey, '1'); } catch (err) {}
-        }
-      });
-    }
+    if (dismissed) hide();
+    document.addEventListener('click', function(e) {
+      if (e.target && e.target.closest && e.target.closest('#newsletter-close')) dismiss();
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && !box.hidden) dismiss();
+    });
   }
   var form = document.getElementById('newsletter-form');
   if (!form) return;
